@@ -1,0 +1,52 @@
+# Problem Set (10 points)
+
+
+
+General idea:
+
+MCQ (2 points)
+
+## Questions de cours
+
+## Un algorithme de résolution
+
+On considère le modèle unidimensionnel $a b_{t+1} + b x_t + c x_{t-1}$ avec $a,b,c\in \mathbb{r}$ et $b\neq 0$.
+
+La solution du modèle est une règle de décision de la forme $x_t = \lambda x_{t-1}$ avec $\lambda \in \mathbb{R}$.
+
+1. Montrer que $\lambda$ est une des racines du polynôme $a X^2+ b X + c$.
+
+On suppose que ce polynôme a deux racines réelles distinctes que l'on note $\lambda_1$ et $\lambda_2$. Sans perte de généralité on suppose $|\lambda_1|<|\lambda_2|$.
+
+2. Montrer que les racines du polynôme $M$ sont les racines du polynome $X^2 - (\lambda_1+\lambda_2) X + \lambda_1 \lambda_2$.
+
+3. On considère la suite récurrente $u_{n}=f(u_{n})$ définie par la relation  $$a u_{n}u_{n+1} + b u_{n+1} + c = 0$$. Montrer que $f(u)=\frac{-c}{a u_n + b}$. Montrer que la suite $(u_n)$ converge vers $\lambda_1$ pour toute valeur initiale $u_0$ distincte de $\lambda_2$.
+
+4. Supposons maintenant connue une solution $\lambda$ du polynôme $P$. Montrer que le modèle admet une et une seule solution non divergente si et seulement si $|\lambda|\leq1$ et $|f^{\prime}(\lambda)|<1$.
+
+
+## L'hypothèse du revenu permanent
+
+Un ménage rećoit un revenu $y_t$ qui suit un processus AR1 $y_t= \rho y_{t-1} + \epsilon_t$ avec $|\rho|<1$ et $(\epsilon_t)$ un processus gaussien unidimensionnel de déviation standard $\sigma>0$.
+
+Le ménage a la possibilité d'épargner à un taux d'intérêt $r$ en respectant la contrainte de budget:
+
+$$b_t + c_t = y_y + b_{t-1} r$$
+
+
+Il maximise l'utilité intertemporelle $\sum_t \beta^t U(c_t)$ avec $U(x)=\log(x)$ 
+
+1. Montrer (rapidement) que l'on a 
+
+$$ \beta \mathbb{E}_t \left[ \frac{U^{\prime}(c_{t+1})}{U^{\prime}(c_t)} r \right] = 1$$
+
+On linéarisant le modèle montrer que la dette satisfait la relation
+
+$$b_{t+1} - () b_t + b_{t-1}$$
+
+2. Le modèle satisfait-il la condition de Blanchard-Kahn ?
+
+## Dynare
+
+
+

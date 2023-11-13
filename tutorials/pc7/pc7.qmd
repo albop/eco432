@@ -1,0 +1,53 @@
+---
+title: "PC7: Demand and Supply Shocks"
+format: pdf
+---
+
+## Exercice 1:
+
+
+## Exercice 2: 
+
+
+{{< pagebreak >}}
+
+## Twitter & Short Term Macroeconomics {.appendix}
+
+
+Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chief économiste du FMI, maintenant au Peterson institute.
+
+
+[^macro_musing]: https://www.mercatus.org/macro-musings/ricardo-reis-macroeconomics-financial-crises-and-recent-inflation-surge
+
+
+> Ricardo’s View of the Phillips Curve
+
+> Beckworth: Okay, one last question and then I'll let you go, but the Phillips curve, it's a key part of modern macro, and at least in the US, it's come under a lot of criticism because we've had low inflation, low unemployment, all of the predictions of some of the big names that we would have to have this huge amount of unemployment to get to the inflation we've gotten to, it hasn't happened. What is your thoughts on the Phillips curve? And maybe we should begin with, how do you view the Phillips curve? Do you view it as a reduced form relationship or a deep structural one? And then from there I guess it's maybe easier to think about its future.
+
+> Reis: David, let me start by saying that I'm the Phillips professor at the LSE, so I have to defend the Phillips curve.
+
+> Beckworth: Okay.
+
+> Reis: I can never say it's obsolete otherwise I would fall on the floor since my chair would become obsolete. So it's definitely present. But with that account, let me make three observations. The first one is that, the way I understand monetary policy is, whereby tightening monetary policy, a central bank is able to bring inflation down. In the same way that when I go to the doctor with an infection with a bacteria of some kind, antibiotics are the way to kill the bacteria and cure me from that. However, a side effect, and I emphasize, let me say it slowly, a side effect of raising interest rates is that you also cause a recession. You also lead to an increase in unemployment. In the same way that a side effect of taking antibiotics is that they tend to wreak havoc with your gastrointestinal, digestive system.
+
+> Reis: Note that it is not a channel. It's not by taking antibiotics and screwing up my intestines that I therefore kill the bacteria. No, no, it’s a side effect. Likewise, raising interest rates lowers inflation and has a side effect of unemployment, but it may not lower unemployment the same way that you may go through a course of antibiotics and be perfectly fine with your gastrointestinal system. So the fact that unemployment has not gone up, does not in any way discredit the way in which monetary policy works, does not pose a puzzle of any kind, because an increase in unemployment following a tightening of monetary policy is not something that has to happen for inflation to fall. It's something that often happens as a side effect. So I make that point first. Second, the Phillips curve is, I think, still one of the most important concepts for any monetary policymaker precisely because if you were to say that raising interest rates brings down inflation, and you are to ignore the side effects, you would go crazy on raising and lowering interest rates in sharp ways, focusing solely on inflation.
+
+> Reis: It's understanding that side effect, and that side effect is the Phillips curve, that when you raise interest rates, you're going to bring down inflation, but you may also increase unemployment. That side effect is there. That makes central banking hard, monetary policy hard. That leads you to be cautious. That leads you to not destroy economies in your obsession with controlling inflation. So understanding the Phillips curve as a trade-off, as a structural trade-off, as a side effect of what happens after you raise interest rates and lower down inflation, is, I think, essential. And any central bank that told me it does not understand the Phillips curve [inaudible] in the central bank, is one that should resign immediately because it would be a very dangerous central bank in that sense.
+
+> Reis: However, and third answer now here, the Phillips curve, however, and as it is, as indeed it was written by Bill Phillips originally, my predecessor here at the LSE many decades ago, as an empirical relation that says that you have a correlation between inflation and employment, or even as a causal relation, that it's through raising unemployment, they lower inflation, is a deeply flawed empirical as well as theoretical claim, precisely because it is a side effect. And when that happens sometimes, but not always, precisely because it's not the causal mechanism, it very often happens that you have inflation going up and down with unemployment not going up and down in that way. That is why when you look at a correlation between inflation and employment, you end up with relatively low values.
+
+> Reis: It is also why when Bill Phillips did those correlations, under some circumstances, having to do with monetary-fiscal regimes, he found very nice Phillips curves, but under other circumstances you wouldn't find them. Just like, David, under some circumstances, antibiotics mess up your stomach and some others, it doesn't. So that Phillips curve is seen as an ironclad law of what happens when employment and inflation moves, seen as a causal part of the mechanism when inflation goes down. That, indeed, is, I think, something that does not receive a lot of support in theory or in the data. But the Phillips curve has a very important trade off as what you can do, is why you have to be careful in controlling inflation, that is absolutely essential for any central bank.
+
+> Beckworth: Well, let me tell you how I think about it, and correct my understanding here. I view it more as a reduced form relationship. It's reflecting some other third variable, which is aggregate demand, which is being shaped by monetary policy. So aggregate demand can affect inflation, it can affect unemployment, and so policy is moving aggregate demand towards some goal and maybe it affects unemployment, maybe it affects inflation. Is that too simple of an understanding?
+
+> Reis: That's a perfectly acceptable complementary view to the ones I was saying. It goes back a little bit to my, as a side effect, meaning you want to be monitoring employment to understand this correlation exists, because it is reflecting something going on in your body, right? You're trying to diagnose the body of the patient. You're trying to kill the bacteria. You know that when you do the antibiotics, it's going to have an effect on a bunch of other things, and you want to be monitoring them, and focusing on your digestion is a very useful one, sometimes even if you're really as triggering is whether the antibiotics are creating problems in other parts of the body, absolutely.
+
+
+![](rreis_response.png){width=70%}
+
+![](rreis_explanation.png){width=70%}
+
+![](blanchard_response_2.png){width=70%}
+
+![](blanchard_response_3.png){width=70%}
+
