@@ -1,0 +1,80 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath, amsthm, amssymb}
+ 
+\usepackage{array}
+\usepackage{caption}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{moreverb}
+\usepackage{titlesec}
+\usepackage[english]{babel}
+\usepackage{pstricks}
+\usepackage{csquotes}
+\usepackage{ae}
+\usepackage{aecompl}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{listing s}
+\usepackage{geometry}
+% \usepackage{bigints}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+%\usepackage[utopia]{mathdesign}
+\usepackage{color}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black, citecolor=black, filecolor=black, pdftex]{hyperref}
+
+
+
+\geometry{ hmargin=1.85cm, vmargin=1.85cm }
+\newcommand{\lag}{\mathcal{L}}
+
+\linespread{1.25}
+
+
+
+\begin{document}
+\large
+
+
+\begin{center}
+	\textbf{\Large PC 5. Coûts de catalogue et arbitrage produit-inflation [Remarks by Mehdi Senouci, 2021-22]}\\
+	\vspace{1em}
+	***\\
+\end{center}
+
+\paragraph{Question 3: alternative method and answer}
+
+We've seen at question 2) that optimal pricing is $P_i^*/P=P^*/P=\eta/(\eta-1)*W/P$. Consequently, at firm $i$'s optimum, demand for good $i$ is at:
+\[
+Y_i^* = Y \left( \frac{\eta}{\eta-1} \frac{W}{P}\right)^{-\eta}
+\]
+which is also the demand for labor from firm $i$. Consequently, aggregate labor demand is at:
+\[
+L^d=\int_i L_i^d = Y \left( \frac{\eta}{\eta-1} \frac{W}{P}\right)^{-\eta}
+\]
+So, in logs:
+\[
+l^d=y-\eta \left( \ln \left( \frac{\eta}{\eta-1}  \right)+w-p\right) 
+\]
+Like in the solution pdf, labor supply is at:
+\[
+l^o=\xi \ln \left( \frac{\eta}{\eta-1}  + w-p \right)
+\]
+So labor market equilibrium implies:
+\begin{equation} \label{eq1}
+y=(\xi+\eta) \left( \ln \left( \frac{\eta}{\eta-1} \right) +w-p \right)
+\end{equation}~
+
+Finally, combining equation~\eqref{eq1} with optimal pricing equation $p^*=\ln \left( \frac{\eta}{\eta-1} \right) +w$, we get:
+\begin{equation} \label{eq2}
+p^*-p=\frac{y}{\xi +\eta}
+\end{equation}
+
+
+
+
+\end{document}
+
+
+

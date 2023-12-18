@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage{graphicx,amsmath}
+\usepackage{hyperref}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:45:13}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\oddsidemargin 0cm \evensidemargin 0cm \textwidth 17cm \topmargin
+-1.5cm \textheight 23.5 cm
+\newcommand{\pdf}[3]{
+\begin{figure}[tp]
+\begin{center}
+\includegraphics[height=#1,keepaspectratio]{#2.pdf}
+\end{center}
+\caption{#3} \label{#2}
+\end{figure}
+}
+\newcommand{\pdfstack}[4]{
+\begin{figure}[p]
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#1.pdf}
+\end{center}
+\caption{#2} \label{#1}
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#3.pdf}
+\end{center}
+\caption{#4} \label{#3}
+\end{figure}
+}
+%\input{tcilatex}
+\begin{document}
+
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 1. Le mod\`{e}le de Solow}
+
+\hspace{1.0in}
+\end{center}
+
+\bigskip
+
+\noindent On suppose une fonction de production Cobb-Douglas identique pour
+tous les pays. Le progr\`{e}s technique $A_{t}$ est exog\`{e}ne et porte sur
+le travail $L_{t}$ ($A_{t}L_{t}$ est appel\'{e} travail efficace) : 
+\begin{equation*}
+Y_{t}=K_{t}^{\alpha }(A_{t}L_{t})^{1-\alpha }\ \text{\ avec }0<\alpha <1
+\end{equation*}%
+La quantit\'{e} de travail $L$ et son efficacit\'{e} $A$ croissent \`{a}
+taux constant $g_{L}$ et $g_{A}$, $\ $soit~: 
+\begin{equation*}
+L_{t}=L_{0}e^{g_{L}t}\text{ \ \ et \thinspace\ }A_{t}=A_{0}e^{g_{A}t}
+\end{equation*}%
+Le stock de capital \'{e}volue de la mani\`{e}re suivante
+\begin{equation*}
+\dot{K_t}=s Y_t-\delta K_t
+\end{equation*}%
+
+
+\noindent Le niveau initial de capital $K_0$ et $L_0$ sont donnés. Le capital se d\'{e}pr\'{e}cie au taux $\delta $ identique pour tous les
+pays. Le taux d'\'{e}pargne $s$ est exog\`{e}ne et constant. Il peut diff%
+\'{e}rer d'un pays \`{a} l'autre. On note $k_{t}=K_{t}/(A_{t}L_{t})$ et $%
+y_{t}=Y_{t}/(A_{t}L_{t})$ les grandeurs par unit\'{e} de travail efficace.
+On a donc : 
+\begin{equation*}
+y_{t}=f(k_{t})=k_{t}^{\alpha }
+\end{equation*}
+
+\begin{enumerate}
+\item Commenter la fonction de production. %On note $w$ le taux de salaire pay%
+%\'{e} par les firmes aux travailleurs et $R$ le taux de location du capital.
+%Calculer la combinaison optimale de facteurs de production n\'{e}cessaire 
+%\`{a} la production de $Y$ unit\'{e}s de biens et en d\'{e}duire la fonction
+%de co\^{u}t $C\left( Y\right) $ des firmes. En d\'{e}duire qu'\`{a} l'\'{e}%
+%quilibre $R$ et $w$ doivent \^{e}tre li\'{e}es par une relation du type $%
+%R=R\left( w\right) $. Que se passe-t-il si $R>R\left( w\right) $ ou $%
+%R<R\left( w\right) $ ?
+
+\item Ecrire l'\'{e}quation d'\'{e}volution du capital effectif $k$ ($\dot{k}%
+_{t}=$d$k_{t}/$d$t$) et en d\'{e}duire l'\'{e}tat stationnaire $k^{\ast }$.
+Retrouver ce r\'{e}sultat graphiquement. D\'{e}terminer le niveau
+correspondant de production effective $y^{\ast }$. Quel est alors le taux de
+croissance de la production par t\^{e}te $Y/L$ et de la consommation par t\^{e}te $C/L$? Commenter.
+
+%\item L'entreprise loue les unit\'{e}s de capital au taux de location re\'{e}el $R_{t}$. On note $w$ le taux de salaire pay\'{e} par les firmes aux travailleurs.  On choisit le bien final comme num\'{e}raire (son prix est donc \'{e}gal \`{a} 1).  Apr\'{e}s avoir \'{e}crit le probl\'{e}me de maximisation des profits de la firme, calculer le salaire $w_{t}$ et le taux de location $R_{t}$ \`{a}
+%l'\'{e}quilibre de cette \'{e}conomie.  On note $r_{t}$ le taux d'int\'{e}r\^{e}t re\'{e}el (rate of return on savings) o\`{u} $r_{t}=R_{t}-\delta.$ Commenter. 
+
+%\item En 1957, l'\'{e}conomiste N. Kaldor affirmait que, sur le long terme les \'{e}conomies capitalistes se caract\'{e}risaient par des parts des
+%facteurs \`{a} peu pr\`{e}s constantes. Montrez que la fonction de production Cobb-Douglass permet  de rendre compte
+%de cette r\'{e}gularit\'{e}.
+
+
+%En 1957, l'\'{e}conomiste N. Kaldor affirmait que, sur le long terme,
+%les \'{e}conomies capitalistes se caract\'{e}risaient par i) des parts des
+%facteurs \`{a} peu pr\`{e}s constantes, ii) un ratio capital/PIB \`{a} peu pr%
+%\`{e}s constant, iii) un taux de croissance du PIB par travailleur \`{a} peu
+%pr\`{e}s constant, iv) un rendement sur le capital investi \`{a} peu pr\`{e}%
+%s constant et vi) une forte h\'{e}t\'{e}rog\'{e}n\'{e}it\'{e} des revenus
+%par t\^{e}te entre pays. Le mod\`{e}le de Solow permet-il de rendre compte
+%de ces r\'{e}gularit\'{e}s?
+
+\item Calculer le taux d'\'{e}pargne optimal $\widehat{s}$ d\'{e}fini comme 
+\'{e}tant celui qui maximise la consommation par unit\'{e} de travail
+efficace. A l'\'{e}quilibre stationnaire, quand $s=\widehat{s}$ , quel est
+le rendement du capital? On dit que l'\'{e}conomie est \textquotedblleft
+dynamiquement inefficiente\textquotedblright\ si une modification du taux d'%
+\'{e}pargne peut am\'{e}liorer la consommation par t\^{e}te \`{a} toutes les
+p\'{e}riodes. Une \'{e}conomie o\`{u} $s>\widehat{s}$ est-elle efficiente ou
+inefficiente~? Et une \'{e}conomie o\`{u} $s<\widehat{s}$~? 
+
+\bigskip 
+
+Considérons maintenant deux variantes du modèle de Solow. 
+%
+%\item On se place maintenant en dehors de l'\'{e}tat stationnaire. Montrer
+%que le taux de croissance $g_{y}$ peut s'approximer, au voisinage de l'\'{e}%
+%quilibre stationnaire, par la relation~:%
+%\begin{equation*}
+%g_{y}\simeq \beta \ln (y/y^{\ast })
+%\end{equation*}%
+%De quoi le coefficient $\beta $ d\'{e}pend-il ? Interpr\'{e}ter.
+
+\item (Mod\`{e}le AK). On suppose maintenant une fonction de production lin\'{e}aire en $K$: 
+
+\begin{equation*}
+Y_{t}=A K_{t}
+\end{equation*}%
+
+o\`{u} $A>0$ est constant (la technologie ne change pas). On note $\tilde{k}_{t}=K_{t}/L_{t}$ et $\tilde{y}_{t}=Y_{t}/L_{t}$ les grandeurs par t\^{e}te.  On a donc:  $\tilde{y}_t=A \tilde{k}_t $. 
+
+
+\'{E}crire l'\'{e}quation d'\'{e}volution du capital par t\^{e}te. Commenter la fonction de production. Montrez que sous certaines conditions, le taux de croissance des variables par t\^{e}te \`{a} long terme est positif m\^{e}me si la technologie ne croit pas. Montrez que le taux de croissance des variables est constant pour tout $t$. Commenter ces r\'{e}sultats.
+
+\item (Les trappes à pauvreté)  On suppose maintenant une fonction de production (en grandeurs par t\^{e}te): 
+
+\begin{equation*}
+\tilde{y}_t=\tilde{k}_t^{\alpha }A_{L} \ \text{ si } \tilde{k}_t < \underline{k}\end{equation*}%
+\begin{equation*}
+\tilde{y}_t=\tilde{k}_t^{\alpha }A_{H} \ \text{ si } \tilde{k}_t \geq \underline{k}\end{equation*}%
+o\`{u} $A_H>>A_L$ et $\alpha \in (0,1).$ %\begin{equation*}
+%\frac{\dot{\tilde{k}}}{\tilde{k}}=SA-\delta-n
+%\end{equation*}%
+Il existe un effet de seuil:  le stock de capital devient hautement productif 
+ lorsqu'il dépasse un certain seuil $\underline{k}$. Notez que l'ensemble de production de cette technologie présente une non convexité: lorsque $\tilde{k}_t$ est proche de $\underline{k}$, il y a des rendements croissants du capital:   
+ 
+ 
+ \textit{" Une économie avec deux fois le stock de capital par personne signifie une économie avec des routes qui fonctionnent toute l'année, plutôt que des routes qui sont emportées à chaque saison des pluies ; une alimentation électrique fiable
+ vingt-quatre heures par jour, plutôt que de l'électricité sporadique et imprévisible ; des travailleurs en bonne santé et à leur travail, plutôt que des travailleurs qui sont chroniquement absents pour cause de maladie. Il est probable que doubler le stock de capital humain et physique fera en réalité plus que doubler le niveau de revenu, du moins à des niveaux très faibles de capital par personne" (Jeffrey Sachs, The End of Poverty, p. 250).}
+
+Montrez qu'on peut  avoir deux états stationnaires: $k_L^{\ast }$ et $k_H^{\ast }$. Les pays dont le capital initial par t\^{e}te est inférieur à $\underline{k}$ convergeront vers $k_L^{\ast }$. Les pays avec un capital supérieur à $\underline{k}$ convergeront vers un état stationnaire plus élevé, $k_H^{\ast }$. Les conditions initiales sont importantes, même à très long terme: il y a une "trappe à pauvreté."  Discutez les implications de ce modèle en terme de politiques d'aide au developpement. 
+\end{enumerate}
+
+\end{document}

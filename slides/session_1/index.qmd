@@ -1,0 +1,893 @@
+---
+title: Classical vs Keynesian Views
+subtitle: Macroeconomics - EF01
+author: Year 2022-2023
+format: beamer
+aspectratio: 169
+---
+
+## Goal of the course
+
+Help all of you to establish solid intuitions about short term macroeconomics.
+
+---
+
+# Resources
+
+![](assets/mankiw_book.jpg){height=30%}
+![](assets/challe_book.jpg){height=30%}
+
+Use Mankiw's book to clarify concepts, Challe's if curious about more theory
+
+We will also use a bit[^littlebit] bit of formalism. You can work on it by doing the exercises, but bear in mind that formalism is actually there to help you establish intuitions.
+
+[^littlebit]: a wee little bitty bit if we're honnest...
+
+---
+
+# Plan for the Course
+
+- Session 1: introduction / reminders on macro
+- Session 2: aggregate demand
+- Session 3: aggregate supply
+- Session 4: macroeconomic fluctuations
+- Session 5: monetary policy
+- Session 6: unconventional monetary policies
+
+---
+
+## Main Goal Today
+
+Understand why it is said that Keynes *invented* macroeconomics as a discipline.
+
+---
+
+# A tiny little bit of economic history
+
+:::{.center}
+![](assets/history.png){width=80%}
+:::
+
+Our goal today:
+
+- quickly contextualize the content of the course
+- contrast classical and keynesian thinking
+- remind you of some important concepts in macro
+- not a real history of economic thought course
+
+---
+
+
+# The Classical
+
+<!-- ![Adam Smith](assets/adam_smith.jpg){width=15%}
+![David Ricardo](assets/ricardo.jpeg){width=15%}
+![Malthus](assets/malthus.jpeg){width=15%}
+![Jean-Baptise Say](assets/say.jpg){width=15%} -->
+
+<!-- ![](assets/history_classical.png) -->
+
+:::{.center}
+![](assets/history_classical.png){width=80%}
+:::
+
+| ![Adam Smith](assets/adam_smith.jpg){width=60%} | ![David Ricardo](assets/ricardo.jpeg){width=60%} | ![Malthus](assets/malthus.jpeg){width=60%} | ![Jean-Baptise Say](assets/say2.jpg){width=60%} |
+| ----------------------------------------------- | ------------------------------------------------ | ------------------------------------------ | ---------------------------------------------- |
+| Adam Smith  (1723-1790)                         | David Ricardo (1772-1823)                                   | Thomas Malthus  (1766-1834)                                  | Jean-Baptiste Say  (1767-1832)                            |
+
+
+---
+
+# The Classical Economists
+
+
+
+- Classical economists were contemporaneous of the development of __industrial capitalism__
+
+- Their goal: understand how market forces could solve society's problems
+
+- Educated belief:
+  - Market is the best way to allocate resources that is to take production decisions and allocate goods
+  - Government should generally not interfere with market activities
+
+---
+
+# The Classical Economists
+
+\framesubtitle{One big question}
+
+What determines *intrinsic* value of goods?
+
+- (marginal) cost?
+- rarity?
+- utility?
+
+
+![](assets/car.jpeg){width=30%}
+![](assets/dasani.jpeg){width=30%}
+![](assets/diamond.png){width=30%}
+
+
+
+---
+
+# The Classical Economists
+
+Conclusion: there is no intrinsic value for individual goods
+
+- The market determines *value*, by definition
+
+![](demand_supply.png)
+
+Model of Market:
+- Supply: cost, rarity
+- Demand: utility
+
+---
+
+# Role-Play: The Classical View
+
+::: columns
+
+:::: {.column width=60%}
+
+\ 
+
+*Subjects complain price of bread is too high. People are starving. Bakers complain about rising costs of wheat. Wheat producers are on strike.*
+
+\ 
+
+What should the government do? Suppose you are Adam Smith answering that question.
+
+. . . 
+
+- price cap on bread? subsidize bread or wheat? tax and redistribute? break the strike? nothing?
+
+. . . 
+
+Classical economists promote "laisser-faire":
+
+- government intervention distorts market allocations and just makes things worse
+
+. . .
+
+But if one market is distorted, it should be fixed:
+
+-  terminate the strike.
+
+::::
+
+:::: {.column width=40%}
+
+![King George III](assets/george_3.jpg){width=70%}
+
+::::
+
+:::
+
+---
+
+# The Classical Economists on the Aggregate Economy
+
+For classical economists, it made no difference, whether one was dealing with a particular market or the whole economy.
+
+The response was the same: see which market is temporary out of equilibrium, and if necessary, try to fix it.
+
+---
+
+# The law of Markets : Say's law
+
+Do you remember Say's law?
+
+. . . 
+
+*Supply creates its own demand*
+
+. . . 
+
+Actually. JB Say never wrote this. Full quote: 
+
+*It is worthwhile to remark that a product is no sooner created than it, from that instant, affords a market for other products to the full extent of its own value.*
+
+. . . 
+
+
+Meaning:
+
+. . . 
+
+*There cannot be a shortage of demand*.
+
+Then what creates aggregate fluctuations and cycles?
+
+- classical economists think it's temporary misfunctions in one or several markets
+
+---
+
+
+# A supply shock
+
+
+::: columns
+
+:::: column
+
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Baby Economy](assets/circular.png){width=90%}
+
+\onslide<2>
+
+![Baby Economy](assets/circular_supply_1.png){width=90%}
+
+\onslide<3>
+
+![Baby Economy](assets/circular_supply_2.png){width=90%}
+
+
+\onslide<4>
+
+
+![Baby Economy](assets/circular_supply_3.png){width=90%}
+
+\onslide<5>
+
+![Baby Economy](assets/circular_supply_4.png){width=90%}
+
+\onslide<6>
+
+![Baby Economy](assets/circular_supply_5.png){width=90%}
+
+
+```{=beamer}
+\end{overprint}
+```
+
+
+::::
+
+:::: column
+
+\onslide<1>
+
+Here is a baby economy with three producers/consumers (a scientist, a barista, a mechanic)
+
+- inside the circle: production
+- outside: monetary transaction
+
+\onslide<2>
+
+Suppose there is initially a production shortage (e.g. the mechanic is missing a tyre and can't produce a second car)
+
+\onslide<3>
+
+It leads to a loss in revenue for said producer...
+
+\onslide<4>
+
+... and decreased demand for another producer (temporary disequilibrium)
+
+\onslide<5>
+
+Once all markets have adjusted, there is a new (lower) equilibrium.
+
+\onslide<6>
+
+The remedy: fix the production shortage.
+
+::::
+
+:::
+
+---
+
+# Neutrality of Money
+
+::: columns
+
+:::: column
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Baby Economy](assets/circular.png){width=90%}
+
+\onslide<2>
+
+![Baby Economy](assets/circular_numeraire.png){width=90%}
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+
+- In the classical view the monetary equivalent of each transaction is immaterial.
+- Mill: *The veil of money*
+  - money is a commodity like another..
+- ... used as a __numeraire__ 
+  - i.e. a good used as unit of accounting
+- Market allocations depend on *relative prices* only
+
+. . . 
+
+- Changing the numeraire changes prices but not real allocations
+
+::::
+
+:::
+
+---
+
+
+# Keynes
+
+:::{.center}
+![](assets/history_keynes.png){width=80%}
+:::
+
+| ![](assets/keynes.jpg){width=50%} | ![](assets/general_theory.jpg){width=20%}            |
+| --------------------------------- | ---------------------------------------------------- |
+| Keynes (1883-1946)                | The General Theory of Employment, Interest and Money (1936) |
+
+---
+
+# A demand shock
+
+
+::: columns
+
+:::: column
+
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Baby Economy](assets/circular.png){width=90%}
+
+\onslide<2>
+
+![Baby Economy](assets/circular_keynes.png){width=90%}
+
+\onslide<3,4>
+
+![Baby Economy](assets/circular_keynes_badeq.png){width=90%}
+
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+
+\onslide<1>
+
+Keynes, in TGTEIM, p18:
+  - *From the time of Say and Ricardo the classical economists have taught that supply creates its own demand...*
+
+\onslide<2>
+
+If one of the agents, *decides* not to spend all its income.
+
+\onslide<3>
+
+We end up with lower productiont too.
+
+\onslide<4>
+
+Why would an agent decide not to spend its income ?
+
+- bad dream, animal spirits...
+- fear of the future -> precautionary spending
+- small propensity to consume
+
+::::
+
+:::
+
+---
+
+# A demand shock
+
+
+::: columns
+
+:::: column
+
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Baby Economy](assets/circular_keynes_badeq.png){width=90%}
+
+\onslide<2>
+
+![Baby Economy](assets/circular_keynes_gvt.png){width=90%}
+
+\onslide<3,4>
+
+![Baby Economy](assets/circular_keynes_liquidity.png){width=90%}
+
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+
+\onslide<1>
+
+What should the authorities do?
+
+\onslide<2>
+
+The governemnt can stimulate production by purchasing goods and services
+
+\onslide<3>
+
+The central bank can create money and provide liquidity
+
+\onslide<4>
+
+All these policies were experimented in the aftermath of the Great Depression
+
+::::
+
+:::
+
+
+---
+
+
+# Classical or Keynesian? Which view is correct?
+
+
+In the preceding slides, implicitly:
+
+- demand is defined as "spending"
+- supply is defined as "revenue"
+
+But __in equilibrium__, *by definition*
+
+- Revenue = Income (cf circular graph)
+
+Then at the macro level __in equilibrium__  "demand=supply" would be tautological.
+
+We're not equipped to conclude.
+
+---
+
+# Circular Flow Diagram (reminder)
+
+![Circular Flow](assets/circle_flow.png){width=100%}
+
+By construction: $$\text{Revenue}=\text{Income}=\text{Spending}=\text{All factor payments}$$
+
+---
+
+
+# Neoclassical Synthesis
+
+:::{.center}
+![](assets/history_neoclassical.png){width=80%}
+:::
+
+|![Alvin Hansen](assets/hansen.jpg){width=30%} |  ![John Hicks](assets/hicks.png){width=30%} | ![Paul Samuelson](assets/samuelson.jpg){width=30%}  |
+|------------------------------------------|------------------------------------------------- | --------------------------------------------------|
+| Alvin Hansen (1887-1975)                                 | John  Hicks (1904-1989)                                        | Paul Samuelson (1915-2009)                                      |
+
+---
+
+# The program of the neoclassical synthesis
+
+Describe a rigorous, quantitative framework, to expose keynesian ideas in a way that is understandable to classical thinkers
+
+Two important questions:
+
+- what is "demand"
+- which market is / is not in equilibrium
+
+[Resulting consensus]{.underline} (Long story short)
+
+- *long term* is classical
+  - static equilibrium
+- *short term* is keynesian
+  - dynamic fluctuations
+
+---
+
+# What is demand?
+
+- Depart from the "demand=Income" view.
+
+- __Planned expenditures__:
+  - How much economic agents (consumers, firms, ...) would like to spend for a given Income
+
+- of which:
+  - __autonomous spending__: what agents spend independently of their income
+  - __induced spending__: what they spend when they become richer
+
+- OK, but if spending depends on income, and income still depends on spending, how do we do?
+
+---
+
+# The Keynesian Cross
+
+
+::: columns
+
+
+:::: {.column width=40%}
+
+![Keynesian Cross a.k.a. 45 degrees Diagram](assets/keynesian_cross.png)
+
+::::
+
+::::  {.column width=60%}
+
+ Suppose *planned expenditures* in the economy are given by:
+
+$$P(Y) = c_0 + c_1 Y + g$$
+
+The equilibrium on the markets for goods and services implies
+
+$$Y = P(Y) = c_0 + c_1 Y + g$$
+
+::::
+
+:::
+
+It is what would be produced *if production was fully determined by demand*[^exercise].
+
+[^exercise]: See exercise 1 for more details.
+
+---
+
+# Demand Stimulus
+
+
+::: columns
+
+::::  {.column width=60%}
+
+![Effect of government spending](assets/keynesian_cross_gvt.png)
+
+::::
+
+::::  {.column width=40%}
+
+Assume now, the government spends $g+\Delta G$ instead of $g$
+
+Planned expenditures become
+$$P(Y) = c_0 + c_1 Y + g + \Delta G$$
+
+The equilibrium condition becomes \begin{eqnarray*}
+& & Y + \Delta Y  =  P(Y+\Delta Y) \\
+             & = & c_0 + c_1 ( Y + \Delta Y) + g + \Delta G
+\end{eqnarray*}
+
+From which we deduce: $$\Delta Y = \frac{1}{1-c_1} \Delta G$$
+
+::::
+
+:::
+
+It shows that government can stimulate demand with __fiscal stimulus__. Stimulus is higher than its own spending: here $\frac{1}{1-c_1}$ is the fiscal multiplier.
+
+---
+
+# About market equlibrium
+
+The idea that *whatever people want will be produced* is preposterous!
+
+. . . 
+
+If all markets were in equilibrium, production should already be optimal
+
+- you can't increase it by "wanting" more of it
+- excessive demand should be washed off with price increases
+
+. . . 
+
+On the other hand, imagine demand is increased and prices are prevented from increasing. Can the firms produce more?
+
+- no if they are already at maximum capacity
+  - then the goods market must be out of equilibrium [^french_economists]
+- yes, if they have access to unemployed ressouces
+
+[^french_economists]: Some economists (Patinkin, Benassy, Malinvaud...) went on from there to develop of general theory of disequilibrium. This agenda didn't really succeed at that time.
+
+---
+
+# The Great Depression
+
+<!-- ![Unemployment rate in the US in 1932: 23.6%](assets/unemployment_crisis.jpg) -->
+
+
+
+![Unemployment rate in the US in 1932: 23.6%](assets/hungry_lion.png){width=30%}
+
+In the aftermath of the 1929 crisis, there seemed to be a lot of workers ready to work...
+
+---
+
+# The labour market
+
+
+Then, at constant prices, stimulating demand could work:
+
+::: {.center}
+
+![](assets/unemployment.png){width=80%}
+
+:::
+
+Actually, it depends on the reasons for unemployment:
+
+- frictional
+- structural (unemployed people don't add value)
+- cyclical (less demand for what they do)
+
+In Keynes' terms, for demand policies to work it is important than unemployment be *unvoluntary*.
+
+---
+
+# The Neoclassical Synthesis
+
+::: columns
+
+:::: column
+
+Until the early 70s: a majority among economists and most policy makers, were convinced by the following distinction:
+
+- short term: stimulate demand during a downturn
+- long term: implement structural reforms
+
+::::
+
+:::: column
+
+## Question
+
+Can you name some short-term and long term macro policies that were taken  after WWII?
+
+::::
+
+:::
+
+---
+
+# The Neoclassical Synthesis
+
+::: columns
+
+:::: column
+
+![The Moniac](assets/moniac.jpg){width=70%}
+
+::::
+
+:::: column
+
+For policy makers, easy tools were available to analyse short term fluctuations:
+
+- theory of demand
+  - keynesian cross
+  - ISLM
+- quantitative models: macroeconometric tools
+- even analog computers!
+  - cf the Maniac running at LSE using water flows
+
+::::
+
+:::
+
+. . . 
+
+Anyway, Keynes himself didn't care much for the long-term / short-term distinction:
+*In the long run we're all dead*
+
+---
+
+# New Classical
+
+:::{.center}
+![](assets/history_new_classical.png){width=80%}
+:::
+
+| ![Alvin Hansen](assets/lucas.jpg){width=40%}  |  ![Tom Sargent](assets/sargent.jpg){width=40%} | ![Ed Prescott](assets/prescott.jpg){width=40%}     | ![Finn Kydland](assets/kydland.jpg){width=40%}  |
+|-----------------------------------------------|------------------------------------------------|----------------------------------------------------|-------------------------------------------------|
+|  Robert Lucas (1937-)                         | Thomas Sargent (1943-)                         | Edward Prescott (1940-2022)                        | Finn Kydland (1943-)                            |
+
+---
+
+# New Classical
+
+
+New classical economists wanted even more rigourous mathematical foundations.
+
+No distinction between short term and long term.
+
+Agent's behavours are specified by their ultimate goal (consumption, profit)
+
+Agents are rational...
+
+- utility/demand: $\max\limits_{\text{s.t.} p_1 C_1 + p_2 C_2 = B} U(C_1, C_2)$
+- cost/supply: $\max_q π(q) = p q - w p$
+
+...like in microeconomics. 
+
+New classical economists established __microfoundations__ for modern macroeconomics.
+
+---
+
+# New Classical vs Keynesian ideas
+
+The new classical program directly conflicted with some keynesian ideas.
+
+For instance, the premise that agents are *rational* implies they should form *rational expectations*.
+
+- use all available information to make informed forecasts
+- as a result, they should not make systematic mistakes in predicting economic variables
+
+In their traditional formulation, keynesian policies relied on agents paying less attention to their real income, agents started to realize it and changed their behaviour by asking for inflation-indexed wages.
+
+---
+
+# The Lucas critique
+
+- This weakness of short term model formulated by Bob Lucas, as what becames the famous __Lucas critique__:
+  - In 60s,  econometric models used by the central banks, were postulating some form of behaviour by agents, in particular a constant marginal propensity to consume, and a certain blindness of agents regarding inflation.
+  -  But when these models led to actual policies, privates agents learnt how to adapt and changed their behaviour. 
+- A good model should be *internally consistent*.
+  - If agents of the model know what the model is (or which policy are taken), they should not change their behaviour.
+
+---
+
+# New classical: The nail in the keynesian coffin
+
+- More generally, rational expectations were thought to invalidate the notion of involuntary unemployment and planned expenditures...
+- ... but policy makers still needed some guidance for the short term and were reluctant to leave the short term keynesian model
+- 1982: Kydland and Prescott: *real business cycles*
+  - it is possible to explain short term fluctuations with only real variables
+  - assuming some random changes in productivity
+  - while maintaining the assumption of full rationality
+- so, you see, no need for keynesian ideas ;)
+- It became the dominant framework until the late 90s
+
+---
+
+
+# New Keynesian
+
+:::{.center}
+![](assets/history_newkeynesian.png){width=80%}
+:::
+
+| ![Gregory Mankiw](assets/mankiw.jpeg){width=50%}  | ![Jordi Gali](assets/gali.jpg){width=50%}  | ![David Romer](assets/romer.jpeg){width=50%}   | ![Olivier Blanchard](assets/olivier.jpg){width=40%} |
+|--------------------------------|--------------------------------------------| ---------------------------------- | --------------------------------------------------- |
+| Gregory Mankiw  (1958)         |        Jordi Gali (1961-)                  |           David Romer (1958)       | Olivier Blanchard (1948-)                           |
+
+---
+
+# New Keynesian
+
+- Reuse tools from the new classical framework...
+  - agents optimisation
+  - rational expectations
+  - -> microfounded planned expenditures (and IS curve)
+- ..Add market imperfections (on the supply side)..
+  - monopolistic competition
+  - nominal rigidities
+  - -> no need to assume prices are fully rigid
+- ... To show that demand policies can have an effect in the short term
+
+
+This course will feature an introduction to the *New Keynesian* model
+  - without all details
+
+---
+
+
+# The new-keynesian model (preview)
+
+
+::: columns
+
+:::: column
+
+Short-term graphical version:
+
+![](assets/as_ad.png)
+
+- Note that AD/AS have their own stories to tell
+
+::::
+
+:::: column
+
+Quantitative model (adapted from NK)
+
+- Aggregate Demand (AD)
+  $$\pi_t = \pi_{t-1} + \kappa (y_t - y^n_t)$$
+- Aggregate Supply (AS): $$y_t = \theta_t - \sigma \gamma (\pi_t - \overline{\pi})$$
+
+Notable features:
+
+- dynamic ($t$ and $t-1$)
+- two shocks:
+  - $\theta_t$: demand
+  - $y^n_t$: supply
+
+::::
+
+:::
+
+---
+
+
+# New synthesis
+
+
+![](assets/history_new_nksynthesis.png){width=80%}
+
+
+Most macroeconomists now adhere to the rational expectations framework and most real world models feature elements from the new-keynesian framework.
+
+This state of affairs is called the *the new classical synthesis* (or by some *the new keynesian synthesis*).
+
+---
+
+# Exective Summary
+
+\framesubtitle{To remember}
+
+- It took time for keynesian ideas to be developped and validated by economists...
+
+. . . 
+
+- ... but the need to smooth conjectural cycles through demand policies is recognized by virtually all macroeconomists nowawdays ...
+
+. . . 
+
+- ... who now have a common framework to develop and measure both keynesian and classical ideas.
+
+---
+
+# Learning guide
+
+\framesubtitle{To understand}
+
+- the economy in the long run
+- the intuition for demand stimulus
+- the keynesian cross (and how to compute the fiscal multiplier)
+- why demand stimulus only works if there is unvoluntary unemployment
+- what are the main features of the new keynesian synthesis:
+  - microfoundations (rationality everywhere, especially on the demand side)
+  - nominal rigidities for aggregate supply to react to prices
+
+---
+
+# Coming Next
+
+__Aggregate Demand__: how rational behaviour by consumers and firms can lead to a microfounded aggregate demand curve

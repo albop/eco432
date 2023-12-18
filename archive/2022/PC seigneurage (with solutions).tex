@@ -1,0 +1,452 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wed Apr 05 06:17:18 2000}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:59:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{Language=French}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{17.5cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength\textheight{25cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 10. Seigneuriage}
+\end{center}
+
+\bigskip
+
+
+
+Le gouvernment peut financer ses depenses en faisant des emprunts. Il peut aussi financer ses deficits en emettant de la monnaie: il le fait lorsque le gouvernement ne veut pas (ou trouve difficile) d'emprunter aux investisseurs. Nous supposons que le gouvernement finance les dépenses entièrement avec de la monnaie.\footnote {C'est le cas opposé à celui observé en classe où nous avons supposé que seules les obligations étaient utilisées.} La quantit\'{e}
+de monnaie cr\'{e}\'{e}e \`{a} la date $t$ doit permettre au gouvernement de
+financer ses achats, on doit donc avoir%
+\begin{equation}
+M_{t}-M_{t-1}=P_{t}G_t.  \label{uqE73}
+\end{equation}
+La quantit\'{e} $M_{t}-M_{t-1}$ est appel\'{e}e le \textbf{seigneuriage. }%
+Par d\'{e}finition, le seigneuriage repr\'{e}sente les ressources que le
+gouvernement s'approprie en imprimant de la monnaie. Exprim\'{e} en termes r%
+\'{e}els, le seigneuriage vaut 
+\begin{equation}
+\frac{M_{t}-M_{t-1}}{P_{t}}.  \label{E78}
+\end{equation}
+
+La création de monnaie doit être absorbée par le secteur privé. Quel est le stock r\'{e}el de monnaie que les agents sont prêts à garder? La demande d'encaisses r\'{e}elles \`{a} la date $t$ est d\'{e}finie par l'\'{e}quation
+suivante:%
+\begin{equation}
+\frac{M^d_{t}}{P_{t}}=Y_tf(i_{t}),f^{\prime }<0.  \label{E75}
+\end{equation}
+avec $f(.)$  fonction decroissante de $i_t$, le taux d'intérêt  nominal entre $t$ et $t+1$, et croissante de $Y_t$ (output r\'{e}el). Un PIB réel plus élevé augmente la demande du secteur privé à des fins de transaction. Un taux d'intérêt nominal plus élevé augmente le coût d'opportunité de la détention de monnaie. Dans ce qui suit, nous supposons que l '\'{e}conomie est au plein emploi ($ Y_t = 1 $) et les prix sont flexibles.
+
+ L'\'{e}%
+quilibre sur le march\'{e} des biens implique que le taux d'int\'{e}r\^{e}t r%
+\'{e}el est \'{e}gal \`{a} son niveau d'\'{e}quilibre, suppos\'{e} constant
+pour simplifier et not\'{e} $r.$  Le taux d'int\'{e}r\^{e}t nominal entre
+deux dates cons\'{e}cutives $t$ et $t+1$ est alors%
+\begin{equation}
+i_{t}\approx r+\pi _{t+1}^{e}.  \label{E74}
+\end{equation}
+
+Pour simplifier, supposons $ r=0 $. Puisqu'il n'y a pas de chocs et que nous supposons des prévisions rationnelles, l'inflation attendue coïncide avec l'inflation réalisée. Dans cet exercice, nous travaillerons avec une version simplifiée de (\ref{E75}):
+
+\begin{equation}
+\frac{M^d_{t}}{P_{t}}=(\frac{P_{t+1}}{P_{t}})^{-\eta}  \label{la75}
+\end{equation}
+
+avec $ \eta> 0 $. L'offre de monnaie $ M_t $ à toutes les périodes est donnée de manière exogène et connue à l'avance. \`{A} l'équilibre, la demande est égale à l'offre $ M_t = M^d_t $. L'exercice se déroule en deux étapes. Dans les questions 1 et 2, nous étudierons la relation entre l'inflation et $M$. À la question 3, nous étudierons le taux d'inflation qui maximise les revenus du gouvernement.
+
+
+\begin{enumerate}
+\item Dans cette question et dans la question suivante, nous travaillerons avec des variables en log. Écrivez (\ref{la75}) en supposant que $m^d_t=m_t$:  
+\begin{equation}
+m_t-p_t=-\eta(p_{t+1}-p_t)  \label{ma75p}
+\end{equation}  Montrer que le niveau de prix d'équilibre $ p_t $ est une fonction de la séquence d'offre de monnaie  dans toutes les périodes futures
+
+\begin{equation}
+p_t=\frac{1}{1+\eta}\sum^{\infty}_{s=t}(\frac{\eta}{1+\eta})^{s-t} m_s\label{aa}
+\end{equation}
+Pour dériver ce résultat, supposons la condition suivante:
+ \begin{equation}\label{bubble}\lim_{T\to \infty} (\frac{\eta}{1+\eta})^Tp_{t+T}=0
+\end{equation}
+
+\item Supposons que la monnaie croît à un taux de pourcentage constant $ \mu $ par période
+\begin{equation}
+m_t=\bar{m}+\mu t
+\end{equation} 
+(si le logarithme de la monnaie croît linéairement au taux $ \mu $, le \textit {niveau} de la masse monétaire doit croître de $\mu $ pour cent par an). Faites la conjecture que $ p_ {t + 1} -p_t = \mu $. Vérifiez que cette supposition est correcte en utilisant (\ref{ma75p}).
+\bigskip 
+
+\item Considérons l'équation (\ref{uqE73}). Calculons un \'{e}tat stationnaire de cette \' {e}conomie o\`{u} le taux
+d'inflation est constant et anticip\'{e} correctement par les agents.
+Dans un tel \'{e}tat stationnaire, $ M / P $ est constant au cours du temps. Trouvez le taux de croissance de M qui maximise les
+recettes de seigneuriage.
+\bigskip
+
+\end{enumerate}
+
+
+
+\textbf{SOLUTION}
+
+\bigskip
+
+\textbf{Réponse 1}: De (\ref {ma75p}) nous obtenons
+, \begin{equation}
+p_t=\frac{1}{1+\eta}m_t +\frac{\eta}{1+\eta}p_{t+1}   \label{a75}
+\end{equation} 
+
+De même, \begin{equation}
+p_{t+1}=\frac{1}{1+\eta}m_{t+1} +\frac{\eta}{1+\eta}p_{t+2}   \label{a752}
+\end{equation} 
+
+Nous combinons les deux: \begin{equation}
+p_{t}=\frac{1}{1+\eta}\left(m_t+ \frac{\eta}{1+\eta}m_{t+1}\right) + \left(\frac{\eta}{1+\eta}\right)^2p_{t+2}   \label{a752}
+\end{equation} 
+
+En répétant cette procédure, nous éliminons $ p_{t + 2} $, $ p_{t + 3} $ et ainsi de suite
+
+\begin{equation}
+p_{t}=\frac{1}{1+\eta} \sum^{\infty}_{s=t} \left(\frac{\eta}{1+\eta}\right)^{s-t} m_s + \lim_{T\to \infty} \left(\frac{\eta}{1+\eta}\right)^Tp_{t+T}  \label{a752}
+\end{equation} 
+En utilisant la condition,  (\ref{bubble})\footnote{Cette condition dit que le log du prix  ne peut pas croître à un taux supérieur ou égal à $(1+\eta)/ \eta$.}, on obtient
+\begin{equation}
+p_{t}=\frac{1}{1+\eta} \sum^{\infty}_{s=t} \left(\frac{\eta}{1+\eta}\right)^{s-t} m_s   \label{qa752}
+\end{equation} 
+Le prix ne dépend que des fondamentaux, c'est-à-dire de la masse monétaire actuelle et future.\footnote{Pour info, sans condition (\ref{bubble}) nous pouvons avoir un autre équilibre de prix dans lequel dans la première période $ t = 0 $ les prix s'écartent des fondamentaux d'un facteur $b_0$: 
+\begin{equation}  p_{0}=\frac{1}{1+\eta} \sum^{\infty}_{s=0} \left(\frac{\eta}{1+\eta}\right)^{s} m_s +b_0 
+\end{equation}. Plus tard, ce facteur supplémentaire ne cesse de croître:
+\begin{equation}
+p_{t}=\frac{1}{1+\eta} \sum^{\infty}_{s=t} \left(\frac{\eta}{1+\eta}\right)^{s-t} m_s + b_0 \left(\frac{1+\eta}{\eta}\right)^{t}  \label{zqa752}
+\end{equation} En conséquence, le niveau des prix devient une `` bulle " et n'est plus lié aux fondamentaux (m). La condition (\ref{bubble}) empêche cette possibilité.
+ } Notez que la somme des coefficients sur les termes de la masse monétaire dans l'équation (\ref{qa752}) est 
+\begin{equation}\label{uno}
+\frac{1}{1+\eta}\left( 1+ \left(\frac{\eta}{1+\eta}\right) +  \left(\frac{\eta}{1+\eta}\right)^2+...\right)=\frac{1}{1+\eta}\left( \frac{1}{1-\frac{\eta}{1+\eta}} \right)=1
+\end{equation}
+
+
+
+Deux remarques de (\ref{qa752}). Premièrement, dans ce modèle avec des prix flexibles, changer la quantité de la masse monétaire dans la même proportion à toutes les dates changera le prix dans la même proportion. Deuxièmement, si la masse monétaire  augmente très loin dans le futur, cela affectera également les prix au cours de la période actuelle. Cela dit, l'influence de la masse monétaire future est pondérée par des pondérations qui diminuent géométriquement avec $t$.
+
+Par exemple, supposons qu'au temps $ t=0 $ les gens s'attendent à ce que dans le futur (au temps $ T> 0 $) la masse monétaire augmentera (pour une raison quelconque, peut-être pour faire face à des dépenses plus élevées). On passe de $\bar{m} $ à $\bar{m}'$. Cette augmentation sera permanente.
+\begin{equation}
+m_t =
+    \begin{cases}
+      \bar{m} & \text{if $t<T$}\\
+       \bar{m}' & \text{if $t \geq T$}}
+    \end{cases}       
+\end{equation}
+
+
+Comme le montre la figure, à partir de (\ref{qa752}), nous avons 
+
+\begin{equation}
+p_t =
+    \begin{cases}
+        \bar{m} +\left(\frac{\eta}{1+\eta}\right)^{T-t} (\bar{m}'-\bar{m})  & \text{if $t<T$}\\
+       \bar{m}' & \text{if $t \geq T$}}
+    \end{cases}       
+\end{equation}
+
+\[\centering
+\includegraphics[height=.2\textheight]{page.pdf}
+
+\]
+
+
+\bigskip
+
+\textbf{Réponse 2}: Après la substitution, nous obtenons $ m_t-p_t = - \eta \mu $. Alors, $ p_t = m_t + \eta \mu $. La période suivante, nous aurions $ p_{t + 1} = m_{t + 1} + \eta \mu $. En effet, on vérifie $ p_{t + 1} -p_t = \mu $. \footnote{Il existe une dérivation alternative et plus compliquée, qui ne nécessite pas de faire une conjecture et de la vérifier après. Nous pouvons utiliser directement la solution générale de  $p_t$: \begin{equation}
+p_{t}=\frac{1}{1+\eta} \sum^{\infty}_{s=t} \left(\frac{\eta}{1+\eta}\right)^{s-t} (m_t+\mu(s-t))  
+\end{equation} En utilisant (\ref{uno}) on obtient \begin{equation}
+p_{t}=m_t + \frac{\mu}{1+\eta} [\frac{\eta}{1+\eta}  + 2 (\frac{\eta}{1+\eta})^2 + 3(\frac{\eta}{1+\eta})^3+... ]  
+\end{equation}
+\begin{equation}
+p_{t}=m_t + \frac{\mu}{1+\eta} \left[\frac{\eta}{1+\eta}  + (\frac{\eta}{1+\eta})^2 + (\frac{\eta}{1+\eta})^3+... \right] \sum^{\infty}_{s=t} \left(\frac{\eta}{1+\eta}\right)^{s-t} 
+\end{equation}
+
+\begin{equation}
+p_{t}=m_t + \frac{\mu}{1+\eta} \left[\left( \frac{1}{1-\frac{\eta}{1+\eta}} \right)-1 \right] \left( \frac{1}{1-\frac{\eta}{1+\eta}} \right)=m_t+ \frac{\mu}{1+\eta} (1+\eta)\eta=m_t+\eta \mu
+\end{equation}
+} En d'autres termes, le taux d'inflation n'est fonction que du taux de croissance de la masse monétaire. Rappelons que dans cet exercice, les prix sont totalement flexibles et que la production est toujours au plein emploi. Vous devez interpréter ces résultats comme des résultats à long terme. À court terme, s'il y avait des rigidités nominales, dues à la courbe de Phillips, l'inflation varierait avec les conditions économiques: elle est plus élevée en période d'expansion et plus faible en récession.
+
+
+
+\bigskip
+
+\textbf{Réponse 3}: En termes r%
+\'{e}els, le seigneuriage vaut 
+\begin{equation}
+\frac{M_{t}-M_{t-1}}{P_{t}}= \frac{M_{t}-M_{t-1}}{M_{t}} \frac{M_t}{P_t}  \label{ssE78}
+\end{equation}
+
+Une croissance monétaire plus élevée augmente l'inflation attendue, ce qui baisse les encaisses r\'{e}elles d\'{e} tenues par les agents.
+Les choses sont plus simples lorsque, comme dans l'exercice, nous nous concentrons sur les équilibres stationnaires. En équilibre stationnaire, l'inflation est constante et égale à $\pi$. le taux d'int\'{e}r\^{e}t nominal est alors lui aussi
+constant, et l'on a $M_{t}=P_{t}(1+\pi)^{-\eta},\forall t.$  
+
+En reportant dans (\ref{uqE73}%  
+) \begin{equation}
+P_tG_t=M_t-M_{t-1}= (P_{t} -P_{t-1})(1+\pi)^{-\eta}  \label{E76}
+\end{equation}
+ 
+ 
+ \begin{equation}
+G_t= \frac{(P_{t} -P_{t-1})}{P_t}(1+\pi)^{-\eta}  \label{E76}
+\end{equation}
+ \begin{equation}
+G_t=  \frac{\pi}{1+\pi}(1+\pi)^{-\eta}  \label{Ee76}
+\end{equation}
+
+L'expression $\frac{\pi} {1+ \pi} $ est la fraction des encaisses r%
+\'{e}elles d\'{e}tenues par les agents qui est confisquée par une hausse du niveau des prix. Comme $ \pi $ devient très élevé, nous avons que cette fraction passe à un (100 \% est confisqué). À mesure que les prix augmentent, la valeur réelle de la monnaie dans votre portefeuille diminue. Par conséquent, lorsque le gouvernement imprime de la monnaie, il reduit la valeur de l'ancienne monnaie entre les mains du public. L'inflation est comme une taxe sur la détention de monnaie.
+
+
+Supposons que le gouvernement puisse s'engager à un taux de croissance monétaire constant. Cela se traduit par le choix d'un taux d'inflation. On trouve le  $ \pi $ qui maximise les  recettes de seigneuriage  \begin{equation}
+G_t=   \pi(1+\pi)^{-\eta-1} \label{Ee763}
+\end{equation}
+C'est une courbe en U invers\'{e} (une courbe de Laffer). Cette \textit{courbe de Laffer } d%
+\'{e}crit comment les recettes de seigneuriage  \'{e}voluent en fonction
+du taux d'inflation. Lorsque ce dernier augmente, les agents sont plus tax%
+\'{e}s ce qui tend \`{a} accro\^{\i}tre les recettes fiscales. Cependant,
+l'anticipation d'une inflation plus \'{e}lev\'{e}e r\'{e}duit la demande de
+monnaie et donc la base fiscale de la taxe inflationniste. La courbe de
+Laffer comporte une portion d%
+\'{e}croissante le long de la quelle "trop d'imp\^{o}t tue l'imp\^{o}t", soit
+ici "trop d'inflation tue le seigneuriage". La condition de premier ordre
+
+ \begin{equation}
+(1+\pi)^{-\eta-1}-\pi(1+\eta)(1+\pi)^{-\eta-2} =0\label{foc}
+\end{equation}
+
+ \begin{equation}
+1-\pi(1+\eta)(1+\pi)^{-1} =0\label{foc}
+\end{equation}
+
+Le taux d'inflation maximisant les revenus est  \begin{equation} \pi^{max}=1/\eta.  \end{equation} Cela suppose que les autorit\'{e}s
+doivent \^{e}tre en mesure de pr\'{e}annoncer de mani\`{e}re cr\'{e}%
+dible ce taux. Si c'est le cas, il co\"{\i}ncidera avec les anticipations
+des agents, et il sera effectivement mis en oeuvre par les autorit\'{e}s
+puisque, ce taux \'{e}tant un taux d'\'{e}quilibre, la quantit\'{e} de
+monnaie correspondante permet alors de financer le maximum de d\'{e}penses publiques. 
+\bigskip
+
+
+Quelques remarques. Si l'on admet que l'inflation est co\^{u}teuse, alors les autorit\'{e}s
+font face à un ``trade-off": la création de monnaie permet plus de dépenses publiques, mais elle est coûteuse en termes d'inflation. En conséquence, le gouvernement peut choisir un taux d'inflation inférieur à $ \pi^{max} $. Deuxièmement, lors de nombreux épisodes d'hyperinflation (Allemagne dans les annees 1920, Zimbabwe, etc) le taux d'inflation est bien supérieur à $\pi^{max} $. Si le but de la création de monnaie est de financer les dépenses publiques, pourquoi l'inflation est-elle tellement plus élevée que le niveau d'inflation qui maximise les recettes reels de seigneuriage? La raison en est que le gouvernement manque souvent de crédibilité pour s'engager dans une croissance monétaire constante. Comme dans PC 8, le gouvernement peut être incité à s'écarter de son annonce et à faire augmenter M plus que ce que les gens attendaient. À court terme, une augmentation de M peut avoir que peu d'effet sur les  encaisses r\'{e}els (M / P). Cela implique qu'un gouvernement peut avoir une incitation à court terme à augmenter de manière inattendue la masse monétaire pour surprendre le secteur privé, de sorte que l'inflation réelle soit supérieure à l'inflation attendue.
+Si les agents sont rationnels, ils s'attendront donc à un taux d'inflation supérieur à $ \pi^{max} $. En équilibre sans engagement on peut donc aboutir à un taux d'inflation supérieur à $ \pi^{max} $.
+
+
+\bigskip
+\bigskip
+
+\bigskip
+
+\textbf{Quelques remarques sur l'annulation de la dette par la BCE.}
+
+\bigskip
+La contrainte budgétaire du gouvernement vue en classe peut être obtenue en consolidant les contraintes budgétaires des deux branches du gouvernement: la branche fiscale et la banque centrale
+
+Tout d'abord, nous notons la contrainte budgétaire de la branche fiscale (le Trésor): 
+\[P_tG_t + (1 + i_{t-1}) \tilde{B}^{tot}_ {t-1} = \tilde{B_t }^ {tot} + \tilde {T _t} + RBC_t \]
+Le côté gauche comprend les dépenses publiques; $ \tilde {B} ^ {tot} $ est la dette totale émise par le gouvernement (détenue par le public et par la banque centrale). Le Trésor doit payer des intérêts sur ses obligations, y compris celles détenues par la banque centrale. Les paiements d'intérêts vont \`{a} la banque centrale, qui finira par les  rendra au Trésor.   $ RBC_t $ 
+sont les transferts en provenance de la banque centrale: il s'agit d'une source de financement du Tr\'{e}sor. 
+
+
+L'autorité monétaire, ou banque centrale, a également une contrainte  budgétaire qui lie l'évolution de ses actifs et de ses passifs. Si les actifs de la banque centrale sont constitués de dette publique, sa contrainte budgétaire prend la forme
+ \[\tilde{B_t}^M+RBC_t=\tilde{B}_{t-1}^M(1+i_{t-1}) + (M_t-M_{t-1})\]
+
+$ B_t^ M $ est la dette détenue par la banque centrale. Le côté gauche indique que les banques centrales achètent de la dette $ B_t^M $ et donnent $ RBC_t $ au Trésor. $ (M_t-M_ {t-1}) $ est le changement de la base monétaire.
+
+  
+ 
+
+En additionnant les deux contraintes, et en 
+dénotant $ \tilde {B} = \tilde {B}^ {Tot} - \tilde {B} ^ M $ le stock de dette  détenue par le public, on obtient la contrainte budg\'{e}taire  consolidée du secteur public (Tr\'{e}sor + banque centrale):  \[P_tG_t + (1 + i_ {t-1}) \tilde {B} _ {t-1} = \tilde {B_t} + \tilde {T} _t + (M_t-M_ {t-1}) \] C'est la contrainte vue en classe.  Il montre que le stock de dette pertinent est celui détenu par le public et non le montant total. L'annulation ne changerait pas la contrainte budgétaire du gouvernement dans son ensemble. Par conséquent, une annulation ne devrait pas changer la façon dont les investisseurs perçoivent la soutenabilité de la dette d'un État.
+
+\bigskip
+
+
+Dans la zone euro, les paiements d’intérêts des différents États de l’UE constituent des bénéfices de la BCE qui seront restitués à ses ``actionnaires", c’est-à-dire à tous les pays membres, en fonction de la part du capital de la BCE détenue par chaque pays. Le capital de la BCE provient des banques centrales nationales (BCN) de l’ensemble des États membres de l’Union européenne (UE). La France détient environ 16 \% du capital de la BCE. Dans une large mesure, l'annulation de la dette 
+représenterait ''un tour de passe-passe consistant à réduire la dette publique en diminuant la valeur de l’actif public - la banque centrale.'' (si intéressé, lire la note de  Agnès Bénassy-Quéré chef economiste au Tr\'{e}sor: 
+ \href{https://www.tresor.economie.gouv.fr/Articles/2020/11/30/annuler-la-dette-detenue-par-la-bce-est-ce-legal-utile-souhaitable}{\underline{cliquer ici}})
+
+
+Les enjeux sont un peu plus compliqués dans l'UE car certains pays (Italie, etc.) ont une dette qui paie des taux d'intérêt plus élevés. Les intérêts payés sur les obligations détenues par la BCE étant redistribués à ses ``actionnaires" selon la part de chaque BCN, cela implique un transfert du pays à fort endettement (plus risqués) vers le pays à faible endettement (moins risqués), qui peut être considéré comme une rémunération du transfert de risque. Étant donné que différentes dettes ont des taux d'intérêt différents, l'annulation de la dette a des implications politiques: les États à faible risque ne seront probablement pas d'accord.
+
+
+
+
+%Things may be even worse when expectations are adaptive (i.e, expected inflation is a weighted average of current inflation  and past expectations of inflation).  This implies that  Mais a plus longue terme les prix s'ajustenent. People raise their inflation expectations on the basis of what happened in the past, lowering $M/P$. If the government wants to finance a given amount of spending, a decrease in $M/P$ induces the government to raise the money growth even more to finance the same deficits in real terms, which may leads to an accelleration of the inflation rate.  
+
+%ay induce the government to raise the money growth even more to finance the same deficits in real terms, 
+%To see this point, assume for simplicity that people have adaptive expectations (i.e, expected inflation is a weighted average of current inflation  and past expectations of inflation).  This implies that  Mais a plus longue terme les prix s'ajustenent. People raise their inflation expectations on the basis of what happened in the past, lowering $M/P$. If the government wants to finance a given amount of spending, a decrease in $M/P$ induces the government to raise the money growth even more to finance the same deficits in real terms, which may leads to an accelleration of the inflation rate. 
+
+
+\end{document}
+
+
+\'{E}quation (\ref{Ee76}) d\'{e}termine le $\pi$ d'equilibre 
+Une ligne horizontale d\'{e}termin\'{e}e par $G,$ le besoin de
+financement de l'\'{e}tat, intersecte 
+
+Une cons\'{e}quence importante est que \textit{le taux d'inflation d'\'{e}%
+quilibre n'est pas unique. }En effet, si les agents anticipent un taux
+d'inflation plus \'{e}lev\'{e} entre la date $t$ et la date $t+1,$ d'apr\`{e}%
+s la demande de monnaie cela r\'{e}duit la demande de monnaie \`{a} la
+date $t,$ augmentant le niveau des prix $P_{t}.$ Ceci, d'apr\`{e}s  (\ref{uqE73}) augmente la valeur nominale des d\'{e}penses publiques, ce qui accro\^{\i}%
+t la quantit\'{e} de monnaie \`{a} imprimer et donc les forces
+inflationnistes. L'inflation a donc un aspect autor\'{e}alisateur: le m\'{e}%
+canisme que nous venons de d\'{e}crire peut s'interpr\'{e}ter comme un ph%
+\'{e}nom\`{e}ne de fuite devant la monnaie: anticipant l'inflation, les
+agents se d\'{e}barrassent de leurs encaisses, ce qui est en soi
+inflationniste. Il est m\^{e}me possible que l'\'{e}quilibre soit un point
+tel que le point B, o\`{u} la courbe de Laffer est localement d\'{e}%
+croissante, cela signifie que si le gouvernement parvenait \`{a} annoncer un
+taux d'inflation l\'{e}g\`{e}rement plus faible de mani\`{e}re cr\'{e}dible,
+ses recettes fiscales augmenteraient.
+
+Du point de vue du financement des d\'{e}penses publiques, tous les taux
+d'inflation d'\'{e}quilibre sont \'{e}quivalents puisque par construction
+ils permettent de financer un montant r\'{e}el de d\'{e}penses \'{e}gal \`{a}
+$G.$ Si l'on admet que l'inflation est co\^{u}teuse, alors les autorit\'{e}s
+aimeraient choisir le plus faible taux d'inflation possible.\ Mais pour que
+cela soit possible, il est n\'{e}cessaire qu'elles puissent \textit{s'engager%
+}. En effet, d\`{e}s lors que les agents anticipent que l'un des taux
+d'inflation d'\'{e}quilibre pr\'{e}vaudra, il est optimal pour les autorit%
+\'{e}s de fixer l'inflation \`{a} ce taux, qui est le seul, \`{a}
+anticipations donn\'{e}es, permettant de financer une quantit\'{e} $G$ de d%
+\'{e}penses publiques (en d'autres termes, \`{a} la date $t$, une fois les
+anticipations et donc $i$ fix\'{e}s, il existe une unique valeur de $M_{t+1}$
+qui satisfasse \`{a} (\ref{uqE73})). Pour coordonner l'\'{e}conomie sur l'\'{e}%
+quilibre avec le plus petit taux d'inflation possible, les autorit\'{e}s
+doivent donc \^{e}tre en mesure de pr\'{e}annoncer de mani\`{e}re cr\'{e}%
+dible ce taux. Si c'est le cas, il co\"{\i}ncidera avec les anticipations
+des agents, et il sera effectivement mis en oeuvre par les autorit\'{e}s
+puisque, ce taux \'{e}tant un taux d'\'{e}quilibre, la quantit\'{e} de
+monnaie correspondante permet alors de financer les d\'{e}penses publiques$.$
+
+
+\textbf{Exercise 1}: There are two periods: 1
+and 2 and two parties that alternate in power, Left and Right.
+Suppose that party L is elected in the first period and may lose power in
+the second period with probability $q\in[0,1]$. \ The two parties have different
+preferences over the two public goods (education and defense): they
+would like to allocate most (or all) of the budget to one of the two public
+goods. We use the following notation: $e$ (education) and $d$ (defense) denote,
+respectively, the good favored by the Left  and Right party, respectively. \
+Utilities in each period of L and R are
+\begin{eqnarray}
+u_{L}(d,e) &=&\frac{e^{1-\sigma }}{1-\sigma }+\theta \frac{d^{1-\sigma }}{1-\sigma }  \label{utility AT} \\
+u_{R}(d,e) &=&\frac{d^{1-\sigma }}{1-\sigma }+\theta \frac{e^{1-\sigma }}{1-\sigma }
+\end{eqnarray}%
+where  $\sigma \in [ 0,1)$. We denote by $\beta $ the discount factor. The parameter $\theta \in \lbrack
+0,1]$ captures political polarization: when $\theta =0$, a party does not
+get any utility from the public good favoured by the other party.
+Polarization disappears as $\theta \rightarrow 1$. At time 1, the
+implemented public policies satisfy the government's budget constraint: 
+\begin{equation}
+e_{1}+d_{1}+ (1+r)b_{0}=\tau +b_1   \label{bc111}
+\end{equation}%
+where $b_{0}$ is the initial level of debt, while $b_{1}$ is debt chosen at time 1,
+which must be repaid at time 2. Tax revenue $\tau $ is exogenous.  The
+interest rate is exogenous and equal to $r$. In the second period, since all debt must be paid and
+new debt cannot be issued, the budget constraint is given by: 
+\begin{equation}
+e_{2}+d_{2}=\tau- (1+r)b_{1}   \label{bc2}
+\end{equation}%
+We assume that $b_{1}$ must be lower than $%
+b_{1}\leq \tau /(1+r)$ so that it is always feasible to pay the
+outstanding debt. To avoid cluttered notation, we assume what follows: $b_0=0$, $\beta= 1$, $r = 0$ and $\theta=0$ (full polarization).
+
+\medskip
+
+
+
+\begin{enumerate}
+\item Consider a benevolent planner who chooses policies to maximizes the sum of the utilities of the two parties. 
+\begin{eqnarray}
+\max_{e_1,e_2,d_1,d_2,b_1}\Big((u_{L}(e_{1},d_{1})+ u_{R}(e_{1},d_{1})\Big) +\beta \Big(u_{L}(e_{2},d_{2})+
+ u_{R}(e_{2},d_{2})\Big) 
+\end{eqnarray}%
+
+subject to (\ref{bc111}) and (\ref{bc2}). Find the first order condition with respect to debt $b_1$. Show that when $\beta=1$ and $r=0$ the optimal debt by the social planner is zero. 
+
+\item In reality, public policies are chosen by the party that has won the election.  In the first period L is the party in office and can choose ($d_1,e_1,b_1$). In the second period, L stays in power with probability 1-q and R goes to power with probability $q$. The party in power at t=2 chooses $e_2,d_2$. Assume full polarization ($\theta=0$).  Solve the two period model
+backwards. That is, first compute public spending in the final period depending on the electoral outcome. Move to the first period and compute public spending and debt in the first period by the Left party. The Left party chooses policies to maximize current utility plus future utilities subject to (\ref{bc111}). Party L is able to forecast the policies that will be chosen in the secon period, depending on the electoral outcome. Show that debt is strictly positive and is increasing in $q$ and decreasing in $\sigma$. Why does political turnover lead to more debt? 
+
+
+\item  When $\theta\in(0,1)$ the two parties still disagree on how to spend resources, but disagreement is more limited. For example, if the Right party goes to power, education spending will be low but not zero.  Do you think that a higher $q$ necessarily increase debt as in the previous question? Can you think of a reason why the left party would want to leave more resources to her successor when $q$ increases. You are not supposed to analytically solve the model when $\theta\in(0,1)$. The intuition is enough.
+\end{enumerate}
+
+
+
+The government budget constraint seen in class can be obtained by consolidating the budget constraints of the two branches of the government: the fiscal branch and the central bank
+
+First, we write down the budget constraint of the fiscal branch (the Treasury): \[P_tG_t+(1+i_{t-1})\tilde{B}^{tot}_{t-1}=\tilde{B_t}^{tot} +\tilde{T}_t +RCB_t\]
+The left side consists of government expenditures. $\tilde{B}^{tot}$ is the Total debt issued by the government (held by the public and by the central bank). Each country must pay interest on its bonds, including those held by the central bank.  Interests payments would go into the central bank's profits to be paid back to the treasury.   $RCB_t$ are the direct receipts from the central bank. 
+The monetary authority, or central bank, also has a budget identity that links changes in its assets and liabilities. If the central bank's assets consist of government debt, its budget identity takes the form
+ \[\tilde{B_t}^M+RCB_t=\tilde{B}_{t-1}^M(1+i_{t-1}) + (M_t-M_{t-1})\]
+
+$B_t^M$ is the debt owned by the central banks. The left hand side indicates that the central banks buys debt $B_t^M$ and gives $RCB_t$  to the Treasury. $(M_t-M_{t-1})$ is the change in the monetary base.  
+ 
+
+BY adding up the two constraints, and letting $\tilde{B} = \tilde{B}^{Tot} - \tilde{B}^M$ be the stock of government interest-bearing debt held by the public, the budget identities of the Treasury and the central bank can be combined to produce the consolidated government sector budget identity:   \[P_tG_t+(1+i_{t-1})\tilde{B}_{t-1}=\tilde{B_t} +\tilde{T}_t+(M_t-M_{t-1})\] This is the one seen in class. 
+
+
+The interest payments from the various EU states would go into the ECB’s profits to be paid back to its shareholders,  i.e. to all member countries, according to the share of ECB capital held by each country. Le capital de la BCE provient des banques centrales nationales (BCN) de l’ensemble des États membres de l’Union européenne (UE). France has about 16\% of the ECB capital and is therefore entitled to receive back these paiments.  To a large extent, de passe-passe consistant à réduire la dette publique en diminuant la valeur de l’actif public – la banque centrale. annulate the debt  amounts to transfer this operatiojn has no effect: à réduire la dette publique en diminuant la valeur de l’actif public – la banque centrale.
+
+Things are a bit more complicate in the EU because  there are some countries (Italy, etc) with debt that pays higher interest rates.  As the interest paid on the bonds held by the ECB is redistributed to its shareholders according, it also involves a transfer from the high debt country to the low debt country, which can be regarded as a remuneration for the risk transfer.  Annuler la dette would amount to some transfers across countires. 
+
+\bigskip
+\end{document}

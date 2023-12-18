@@ -1,0 +1,231 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:52:06}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\oddsidemargin -15pt
+\evensidemargin 0pt
+\setlength\textwidth{17cm}
+\topmargin -30pt
+\setlength\textheight{23cm}
+%\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 3. Co\^{u}ts de catalogue}
+
+\hspace{1.0in}
+\end{center}
+
+\bigskip
+
+On consid\`{e}re le mod\`{e}le suivant de concurrence monopolistique avec
+rigidit\'{e}s nominales sur le march\'{e} des biens. Les firmes forment un
+continuum de longueur 1. Chaque firme maximise son profit r\'{e}el et fait
+face \`{a} la fonction de demande%
+\begin{equation}
+Y_{i}=Y\left( \frac{P_{i}}{P}\right) ^{-\eta },\;\eta >1
+\label{Demande relative}
+\end{equation}%
+o\`{u} $Y_{i}$, $i\in \left[ 0,1\right] $ est la demande adress\'{e}e \`{a}
+la firme $i$, $P_{i}$ le prix de vente nominal du bien qu'elle produit, $P$
+le niveau g\'{e}n\'{e}ral de prix (qu'on d\'{e}terminera plus loin) et $Y$
+la demande agr\'{e}g\'{e}e. Les firmes sont dot\'{e}es de la fonction de
+production $Q_{i}=L_{i}$.
+
+L'offre de travail des m\'{e}nages est donn\'{e}e par 
+\begin{equation}
+L^{o}=A\left( \frac{W}{P}\right) ^{\xi },  \label{Offre de travail}
+\end{equation}%
+o\`{u} $\xi >0$ est l'\'{e}lasticit\'{e} de l'offre de travail au salaire, $%
+W $ le salaire nominal et%
+\begin{equation*}
+A=\left( \frac{\eta }{\eta -1}\right) ^{\xi }>0
+\end{equation*}%
+une constante d'\'{e}chelle. 
+
+Enfin, la demande agr\'{e}g\'{e}e est une version simplifiée de celle vue au chapitre 3:%
+\begin{equation}
+y=\theta-p  \label{Demande agregee}
+\end{equation}
+
+où $\theta$ est un choc de demande. 
+Comme d'habitude, les lettres minuscules d\'{e}signent le logarithme des
+lettres majuscules correspondantes. Par ailleurs, on raisonnera toujours au
+voisinage de l'\'{e}quilibre sym\'{e}trique o\`{u} toutes les firmes fixent
+le m\^{e}me prix de vente, ce qui implique le log du prix moyen $p=\ln P$
+est en premi\`{e}re approximation \'{e}gal \`{a} la moyenne des prix de
+vente individuels en log $p_{i}=\ln P_{i}$:%
+\begin{equation*}
+p\simeq \int_{0}^{1}p_{i}\text{d}i,
+\end{equation*}%
+et de m\^{e}me pour la demande de travail\ totale en log :%
+\begin{equation*}
+l^{d}\simeq \int_{0}^{1}l_{i}\text{d}i.
+\end{equation*}
+
+\vspace{1cm}
+
+\noindent \textbf{Premi\`{e}re partie : prix de vente optimal et \'{e}%
+quilibre naturel}
+
+\bigskip
+
+\noindent \textbf{1.} Interpr\'{e}ter les \'{e}quations du mod\`{e}le.
+
+\bigskip
+
+\noindent \textbf{2.} Calculer le prix de vente optimal de la firme, 
+$P^{\ast }$, en fonction du salaire nominal $W,$ et interpr\'{e}ter.
+
+
+%Montrer qu'au voisinage de $P^{\ast }$ le choix d'un prix de vente $p_{i}\neq
+%p^{\ast }$ engendre une perte proportionnelle de profit de l'ordre de $%
+%K\left( p_{i}-p^{\ast }\right) ^{2}$, o\`{u} $K$ est une constante positive
+%qui d\'{e}pend de l'intensit\'{e} de la concurrence sur le march\'{e} des
+%biens.
+
+\bigskip
+Dans ce qui suit, exprimez toutes les variables en logarithme.
+\bigskip
+
+\noindent \textbf{3.}  Utiliser l'\'{e}quilibre sur le march\'{e} du travail
+pour exprimer le prix\ r\'{e}el optimal $p^{\ast }-p$ en fonction de $y$ et
+expliquer le r\'{e}sultat obtenu.
+
+\bigskip
+
+\noindent \textbf{4.} Calculer l'\'{e}quilibre de prix flexibles ($%
+y^{n},p^{n}$) lorsque $\theta=\theta_{0}=0$ 
+
+\bigskip
+
+\noindent \textbf{Deuxi\`{e}me partie : co\^{u}ts de catalogue h\'{e}t\'{e}%
+rog\`{e}nes et pente de l'arbitrage}
+
+\bigskip
+
+On suppose dans cette partie que $\xi =1$, et que l'\'{e}conomie est \`{a} l'%
+\'{e}quilibre naturel ($y^{n},p^{n}$) avant un choc de demande de taille $\Delta
+\theta=\theta_{1}-\theta_{0}$ ($=\theta_{1}$). Les firmes font face \`{a} des co\^{u}ts fixes de changement de
+prix (co\^{u}ts de catalogues), de sorte qu'elles peuvent rationnellement
+choisir de maintenir leur prix de vente au niveau $p^{n}$ m\^{e}me apr\`{e}s
+le choc. Les co\^{u}ts de catalogue diff\`{e}rent d'une firme \`{a} l'autre
+: en classant les firmes $i\in \left[ 0,1\right] $ par ordre croissant de co%
+\^{u}t de catalogue, on suppose que la firme $i$ fait face au co\^{u}t :%
+\begin{equation*} 
+z\left( i\right) =\bar{z}i
+\end{equation*}%
+o\`{u} $\bar{z}$ est une constante positive.
+
+\bigskip
+
+\noindent \textbf{5.} Le choix d'un prix de vente $p_{i}\neq p^{\ast }$ engendre une perte de profit. Au voisinage de l'\'{e}quilibre sym\'{e}trique (o\`{u} $p^{\ast }\simeq p$) la perte est de second ordre et égale \`{a} $K \left(p_ {i} -p ^ {\ast} \right) ^ {2} $, o\`{u} $ K> 0 $ est une constante positive.\footnote{Il n'est pas nécessaire de dériver ce résultat. Pour les éleves intéressés,  le corrigée montrera que ce résultat est une bonne approximation.} Plus l'écart entre le prix courant  et le prix optimal  est important, plus la perte est importante.  Calculer la proportion $\omega \in \left[ 0,1\right] $
+de firmes maintenant leur prix inchang\'{e} en fonction du nouveau prix
+optimal $p^{\ast }$ pr\'{e}valant apr\`{e}s le choc, et interpr\'{e}ter.
+
+\bigskip
+
+\noindent \textbf{6.} Calculer le niveau g\'{e}n\'{e}ral des prix $p$ en
+fonction de $p^{\ast }$, et en d\'{e}duire la relation entre $p$, $\omega $
+et $y.$ Interpr\'{e}ter le r\'{e}sultat obtenu.
+
+\bigskip
+
+\noindent \textbf{7.} Utiliser les r\'{e}ponses aux questions 5 et 6 pour
+montrer que la courbe d'offre agr\'{e}g\'{e}e peut s'\'{e}crire%
+\begin{equation}
+y\left( p\right) =\left( \left( \bar{z}/K\right) ^{\frac{1}{3}}\left\vert
+p\right\vert ^{-\frac{2}{3}}-1\right) p,  \tag{OA}
+\end{equation}%
+et repr\'{e}senter graphiquement cette fonction dans le plan ($y,p$). Commentez la pente de la courbe. 
+
+%Montrer que la taille du choc ($\Delta \theta$) affecte son impact sur le produit
+%(d$y/$d$\left( \Delta \theta \right) $) et expliquer pourquoi. Pourquoi les param%
+%\`{e}tres ($K,\bar{z}$) influencent-ils la pente de la courbe OA ?
+
+\vspace{1cm}
+
+\noindent \textbf{Troisi\`{e}me partie (facultatif) : co\^{u}ts de catalogue
+et multiplicit\'{e} d'\'{e}quilibres}
+
+\bigskip
+
+On suppose maintenant que $\xi >1$, et que toutes les firmes font face au m%
+\^{e}me co\^{u}t de catalogue $\bar{z} $. Comme dans la deuxi\`{e}me
+partie, l'\'{e}conomie est initialement \`{a} l'\'{e}quilibre naturel et on
+s'interroge sur les incitations qu'on les firmes \`{a} changer leur prix
+suite au choc $\Delta \theta$.
+
+
+\bigskip
+
+
+\noindent 8. Exprimer $p$, $y$ et $p^{\ast }$ en fonction de $\Delta \theta$ et $%
+1-\omega $
+
+\bigskip
+
+\noindent 9. Calculer $Kp^{\ast 2}$ en fonction de $\omega $, et interpr\'{e}%
+ter le r\'{e}sultat obtenu.
+
+\bigskip
+
+\noindent 10. Calculer les valeurs de $\Delta \theta $ pour lesquelles
+
+\begin{itemize}
+\item $\omega =0$ est le seul \'{e}quilibre de Nash sym\'{e}trique
+
+\item $\omega =1$ est le seul \'{e}quilibre de Nash sym\'{e}trique
+
+\item les deux \'{e}quilibres de Nash sont possibles.
+\end{itemize}
+
+\newpage
+
+
+
+\end{document}
+

@@ -1,0 +1,188 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wed Apr 05 06:17:18 2000}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:47:23}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{17.5cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength\textheight{25cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 2. Productivité totale des facteurs et d\'{e}veloppement \'{e}conomique}
+\end{center}
+
+\bigskip
+
+On suppose que l'entreprise repr\'{e}sentative du pays $i$ produit \`{a}
+l'aide de la fonction de production : 
+\begin{equation}
+Y_{i}=K_{i}^{\alpha }(A_{i}H_{i})^{1-\alpha },\;\alpha \in (0,1),  \label{E1}
+\end{equation}%
+o\`{u} $K_{i}$ est le stock de capital physique, $H_{i}$ le stock de capital
+humain et $A_{i}$ un terme de productivit\'{e}. Le stock de capital humain
+est lui-m\^{e}me donn\'{e} par 
+\begin{equation}
+H_{i}=e^{\phi u_{i}}L_{i},\;\phi >0,  \label{E2}
+\end{equation}%
+o\`{u} $L_{i}$ est la quantit\'{e} de travail brute utilis\'{e}e dans la
+production, $u_{i}$ le nombre moyen d'ann\'{e}es d'\'{e}tudes dans le pays
+et $\phi $ la productivit\'{e} de la formation (suppos\'{e}e commune \`{a}
+tous les pays).  Les march\'{e}s des facteurs de production
+(capital, travail) sont suppos\'{e}s concurrentiels. On note respectivement $%
+w_{i}$ et $r_{i}$ le salaire r\'{e}el et le taux d'int\'{e}r\^{e}t r\'{e}el
+dans le pays $i$.
+
+%Le nombre de travailleurs dans le pays $i$ cro\^{\i}t au
+taux (exog\`{e}ne) $n_{i}>0$.
+
+\bigskip
+
+\noindent \textbf{Premi\`{e}re partie : comment mesurer la productivit\'{e}
+de la formation ?}
+
+\bigskip
+
+\begin{enumerate}
+\item Calculer la demande de travail de l'entreprise repr\'{e}sentative $%
+L_{i}^{d}$, et en d\'{e}duire le salaire r\'{e}el d'\'{e}quilibre $w_{i}.$
+Expliquer intuitivement comment $u_{i}$ affecte ces deux variables.
+
+\item Calculer la semi-\'{e}lasticit\'{e} du salaire \`{a} la formation
+(c'est-\`{a}-dire la variation proportionnelle du salaire associ\'{e}e \`{a}
+une ann\'{e}e d'\'{e}tude suppl\'{e}mentaire).
+
+\item Une vaste litt\'{e}rature cherche \`{a} estimer l'effet de la dur\'{e}%
+e des \'{e}tudes sur le salaire. Elle est bas\'{e}e sur des r\'{e}gressions,
+pour chaque pays $i$, de la forme :%
+\begin{equation*}
+\ln (w_{j})=\lambda _{0}+\lambda _{1}u_{j}+\lambda _{2}\times (\text{exp\'{e}%
+rience})+\lambda _{3}(\text{exp\'{e}rience})^{2}+\varepsilon _{j},
+\end{equation*}%
+o\`{u} $u_{j}$ est le nombre d'ann\'{e}es d'\'{e}tude du salari\'{e} $j$ et ``exp\'{e}rience}" est une mesure de son exp\'{e}rience professionnelle. De
+quelle mani\`{e}re les coefficients estim\'{e}s de cette r\'{e}gression
+peuvent-ils \^{e}tre utilis\'{e}s pour calibrer le param\`{e}tre $\phi $ ?
+Compte tenu des valeurs estim\'{e}es de $\lambda _{1}$ report\'{e}es dans le tableau de la
+Figure 2 (cf. ci-dessous), la valeur commun\'{e}ment retenue ($\phi =0.1$)
+semble-t-elle raisonnable ?
+\end{enumerate}
+
+\bigskip
+
+\noindent \textbf{Deuxi\`{e}me partie : pourquoi le capital n'afflue-t-il
+pas vers les pays pauvres ?}
+
+\bigskip
+
+\begin{enumerate}
+\item Exprimer la productivit\'{e} marginale du capital dans le pays $i$, $%
+PMC_{i}=\partial Y_{i}/\partial K_{i}$, en fonction de la productivit\'{e} $%
+A_{i},$ de la dur\'{e}e des \'{e}tudes $u_{i}$, du PIB par travailleur $%
+\tilde{y}_{i}=Y_{i}/L_{i}$ et du capital par travailleur $%
+\tilde{k}_{i}=K_{i}/L_{i}$ . En d\'{e}duire une d\'{e}composition de la
+productivit\'{e} marginale relative $PMC_{i}/PMC_{US}$, o\`{u} $PMC_{US}$
+est la productivit\'{e} marginale du capital aux Etats-Unis.
+
+\item On suppose que $\phi =0.1$ et $\alpha =1/3$. Le PIB par travailleur en
+Chine est environ dix fois inf\'{e}rieur \`{a} celui des Etats-Unis, et les
+am\'{e}ricains passent en moyenne \`{a} peu pr\`{e}s cinq ann\'{e}es de plus 
+\`{a} \'{e}tudier que les chinois. Si le march\'{e} du capital \'{e}tait parfaitement int\'{e}gr\'{e}
+mondialement et parfaitement concurrentiel, quel rapport de productivit\'{e}
+devrait-on observer entre les Etats-Unis et la Chine ($A_{US}/A_{Chine}$) ?
+\end{enumerate}
+
+
+
+\noindent \textbf{Troisi\`{e}me partie : la comptabilit\'{e} de la croissance}
+
+\bigskip
+
+\begin{enumerate}
+\item La comptabilit\'{e} de la croissance d\'{e}compose
+la croissance de l’output
+selon les contributions de chaque facteur de production (capital et
+travail) et attribue la partie non expliqu\'{e}e par ces deux facteurs au
+progr\`{e}s technologique. En partant de l'équation (\ref{E1}) montrez que
+
+\begin{equation}
+    g_{Y/L}=\frac{\alpha}{1-\alpha} g_{K/Y} + g_{H/L} +g_A
+\end{equation}
+Le taux de croissance de Y/L est une fonction lin\'{e}aire des taux de
+croissance de K/Y, de H/L (“labour composition”) et de A  (“labour augmenting technological progress”).\footnote{Soit  $y=f(t)$  une variable dont l’évolution au cours du temps est décrite par la fonction
+$f$. Le taux de croissance de $y$ est $g_y=\frac{\dot{y}}{y}=\frac{\partial \ln f(t)}{\partial t}$.}
+
+\item  Commentez la tableau ci-dessous, qui montre la comptabilit\'{e} de la croissance aux États-Unis après la seconde guerre mondiale.
+\end{enumerate}
+
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=1.1, clip = true]{com.pdf}
+\caption{comptabilit\'{e} de la croissance aux États-Unis (Jones, 2016)}
+\label{fig:1.5}
+\end{figure}
+
+
+\newpage
+
+
+\bigskip
+
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=0.9, clip = true]{tableau.pdf}
+\caption{Coefficients de r\'{e}gression}
+\label{fig:1.4}
+\end{figure}
+
+
+\end{document}

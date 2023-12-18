@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Pablo Winant">
+  <title>Macroéconomie</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Macroéconomie</h1>
+  <p class="subtitle">Demande Agrégée</p>
+  <p class="author">Pablo Winant</p>
+</section>
+
+<section>
+<section id="introduction" class="title-slide slide level1">
+<h1>Introduction</h1>
+
+</section>
+<section id="plan" class="slide level2">
+<h2>Plan</h2>
+<ul>
+<li>la semaine dernière
+<ul>
+<li>PIB potentiel, fluctuations</li>
+<li>Consommation:
+<ul>
+<li>optimisation des consommateurs (fondamental)</li>
+<li>agents keynesiens (qui ne peut pas s'endetter)</li>
+<li>agents ricardiens (qui peuvent lisser leur consommation)</li>
+</ul></li>
+<li>Relation fondamentale: $$Y = C + I + G + NX$$</li>
+</ul></li>
+<li>cette semaine
+<ul>
+<li>Intro au modèle AS/AD</li>
+<li>Les <em>autres</em> composantes de la demande agrégée</li>
+</ul></li>
+</ul>
+</section>
+<section id="regardons-les-cycles-depuis-20-ans-1" class="slide level2">
+<h2>Regardons les cycles depuis 20 ans (1)</h2>
+<p><img data-src="gdp_growth.png" /></p>
+<ul>
+<li>1990-2021: deux grands événement: la grande récession et la crise du
+covid</li>
+<li>quel choc a pu les causer?</li>
+</ul>
+</section>
+<section id="le-modèle-classique" class="slide level2">
+<h2>Le modèle classique</h2>
+<div class="columns">
+<div class="column">
+<p><img data-src="super_basic.png" /></p>
+</div><div class="column">
+<ul>
+<li>une baisse de la production peut résulter
+<ul>
+<li>d'une baisse de la demande (avec une baisse des prix)</li>
+<li>d'une baisse de la production (avec une hausse des prix)</li>
+</ul></li>
+<li>à l'inverse, une hausse des prix peut résulter
+<ul>
+<li>d'une réduction de la production</li>
+<li>d'une hausse de la demande</li>
+</ul></li>
+<li>suggestion simple du modèle classique: regardons les prix (ou
+l'inflation) pour identifier les chocs</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="regardons-les-cycles-depuis-20-ans-2" class="slide level2">
+<h2>Regardons les cycles depuis 20 ans (2)</h2>
+<p><img data-src="demand_or_supply.png" /></p>
+</section>
+<section id="comment-identifier-chocs-doffre-et-de-demande-"
+class="slide level2">
+<h2>Comment identifier chocs d'offre et de demande ?</h2>
+<ul>
+<li>Le modèle classique ne marche pas si bien
+<ul>
+<li>Comment identifier les choc?</li>
+<li>Example: la crise du covid est-elle un choc d'offre ou de
+demande?</li>
+</ul></li>
+<li>Dans les données de comptabilité nationales, on a tojours
+"Revenu=Production"
+<ul>
+<li>les courbes d'offre et de demande ne sont pas directement
+observables dans les données</li>
+</ul></li>
+<li>On peut cependant définir des "concepts" correspondant à offre et
+demande. On les appelle: <strong>Offre Agrégée</strong> (OA ou en
+anglais AS) et <strong>Demande Agrégée</strong> (OD ou AD)</li>
+</ul>
+</section>
+<section id="le-modèle-asad" class="slide level2">
+<h2>Le Modèle AS/AD</h2>
+<pre class="{=beamer}"><code>\begin{center}</code></pre>
+<p><img data-src="as_ad.png" />{width=60%}</p>
+<pre class="{=beamer}"><code>\end{center}</code></pre>
+<p>Ce n'est pas le même modèle !</p>
+</section>
+<section id="probleme-1" class="slide level2">
+<h2>Probleme 1:</h2>
+<ul>
+<li>Pourquoi la courbe de demande est-elle décroissante?</li>
+<li>Les Keynésiens: lorsque les agents deviennent plus riches (ou les
+prix réels plus bas), ils consomment plus, ce qui augmente la production
+<ul>
+<li>remarquez bien la différence avec une courbe de demande normale</li>
+</ul></li>
+<li>Les Néo-keynésiens
+<ul>
+<li>essayer de formaliser (=microfonder) le comportement des agents pour
+calculer la demande agrégée (-&gt; session 2)</li>
+<li>obtenir un modèle sans irrationnalité, donc robuste à la critique de
+Lucas</li>
+</ul></li>
+<li>L'existence de la courbe AD n'est pas controversée dans la
+profession
+<ul>
+<li>Mais il y a un gros débat sur sa pente</li>
+</ul></li>
+</ul>
+<!--- pourquoi la demande n' est pas juste infinie? --->
+
+</section>
+<section id="probleme-2-loffre-agrégée" class="slide level2">
+<h2>Probleme 2: l'offre agrégée</h2>
+<p><img data-src="lr_sh_run.png" />{width=45%}</p>
+<pre class="{=beamer}"><code>\begin{overprint}</code></pre>
+<p>\onslide&lt;1&gt;</p>
+<ul>
+<li>A l'inverse, il n'est pas évident que la courbe d'offre soit
+croissante avec une pente finie</li>
+<li>A long terme, quand tous les marchés sont à l'équilibre, elle
+devrait être verticale. Changer la demande n'aurait alors aucun effet
+<ul>
+<li>Le point de vue des monétaristes (Friedman)</li>
+</ul></li>
+<li>Et à court terme? La courbe pourrait être horizontale, croissante,
+verticale...</li>
+</ul>
+<p>\onslide&lt;2&gt;</p>
+<ul>
+<li>La pente de la courbe (OA) est cruciale pour l'efficacité des
+politiques de demande.
+<ul>
+<li>sur le graphe, la politique de demande est plus importante pour AS1
+que pour AS2 ou LRAS</li>
+</ul></li>
+<li>Classique: les prix sont flexible, la courbe d'offre est
+verticale</li>
+<li>Keynésiens (ISLM): les prix sont absolument rigides, la courbe
+d'offre est horizontale</li>
+<li>Néo-keynésiens: la courbe d'offre est croissante à cause d'une
+friction ou d'une inefficacité (voir amphi 3)</li>
+</ul>
+<pre class="{=beamer}"><code>\end{overprint}</code></pre>
+</section>
+<section id="aperću-notre-modèle-de-base" class="slide level2">
+<h2>Aperću: notre modèle de base</h2>
+<ul>
+<li>Demande agrégée (version IS-MP)
+<ul>
+<li>IS: $y_t=\theta_t - \sigma (r_t-r)$</li>
+<li>MP: $r_t = \overline{r} + \gamma (\pi_t - \overline{\pi})$ $$AD: y_t
+= \theta_t - \sigma \gamma (\pi_t - \pi)$$</li>
+</ul></li>
+<li>Offre agrégé: $$AS: \pi_t=\pi_{t-1}+\kappa (y_t - y^n_t)$$</li>
+<li>Votre but: comprendre d'où viennent ces équations, et comment les
+utiliser</li>
+<li>Les variables:
+<ul>
+<li>minuscules, log-deviations par rapport à l'état stationnaire</li>
+<li>lettres grecques: paramètres positifs</li>
+<li>$r_t$: taux d'intérêt réel ($r_t = i_t -\pi_{t+1}$)</li>
+<li>deux type de chocs:
+<ul>
+<li>$\theta_n$ demande</li>
+<li>$y_t^n$ offre (choc sur PIB potentiel)</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="aperću-notre-modèle-de-base-1" class="slide level2">
+<h2>Aperću: notre modèle de base</h2>
+<p>$$AS: \pi_t=\pi_{t-1}+\kappa (y_t - y^n_t)$$ $$AD: y_t = \theta_t -
+\sigma \gamma (\pi_t - \overline{\pi})$$</p>
+<ul>
+<li>Remarques sur notre modèle:
+<ul>
+<li>il est intertemporel: variables en $t-1$ et en $t$.</li>
+</ul></li>
+<li>Il unifie le court terme et le moyen terme. On peut simuler le
+retour à l'équilibre</li>
+<li>A la date $t$, l'inflation passée est prédeterminée</li>
+<li>On peut donc représenter OA/AD dans le plan ($y_t, \pi_t$).</li>
+</ul>
+<p>Remarque: etant donné $\pi_{t-1}$ les plans $(y_t,p_t)$ et
+$(\pi_{t},y_t)$ sont equivalents.</p>
+</section></section>
+<section>
+<section id="la-demande-agrégée---la-courbe-is"
+class="title-slide slide level1">
+<h1>La demande agrégée - la courbe IS</h1>
+
+</section>
+<section id="les-composants-de-la-demande-agregee" class="slide level2">
+<h2>Les composants de la demande agregee</h2>
+<ul>
+<li><p>Rappel: $$Y = C + I + G + NX$$</p>
+<ul>
+<li>Ce n'est pas un modèle, c'est une relation comptable.</li>
+</ul></li>
+<li><p>Donc $C + I + G + NX$ est la demande agregee?</p>
+<ul>
+<li>NON!</li>
+</ul></li>
+<li><p>On va montrer que les <em>composants de la demande agrégée</em>,
+$C,I,G,NX$ dépendent du</p>
+<ul>
+<li>revenu $Y$ (+)</li>
+<li>taux d'intéret réel $r$ (-)</li>
+</ul></li>
+</ul>
+</section>
+<section id="la-courbe-is" class="slide level2">
+<h2>La courbe IS</h2>
+<ul>
+<li>En macroéconomie la demande est caractérisée par l'équation $$Y =
+C(Y,r) + I( r ) + G + NX( r )$$ qui lie implicitement production et taux
+d'intérêt réel.</li>
+<li>Cette relation s'appelle la courbe IS (pour Investment-Saving) parce
+qu'elle provient d'un arbitrage intertemporal (au travers du taux
+d'intérêt réel)</li>
+<li>Elle correspond à l'équilibre sur le marché des biens et services,
+qui serait déterminé uniquement par les dépenses prévues, avec une
+production parfaitement élastique.</li>
+<li>Cas spéciaux:
+<ul>
+<li>$G$ est décidé de manière <em>autonome</em> par le gouvernement</li>
+<li>Dans ce cours on prend NX comme <em>exogène</em>.</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="la-consommation" class="title-slide slide level1">
+<h1>La consommation</h1>
+
+</section>
+<section id="consommateurs-1" class="slide level2">
+<h2>Consommateurs (1)</h2>
+<ul>
+<li>Étant données ses préférences, un consommateur prend ses décisions
+de consommation en fonction de:
+<ul>
+<li>son revenu aujourd'hui $Y_t$)</li>
+<li>son revenu futur (plus précisément le revenu qu'il anticipe)</li>
+</ul></li>
+<li>Etant donné le revenu, la décision de consommer est un arbitrage
+entre la consommation aujourd'hui et la consommation future.</li>
+<li>Cet arbitrage dépend du taux d'intérêt réel $r$ (le prix de la
+consommation aujourd'hui).</li>
+<li>On peut modéliser cet arbitrage en supposant que les agents sont
+rationnels mais ont une préférence pour le présent ($C_t$ consommation,
+$N_t$ travail): $$\max_{C_0, C_1, C_2 ...} E_0 \left[ \beta^t U(C_t)
+\right] \text{ou}\max_{C_0, C_1, C_2 ...} E_0 \left[ \beta^t U(C_t, N_t)
+\right]$$</li>
+</ul>
+</section>
+<section id="les-deux-grands-types-de-consommateurs-rappel"
+class="slide level2">
+<h2>Les deux grands types de consommateurs (rappel)</h2>
+<ul>
+<li>Agents <strong>keynésiens</strong>
+<ul>
+<li>leur consommation est limité par une contrainte d' endettement</li>
+<li>par ex $C^K(Y^K_t) = c^K_0 + c^K_1 Y^K_t$</li>
+<li>propension marginale à consommer $c_1$ proche de 1.</li>
+</ul></li>
+<li>Agents <strong>ricardiens</strong>
+<ul>
+<li>il peuvent lisser leur consommation dans le temps</li>
+<li>consomment une (petite) partie de leur revenu permanent
+($0&lt;\xi\approx 0$): $$\begin{aligned} C^R(Y^R_t) &amp; = &amp; \zeta
+\left(Y_t + \frac{1}{(1+r)}Y_{t+1} (...)\right)\ C^R(Y^R_t) &amp;
+\approx &amp; c^R_0 - c^R_1 r_t \end{aligned}$$</li>
+<li>répondent peu aux choc temporaires de revenu</li>
+<li>réagissent au taux d'interêt</li>
+</ul></li>
+</ul>
+</section>
+<section id="agrégation" class="slide level2">
+<h2>Agrégation</h2>
+<ul>
+<li>Supposons qu'on ait
+<ul>
+<li>une part $\lambda$ d'agents keynésiens $$C^K(Y^K_t) = c^K_0 + c^K_1
+Y^K_t$$</li>
+<li>une part $(1-\lambda)$ d'agents ricardiens: $$C^R(Y^R_t) = c^R_0 -
+c^R_1 r_t$$</li>
+</ul></li>
+<li>Peut-on facilement agréger les consommations pour obtenir $$C(Y) =
+c_0 + c_1 Y + c_2 r_t ?$$
+<ul>
+<li>oui mais il faut connaître comment se distribue le revenu $Y_t$
+entre les deux types d'agents</li>
+<li>par exemple si $\frac{Y^K_t}{\lambda} = \frac{Y^R_t}{1-\lambda}$
+(pas d'inégalité) alors $c_1 = \lambda c_1^K + (1-\lambda)c_1^R$</li>
+</ul></li>
+<li>Intuitivement: plus la part $\lambda$ de ménages keynésiens, plus la
+mpc agrégée est élevée (*)</li>
+<li>Au fait, quelle est la proportion d'agents keynésiens?</li>
+</ul>
+</section>
+<section
+id="propension-marginale-à-consommer-et-distribution-des-revenus"
+class="slide level2">
+<h2>Propension marginale à consommer et distribution des revenus</h2>
+<p>Japelli and Pistaferri, <em>politique fiscale et hétérogénéité des
+propensions marginales à consommer</em> (2017)</p>
+<p><img data-src="mpc_1.png" />{ width=45% } <img
+data-src="mpc_2.png" />{ width=45% }</p>
+</section>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<ul>
+<li>D'après le premier graphe, il y a trois grandes catégories de MPC,
+pas deux
+<ul>
+<li>Elevée</li>
+<li>Faible</li>
+<li>Intermédiaire: qui est dans cette catégorie?</li>
+</ul></li>
+<li>Le deuxième graphe suggère que le revenu disponible est un bon
+prédicteur de la MPC</li>
+<li>Revenu disponible: revenu restant après paiement des dépenses
+contrainte</li>
+</ul>
+</section>
+<section id="pourquoi-les-agents-sont-ils-contraints"
+class="slide level2">
+<h2>Pourquoi les agents sont-ils contraints?</h2>
+<p>D'après Piketty (2018)</p>
+<p><img data-src="mpc_3.png" />{ width=45% } <img
+data-src="mpc_4.png" />{ width=45% }</p>
+</section>
+<section id="discussion-2" class="slide level2">
+<h2>Discussion (2)</h2>
+<ul>
+<li>Les agents au milieu de la distribution on une part plus importante
+de richesse illiquide</li>
+<li>En conséquence:
+<ul>
+<li>Leur revenu disponible (utilisable pour acheter immédiatement) est
+plus faible car une part importante de leur revenu est alloué au
+remboursement de leur prêt</li>
+<li>Ils on un PMC plus élevé</li>
+<li>Et réagissent aux changement dans le taux d'intérêt (surtout s'il
+est flottant)</li>
+</ul></li>
+<li>Dans un papier très influent, <em>Monetary Policy According to
+HANK</em>, 2018, Kaplan, Moll et Violante, souligne le role des “wealthy
+hand to mouth” et leur influence sur les politiques monétaires.</li>
+</ul>
+</section></section>
+<section>
+<section id="linvestissement" class="title-slide slide level1">
+<h1>L'investissement</h1>
+
+</section>
+<section id="les-firmes" class="slide level2">
+<h2>Les firmes</h2>
+<ul>
+<li>Pour comprendre la réaction des firmes aux taux d'intérêt, il suffit
+de comprendre le comportement d'une firme: $$I(r) = \int_i I_i(r)$$</li>
+<li>Pourquoi l'investissement d'une firme dépend-t-il négativement de
+$r$ ?</li>
+<li>Intuition ?</li>
+</ul>
+</section>
+<section id="la-production-des-firmes-1" class="slide level2">
+<h2>La production des firmes (1)</h2>
+<p>Une firme $i$ produit avec du capital physique et du travail: $Y_i =
+f(K_i, N_i)$</p>
+<ul>
+<li>Elle loue le travail au prix $W$</li>
+<li>Elle achète du capital au prix $R^K$
+<ul>
+<li>elle est donc du côté de la <em>demande</em> sur le marchés des bien
+et des services</li>
+<li>il s'agit de biens d'investissements (machines, ordinateurs,
+batiments, infrastructures...)</li>
+<li>pour simplifier on peut supposer que 100% du capital se déprécie à
+chaque période de sorte que $I_i=K_i$</li>
+</ul></li>
+<li>On supppose que la fonction de production d'une firme est monotone
+et concave
+<ul>
+<li>$f^{\prime}<em>{K}&gt;0$ , $f^{\prime}</em>{L}&gt;0$,
+$f^{\prime\prime}<em>{KK}&lt;0$, $f^{\prime\prime}</em>{LL}&lt;0$</li>
+</ul></li>
+<li>On dit qu'elle a des rendements décroissants en chaque facteur:</li>
+</ul>
+</section>
+<section id="le-programme-des-firmes" class="slide level2">
+<h2>Le programme des firmes</h2>
+<ul>
+<li>Combien de capital une firme veut-elle acheter ?</li>
+<li>Notons $P_i$ le prix d'une unité de production de la firme $i$.</li>
+<li>Son profit est: $$\Pi_i = P_i f(K_i, N_i) - W N_i - R^K K_i$$</li>
+<li>Supposons pour simplifier qu'elle est en compétition parfaite:
+<ul>
+<li>preneuse de prix pour $P_i$</li>
+</ul></li>
+<li>Sur le marché des facteurs elle est acheteuse aux prix $W$ et
+$R^K$</li>
+<li>Son problème est alors: $$\max_{K_i, N_i} \Pi_i = P_i f(K_i, N_i) -
+W N_i - R^K K_i$$</li>
+</ul>
+</section>
+<section id="le-programme-des-firmes-solution-optimale"
+class="slide level2">
+<h2>Le programme des firmes (solution optimale)</h2>
+<p>La solution du problème: $$\max_{K_i, N_i} \Pi_i = P_i f(K_i, N_i) -
+W N_i - R^K K_i$$ donne: $$W = P_i f^{\prime}_N (K_i,N_i)$$ $$R^K = P_i
+f^{\prime}_K (K_i,N_i)$$</p>
+<p>La firme ajuste sa demande de facteurs de façon à ce qu'ils soient
+remunérés à leur productivité marginale.</p>
+</section>
+<section id="rendement-du-capital-et-rémunéraiton-de-lépargne"
+class="slide level2">
+<h2>Rendement du capital et rémunéraiton de l'épargne</h2>
+<p>Une firme typique doit emprunter les fonds pour acheter du
+capital.</p>
+<p>Si elle emprunte la totalité: $B_r = K_i$ et doit rembourser au taux
+d'intérêt du marché $(1+r)$.</p>
+<p>La solution du problème: $$\max_{K_i, L_i | K_i = B_i} \Pi_i = P_i
+f(K_i, L_i) - W L_i - (1+r) B_i $$ donne: $$W = P_i f^{\prime}_L
+(K_i,L_i)$$ $$(1+r) = P_i f^{\prime}_K (K_i,L_i)=(R^K)$$</p>
+<p>Même formule: le rendement financier est égal au rendement du
+capital. Cas particulier du principe d'<em>arbitrage</em>.</p>
+</section>
+<section id="demande-de-capital-des-firmes" class="slide level2">
+<h2>Demande de capital des firmes</h2>
+<ul>
+<li>On a donc: $$(1+r) = P_i f^{\prime}_K (K_i,L_i)$$</li>
+<li>Comme $F(.,L_i)$ est croissante et convexe, on peut obtenir la
+demande d'investissement $I(r; L_i)$</li>
+<li>On peut différencier l'équation pour obtenir: $$\Delta r = P_i
+f^{\prime\prime}_K(K_i; L_i) \Delta K$$ Ou $$\Delta K_i = 1/(P_i
+f^{\prime\prime}_K(K_i; L_i) ) \Delta r$$</li>
+<li>Une augmentation du taux d'intérêt baisse la demande
+d'investissement</li>
+<li>Intuition?
+<ul>
+<li>si le taux d'intérêt du marché est plus élevé, les investissement
+productifs sont comparativement moins rentables</li>
+</ul></li>
+<li>Remarque: le raisonnement est valide que la firme investisse ses
+propre fonds ou bien emprunte</li>
+</ul>
+</section>
+<section id="est-ce-que-les-firmes-réagissent-au-taux-dintérêt"
+class="slide level2">
+<h2>Est-ce que les firmes réagissent au taux d'intérêt?</h2>
+<p><img data-src="investment.png" /></p>
+</section>
+<section id="est-ce-que-les-firmes-réagissent-au-taux-dintérêt-1"
+class="slide level2">
+<h2>Est-ce que les firmes réagissent au taux d'intérêt?</h2>
+<ul>
+<li>Dans les dernières années le canal de l'investissement ne semble pas
+avoir soutenu la demande
+<ul>
+<li>Lors des deux dernières crises, les taux d'interêt étaient très bas.
+Et l'investissement aussi.</li>
+</ul></li>
+<li>Il y a d'autre facteurs.
+<ul>
+<li>L'incertitude sur la conjoncture économique</li>
+<li>Les firmes sont averses au risque. Quand la valeur future de leur
+production est inconnue elle produisent moins.</li>
+</ul></li>
+<li>Même si les taux directeurs sont très bas, les conditions de
+financements peuvent être mauvaises
+<ul>
+<li>Les banques aussi sont averses au risque</li>
+</ul></li>
+</ul>
+</section>
+<section id="les-producteurs" class="slide level2">
+<h2>Les producteurs</h2>
+<ul>
+<li>En réalité le problème des firmes est plus compliqué qu'une simple
+maximisation de profit</li>
+<li>Les firmes possèdent du capital et n'ont pas nécessairement besoin
+d'emprunter.
+<ul>
+<li>Elle peuvent emprunter à plus long terme sans devoir repayer leur
+prêt immédiatement après la production</li>
+</ul></li>
+<li>Certaines firmes ont des contraintes de crédit
+<ul>
+<li>Dans ce cas leur capacité à emprunter dépend de leur capital
+existant qu'elle peuvent utiliser comme garantie ("collateral")</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="courbe-is" class="title-slide slide level1">
+<h1>Courbe IS</h1>
+
+</section>
+<section id="courbe-is-1" class="slide level2">
+<h2>Courbe IS:</h2>
+<ul>
+<li>On a donné une justification pour les différentes composantes du PIB
+$$C(Y,r) + I( r) + G + NX$$</li>
+<li>A l'équilibre on doit avoir $$\overline{Y} = \overline{C} +
+\overline{I} + \overline{G} + \overline{NX}$$</li>
+<li>Après diférenciation: $$\Delta Y = C_Y \Delta Y + C_r \Delta r + I_r
+\Delta r + \Delta S$$ avec $\Delta S = \Delta G + \Delta NX$ qui
+représente un choc sur la demande.</li>
+</ul>
+</section>
+<section id="courbe-is-log-linearisation" class="slide level2">
+<h2>Courbe IS: Log-linearisation</h2>
+<p>$$\Delta Y = C_Y \Delta Y + C_r \Delta r + I_r \Delta r + \Delta
+S$$</p>
+<ul>
+<li>On peut aussi log-linéariser pour obtenir: $$\frac{\Delta Y}{Y} =
+C_Y \frac{\Delta Y}{Y} + \frac{C_r}{Y}\Delta r + \frac{I_r}{Y}\Delta r +
+\frac{1}{Y}\Delta S$$</li>
+<li>En notant $y=\frac{\Delta Y}{Y}$ on obtient: $$y = -\sigma
+(r-r^{\star}) + \theta$$ avec $\sigma=
+\frac{-\left(\frac{C_r}{Y}+\frac{I_r}{Y}\right)}{1-C_y}&gt;0$ et où
+$\theta = \frac{\Delta G + \Delta NX}{Y}$ contient toutes les sources
+variations qui ne proviennent pas du revenu ou du taux d'intérêt.</li>
+</ul>
+</section>
+<section id="courbe-is-résumé" class="slide level2">
+<h2>Courbe IS: résumé</h2>
+<p>Avec ce travail, on obtient une courbe IS (log-)linéaire (on a omis
+jusqu'à présent les indices $t$ mais l'équation vaut à toutes les
+dates.)</p>
+<p>$$y_t = -\sigma (r_t-r^{\star}) + \theta_t$$</p>
+<p>Où $\sigma=
+\frac{-\left(\frac{C_r}{Y}+\frac{I_r}{Y}\right)}{1-C_y}&gt;0$ est la
+demi-élasticité de la demande au taux d'intérêt et où $\theta_t$ est un
+choc de demande.</p>
+<ul>
+<li>Une propension marginale à consommer $C_y$ plus grande implique une
+élasticité plus grande de la demande aux chocs de revenus.
+<ul>
+<li>pour les ménages keynésiens</li>
+</ul></li>
+<li>Une élasticité plus grande de la demande prévue aux taux d'intérêt
+implique une réponse plus forte de la demande aux chocs de politique
+monétaire
+<ul>
+<li>pour les ménages ricardiens et les firmes</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="politique-monétaire-et-demande-agrégée"
+class="title-slide slide level1">
+<h1>Politique Monétaire et Demande Agrégée</h1>
+
+</section>
+<section id="le-mandat-de-la-banque-centrale" class="slide level2">
+<h2>Le mandat de la banque centrale</h2>
+<ul>
+<li>L'objectif principal de la banque centrale consiste à stabiliser
+l'inflation autour de son objectif $\pi^{\star}$</li>
+<li>Elle atteint cet objectif en influençant la demande en réponse au
+fluctuations du cycle économique</li>
+<li>La demande est affectée par le taux d'intérêt réel</li>
+<li>La banque centrale peut fixer le taux d'intérêt <em>nominal</em>
+$i_t$, mais est vraiment intéressée par le taux d'intérêt <em>réel</em>
+$r_t$
+<ul>
+<li>les deux sont liés par la relation de Fisher: $r_t = i_t -
+\pi_{t+1}$</li>
+<li>pour simplifier on suppose ici qu'elle fixe directement le taux
+$r_t$</li>
+<li>voir amphi 4</li>
+</ul></li>
+<li>En suivant Romer 2002, on suppose simplement: $r_t = r^{\prime} +
+\kappa (\pi_t- \pi^{\star})$</li>
+<li>Typiquement, la banque centrale augmente le taux d'intérêt pour
+réduire l'inflation donc: $\kappa&gt;0$</li>
+</ul>
+</section>
+<section id="la-courbe-de-demande-agrégée" class="slide level2">
+<h2>La courbe de demande agrégée</h2>
+<ul>
+<li><p>Maintenant que l'on a la courbe IS: $$y_t = -\sigma (r_t -
+r^{\prime}) = \theta_t$$</p></li>
+<li><p>Et la réponse de la banque centrale (MP) $$r_t = r^{\prime} +
+\kappa (\pi_t - \pi^{\star})$$</p></li>
+<li><p>On peut substituer le taux d'intérêt réel pour obtenir l'equation
+de demande agrégée (aussi appelée IS-MP): $$y_t = -\sigma \kappa (\pi_t
+- \pi^{\star}) + \theta_t$$</p></li>
+<li><p>Cette courbe repressente l'équilibre sur le marche des biens et
+services, en prenant en compte la réponse de la banque
+centrale.</p></li>
+<li><p>On a bien la demande agrégée comme une fonction décroissante de
+l'inflation (donc aussi des prix)</p></li>
+</ul>
+<!-- ---
+# Conclusion
+
+## Preview Our baseline model (3)
+
+
+- Notre modèle néo-keynésien
+    - a un mécanisme de demande
+    - et une courbe d'offre non-verticale
+- Est micro-fondé
+    - Les agents (ménages & firmes) prennent des décisions optimales
+    - Des rigidités nominales impliques une élasticité de court terme de la demande
+- Est intertemporal
+    - Dynaymique (peut être utilisé à court terme ou pour la transition)
+    - A court terme il donne une représentation OA/OD
+    - A long terme il coincide avec la vision classique
+    - on parle de "synthèse" néo keynésienne (ou néoclassique)
+
+--- -->
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

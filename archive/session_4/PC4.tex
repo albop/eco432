@@ -1,0 +1,423 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wed Apr 05 06:17:18 2000}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:59:03}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{Language=French}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{17.5cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength\textheight{25cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 4. L'effet macro\'{e}conomique de la d\'{e}pense publique}
+\end{center}
+
+\bigskip
+
+On \'{e}tudie l'\textit{\'{e}quilibre g\'{e}n\'{e}ral} d'une \'{e}conomie
+compos\'{e}e de m\'{e}nages (qui travaillent et consomment), d'entreprises
+(qui produisent des biens diversifi\'{e}s \`{a} l'aide du facteur travail),
+d'un Etat (qui choisit le niveau de la d\'{e}pense publique et l\`{e}ve des
+imp\^{o}ts, suppos\'{e}s ici forfaitaires) et d'une banque centrale (qui d%
+\'{e}termine le taux d'int\'{e}r\^{e}t r\'{e}el).
+
+\bigskip
+
+\noindent \textbf{Les m\'{e}nages}
+
+Les m\'{e}nages sont tous identiques et \textquotedblleft
+ricardiens\textquotedblright\ au sens de la PC\ 1. On suppose que leurs
+comportements de demande de consommation ($C_{t}$) et d'offre de travail ($%
+L_{t}^{o}$) satisfont les conditions d'optimalit\'{e} suivantes, pour tout $%
+t\geq 0$ : 
+\begin{equation*}
+\frac{C_{t+1}}{C_{t}}=\frac{1+r_{t}}{1+\rho },\ \ \ \frac{\left(
+L_{t}^{o}\right) ^{\frac{1}{\xi }-1}}{C_{t}^{-1}}=\frac{W_{t}}{P_{t}},\ \ \
+k=0,1,2,...,
+\end{equation*}%
+avec $r_{t}$ le taux d'int\'{e}r\^{e}t r\'{e}el, $\rho >0$ le taux de pr\'{e}%
+f\'{e}rence pour le pr\'{e}sent, $\xi \in \left] 0,1\right[ $ l'\'{e}lasticit%
+\'{e} de l'offre de travail, $W_{t}$ le salaire nominal et $P_{t}$ le niveau
+g\'{e}n\'{e}ral des prix.
+
+\bigskip
+
+\noindent \textbf{Les entreprises}
+
+Le secteur productif est compos\'{e} d'un continuum d'entreprises index\'{e}%
+es par $i\in \left[ 0,1\right] $. Les entreprises sont détenues par les ménages qui reçoivent leurs profits. L'entreprise $i$ produit \`{a} l'aide de
+la fonction de production $Q_{i,t}=Z_{t}L_{i,t}$, avec $Q_{i,t}$ la quantit%
+\'{e} produite, $L_{i,t}$ la quantit\'{e} de travail utilis\'{e}e et $Z_{t}$
+la productivit\'{e} du travail. L'entreprise est en situation de monopole et
+fait face \`{a} la demande :%
+\begin{equation*}
+Y_{i,t}=Y_{t}\left( P_{i,t}/P_{t}\right) ^{-\eta }
+\end{equation*}%
+avec $Y_{t}$ la production totale, $P_{i,t}$ le prix nominal du bien $i$ et $%
+\eta >1$ l'\'{e}lasticit\'{e} de la demande de bien \`{a} son prix. Comme nous l'avons montr\'{e} au chapitre 4 (eq. 4.4), l'\'{e}quation du prix nominal optimal en log est 
+\begin{equation*}
+p^{\ast}_{t}=\mu^{\ast} +w_t-z_t
+\end{equation*}%
+avec $\mu^{\ast}$ le taux de marge optimal. La demande de travail optimal en log est (cf eq 4.6 du poly)
+\begin{equation*}
+l_{t}^{d}=y_{t}-z_{t}
+\end{equation*} 
+
+La productivit\'{e} du travail est constante et normalis\'{e}e \`{a} 
+\begin{equation*}
+Z_{t}=e^{\xi \mu^{\ast}}
+\end{equation*}
+
+
+\noindent \textbf{L'Etat}
+
+On supposera que la d\'{e}pense publique est nulle \`{a} toutes les p\'{e}%
+riodes sauf \`{a} la p\'{e}riode courante (o\`{u} elle est enti\`{e}rement
+financ\'{e}e par des imp\^{o}ts forfaitaires) :%
+\begin{equation*}
+G_{t}>0,\ \ G_{t-1}=G_{t+1}=G_{t+2}=...=0.
+\end{equation*}
+
+\noindent \textbf{La banque centrale}
+
+La banque centrale est suppos\'{e}e ne pas r\'{e}agir aux pressions
+inflationnistes engendr\'{e}es par la d\'{e}pense publique : elle met en
+oeuvre le taux d'int\'{e}r\^{e}t r\'{e}el $r_{t}=\rho $ (le param\`{e}tre $\gamma$ dans la r\`{e}gle PM est z\'{e}ro).
+
+\bigskip
+
+\noindent \textbf{Premi\`{e}re partie : l'\'{e}quilibre OA-DA avec d\'{e}%
+pense publique}
+
+\begin{enumerate}
+\item Expliquer intuitivement le sens des conditions d'optimalit\'{e} caract%
+\'{e}risant le comportement des m\'{e}nages, puis les formuler en log.
+
+\item  Expliquer intuitivement l'\'{e}quation du prix nominal optimal et la demande optimal du travail. 
+
+
+\item V\'{e}rifier qu'au voisinage de $G_{t}=0$ l'\'{e}quilibre sur le march%
+\'{e} des biens donne :%
+\begin{equation*}
+y_{t}\simeq c_{t}+G_{t},\text{ avec }y_{t}=\ln Y_{t}\text{ et }c_{t}=\ln
+C_{t}
+\end{equation*}
+
+\item En utilisant les conditions d'\'{e}quilibre sur les march\'{e}s des
+biens et du travail, calculer le niveau naturel du produit $y_{t}^{n}$ dans
+cette \'{e}conomie et expliquer pourquoi il est influenc\'{e} par la d\'{e}%
+pense publique.
+
+\item On suppose que les prix nominaux sont rigides : \`{a} chaque p\'{e}%
+riode une fraction $1-\omega $ des entreprises choisit son prix de vente de
+mani\`{e}re optimale, alors que les autres font cro\^{\i}tre leur prix de
+vente \`{a} un taux \'{e}gal \`{a} l'inflation de la p\'{e}riode pr\'{e}c%
+\'{e}dente (cf. chapitre 4). En passant par les m\^{e}mes \'{e}tapes de
+calcul que dans le chapitre 4, en d\'{e}duire que la courbe OA en pr\'{e}%
+sence de d\'{e}pense publique est donn\'{e}e par :%
+\begin{equation*}
+\text{\textbf{OA}}:\pi _{t}=\pi _{t-1}+\kappa \left( y_{t}-y_{t}^{n}\right)
+,\ \kappa \geq 0,
+\end{equation*}%
+o\`{u} $y_{t}^{n}$ a \'{e}t\'{e} calcul\'{e} \`{a} la question 4.
+\end{enumerate}
+
+\bigskip
+
+\noindent \textbf{Deuxi\`{e}me partie : l'impact d'un choc de d\'{e}pense
+publique}
+
+\begin{enumerate}
+\item Montrer que la courbe DA de cette \'{e}conomie est donn\'{e}e par : 
+\begin{equation*}
+\text{\textbf{DA}}:y_{t}=G_{t}
+\end{equation*}
+
+\item Calculer analytiquement l'impact sur $y_{t}$ et sur $\pi _{t}$ du choc
+de d\'{e}pense publique, et expliquer intuitivement les r\'{e}sultats
+obtenus (on supposera que l'inflation \'{e}tait nulle \`{a} la p\'{e}riode pr%
+\'{e}c\'{e}dente: $\pi _{t-1}=0$).
+
+\item Repr\'{e}senter dans le plan ($y,\pi $) l'\'{e}quilibre OA-DA et son d%
+\'{e}placement suite au choc de d\'{e}pense publique.
+\end{enumerate}
+
+
+
+\bigskip
+\begin{center}
+\textbf{Solution}
+\end{center}
+
+\bigskip
+
+
+
+\begin{enumerate}
+\item cf. chapitre 4 et PC 1. Supposons \begin{align}
+\mathcal{U}_{t}  &  =\sum_{k=0}^{n}\left(  \frac{1}{1+\rho}\right)  ^{k}  \left[\ln
+C_{t+k}^{j}  -\xi L_{t+k}^{1/\xi} \right]\label{2 - utilite intertemporelle}
+\end{align}
+où le nouveau terme représente la désutilité du travail. Maximisez cette utilité intertemporelle sous  l'éq. 3.10 dans le poly pour obtenir la condition du premier ordre. 
+\begin{equation*}
+\left(L_{t}^{o}\right)^{\frac{1}{\xi }-1}=\frac{W_{t}}{P_{t}} \frac{1}{C_t}\end{equation*}
+Cette condition stipule que le ménage représentatif augmente ses heures de travail juste au point où une unité supplémentaire
+de travail fournie rapporte autant en termes d'utilité de la consommation (le côté droit de l'équation) que cela coûte en termes 
+de désutilité du travail (côté gauche de l'équation). Rappelons que l'augmentation des dépenses est financée par des impôts 
+forfaitaires ($ T_t $ dans l'équation 3.10 dans le poly). Les impôts étant forfaitaires, ils n'apparaissent pas
+dans la condition du premier ordre: l'impôt forfaitaire n'induit aucun effet de substitution entre la consommation et les loisirs. 
+En revanche, l'impôt forfaitaire a un effet sur le revenu dans la mesure où il appauvrit les ménages. 
+Cet effet de revenu  modifie l'offre de travail et la demande de consommation en équilibre général, mais les effets 
+ne sont pas apparents en regardant simplement l'équation du premier ordre (nous reviendrons sur cette question après).
+Un raisonnement exactement identique s'applique pour les profits des entreprises perçus par les ménages: 
+il n'affectent pas les conditions d'optimalité mais l'équilibre général via la contrainte de budget.\footnote{La 
+contrainte de budget d'un consommateur $j$ peut s'écrire comme dans l'équation 3.10: 
+$C^j_t + A^j_t - A^j_{t-1} = r_{t-1}A^j_{t-1} + \frac{W_t}{P_t}L^j_t  - T^j_t$ où $A^j_t$ représente le patrimoine financier.
+ C'est cette équation que l'on utilise pour dériver les conditions du premier ordre. Dans cette équation le revenu financier (net) est
+ $r_{t-1}A^j_{t-1} - (A^j_t - A^j_{t-1})$. Au niveau agrégé le total du revenu financier correspond aux profit total des entreprises $\Pi_t$ de sorte qu'en sommant
+ les contraintes de budget des entreprises, on obtient la contrainte de ressource: $C_t = \Pi_t + \frac{W_t}{P_t}$.}
+
+
+
+
+En log on obtient :%
+\begin{equation*}
+c_{t+1}-c_{t}\simeq r_{t}-\rho \text{ \ et \ }\left( \frac{1}{\xi }-1\right)
+l_{t}^{o}=w_{t}-p_{t}-c_{t}
+\end{equation*}
+
+
+\item Voir chapitre 4. En utilisant l'expression pour $ z_t $, nous écrivons
+\begin{equation*}
+p_{t}^{\ast }=\left( 1-\xi \right) \mu ^{\ast }+w_{t}
+\end{equation*}%
+
+La demande totale de travail en log :%
+\begin{equation*}
+l_{t}^{d}=y_{t}-z_{t}=y_{t}-\xi \mu ^{\ast }
+\end{equation*}
+
+\item L'\'{e}quilibre sur le march\'{e} des biens s'\'{e}crit :%
+\begin{equation*}
+Y_{t}=C_{t}+G_{t}
+\end{equation*}%
+A l'\'{e}tat stationnaire de long terme, par hypoth\`{e}se on a :%
+\begin{equation*}
+G_{\infty }=0\Rightarrow Y_{\infty }=C_{\infty }
+\end{equation*}%
+Par ailleurs, comme \`{a} long terme les prix sont flexibles on a%
+\begin{equation*}
+\frac{W_{\infty }}{P_{\infty }}=\left( \frac{\eta }{\eta -1}\right) ^{\xi -1}
+\end{equation*}%
+L'\'{e}quilibre sur le march\'{e} du travail donne alors 
+\begin{equation*}
+\underset{L_{\infty }^{d}}{\underset{\uparrow }{\underset{}{\frac{Y_{\infty }%
+}{Z_{\infty }}}}}=\underset{L_{\infty }^{o}}{\underset{\uparrow }{\underset{}%
+{\left( \frac{W_{\infty }}{P_{\infty }}\frac{1}{C_{\infty }}\right) ^{\frac{%
+\xi }{1-\xi }}}}}\ \ \Leftrightarrow \ \ \frac{Y_{\infty }}{\left( \frac{%
+\eta }{\eta -1}\right) ^{\xi }}=\left( \left( \frac{\eta }{\eta -1}\right)
+^{\xi -1}\frac{1}{Y_{\infty }}\right) ^{\frac{\xi }{1-\xi }}\Leftrightarrow
+Y_{\infty }=1
+\end{equation*}%
+En lin\'{e}arisant l'\'{e}quilibre sur le march\'{e} des biens au voisinage
+de l'\'{e}quilibre de long terme, on obtient :%
+\begin{eqnarray*}
+Y_{t}-Y_{\infty } &=&C_{t}-C_{\infty }+G_{t} \\
+\frac{Y_{t}-Y_{\infty }}{Y_{\infty }} &=&\frac{C_{t}-C_{\infty }}{C_{\infty }%
+}+\frac{G_{t}}{Y_{\infty }} \\
+y_{t}-y_{\infty } &=&c_{t}-c_{\infty }+G_{t} \\
+y_{t} &=&c_{t}+G_{t}
+\end{eqnarray*}
+
+A partir de la condition $ y_t = c_t + G_t $ et en utilisant l'équation de la demande totale de travail $y_{t}= l_t^d + \xi \mu ^{\ast }$
+\begin{equation*}
+c_{t}= l_t^d + \xi \mu ^{\ast }-G_t
+\end{equation*}
+
+
+
+nous savons que \begin{equation*}
+l_{t}^{o}=\frac{\xi}{1-\xi}(w_{t}-p_{t}-c_{t}) 
+\end{equation*}
+
+Hence
+
+We know \begin{equation*}
+l_{t}^{o}=\frac{\xi}{1-\xi}(w_{t}-p_{t}- l_t^d - \xi \mu ^{\ast }+G_t) 
+\end{equation*}
+Since $l_t^o=l_t^d$ we have \begin{equation*}
+l_{t}=\xi(w_{t}-p_{t}- \xi \mu ^{\ast }+G_t) 
+\end{equation*}
+so, in equilibrium labour supply is increasing in the real wage and in G.
+ This is an outcome of the so-called wealth effects of government spending on labor supply. Intuitively, an increase in government spending must be financed at some point intime and thus it lowers households’ present value of disposable income, pshing individuals to work more. 
+
+\item A l'\'{e}quilibre naturel, les prix sont flexibles mais la d\'{e}pense
+publique n'est pas n\'{e}cessairement nulle (\`{a} la diff\'{e}rence de l'%
+\'{e}quilibre de long terme). Cet \'{e}quilibre est r\'{e}sum\'{e} par les 
+\'{e}quations suivantes :%
+\begin{eqnarray*}
+\text{prix flexibles} &:&w_{t}-p_{t}=-\left( 1-\xi \right) \mu ^{\ast } \\
+\text{eq. sur le march\'{e} du travail} &:&\underset{l_{t}^{d}}{\underbrace{%
+y_{t}^{n}-\xi \mu ^{\ast }}}=\underset{l_{t}^{o}}{\underbrace{\frac{\xi }{%
+1-\xi }(w_{t}-p_{t}-y_{t}^{n}+G_{t})}}
+\end{eqnarray*}%
+ce qui donne :%
+\begin{equation*}
+y_{t}^{n}=\xi G_{t}
+\end{equation*}%
+A long terme, avec une d\'{e}pense publique nulle, le produit naturel est 
+\'{e}gal au produit de long terme (z\'{e}ro en log). A court terme, la d\'{e}%
+pense publique engendre des imp\^{o}ts dont les m\'{e}nage att\'{e}nuent les
+effets en augmentant leur offre de travail (\`{a} salaire r\'{e}el donn\'{e}%
+) ; Intuitively, an increase in government spending must be financed at some point intime and thus it lowers households’ present value of disposable income. Cette augmentation de l'offre de travail \'{e}l\`{e}ve le produit
+naturel.  The  higher the elasticity of labor supply ($\xi$), the more the hours worked will increase after the government-spending shock. Note that output increases less than G, so that consumption must go down a bit. 
+
+%The response of households is to consume less but also to work more in order to buffer the effect of the shock on their labor income (that is,in order to limit the fall in consumption that higher taxes force). The increase inhours worked makes possible an increase in output, but the drop in consumptionimplies that output increases less than the amount of government spending—andtherefore we say that government spending crowds out private consumption.  and hence the less labor income will diminishand the less consumption will fall
+
+\item Le prix moyen \'{e}volue comme suit : 
+\begin{equation*}
+p_{t}=\omega \left( p_{t-1}+\pi _{t-1}\right) +\left( 1-\omega \right)
+p_{t}^{\ast }
+\end{equation*}%
+Comme $\pi \simeq p-p_{-1}$, cette expression donne (cf. chapitre 2) :%
+\begin{equation*}
+\pi _{t}=\pi _{t-1}+\left( \frac{1-\omega }{\omega }\right) \left(
+p_{t}^{\ast }-p_{t}\right)
+\end{equation*}%
+On calcule maintenant $p^{\ast }-p$. D'apr\`{e}s l'analyse ci-dessus on a :%
+\begin{eqnarray*}
+\text{prix nominal optimal} &:&p_{t}^{\ast }=\left( 1-\xi \right) \mu ^{\ast
+}+w_{t} \\
+\text{eq sur le march\'{e} du travail} &:&\ \underset{l^{d}}{\underbrace{%
+y_{t}-\xi \mu ^{\ast }}}\ =\ \underset{l^{o}}{\underbrace{\frac{\xi }{1-\xi }%
+(w_{t}-p_{t}-y_{t}+G_{t})}}
+\end{eqnarray*}%
+Ces deux expressions donnent :%
+\begin{equation*}
+p_{t}^{\ast }-p_{t}=\xi ^{-1}\left( y_{t}-y_{t}^{n}\right)
+\end{equation*}%
+Ainsi, la courbe OA s'\'{e}crit :%
+\begin{equation*}
+\text{\textbf{OA}}:\pi _{t}=\pi _{t-1}+\kappa \left( y_{t}-y_{t}^{n}\right)
+,\ \kappa =\frac{1-\omega }{\omega \xi }
+\end{equation*}%
+La courbe OA a exactement la m\^{e}me forme qu'en l'absence de d\'{e}pense
+publique, mais la d\'{e}pense publique influence le produit naturel $%
+y_{t}^{n}$.
+\end{enumerate}
+
+\bigskip
+
+\noindent \textbf{Deuxi\`{e}me partie : l'impact d'un choc de d\'{e}pense
+publique}
+
+\begin{enumerate}
+\item En temps normal on a $r_{t}=\rho $ (constant) et donc la r\`{e}gle de
+Keynes-Ramsey donne :%
+\begin{equation*}
+c_{t}=c_{t+1}=...=c_{t+\infty }=y_{t+\infty }=0
+\end{equation*}%
+L'\'{e}quilibre sur le march\'{e} des biens donne donc :%
+\begin{equation*}
+\text{\textbf{DA}}:y_{t}=G_{t}
+\end{equation*}%
+
+
+Comme la banque centrale ne fait pas bouger le taux d'int\'{e}r\^{e}t r\'{e}%
+el quelles que soient les pressions inflationnistes provoqu\'{e}es par le
+choc budg\'{e}taire, la consommation est constante et \'{e}gale \`{a} son
+niveau niveau de long terme (cf. r\`{e}gle de
+Keynes-Ramsey). Il n'y a pas donc pas d'\'{e}viction de la
+consommation priv\'{e}e par la d\'{e}pense publique, ce qui implique que la d%
+\'{e}pense augmente la production de 1 pour 1.  (If instead prices and interest rates were fully flexible at all times, the effect of G on output would be the derivative of $y^n$ wrt to G, which is $\xi$, less than 1. Output increases less than G, implying that consumption must go down a bit: there is some crowding out) 
+
+
+[why supply increase one period only? ]
+
+\item La courbe DA implique 
+\begin{equation*}
+\frac{\text{d}y_{t}}{\text{d}G_{t}}=1
+\end{equation*}%
+
+The reason why the multiplier is 1 in that scenario is that consumers do not alter their consumption after a government-spending shock; hence output rises by exactly the same amount as government spending.  Of course, this increase in output requires more labor input, and labor supply can rise only if the real wage does. Hence, the government-spending shock increases the unit production cost of the firms, which the firms that set their price optimally pass through to selling prices, and inflation rises. (Notice that the multiplier is still smaller than the Keynesian multiplier discussed in amphy 4. The reason is that when drawing the Keynesian cross  we implicitly assumed that higher taxes (due to higher G) did not have any effect on consumption and labour supply. SInce higher taxes make consumers poorer, Ricardian consumers should respond to that)
+
+
+
+En utilisant la courbe OA on trouve : 
+\begin{equation*}
+\frac{\text{d}\pi _{t}}{\text{d}G_{t}}=\kappa \left( \frac{\text{d}y_{t}}{%
+\text{d}G_{t}}-\frac{\text{d}y_{t}^{n}}{\text{d}G_{t}}\right) =\kappa \left(
+1-\xi \right) >0
+\end{equation*}%
+Le choc de d\'{e}pense est inflationniste : la hausse de la production
+provoque une tension sur le march\'{e} du travail et donc une augmentation
+du salaire r\'{e}el d'\'{e}quilibre ; les entreprises qui ajustent leur prix
+de mani\`{e}re optimale r\'{e}percutent ce surco\^{u}t, ce qui contribue 
+\`{a} \'{e}lever l'inflation. Cet effet inflationniste est d'autant plus
+fort que l'\'{e}lasticit\'{e} de l'offre de travail est faible (plus elle
+est faible, plus le salaire r\'{e}el doit augmenter pour atteindre un niveau
+donn\'{e} d'offre de travail).
+
+\item La courbe DA\ est verticale dans le plan ($y,\pi $), et translat\'{e}e
+vers la droite d'une distance d$G$ par le choc budg\'{e}taire. La courbe OA
+et croissante, et translat\'{e}e vers le bas de la distance $\kappa \xi $d$G$
+(cf. la courbe OA\ et l'effet de la d\'{e}pense sur le produit naturel). Le
+choc de d\'{e}pense publique d\'{e}place l'\'{e}quilibre dans la direction
+nord-est.
+\end{enumerate}
+
+\end{document}
+
+\end{document}

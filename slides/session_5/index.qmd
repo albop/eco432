@@ -1,0 +1,599 @@
+---
+title: Monetary Policy
+subtitle: Macroeconomics - EF01
+author: Year 2022-2023
+format: beamer
+slide-level: 3
+aspectratio: 169
+---
+
+### Sessions Program
+
+- Session 1: introduction / reminders on macro
+- Session 2: aggregate demand
+- Session 3: aggregate supply
+- Session 4: macroeconomic fluctuations
+- Session 5: monetary policy
+- ~~Session 6: unconventional monetary policies~~
+
+---
+
+###
+
+#### Main question
+
+How does the Central Bank set interest rates?
+
+---
+
+\tableofcontents
+
+<!-- Tools of Monpol -->
+
+# Tools of Monetary Policy
+
+### Tools of Monetary Policy
+
+What are the main tools of monetary policy?
+
+. . .
+
+- Open market operations
+  - CB exchanges liquidities (cash) in exchange for more illiquid assets (gvt bonds)
+  - CB lends in the interbank market
+
+- Reserve requirement ratios
+
+- Interest rates on reserves held by banks at the CB
+  - Discount rate in the US
+  - Main Refinancing Operations (MRO) in EZ
+
+- Many other unconventional tools (not covered here)
+
+
+## Money Aggregates
+
+### Central Bank Money
+
+The Central Bank has the monopoly to create __Central Bank Money__
+
+- Coins, banknotes, digital euros...
+
+Central Bank Money is also called __Monetary Base__. How is it *injected* in the economy?
+
+. . .
+
+In principle, Central Bank *could* distribute it
+
+- by sending checks or by directly monetizing the government deficit[^helicopter]
+
+. . .
+
+But in practice the central banks exchanges central bank money for less liquid assets.
+
+  - which enables money creation by private bank.
+
+[^helicopter]: Helicopter Money is a *metaphor* invented by Milton Friedman to discribe, to explain that, from a macro perspective, the actual recipient of money is not that important. It now refers to the direct distribution of central bank money.
+
+---
+
+### Who owns Central Bank Money?
+
+
+![Base Money (ECB stats)](./assets/base_money.png){height=60%}
+
+. . .
+
+Most of the money created by the central bank since 2009 is owned by private financial institutions who keep reserves (current accounts) at the central bank.[^virtual]
+
+[^virtual]: This money remains virtual in the sense that it is never printed. It is effectively digital currency.
+
+---
+
+### Narrow Money / Broad Money
+
+\framesubtitle{Money circulating in the economy}
+
+::: columns
+
+:::: {.column width=60%}
+
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+
+
+ECB lists several monetary aggregates:
+
+  - M1: __narrow money__
+    - currency (coins, banknotes) in circulation and overnight deposits (e.g. consumer checking accounts)
+  - M2:
+    - M1 + deposits with an agreed maturity of up to two years and deposits redeemable at notice of up to three months
+  - M3: __broad money__
+    - M2 + repurchase agreements, money market fund shares/units and debt securities with maturity of up to two years 
+
+\onslide<2>
+
+
+
+Monetary aggregates contain financial assets of decreasing liquidity.
+
+Note that in these monetary aggregates, only currency is created by the central bank. All the other assets are created by the private sector.
+
+
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: {.column width=40%}
+
+![](assets/aggreg.png){height=60%}
+
+::::
+
+:::
+
+---
+
+![ ](two_birds.png){width=20%}
+
+Wait? Private banks create money?
+
+. . .
+
+Yes, most of it. Let's explain how.
+
+---
+
+### Controlling M1
+
+\framesubtitle{Reminder: Fractional Reserve system}
+
+::: columns
+
+:::: {.column width=60%}
+
+- When a commercial bank makes a loan it creates money directly!!!
+- Credit from private banks is limited by the reserve requirement ratio
+  - commercial banks must keep a fraction $\lambda$ of outstanding loans in reserves
+  - for 1 unit of central bank money they receive (e.g  as deposits), they can lend $1-\lambda$
+- The total amount of narrow money the financial system can create from a $1$ deposit is called the money multiplier: $μ=\frac{1}{\lambda}-1$
+
+::::
+
+:::: {.column width=40%}
+
+![](multiplier.png){width=80%}
+
+
+::::
+
+:::
+
+Changing reserve ratio is a potential policy tool to control money creation by the private sector[^money_multiplier].
+
+[^money_multiplier]: the calculations to obtain the money multiplier are very similar to the fiscal multiplier. One euro of deposits leads to total lending $(1-\lambda) + (1-\lambda)^2 + \cdots  = (1-\lambda)\frac{1}{1-(1-\lambda)}$
+
+### 
+
+How big is the money multiplier?
+
+. . .
+
+Reserves requirements where 2% until 2012. 1% since then.
+
+. . .
+
+Theoretical money multiplier was about 50 until 2012, 100 since then.
+
+. . .
+
+Let's check the data...
+
+### Controlling M1
+
+![Base money and the money multiplier (ECB)](assets/base_money_multiplier.png){width=60%}
+
+Since 2009, base money has increased tremendously, but not credit. Money multiplier is far from its maximum.
+Reserve requirements are not binding.
+
+## Inflation Targeting
+
+### Evolution of Standard Policy Practices
+
+![](evolution_practices.png)
+
+### Inflation Targeting
+
+Most CBs have now switched to some form of "inflation targeting"
+
+- the central bank tries to achieve a given inflation target (e.g. 2\% in EZ)
+
+It reaches the target, by manipulating nominal interest rates:
+
+- either by controlling the money supply
+- or by setting interest rates directly
+
+. . .
+
+::: {.callout-note icon=false}
+
+#### Important message
+
+Since 2009s __main instrument for monetary policy is interest rate setting__
+
+- the amount of money creation is determined by he private sector
+
+:::
+
+## The Taylor Rule
+
+### Inflation targeting and the Taylor Rule
+
+What economic variables does the CB mostly look at to stabilize inflation?
+
+. . .
+
+John Taylor, discovered empirically (in 1993) that  actual interest rates decisions were well approximated (even before inflation targeting was adopted) by a *simple rule* of the form:
+
+$$i_t = i^{\star} + 0.5 (\pi_t - \pi^ {\star}) + 0.5 (y_t - y_t^ {nt})$$
+
+It depends on
+
+- the deviation of inflation from its target
+- the deviation of output from its natural level (output gap)
+
+### Taylor Rule vs Effective Rate
+
+![Original Taylor Rule against Actual Decisions (US Data)](taylor_rule_vs_effective_1.png){width=80%}
+
+Since 1999, the Taylor Rule is still broadly relevant but completely misses the target after 2014 (when i.r. were at 0).
+
+### Improved Taylor RuleOriginal Taylor Rule is too simple
+
+A version based on inflation expectations describes well CB decisions:
+
+$$i_t = i^{\star} + 0.5 \underbrace{(E_t \left[ \pi_{t+1} \right] - \pi^{\star})}_{\text{expected excess inflation}} + 0.5 \underbrace{E_t \left[y_t - y_t^ {nt}\right]}_{\text{expected output gap}}$$
+
+This version is a good reference point to understand central bank's communication.
+
+
+
+
+### Improved Taylor Rule vs Effective Rate
+
+![Improved Taylor Rule](taylor_rule_vs_effective_2.png){width=80%}
+
+Source: Orphanides and Wieland
+
+### Operational Summary
+
+Evolution of Central Banking
+
+- since the 90s and inflation targeting, the main central banks have switched to inflation targeting
+
+The central bank raises interest rate 
+
+- when (expected) production is above its natural level 
+  - to prevent inflationary pressures, economy overheating
+- when (expected) inflation is too high
+  - the bank tries to *anchor* expectations around its target
+
+The fact that central bank reacts to and manipulate *expectations*, is the central key of modern central banking.[^jedis]
+
+[^jedis]:  Blogger Matt O’Brian notes that «Central Banks have a strong influence on market expectations» and likens its activities to «jedi mind tricks».
+
+
+
+
+# Monetary Policy Implementation
+
+
+## Interest Rate Term Structure
+
+### Fisher Equation and Inflation Expectation
+
+
+\framesubtitle{Reminder}
+
+Recall the Fisher equation:
+
+$$r_t = i_t - \pi_{t+1}$$
+
+To be more precise, we should write:
+$$r_t = i_t - E_t [\pi_{t+1}]$$
+
+Because it is only the "expected" inflation that is known at date $t$. We omit the expectation sign, but keep in mind that $\pi_{t+1}$ represents expected inflation.
+
+
+### Monetary rule and inflation expectation
+
+When deriving the AD curve, we wrote real interest rule (MP) as follows:$$r_t = r^ {\star} + \gamma (\pi_t - \overline{\pi})$$
+
+But the CB does not directly control real interest rate. It controls the *nominal* interest rate $i_t$.
+
+Now, take the Fisher equation $r_t = i_t - \pi_{t+1}$. We can replace it above to get:
+$$i_t = r^{\star} + \gamma (\pi_t - \overline{\pi}) + \pi_{t+1}$$
+
+We see that the central bank sets the interest rate to control a combination of inflation and "expected inflation". Closer to a modern Taylor Rule.
+
+
+### Short Term Interest Rates
+
+Actually, the CB doesn’t control $i_t$ directly (the quarterly or the yearly rate)
+
+The CB controls instead very short-term interest rates typically overnight. Where does it happen?
+On the *Interbank market*:
+
+- Banks lend to each others reserves they hold on a Central Bank account
+- Central bank is a price maker on this market
+
+How does setting a short term interest rate affect the long run interest rate at any maturity (horizon)?
+
+- Through the market’s ability to *arbitrage* between several investment options.
+
+### Arbitrage
+
+
+::: columns
+
+:::: column
+
+![](arbitrage_1.png)
+
+::::
+
+:::: column
+
+Arbitrage is a very generic concept
+
+When two or more equivalent investment options yield different returns on investment, investors rush on the most profitable one... until returns equalize
+
+So in equilibrium, all, equivalent investment options, must eventually have the same return.
+
+Differences between rates of return are explained by differences in:
+
+- risk characteristics
+- liquidity
+
+::::
+
+:::
+
+### Term Structure of Interest Rates
+
+::: columns
+
+:::: column
+
+![](arbitrage_2.png)
+
+::::
+
+:::: column
+
+Apply the arbitrage principle to:
+
+- A one year bond yielding $i_t^{1y}$
+- Two 6 months bonds yielding (annualized)
+  - $i_t^{6m}$ bought at date $t$
+  - $i_{t+6m}^{6m}$ bought at date $t+6m$
+- This provides us with two options to invest over 1 year.
+- What is the arbitrage condition?
+
+::::
+
+:::
+
+### Term Structure of Interest Rates
+
+Invest value X at date $t$
+
+Option 1 yields:
+
+- $X(1+i^{1y})$ after one year
+- (Gross) return is $(1+i^{1y})$
+
+Option 2 yields (pay attention to the fact that returns are annualized)
+
+- $X(1+i^{6m}_t)^{1/2}$ after 6 months
+- $X(1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$ after one year
+- (Gross) Return is $(1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$
+
+### Term Structure of Interest Rates
+
+The arbitrage equation would read: $$(1+i^{1y}) = (1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$$
+Or in log-terms: $i^{1y}_t = \frac{1}{2} i^ {6m}_t + \frac{1}{2} i^ {6m}_{t+6m}$
+Given that investors are risk-averse and value the flexibility of having the cash sooner, they ask for a risk premium $\varphi$:
+$$i^{1y} = \frac{1}{2} i^{6m}{t} + \frac{1}{2} i^ {6m}{t+6m} + \varphi$$
+
+The risk premium incorporates the uncertainty about the fact that investment opportunities might change before one year, and about the possibility that 6-months interest rate might change before one year.
+
+### Term Structure of Interest Rates
+
+The same reasoning applies to the daily rate set by the central bank:
+
+$$i^{1y}_t = \frac{1}{365} \left( i^{t}_{1d}  + i^{1d}_{t+1d}  + i^{1d}_{t+2d}i^{1d}_{t+2d} +  \cdots i^{1d}_{t+364d} \right) + \varphi$$
+
+- By manipulating overnight interest rates (annualized term), the central bank can manipulate the yearly interest rate.
+- It does so by announcing a path for future interest rates.
+- For the manipulation to be effective, the path of future interest rates, must be clear and predictable as well as its potential adjustment to economic contingencies.
+- This is one of the reason, the central bank tries to commit to a clear and transparent policy.
+
+### Short Term Interest Rates
+
+::: columns
+
+:::: column
+
+![](short_term.png)
+
+::::
+
+:::: column
+
+- Interest rates are reviewed at a regular basis (a few months).
+- In general they evolve slowly, in a predictible way.
+  - US Fed let rates fluctuate within a band.
+- Note that rates have stayed at historically low levels since 2008
+
+
+::::
+
+:::
+
+### Short Term and Long Term Interest Rates
+
+::: columns
+
+:::: {.column width=60%}
+
+![](short_term_long_term.png)
+
+::::
+
+:::: {.column width=40%}
+
+- Overnight interest rates on the interbank market, affect longer maturities (3 months and 10 years)
+
+- Long term interest rates do not vary one to one with short term interest rates.
+
+- This is because long-term interest rates incorporate *future* changes in short term interest rates.
+
+::::
+
+:::
+
+## The Interbank Market
+
+### Interest Rate on Reserves and the Interest Rate in the Interbank Market
+
+- So, the CB, manipulates $r$ by manipulating $i$ by setting the i.r. on the overnight interbank market...
+- But how does the CB set the price on the interbank market ? 🤔
+
+  - It is an equilibrium price, not directly decided by the CB.
+
+### The Interbank market
+
+\framesubtitle{What is the role of the interbank market?}
+
+When clients of a given bank trade with each other no money is leaving the bank
+
+Now let's consider the following mental experiment:
+
+- When a client of bank A pays a client of bank B, bank A should receive reserves from bank B
+- In the same day there might be transactions from B to A to offset the first transaction.
+- But at the end of the day, imbalances must be corrected and bank A needs to pay bank B
+- If A has enough reserves it can use them
+- Otherwise, it can borrow them from another bank C to cover the transaction
+  - on the interbank market
+
+
+
+### Interest Rate on Reserves and the Interest Rate in the Interbank Market
+
+- To ensure they can make the transactions to settle imbalances:
+
+  - Banks hold reserves at the CB to cover interbank payment when needed
+  - And lend to each other on the interbank market
+
+- There are two corresponding rates:
+
+  - Reserves at the CB yield interest rate $i^R$. Set exogenously by the CB.
+  - The market rate $i_M$
+
+- The total amount $R_0$ of reserves (central bank money) is decided by the central bank.
+
+- Two instruments: 
+  - introduce more reserves via open market operations : change $R_0$
+  - change interest rate paid on reserves
+
+### Equilibrium in the interbank market
+
+::: columns
+
+:::: column
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Equilibrium in the interbank market](assets/interbank.png){width=80%}
+
+\onslide<2>
+
+![Equilibrium in the interbank market: quantitative intevention](assets/interbank_quantitative.png){width=80%}
+
+
+\onslide<3>
+quantitative
+![Equilibrium in the interbank market: quantitative intevention](assets/interbank_ir.png){width=80%}
+
+
+```{=beamer}
+\end{overprint}
+```
+::::
+
+:::: column
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+- The higher the interest rate, the higher the incentive for a bank needing liquidity to draw from its own reserves (at the cost of some operational risk)
+- Demand is decreasing in the short term interest rate
+
+\onslide<2>
+
+Quantitative intervention:
+
+- Higher supply of reserves decrese market rate $i_M$
+  - as in the ISLM  $\heartsuit$ model 
+- The higher the level of reserves, the lower the quantitative channel.
+
+\onslide<3>
+
+Direct interest rate setting:
+
+- Decreasing interest rates on reserves always work.
+- No liquidity trap
+- Interest rates can even be negative
+  - banks pay for liquidity provisions
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::
+
+### Equilibrium in the Interbank Market
+
+![Short Term i.r.](short_term.png){width=40%}
+![Excess Reserves](excess_reserves.png){width=40%}
+
+The interest rate on reserves has become the main policy instrument. It is a consequence of the large excess (precautionary) reserves held by banks.
+
+
+# Conclusion
+
+### Takeaways
+
+- Central Banks control interest rates through several policy tools
+- Nowadays, it concentrates on setting the interest rate on the interbank market
+- Controlling interest rate through money growth is less efficient because private banks don't lend enough and hold vast amounts of reserves at the central bank
+- Interest rates on reserves held by commercial banks at the central bank have become the main instrument of the central bank
+- ... But recently, unconventional policies have brought back quantitative measures to the center stage.

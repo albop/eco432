@@ -1,0 +1,251 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[french]{babel}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:58:24}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{17cm}
+\topmargin 0pt
+\setlength\textheight{23cm}
+%\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 8. Le biais inflationniste}
+
+\bigskip
+
+\textbf{Correction}
+
+\hspace{1.0in}
+\end{center}
+
+\bigskip
+
+\noindent \textbf{Premi\`{e}re partie : la fonction d'offre agr\'{e}g\'{e}e}
+
+\noindent \textbf{1.} Les entrepreneurs r\'{e}solvent%
+\begin{equation*}
+\max_{L_{t}}\sqrt{2e^{\epsilon _{t}}L_{t}}-\frac{W_{t}}{P_{t}}L_{t}
+\end{equation*}%
+La condition de premier ordre donne:%
+\begin{equation*}
+\frac{1}{\sqrt{2e^{\epsilon _{t}}L_{t}}}e^{\epsilon _{t}}=\frac{W_{t}}{P_{t}}
+\end{equation*}%
+On obtient la demande de travail et production de biens:%
+\begin{eqnarray*}
+L_{t} &=&\frac{e^{\epsilon _{t}}}{2\left( W_{t}/P_{t}\right) ^{2}} \\
+Y_{t} &=&\frac{e^{\epsilon _{t}}}{W_{t}/P_{t}}
+\end{eqnarray*}
+
+Une augmentation du salaire r\'{e}el r\'{e}duit la demande de travail et la
+production. En passant en log, on obtient la relation d'offre globale:%
+\begin{equation*}
+y_{t}=p_{t}-w_{t}+\epsilon _{t}
+\end{equation*}
+
+\bigskip
+
+\noindent \textbf{2.} En passant en log, on a $w_{t}=p_{t}^{a}$. En
+introduisant cette relation dans l'\'{e}quation d'offre globale, on obtient%
+\begin{eqnarray*}
+y_{t} &=&p_{t}-p_{t}^{a}+\epsilon _{t} \\
+&=&p_{t}-p_{t-1}-\left( p_{t}^{a}-p_{t-1}\right) +\epsilon _{t}
+\end{eqnarray*}%
+En utilisant l'approximaiton suivante (valable pour des taux d'inflation
+proches de z\'{e}ro):
+
+\begin{equation*}
+p_{t}-p_{t-1}=\ln \left( P_{t}/P_{t-1}\right) =\ln \left( 1+\pi _{t}\right)
+\simeq \pi _{t},
+\end{equation*}%
+on obtient:%
+\begin{equation*}
+y_{t}=\pi _{t}-\pi _{t}^{a}+\epsilon _{t}
+\end{equation*}
+
+Compte tenu du salaire nominal fix\'{e} \`{a} la p\'{e}riode pr\'{e}c\'{e}%
+dente (et sur la base du niveau des prix anticip\'{e}), un choc
+inflationniste non anticip\'{e} r\'{e}duit le salaire r\'{e}el et stimule
+l'emploi et la production.
+
+\bigskip
+
+\noindent \textbf{Deuxi\`{e}me partie : discr\'{e}tion et r\`{e}gle dans la
+conduite de la politique mon\'{e}taire}
+
+\noindent \textbf{3.} La Banque Centrale consid\`ere comme donn\'ees les
+anticipations d'inflation des agents et minimise sa fonction de perte
+connaissant le fonctionnement de l'\'economie: 
+\begin{equation*}
+\left\{%
+\begin{array}{l}
+\min_{\pi_t,y_t} L_t=\pi_t^2+b(y_t-y^\ast)^2 \\ 
+s.t.:\quad y_t=\pi_t-\pi_t^a+\epsilon_t%
+\end{array}%
+\right.
+\end{equation*}
+Apr\`es substitution, la condition du premier ordre s'\'ecrit:%
+\begin{equation*}
+\pi_t=\frac{1}{1+b}(b\pi_t^a-b \epsilon_t+b y^\ast)
+\end{equation*}
+
+\noindent \textbf{4.} Les agents ont des anticipations rationnelles et
+anticipent donc la fonction de meilleure r\'{e}ponse de la Banque Centrale: 
+\begin{eqnarray*}
+&&\pi _{t}^{a}=E_{t-1}\pi _{t} \\
+&\Leftrightarrow &\pi _{t}^{a}=by^{\ast }>0
+\end{eqnarray*}%
+Avec cette politique discr\'{e}tionnaire, il se cr\'{e}e un biais
+inflationniste positif li\'{e} au fait que les agents anticipent que la
+Banque Centrale a int\'{e}r\^{e}t \`{a} fixer un taux d'inflation positif.
+
+\noindent L'inflation effective est alors : 
+\begin{equation*}
+\pi _{t}=by^{\ast }-\frac{b}{1+b}\epsilon _{t}
+\end{equation*}%
+et la production : 
+\begin{equation*}
+y_{t}=\frac{1}{1+b}\epsilon _{t}
+\end{equation*}
+
+\noindent En esp\'erance on a: 
+\begin{eqnarray*}
+E(\pi_t)&=&by^\ast \\
+E(y_t)&=&0
+\end{eqnarray*}
+La discr\'etion conduit donc \`a un biais inflationniste sans diminuer
+l'output gap en esp\'erance.
+
+\noindent En termes de variance: 
+\begin{eqnarray*}
+Var(\pi_t)&=&\left(\frac{b}{1+b}\right)^2 \sigma_\epsilon^2 \\
+Var(y_t)&=&\left(\frac{1}{1+b}\right)^2 \sigma_\epsilon^2
+\end{eqnarray*}
+La banque centrale fait face \`a un arbitrage stabilisation de
+l'inflation/stabilisation du PIB: si elle accorde moins de poids \`a
+l'output gap ($b$ diminue), la variance de l'inflation (et l'inflation
+esp\'er\'ee en niveau) diminue mais celle de l'output augmente.
+
+\smallskip \noindent \textbf{5.} A la date $(t-1)$, la Banque centrale
+annonce une r\`egle de conduite de la forme: 
+\begin{equation*}
+\pi_t=\rho_0+\rho_1 \epsilon_t
+\end{equation*}
+qui implique une inflation anticip\'ee:%
+\begin{equation*}
+\pi_t^a=\rho_0
+\end{equation*}
+La perte anticip\'ee pour la Banque centrale s'\'ecrit: 
+\begin{eqnarray*}
+E_{t-1}L_t&=&E_{t-1}\{(\rho_0+\rho_1\epsilon_t)^2+b(\rho_1\epsilon_t+%
+\epsilon_t-y^\ast)^2\} \\
+&=&\rho_0^2+[\rho_1^2+b(\rho_1+1)^2]\sigma_\epsilon^2+b\left.y^\ast\right.^2
+\end{eqnarray*}
+Les conditions du premier ordre du programme de minimisation de la perte
+anticip\'ee impliquent les param\`etres suivants: 
+\begin{eqnarray*}
+\rho_0&=&0 \\
+\rho_1&=&\frac{-b}{1+b}
+\end{eqnarray*}
+Avec cette r\`egle, l'inflation et l'output gap sont d\'efinis par: 
+\begin{eqnarray*}
+\pi_t&=&\frac{-b}{1+b}\epsilon_t \\
+y_t&=&\frac{1}{1+b}\epsilon_t
+\end{eqnarray*}
+et les moments: 
+\begin{eqnarray*}
+E_{t-1}\pi_t&=&0 \\
+E_{t-1}y_t&=&0 \\
+Var_{t-1}\pi_t&=&\left(\frac{b}{1+b}\right)^2\sigma_\epsilon^2 \\
+Var_{t-1}y_t&=&\left(\frac{1}{1+b}\right)^2\sigma_\epsilon^2
+\end{eqnarray*}
+Avec cette r\`egle, il n'y a plus de biais inflationniste car les agents
+savent que la Banque centrale ne va pas faire de l'inflation pour augmenter
+l'activit\'e. Par rapport au cas discr\'etionnaire, la volatilit\'e de
+l'inflation et de l'output sont inchang\'ees. La perte de la Banque Centrale
+est plus petite ; la possibilit\'e de s'engager ex ante a donc bien un
+impact positif pour la Banque Centrale.
+
+\bigskip
+
+\noindent \textbf{Troisi\`{e}me partie : d\'{e}l\'{e}gation de la politique
+mon\'{e}taire \`{a} un banquier central \textquotedblleft
+conservateur\textquotedblright }
+
+\smallskip \noindent \textbf{6-8.} Quand la Banque Centrale a sa propre
+fonction de perte, l'inflation et l'output sont fonction du param\`{e}tre $%
+b_{i}$: 
+\begin{eqnarray*}
+\pi _{t} &=&b_{i}y^{\ast }-\frac{b_{i}}{1+b_{i}}\epsilon _{t} \\
+y_{t} &=&\frac{1}{1+b_{i}}\epsilon _{t}
+\end{eqnarray*}%
+La fonction de perte sociale anticip\'{e}e vaut: 
+\begin{eqnarray*}
+E_{t-1}L_{t} &=&E_{t-1}\left\{ \left( b_{i}y^{\ast }-\frac{b_{i}}{1+b_{i}}%
+\epsilon _{t}\right) ^{2}+b\left( \frac{1}{1+b_{i}}\epsilon _{t}-y^{\ast
+}\right) ^{2}\right\} \\
+&=&(b_{i}^{2}+b)\left. y^{\ast }\right. ^{2}+\frac{b_{i}^{2}+b}{(1+b_{i})^{2}%
+}\sigma _{\epsilon }^{2}
+\end{eqnarray*}%
+qui est minimum pour $b_{i}$ tel que: 
+\begin{equation*}
+b_{i}\frac{\left. y^{\ast }\right. ^{2}}{\sigma _{\epsilon }^{2}}=\frac{%
+b-b_{i}}{(1+b_{i})^{3}}
+\end{equation*}%
+qui implique $0<b_{i}<b$. La soci\'{e}t\'{e} a donc int\'{e}r\^{e}t \`{a}
+choisir un banquier central \textquotedblleft
+conservateur\textquotedblright\ qui est moins sensible aux fluctuations de
+l'output (mais pas insensible puisque le $b_{i}$ optimal est strictement
+positif).
+
+\noindent Le choix d'un banquier central conservateur et ind\'{e}pendant
+implique une inflation moyenne et une volatilit\'{e} des prix plus faible
+mais une volatilit\'{e} de l'output plus \'{e}lev\'{e}e. Ce r\'{e}sultat
+semble assez coh\'{e}rent avec les donn\'{e}es.
+
+\end{document}

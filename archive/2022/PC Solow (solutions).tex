@@ -1,0 +1,568 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+%\usepackage[T1]{fontenc}
+%Graphs
+
+
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage{graphicx,amsmath}
+\usepackage{hyperref}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:45:13}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\oddsidemargin 0cm \evensidemargin 0cm \textwidth 17cm \topmargin
+-1.5cm \textheight 23.5 cm
+\newcommand{\pdf}[3]{
+\begin{figure}[tp]
+\begin{center}
+\includegraphics[height=#1,keepaspectratio]{#2.pdf}
+\end{center}
+\caption{#3} \label{#2}
+\end{figure}
+}
+\newcommand{\pdfstack}[4]{
+\begin{figure}[p]
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#1.pdf}
+\end{center}
+\caption{#2} \label{#1}
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#3.pdf}
+\end{center}
+\caption{#4} \label{#3}
+\end{figure}
+}
+%\input{tcilatex}
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip 
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip 
+
+\textbf{PC 1. Le mod\`{e}le de Solow}
+
+\bigskip 
+
+\textbf{Correction}
+
+\hspace{1.0in}
+\end{center}
+
+\bigskip
+
+\noindent \textbf{1.} La fonction de production se caract\'{e}rise par des
+rendements d'\'{e}chelle constants. Pour tout $\lambda >0$, on a $F(\lambda
+L,\lambda K)=\lambda Y$. Le rendement marginal des facteurs est d\'{e}%
+croissant: $\frac{\partial Y}{\partial X}>0,\frac{\partial ^{2}Y}{\partial
+X^{2}}<0,\;X=K,L$. Une augmentation marginale du nombre d'unit\'{e}s de
+travail ou de capital int\'{e}gr\'{e}es \`{a} la production \`{a} un impact d%
+\'{e}croissant sur l'output. $A_{t}$ mesure la productivit\'{e} du travail
+(progr\`{e}s technique neutre au sens de Harrod). Une augmentation de $A_{t}$
+implique qu'une m\^{e}me unit\'{e} de travail produit une plus grande quantit%
+\'{e} d'output. Dans le mod\`{e}le de Solow, ce progr\`{e}s technique est
+exog\`{e}ne. En outre, c'est un bien non rival au sens o\`{u} son
+\textquotedblleft utilisation\textquotedblright\ par une firme ne r\'{e}duit
+pas la quantit\'{e} disponible pour les autres firmes dans l'\'{e}conomie.
+
+%La combinaison optimale de facteurs $\left( K,L\right) $ minimise le co\^{u}%
+%t de production de la quantit\'{e} de biens $Y$. Elles r\'{e}sout donc :%
+%\begin{equation*}
+%\min wL+RK\text{ \ \ s.c. \ }Y=K^{\alpha }(AL)^{1-\alpha }
+%\end{equation*}
+%
+%Le Lagrangien s'\'{e}crit :%
+%\begin{equation*}
+%L=wL+RK+\lambda \left( Y-K^{\alpha }(AL)^{1-\alpha }\right) ,
+%\end{equation*}%
+%ce qui donne les conditions de premier ordre :%
+%\begin{eqnarray*}
+%w &=&\lambda \left( 1-\alpha \right) K^{\alpha }A^{1-\alpha }L^{-\alpha } \\
+%R &=&\lambda \alpha K^{\alpha -1}A^{1-\alpha }L^{1-\alpha }
+%\end{eqnarray*}
+%
+%Cela implique que, pour ($w,R$) donn\'{e}, le ratio $K/L$ doit toujours
+%satisfaire :%
+%\begin{equation*}
+%\frac{K}{L}=\left( \frac{\alpha }{1-\alpha }\right) \frac{w}{R}
+%\end{equation*}
+%
+%Cette condition r\'{e}sume l'usage relatif des facteurs compte tenu de leur
+%prix relatif. On peut utiliser ce r\'{e}sultat pour r\'{e}\'{e}crire la
+%production par travailleur comme suit :%
+%\begin{equation*}
+%\frac{Y}{L}=A^{1-\alpha }\left( \frac{K}{L}\right) ^{\alpha }=A^{1-\alpha }%
+%\left[ \left( \frac{\alpha }{1-\alpha }\right) \frac{w}{R}\right] ^{\alpha }
+%\end{equation*}
+%
+%En utilisant cette relation, on trouve que le co\^{u}t de production d'une
+%quantit\'{e} $Y$ de biens est donn\'{e} par :%
+%\begin{eqnarray*}
+%C\left( Y\right) &=&wL+RK=wL\left( 1+\frac{RK}{wL}\right) =\frac{wL}{%
+%1-\alpha } \\
+%&=&\frac{w}{1-\alpha }\frac{1}{A^{1-\alpha }}\left[ \left( \frac{\alpha }{%
+%1-\alpha }\right) \frac{w}{R}\right] ^{-\alpha }Y \\
+%&=&\left( \frac{w/A}{1-\alpha }\right) ^{1-\alpha }\left( \frac{R}{\alpha }%
+%\right) ^{\alpha }Y \\
+%&=&\Psi \left( w/A,R\right) \times Y\text{, \ avec }\Psi \left( w/A,R\right)
+%=\left( \frac{w/A}{1-\alpha }\right) ^{1-\alpha }\left( \frac{R}{\alpha }%
+%\right) ^{\alpha }
+%\end{eqnarray*}
+%
+%$\Psi \left( w/A,R\right) $ est le co\^{u}t marginal r\'{e}el. Il est
+%constant parce que le co\^{u}t de production de $Y$ est lin\'{e}aire en $Y$
+%; c'est l\`{a} une implication directe de l'hypoth\`{e}se de rendements d'%
+%\'{e}chelle constants.\ La firme qui utilise la combinaison optimale
+%d'inputs choisit ensuite la quantit\'{e} produite qui maximise son profit,
+%donn\'{e} par :%
+%\begin{equation*}
+%Y-\Psi \left( w/A,R\right) \times Y=\left( 1-\Psi \left( w/A,R\right)
+%\right) Y
+%\end{equation*}
+%
+%Ainsi, si $\Psi \left( w/A,R\right) <1$, le co\^{u}t marginal ($=\Psi \left(
+%.\right) $) est inf\'{e}rieur au revenu marginal ($=$1) et la firme choisit
+%de produire une quantit\'{e} infinie de biens. En revanche, si $\Psi \left(
+%w/A,R\right) >1$ c'est l'inverse et la firme choisit de ne pas produire. Ces
+%configurations engendrent des modifications des prix des facteurs ($w,R$)
+%jusqu'\`{a} ce que :%
+%\begin{equation*}
+%\Psi \left( w/A,R\right) =1.
+%\end{equation*}
+%
+%A ce co\^{u}t marginal, la firme est indiff\'{e}rente quant \`{a} son \'{e}%
+%chelle de production : c'est l'implication centrale des rendements d'\'{e}%
+%chelle constants. On rappelle que 
+%\begin{equation*}
+%\Psi \left( w/A,R\right) =\left( \frac{w/A}{1-\alpha }\right) ^{1-\alpha
+%}\left( \frac{R}{\alpha }\right) ^{\alpha }
+%\end{equation*}
+%
+%Ainsi, la condition $\Psi \left( w/A,R\right) =1$ d\'{e}finit la fonction :%
+%\begin{equation*}
+%R\left( w\right) =\alpha \left( \frac{w/A}{1-\alpha }\right) ^{\frac{\alpha
+%-1}{\alpha }},
+%\end{equation*}%
+%qui est d\'{e}croissante et convexe dans le plan ($w,R$). On l'appelle \ la
+%"fronti\`{e}re des prix des facteurs". L'\'{e}quilibre se situe n\'{e}%
+%cessairement sur la fronti\`{e}re des prix des facteurs : si les prix des
+%facteurs sont tels que tel que $R>R\left( w\right) $ dans le plan ($w,R$),
+%alors ils sont (conjointement) trop \'{e}lev\'{e}s pour qu'il vaille la
+%peine de produire ; les firmes choisissent toutes un niveau de production
+%nul, ce qui entraine n\'{e}cessairement une baisse du prix des facteurs
+%jusqu'\`{a} ce que l'\'{e}galit\'{e} soit r\'{e}tablie. A\ l'inverse, si les
+%prix des facteurs sont tels que $R<R\left( w\right) $ dans le plan ($w,R$),
+%alors ils sont (conjointement) suffisamment faibles pour permettre \`{a} la
+%firme d'extraire une marge positive sur chaque unit\'{e} de bien produite
+%est vendue ; il est alors optimal de produire une quantit\'{e} infinie de
+%biens, ce qui exerce une pression \`{a} la hausse sur les prix des facteurs
+%jusqu'\`{a} r\'{e}tablissement de l'\'{e}galit\'{e} $\Psi \left(
+%w/A,R\right) =1$.
+
+\noindent \textbf{2.} On part de l'\'equation d'accumulation du capital
+total : 
+\begin{equation*}
+\dot{K}_t=s Y_t-\delta K_t \quad \quad \Rightarrow g_K\equiv \frac{\dot{K}_t%
+}{K_t}=s\frac{Y_t}{K_t}-\delta
+\end{equation*}
+Les variations du stock de capital d\'ecoulent de l'investissement brut
+(\'egal \`a l'\'epargne dans un cadre d'\'economie ferm\'ee) et de la
+d\'epr\'eciation du capital.
+
+\smallskip Par d\'efinition, $k_t\equiv \frac{K_t}{A_tL_t}$, i.e. $%
+g_k=g_K-g_A-g_L$. On en d\'eduit : 
+\begin{eqnarray*}
+\frac{\dot{k}_t}{k_t}&=&s\frac{Y_t}{K_t}-\delta-g_A-g_L \\
+\Rightarrow \dot{k}_t&=&sy_t-(\delta+g_A+g_L)k_t
+\end{eqnarray*}
+Les variations du stock de capital par unit\'e de travail efficace sont
+d\'etermin\'ees par i) l'investissement par unit\'e de travail efficace ($%
+sy_t$), ii) la d\'epr\'eciation par unit\'e de travail efficace ($\delta k_t$%
+), iii) l'augmentation du nombre d'unit\'es de travail efficace ($%
+(g_A+g_L)k_t$).
+
+\smallskip À  l'\'{e}quilibre stationnaire, on a $\dot{k}_{t}=0$, i.e. $%
+sf(k^{\ast })=(\delta +g_{A}+g_{L})k^{\ast }$. On en d\'{e}duit : 
+\begin{eqnarray*}
+k^{\ast } &=&\left( \frac{s}{\delta +g_{A}+g_{L}}\right) ^{\frac{1}{1-\alpha 
+}} \\
+y^{\ast } &=&\left( \frac{s}{\delta +g_{A}+g_{L}}\right) ^{\frac{\alpha }{%
+1-\alpha }}
+\end{eqnarray*}
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=0.7, clip = true]{figure1solow}
+\label{fig:1.4}
+\end{figure}
+
+
+Pour $k_t<k^\ast$, l'\'epargne par unit\'e de travail efficace ($sf(k_t)$)
+est sup\'erieure \`a la d\'epr\'eciation du stock de capital par unit\'e de
+travail efficace $(\delta+g_L+g_A)k_t$ car la productivit\'e marginale du
+capital est sup\'erieure au taux de d\'epr\'eciation. On a donc $\dot{k}_t>0$%
+, i.e. accumulation de capital. Au contraire, pour $k_t>k^\ast$, la
+productivit\'e marginale du capital est insuffisante pour compenser la
+baisse du stock de capital par unit\'e de travail efficace li\'ee \`a la
+d\'epr\'eciation et \`a l'augmentation de la force de travail. Le stock de
+capital par t\^ete diminue en cons\'equence. Ce mod\`ele se caract\'erise
+donc par une convergence vers l'\'etat stationnaire $(k^\ast,y^\ast)$.
+
+
+À long terme le stock de capital et le revenu par unit\'{e} de travail
+efficace sont des fonctions croissantes du taux d'\'{e}%
+pargne/d'investissement. Plus l'\'{e}conomie \'{e}pargne, plus
+l'accumulation de capital est rapide ce qui lui permet d'atteindre un \'{e}%
+tat stationnaire plus \'{e}lev\'{e}. Le lien empirique entre taux
+d'investissement et revenu est valid\'{e} empiriquement comme l'illustre le
+graphique 1.14 du poly. Au contraire, le stock de capital et le revenu par
+unit\'{e} de travail efficace sont des fonctions d\'{e}croissantes du taux
+de d\'{e}pr\'{e}ciation du capital, du taux de croissance de la productivit%
+\'{e} et de la croissance d\'{e}mographique. Ces trois param\`{e}tres
+augmentent le taux d'investissement n\'{e}cessaires pour maintenir un stock
+donn\'{e} de capital par unit\'{e} de travail efficace. Le lien empirique
+entre revenu et croissance d\'{e}mographique est illustr\'{e} sur le
+graphique 1.15 du poly.  
+
+À long terme, les variables par travailleur sont
+
+\begin{eqnarray*}
+\frac{K_t}{L_t} = A_t k^{\ast }   \\
+ \frac{Y_t}{L_t} =  A_t y^{\ast }
+\end{eqnarray*}
+
+L'h\'et\'erog\'en\'eit\'e entre pays des niveaux de PIB par
+t\^ete s'explique, dans le mod\`ele de Solow par des diff\'erences de taux
+d'\'epargne, de croissance d\'emographique, de taux de d\'epr\'eciation du
+capital et de taux de croissance d ela productivit\'e. Sur le
+sentier stationnaire, $k^{\ast }$ et $y^{\ast }$ sont constant. Donc, \`{a} long terme, le PIB par travailleur et le capital par travailleur croissent  au taux
+de croissance de la productivit\'{e} du travail $g_A$. Une hausse du taux d'\'{e}%
+pargne ou une baisse du taux de d\'{e}pr\'{e}ciation du capital ne
+permettent pas d'accro\^{\i}tre la croissance de long terme mais augmentent
+une fois pour toute le stock de capital et le produit par unit\'{e} de
+travail efficace de l'\'{e}tat stationnaire. La consommation est $C_{t}=Y_t - s Y_t$. La consommation par travailleur est donc $(1-s) \frac{Y_t}{L_t}$, qui cro\^{\i}t aussi au taux $g_{A}$ \`{a} long terme. 
+
+
+
+Quand l'economie est pauvre ($K_t$ petit), le capital est tres productif et le ratio $\frac{K_{t}}{Y_{t}}$ est petit. Ce ratio augmente dans le temps car le rendement marginal du capital est decroissant. A long terme le capital/PIB est constant:%
+\begin{equation*}
+\frac{K_{t}}{Y_{t}}=\frac{K_{t}/A_{t}L_{t}}{Y_{t}/A_{t}L_{t}}=\frac{k^{\ast }%
+}{y^{\ast }}=\left( k^{\ast }\right) ^{1-\alpha }
+\end{equation*}
+
+
+\bigskip
+
+
+%
+%$C\left( Y\right) =wL+RK$ et $R=\lambda \alpha
+%K^{\alpha -1}A^{1-\alpha }L^{1-\alpha }$, on a%
+%\begin{equation*}
+%\frac{\text{d}C\left( Y\right) }{\text{d}Y}=\frac{\text{d}C\left( Y\right) /%
+%\text{d}K}{\text{d}Y/\text{d}K}=\frac{R}{\alpha K^{\alpha -1}A^{1-\alpha
+%}L^{1-\alpha }}=\lambda
+%\end{equation*}
+%
+%Or d$C\left( Y\right) /$d$Y$ n'est rien d'autre que le co\^{u}t marginal $%
+%\Psi \left( w/A,R\right) $, dont on a vu qu'il \'{e}tait n\'{e}cessairement 
+%\'{e}gal \`{a} 1. Ainsi, \`{a} l'optimum on a%
+%\begin{equation*}
+%\lambda =1
+%\end{equation*}%
+%de sorte que%
+
+%
+%\noindent \textbf{4.} A l'\'{e}tat stationnaire, on a les relations
+%suivantes:
+%
+%Part des facteurs:%
+%\begin{equation*}
+%\frac{R_t K_{t}}{Y_{t}}=\frac{\left( \alpha k_{t}^{\alpha -1}\right) k_{t}}{%
+%k_{t}^{\alpha }}=\alpha ,\;\frac{w_{t}L_{t}}{Y_{t}}=1-\alpha
+%\end{equation*}
+%
+%
+%
+%Croissance du PIB/travailleur:%
+%\begin{equation*}
+%y^{\ast }=f\left( k^{\ast }\right) =\frac{Y_{t}}{A_{t}L_{t}}\Rightarrow 
+%\frac{Y_{t}}{L_{t}}=f\left( k^{\ast }\right) A_{t}\Rightarrow g_{Y/L}=g_{A}
+%\end{equation*}
+%
+%Rendement du capital investi:%
+%\begin{equation*}
+%r^{\ast }=f^{\prime }\left( k^{\ast }\right) -\delta =\alpha \left( k^{\ast
+%}\right) ^{\alpha -1}-\delta
+%\end{equation*}
+%
+%Par ailleurs, la croissance des salaire est:%
+%\begin{equation*}
+%w_{t}=A_{t}\left( 1-\alpha \right) \left( k^{\ast }\right) ^{\alpha
+%}\Rightarrow \frac{\dot{w}_{t}}{w_{t}}=g_{A}
+%\end{equation*}
+%
+%
+%
+%\bigskip
+\bigskip
+
+\noindent \textbf{3.} Le taux d'\'{e}pargne \textquotedblleft
+optimal\textquotedblright\ est celui qui maximise la consommation par unit%
+\'{e} de travail efficace \`{a} l'\'{e}quilibre stationnaire. Celle-ci est d%
+\'{e}finie par : $c^{\ast }=(1-s)y^{\ast }=f(k^{\ast })-sf(k^{\ast })$. Or,
+on sait qu'\`{a} l'\'{e}quilibre stationnaire, $sf(k^{\ast
+})=(g_{L}+g_{A}+\delta )k^{\ast }$. On v\'{e}rifie donc que le taux d'\'{e}%
+pargne optimal est celui qui maximise: $c^{\ast }=f(k^{\ast
+})-(g_{L}+g_{A}+\delta )k^{\ast }$. Sachant que $k^{\ast }$ est une fonction
+croissante du taux d'\'{e}pargne, cette maximisation implique : 
+\begin{eqnarray*}
+&&f^{\prime }(\hat{k}^{\ast })=g_{L}+g_{A}+\delta \\
+&\Leftrightarrow &\alpha \left. \hat{k}^{\ast }\right. ^{\alpha
+-1}=g_{L}+g_{A}+\delta \\
+&\Leftrightarrow &\alpha \left( \frac{\hat{s}}{g_{L}+g_{A}+\delta }\right)
+^{-1}=g_{L}+g_{A}+\delta \\
+&\Leftrightarrow &\hat{s}=\alpha
+\end{eqnarray*}%
+C'est ce qu'on appelle la \textquotedblleft r\`{e}gle
+d'or\textquotedblright\ : la consommation par unit\'{e} de travail efficace
+est maximale lorsque le taux d'\'{e}pargne (et d'investissement) est \'{e}%
+gal \`{a} la part du capital dans la valeur ajout\'{e}e. Pour que le produit
+par t\^{e}te soit \'{e}lev\'{e} \`{a} long terme, il faut en effet accumuler
+beaucoup de capital en \'{e}pargnant. Cependant, maintenir ce stock de
+capital \'{e}lev\'{e} \`{a} un niveau constant n\'{e}cessite \'{e}galement
+des ressources. Il existe donc un niveau optimal de capital (et
+d'investissement) qui maximise la consommation. Celui-ci est illustr\'{e}
+sur le graphique "mod\`{e}le de Solow et r\`{e}gle d'or". La consommation
+par t\^{e}te est maximale lorsque la tangente \`{a} $f(k_{t})$ au point
+stationnaire est exactement \'{e}gale \`{a} $(\delta +g_{L}+g_{A})$, i.e. la
+pente de la droite de d\'{e}pr\'{e}ciation du stock de capital par unit\'{e}
+de travail efficace.
+
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=0.7, clip = true]{figure2}
+\label{fig:1.4}
+\end{figure}
+
+
+Dans la mesure o\`u, dans ce mod\`ele, l'\'epargne est \'egale \`a
+l'investissement, on peut aussi interpr\'eter cette r\`egle d'or en terme de
+taux d'investissement. On sait que dans un cadre concurrentiel, le taux
+d'int\'er\^et r\'eel est \'egal \`a la productivit\'e marginale du capital : 
+$r_t=f^{\prime }(k_t)-\delta$. A l'\'equilibre stationnaire de r\`egle d'or,
+on a donc : $\hat{r}^\ast=f^{\prime }(\hat{k}^\ast)-\delta=g_L+g_A$.
+
+Pour $s>\hat{s}$, le stock de capital par t\^{e}te de long terme est sup\'{e}%
+rieur au stock de capital de r\`{e}gle d'or et la consommation inf\'{e}%
+rieure. Si un choc exog\`{e}ne permet de r\'{e}duire le taux d'\'{e}pargne
+au niveau du taux d'\'{e}pargne optimal, la consommation par t\^{e}te
+augmente imm\'{e}diatement puis diminue de p\'{e}riode en p\'{e}riode jusqu'%
+\`{a} atteindre le nouveau niveau stationnaire, sup\'{e}rieur au niveau
+initial. La situation de sur-\'{e}pargne est donc inefficiente dynamiquement
+puisqu'on peut augmenter la consommation par t\^{e}te \`{a} chaque p\'{e}%
+riode en r\'{e}duisant le taux d'\'{e}pargne.
+
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=0.9, clip = true]{figure3}
+\label{fig:1.4}
+\end{figure}
+
+
+A l'inverse, si l'\'economie n'\'epargne pas assez, on peut augmenter la
+consommation par t\^ete de long terme en augmentant le taux d'\'epargne.
+Cependant, l'effet initial sera une baisse de la consommation par t\^ete
+permettant d'accumuler plus de capital par l'investissement. Une solution
+alternative (externe au mod\`ele) serait un transfert international
+permettant au pays de sortir de la ``trappe \`a sous-d\'eveloppement''.
+
+
+
+\smallskip \noindent \textbf{4.}  Le travail n'est pas un input dans la fonction de production AK: cette fonction de production est r\'{e}aliste seulement si on prend une d\'{e}finition de capital au sens large, qui inclut le capital humain. La productivit\'{e}  marginale de capital est constante et \'{e}gale \`{a} A: il n'y a plus de rendement décroissant du capital. Cette hypoth\`ese jouera un rôle clé dans l'analyse.
+
+
+On part de l'\'equation d'accumulation du capital agreg\'{e}: 
+\begin{equation*}
+\dot{K}_t=s AK_t -\delta K_t 
+\end{equation*} Le stock de capital per capita evolue  de la manière suivante :
+
+\begin{equation*}
+\frac{\dot{\tilde{k}}}{\tilde{k}}=sA-\delta-g_L
+\end{equation*}%
+
+
+Le côté gauche est le taux de croissance de K/L. Quand $sA-\delta-g_L>0$, le capital par travailleur croît à taux constant. Il est facile de montrer que C/L et Y/L croissent également au même rythme. Quand au contraire $sA-\delta-g_L<0$ capital par travailleur diminue vers zéro.
+
+Le modèle AK fournit des prédictions très différentes par rapport au modèle de  Solow, qui suppose des rendements décroissants du capital. Premièrement, le progrès technologique n'est plus nécessaire pour une croissance soutenue. Deuxièmement, le taux de croissance est constant pour tout $t$. Dans le modèle de Solow, au contraire, le taux de croissance de l'économie est plus élevé dans les premiers stades de développement, ralentit à mesure que l'économie se développe et ne devient constant qu'à long terme. Enfin, dans le modèle AK les 
+paramètres $s,n,\delta$ ont des effets  durables sur les taux de croissance. Dans le modèle de Solow, au contraire, un changement de paramètres a un effet sur les niveaux, et non sur le taux de croissance à long terme.
+
+Le modèle AK offre-t-il une approche attrayante pour expliquer la croissance soutenue? Bien que sa simplicité soit un plus, le modèle présente un certain nombre de caractéristiques peu attrayantes. Tout d'abord, il s'agit d'un résultat ``knife-edge" : cela ne fonctionne que si la production est exactement linéaire en capital. Deuxièmement, le modèle AK implique qu'avec le temps, la part du revenu national revenant au capital augmentera vers 1 (si elle n'est pas égale à 1 pour commencer). Cette tendance ne semble pas confirmée par les données (même si nous utilisons une définition large du capital qui inclut le capital humain). Troisièmement et surtout, diverses données indiquent que le progrès technologique est un facteur majeur (peut-être le plus important) pour comprendre le processus de croissance économique. Quatrièmement, il n'y a pas de convergence conditionnelle: prenez deux pays avec les mêmes $s,A,n,\delta$ mais des conditions initiales différentes $K_0$. Dans le modèle AK, il n'y a aucun espoir pour un pays pauvre de rattraper son retard. Dans les données, il y a (quelques) preuves en faveur de la convergence conditionnelle (Barro et Sala-Martin, 2004). Enfin, le modèle prédit que les politiques qui affectent les paramètres $s,n,\delta$ ont un effet sur les taux de croissance. Cela est discutable: entre 1960 et 1997, par exemple, les États-Unis, la Bolivie et le Malawi ont tous augmenté à peu près au même rythme. Les grandes différences de politiques économiques entre ces pays se reflètent dans les niveaux de revenu et non dans les taux de croissance.
+
+\bigskip
+
+\noindent \textbf{5.} 
+Dans cette question $g_A=0.$ Quand $\tilde{k}_t <  \underline{k}$ le capital évolue de la manière suivante:
+\begin{eqnarray*}
+ \dot{\tilde{k}}_t&=&s \tilde{k}_t^{\alpha }A_{L}-(\delta+g_L)\tilde{k}_t
+\end{eqnarray*}
+
+Si au contraire $\tilde{k}_t \geq  \underline{k}$ le capital évolue de la manière suivante:
+\begin{eqnarray*}
+ \dot{\tilde{k}}_t&=&s \tilde{k}_t^{\alpha }A_{H}-(\delta+g_L)\tilde{k}_t
+\end{eqnarray*}
+
+Sous certaines conditions\footnote{Supposons que les paramètres $s, A_L, A_H, etc $ soient tels que $k_L^{\ast }< \underline{k}< k_H^{\ast } }, nous observons deux états stationnaires :
+
+\begin{eqnarray*}
+k_L^{\ast } &=&\left( \frac{A_Ls}{\delta + g_{L}}\right) ^{\frac{1}{1-\alpha 
+}} \\
+k_H^{\ast } &=&\left( \frac{A_H s}{\delta + g_{L}}\right) ^{\frac{1}{1-\alpha 
+}} 
+\end{eqnarray*}
+\begin{figure}[th]
+\centering
+\includegraphics[keepaspectratio=true, scale=0.5, clip = true]{trap1.pdf}
+%\caption{Piège à pauvreté}
+\label{fig:1.4}
+\end{figure}
+
+Les trappe à pauvreté ont des implications spécifiques en termes de politiques publiques. Des économistes tels que J. Sachs ont soutenu que les pays pauvres ont besoin d'un "big push" (aide importante) qui les amène au-dessus de $\underline{k}$, leur permettant de décoller. Le modèle standard de Solow suggère plutôt que les pays pauvres devraient «améliorer» leurs paramètres structurels (augmenter $s$, réduire la corruption, améliorer les droits de propriété, baisser $g_L$). Balboni et al décrivent bien ces deux points de vue différents: "There are two broad views as to why people stay poor. One emphasizes differences in fundamentals, such as ability, talent or motivation. The other, the poverty traps view, argues that differences
+in opportunities stem from differences in wealth"
+\medskip 
+
+ Plusieurs économistes (Kremer, Easterly) sont contre les politiques "big push". Easterly blâme les mauvais gouvernements et institutions dans les pays pauvres, tandis que Sachs  soutient que "l'affirmation selon laquelle la corruption en Afrique est la source fondamentale du problème ne résiste pas à l'expérience pratique ou à un examen minutieux".
+\medskip
+
+
+
+
+L'existence des pièges à pauvreté au niveau macro (au niveau d'un pays) est quelque peu contestée (voir Kraay et McKenzie, 2014). Pour William Easterly, la divergence grandissante entre les pays les plus pauvres et les plus riches sur les deux derniers siècles n'est pas assimilable à une trappe à pauvreté car selon lui, pour valider l'existence d'un tel phénomène, il faudrait montrer que la croissance des premiers a été nulle. Or cela n'a pas été le cas: dans les pays à bas revenu, le revenu par tête a lentement augmenté dans la deuxième moitié du XXe siècle. 
+
+
+Au niveau micro, cependant, il existe des preuves plus solides des trappes à pauvreté. Dans un article récent, Balboni et al (2021) exploitent un transfert d'actifs (une vache) randomisé à grande échelle  sur 6000 ménages du Bangladesh rural (une région tres pauvre) sur une période de 11 ans pour tester entre les deux raisons pour lesquelles les gens restent pauvres. Les auteurs suivent la dynamique à long terme des actifs, des professions et de la pauvreté
+sur 11 ans. Les données soutiennent le point de vue des trappes à pauvreté - elles identifient un niveau seuil de
+actifs initiaux au-dessus desquels les ménages accumulent des actifs, occupent de meilleurs emplois et 
+sortent de la pauvreté. L'inverse se produit pour ceux en dessous du seuil. Si cela vous intéresse, en plus du livre de Sachs, vous pouvez lire les références suivantes :
+\bigskip
+
+\footnotesize{ Balboni,  Bandiera,  Burgess,  Ghatak &  Heil, 2021, “Why do people stay poor?" Quarterly Journal of Economics
+
+\medskip
+Clemens and Kremer 2016, “The New Role for the World Bank", Journal of Economic Perspectives 
+
+\medskip
+Kraay and McKenzie. 2014. “Do
+Poverty Traps Exist? Assessing the Evidence.” Journal of Economic Perspectives 
+
+\medskip
+Easterly, 2006, “The Big Push Déjà Vu: A Review of Jeffrey Sachs's The End of Poverty.” Journal of Economic Literature}
+
+
+
+\end{document}
+\noindent \textbf{3.}  Dans un équilibre concurrentiel, la firme représentative est price-taker: elle prend $R_t$ et $w_t$ comme donnés. Rappelons que le prix du bien de consommation est normalisé à un. L'entreprise choisit les inputs K et L pour maximiser le profit:  
+
+\begin{equation*}
+\pi_t= K_t^{\alpha} (L_t A_t)^{1-\alpha}-{w_t}L_t-R_tK_t
+\end{equation*}%
+
+La solution à la maximisation ci-dessus n'est pas immédiate car elle dépend des prix ($w$ and $R$):  comme nous le montrerons ci-dessous, soit il n'existe pas de solution bien définie, soit $K_t=L_t=0$, soit plusieurs valeurs de K et L atteindront la valeur maximale. Notons $\tilde {k}_t = K_t/L_t$ le rapport capital-travail (ce rapport définit la technique de production choisie par l'entreprise: combien de machines chaque travailleur doit être fourni). Pour trouver la solution, nous réécrivons le profit comme suit 
+
+
+\begin{equation}\label{profcha}
+\pi_t= L_t[A_t^{1-\alpha} (\tilde{k}_t)^{\alpha}-R_t\tilde{k}_t-w_t]
+\end{equation}% 
+
+Pour un $L_t$  donnée,  la technique de production optimale  $\tilde{k}_t$ résout
+\begin{equation}\label{zero}
+A_t^{1-\alpha} \alpha (\tilde{k}_t)^{\alpha-1}=R_t
+\end{equation}% 
+
+La condition ci-dessus définit la technique optimale de production (le rapport capital-travail).  Quel est le L optimal? Cela dépend des profits qui en résultent. Si w est trop élevé, le terme [.] dans l'équation (\ref{profcha}) est strictement négatif et l'échelle optimale est L = 0 (pas de production). Si les salaires sont bas, le terme [.] est strictement positif et l'échelle optimale est une production infinie. Ces deux résultats ne peuvent pas être possibles dans un équilibre de marché.\footnote{Si L=0 (pas de production), nous aurions des travailleurs inactifs et des machines inactives: les prix baisseraient. Si au contraire le niveau optimal de production est infini, les prix augmenteraient parce que l'entreprise exigerait plus d'inputs que ce qui est disponible. Rappelons en fait que l'offre de main-d'œuvre est donnée par la population (qui est finie) et que l'offre si capital machines est également finie (l'offre de machines est prédéterminée au temps $t$ car elle dépend des décisions d'investissement passées).} La seule possibilité est que les prix s'ajustent pour que les profits soient nuls: quand la valeur de $\tilde{k}$ satisfait (\ref{zero}), il faut
+
+\begin{equation}\label{uno}
+A_t^{1-\alpha} (\tilde{k}_t)^{\alpha}-R_t\tilde{k}_t=w_t
+\end{equation}% 
+
+Les équations (\ref{uno}) and (\ref{zero})  caractérisent les prix d'équilibre. Lorsque le profit est nul, l'entreprise est indifférente quant à son échelle. Dans un monde à rendements d'échelle constants, la taille de chaque entreprise n'est pas déterminée: seule sa technique de production est déterminée.
+
+
+
+
+Multipliez  (\ref{uno}) par $L_t$ et obtenez
+
+\begin{equation}\label{due}
+(A_t L_t)^{1-\alpha } K_t^{1-\alpha}=R_t K_t + w_t L_t
+\end{equation}% 
+
+À l'équilibre, les paiements totaux épuisent la production totale de sorte que les bénéfices sont nuls (Théorème d'Euler, Cf Ch. 1 du poly). La part de la production qui va aux capitalistes est donnée par le revenu que les capitalistes reçoivent divisé par la valeur de la production: $\frac{R_tK_t}{Y_t}$. De même, le part qui va aux travailleurs est $\frac{w_tL_t}{Y_t}$. En utilisant  (\ref{zero}) et (\ref{uno}), les parts sont respectivement
+
+
+\begin{equation}\label{sharec}
+\frac{R_tK_t}{Y_t}=\alpha
+\end{equation}
+
+\begin{equation}\label{sharel}
+\frac{w_t L_t}{Y_t}=1-\alpha
+\end{equation}
+
+
+Notez qu'avec une fonction de production Cobb-Douglas, les parts sont constants \textit{pour tout $t$} (pas seulement à long terme). Dans les données, la part du travail $\alpha$ est d'environ 1/3 et a été assez constante après la Seconde Guerre mondiale. Cependant, des preuves récentes (Karabarbounis et Neiman, 2014) ont montré que la part du travail diminue (et que les capitalistes en reçoivent une plus grande). Pour saisir la baisse récente de la part du travail, les modèles économiques récents ont abandonné l'hypothèse selon laquelle la technologie de production est Cobb-Douglas.
+ 
+\bigskip
+Nous expliquons maintenant pourquoi le rendement de l'épargne (taux d'intérêt réel) est $r_t=R_t-\delta$. En effet, en achetant une machine en t, un ménage reçoit $R_t$ unités de bien comme prix de location, et il perd $\delta$ de son capital, puisque $\delta$ est la fraction du capital se déprécie avec le temps.
+
+\bigskip
+
+
+Même si l'exercice ne vous pose pas cette question, il est intéressant de montrer comment $R_t$ et $w_t$ évoluent sur le long terme. Prenez le log des deux côtés de (\ref{zero}):
+
+\begin{equation}\label{zero1}
+\log \alpha+ (1-\alpha)\log A_t + (\alpha-1) \log (\tilde{k}_t)=\log R_t
+\end{equation}% 
+
+Rappelons que le taux de croissance d'une variable x est donné par $g_x=\frac{\dot{x}}{x}$: c'est-à-dire $g_x$  est égal à la dérivée par rapport au temps du log de x. Prenez la dérivée par rapport au temps de (\ref{zero1}):
+
+\begin{equation}\label{zero12}
+(1-\alpha)g_A + (\alpha-1) g_{K/L}= g_R
+\end{equation}% 
+
+
+À  long terme, $g_{K/L}=g_A$: à long terme le taux de croissance de R est donc nul.
+Comme $R$ est constant, le taux d'int\'{e}r\^{e}t $r=R-\delta $ l'est aussi à long terme. Pour voir comment les salaires réels évoluent au fil du temps, réécrivez (\ref{uno}):  
+
+\begin{equation}\label{uno1}
+w_t= A_t^{1-\alpha}(\tilde{k}_t)^{\alpha} (1- \frac{R_t\tilde{k}_t}{A_t^{1-\alpha}(\tilde{k}_t)^{\alpha}})= A_t^{1-\alpha}(\tilde{k}_t)^{\alpha}(1-\alpha)
+\end{equation}% 
+Utilisez (\ref{sharec}) pour la dernière égalité. En prenant le log: 
+
+\begin{equation}\label{uno1}
+\log(w_t)= (1-\alpha) \log A_t +\alpha \log (\tilde{k}_t) + \log (1- \alpha)
+\end{equation}% 
+
+À long terme, les salaires réels croissent au rythme de la technologie $g_{K/L}=g_A$ (les données américaines sur les salaires réels semblent confirmer ce résultat).
+
+
+{\samepage
+\begin{center}
+\begin{tabular}{c}
+\resizebox{10cm}{6cm}{\includegraphics{wage.pdf}   }
+\end{tabular}
+\end{center}}
+

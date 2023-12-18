@@ -1,0 +1,415 @@
+\documentclass[11pt,a4paper]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float}
+\usepackage{graphicx,amsmath}
+\usepackage{hyperref}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:45:13}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\renewcommand{\floatpagefraction}{.9}
+\renewcommand{\textfraction}{.1}
+\oddsidemargin 0cm \evensidemargin 0cm \textwidth 17cm \topmargin
+-1.5cm \textheight 23.5 cm
+\newcommand{\pdf}[3]{
+\begin{figure}[tp]
+\begin{center}
+\includegraphics[height=#1,keepaspectratio]{#2.pdf}
+\end{center}
+\caption{#3} \label{#2}
+\end{figure}
+}
+\newcommand{\pdfstack}[4]{
+\begin{figure}[p]
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#1.pdf}
+\end{center}
+\caption{#2} \label{#1}
+\begin{center}
+\includegraphics[height=4in,keepaspectratio]{#3.pdf}
+\end{center}
+\caption{#4} \label{#3}
+\end{figure}
+}
+%\input{tcilatex}
+\begin{document}
+
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\bigskip
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 9. COVID et demande agr\'{e}g\'{e}e}
+
+\hspace{1.0in}
+\end{center}
+
+\bigskip
+
+Suivant l'article de Guerrieri et al (2021)\footnote{Guerrieri, Lorenzoni, Straub
+and Werning, 2021, Macroeconomic Implications of Covid-19: Can Negative Supply Shocks Cause Demand Shortages? American Economic Review} nous allons mod\'{e}liser l'effet de la pand\'{e}mie sur les variables macro%
+\'{e}conomiques. Initialement, la pand\'{e}mie correspond \`{a} un \textit{%
+choc d'offre} puisqu'elle entra\^{\i}ne la fermeture des emplois jug\'{e}s
+non-essentiels.\ L'objectif de cette PC est d'identifier les conditions
+sous lesquelles ce choc d'offre peut se transformer en choc de demande,
+justifiant donc l'intervention de l'\'{e}tat pour soutenir l'activit\'{e} 
+\'{e}conomique.
+
+
+\bigskip
+
+\textbf{Structure du mod\`{e}le.} Les m\'{e}nages forment un continuum de longueur 1.  Les pr\'{e}f\'{e}rences des m\'{e}nages sont
+donn\'{e}es par%
+\[
+\sum_{t=0}^{\infty }\beta ^{t}U\left( c_{t}^{i}\right) ,
+\]%
+o\`{u} $c_{t}^{i}$ indique la consommation \`{a} la date $t$ du m\'{e}nage $i$, 
+$\beta\in \left( 0,1\right) $ est le facteur d'escompte, $\beta =1/(1+\rho)$ o\`{u} $\rho$ est le taux d'escompte,  et \begin{equation}U\left(
+c\right) =c^{1-\sigma }/\left( 1-\sigma \right) 
+\end{equation} est une fonction d'utilit%
+\'{e} avec $1/\sigma$ l'\'{e}%
+lasticit\'{e} de substitution  intertemporelle ($1/\sigma=-\frac{u'(c)}{ cu''(c)}>0$).
+La taille de la population est normalis\'{e}e \`{a} un.  
+
+%si bien que $\beta
+%\in \left[ 0,1\right] $.
+
+
+
+Comme les agents n'\'{e}prouvent aucune d\'{e}sutilit\'{e} \`{a} travailler,
+ils offrent toujours la quantit\'{e} maximale de travail $\bar{n}\ $que nous
+normalisons \`{a} $1.\ $La fonction de production de la firme repr\'{e}sentative est lin\'{e}aire%
+\[
+Y_{t}=N_{t}. 
+\]
+La firme est comp\'{e}titive et les prix sont flexibles, de sorte que le niveau de prix $P_t $ est \'{e}gal au co\^{u}t marginal ($P_t=W_t$) et le salaire r\'{e}el est $ w_t = 1 $. \`{A} l'\'{e}quilibre, les march\'{e}s du travail sont \`{a} l'\'{e}quilibre: la demande de travail est \'{e}gale \`{a} l'offre de travail, $ N_ {t} = \int_ {0}^{1} n_{t}^{i} di $. Le march\'{e} des biens est aussi \`{a} l'\'{e}quilibre, $ Y_t = \int_ { 0}^{1} c_{t}^{i} di = C_t $ comme il n'y a ni capital ni gouvernement.
+
+\bigskip
+
+\textbf{Choc COVID.} L'\'{e}pid\'{e}mie frappe \`{a} la date $0.$ En r\'{e}%
+ponse, une fraction $\alpha \in \left( 0,1\right) $ de la population ne peut
+plus travailler.\ Le vaccin est administr\'{e} \`{a} la fin de la p\'{e}%
+riode et tout retourne \`{a} la normale \`{a} partir de la date $1$. Nous \'{e}tudions un environnement d\'{e}terministe  pour faire abstraction de l'effet de l'incertitude sur la consommation; par exemple, nous n'analysons pas l'effet du covid sur l'\'{e}pargne de pr\'{e}caution, comme dans la PC4.
+
+
+\bigskip
+
+\textbf{Section 1:\ Economie avec un seul secteur et m\'{e}nage repr\'{e}sentatif.%
+}
+
+Pour simplifier l'analyse, nous commençons  \`{a} supposer que tous les m\'{e}nages sont \'{e}galement touch\'{e}s par le choc Covid. Autrement dit, en raison du choc Covid, une fraction $ \alpha $ de chaque m\'{e}nage ne peut pas travailler. L'\'{e}conomie peut donc
+\^{e}tre analys\'{e}e en utilisant un m\'{e}nage repr\'{e}sentatif. 
+
+Chaque
+m\'{e}nage maximise son utilit\'{e} sous la contrainte budg\'{e}taire%
+
+\[
+P_tc_{t}^{i}+P_ta_{t}^{i}\leq W_t n_{t}^{i}+(1+i_{t-1})P_{t-1}a_{t-1}^{i}, 
+\]%
+
+avec  $n_{t}^{i}$ l'offre de travail r\'{e}mun\'{e}r\'{e}e  du m\'{e}nage \`{a} un salaire nominal $W_t$ (avec $n^i_0 \leq (1-\alpha)$ et $n^i_t \leq  1 $ pour $t\geq 1$ et pour tout $i \in[0,1]$) et $a_{t}^{i}$ est la quantit\'{e} d'obligations d\'{e}tenus par le m\'{e}nage
+$i$. Chaque obligation achet\'{e}e en $t$ co\^{u}te $ P_t $; $ i_ {t-1} $ est le taux d'int\'{e}ret nominal entre $t-1$ et $t$. Nous supposons que les obligations sont en ``zero net supply":  les m\'{e}nages ne peuvent emprunter ou pr\^{e}ter qu'\`{a} d'autres m\'{e}nages. Tous les agents rentrent dans la p\'{e}riode $0$ sans \'{e}pargne si bien
+que $a_{-1}^{i}=0$ pour tout $i\in \left[ 0,1\right] .$ 
+
+En divisant par $ P_t $ et en utilisant la d\'{e}finition du taux d'int\'{e}ret r\'{e}el (cf. \'{e}q. 3.6 du poly) et $ W_t / P_t = 1 $, on obtient la contrainte budg\'{e}taire en termes r\'{e}els:
+
+\[
+c_{t}^{i}+a_{t}^{i}\leq n_{t}^{i}+(1+r_{t-1})a_{t-1}^{i}, 
+\]%
+
+Avant le choc Covid, l'\'{e}conomie est \`{a} l'\'{e}tat stationnaire: la production totale $ Y_{-1} = 1 $, tous les m\'{e}nages consomment une unit\'{e}. Le taux d'int\'{e}ret r\'{e}el d'\'{e}quilibre est $ r_{-1} = 1 /\beta -1 $, ce qui implique que les m\'{e}nages lissent leur consommation dans le temps et ne souhaitent ni emprunter ni pr\^{e}ter \`{a} d'autres agents de l'\'{e}conomie.
+
+
+%o\`{u} $a_{t}^{i}$ est la quantit\'{e} d'obligations d\'{e}tenus par l'agent 
+%$i$, $n_{t}^{i}$ son offre de travail r\'{e}mun\'{e}r\'{e}e \`{a} un salaire r\'{e}el 
+%unitaire.
+
+\bigskip
+
+\textbf{Question 1.} Supposons que tous les m\'{e}nages  sont ricardiens. Maximisez leur utilit\'{e} intertemporelle sous la contrainte budg\'{e}taire r\'{e}elle. Trouvez la r\`{e}gle Keynes-Ramsey. Quelle est la consommation de l'agent repr\'{e}%
+sentatif \`{a} la date $0$ et \`{a} la date $1$?\ R\'{e}ins\'{e}rez leurs
+expressions dans la r\`{e}gle Keynes-Ramsey   pour d\'{e}terminer le taux d'int%
+\'{e}r\^{e}t r\'{e}el d'equilibre $r_{0}\ $\`{a} la date\ $0$? Est-il plus \'{e}lev\'{e}
+qu'\`{a} la date $1$ ($r_{0}>r_{1}$)?
+
+%\textbf{R\'{e}ponse:} On a $c_{0}=1-\alpha ,\ c_{1}=1$ et donc%
+%\[
+%1+r_{0}=\beta \frac{U^{\prime }\left( 1-\alpha \right) }{U^{\prime }\left(
+%1\right) }>\beta =1+r_{1}, 
+%\]%
+%soit $r_{0}>r_{1},$ ce qui montre que le choc n\'{e}gatif d'offre ne s'est
+%pas propag\'{e} en choc n\'{e}gatif de demande entra\^{\i}nant une baisse du
+%taux d'int\'{e}r\^{e}t.
+
+\bigskip
+
+\textbf{Question 2. } Que se passe-t-il si la banque centrale
+maintient le taux d'int\'{e}r\^{e}t r\'{e}el \`{a} son niveau de long-terme,
+soit $r_{0}=r_{1}$. S'agit-t-il d'un \'{e}quilibre?\ Observe-t-on un exc\`{e}%
+s d'offre ou de demande de biens de consommations? Les consommateurs voudraient-ils emprunter ou pr\^{e}ter \`{a} $ t = 0 $? 
+
+%\bigskip
+%\textbf{R\'{e}ponse:} $U^{\prime }\left( c_{0}\right) =U^{\prime }\left(
+%1\right) \frac{1+r_{0}}{\beta }=U^{\prime }\left( 1\right) \frac{1+r_{1}}{%
+%\beta }=U^{\prime }\left( 1\right) .\ $Mais $Y_{0}=1-\alpha <c_{0},\ $on a
+%donc un exc\`{e}s de demande.
+
+\bigskip 
+
+%
+%\textbf{R\'{e}ponse:} L'intuition vient de l'\'{e}quation d'Euler: $%
+%U^{\prime }\left( c_{t}\right) Z_{t}=\frac{1+r_{t}}{\beta }U^{\prime }\left(
+%c_{t+1}\right) $,\ o\`{u} $Z_{t}$ d\'{e}note un choc de demande. Quand $Z_{t}
+%$ augmente, on a un exc\`{e}s de demande.\ Afin de r\'{e}\'{e}quilibrer le
+%march\'{e} des biens, le taux d'int\'{e}r\^{e}t doit augmenter pour inciter
+%les agents \`{a} repousser leur consommation.
+
+
+\bigskip
+
+
+\textbf{Section 2:\ Economie avec deux secteurs}
+
+Nous supposons qu'il y a deux secteurs (A et B). Dans le mod\`{e}le, une fraction $ \alpha $ d'agents travaille dans le secteur non-essentiel A et la fraction restante $ 1- \alpha $ dans le secteur essentiel B. Tous les agents fournissent in\'{e}lastiquement du travail \`{a} leur secteur respectif et les travailleurs ne peuvent pas se d\'{e}placer d'un secteur \`{a} l'autre. Le choc Covid arr\^{e}te le secteur non essentiel. \ Lorsque le choc Covid frappe, la production dans le secteur non essentiel est nulle et, par conséquent, personne ne peut consommer les biens non essentiels.
+
+
+Nous supposons que tous les m\'{e}nages sont \'{e}galement touch\'{e}s par le choc Covid: c'est-\`{a}-dire qu'une fraction $ \alpha $ de chaque m\'{e}nage travaille dans le secteur A.  L'\'{e}conomie peut donc
+\^{e}tre analys\'{e}e en utilisant un m\'{e}nage repr\'{e}sentatif. 
+
+
+Les pr\'{e}f\'{e}rences des
+m\'{e}nages  sont donn\'{e}es par%
+\[
+\sum_{t=0}^{\infty }\beta ^{t}U\left( c_{A,t}^{i},c_{B,t}^{i}\right) ,
+\]%
+o\`{u} $c_{A,t}$ est la consommation de biens non-essentiels et $c_{B,t}$ la
+consommation de biens essentiels. La fonction d'utilit\'{e} est 
+\[
+U\left( c_{A},c_{B}\right) =\frac{1}{1-\sigma }\left( \alpha ^{\rho
+}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+}{1-\rho }}\ ,
+\]
+o\`{u} $1/\sigma $ est l'\'{e}lasticit\'{e} de substitution
+inter-temporelle, et $1/\rho $ est l'\'{e}lasticit\'{e} de substitution entre
+les biens, avec $\rho <1$. Une faible valeur de $1/\rho $  signifie que les deux biens sont utilis\'{e}es ensemble et il difficile de remplacer un bien par l'autre.
+
+La contrainte budg\'{e}taire est
+
+\[
+P_{A,t}c_{A,t}^{i} + P_{B,t}c_{B,t}^{i} +P_{B,t}a_{t}^{i}\leq W_t n_{t}^{i}+(1+i_{t-1})P_{B,t-1}a_{t-1}^{i}, 
+\]%
+
+o\`{u} $ P_{A, t} $ et $ P_{B, t} $ sont les prix nominaux dans les deux secteurs. Supposons que chaque obligation co\^{u}te une unit\'{e} de bien B. Enfin, en sachant que les salaires dans les deux secteurs sont identiques,  $ n_{t}^{i} $ est l'offre totale de travail du m\'{e}nage. Nous exprimons le taux d'int\'{e}r\^{e}t r\'{e}el en termes de bien B,
+
+\[
+(1+r_t)= (1+i_t) \frac{P_{B,t}}{P_{B,t+1}} 
+\]%
+
+
+ Avant le choc Covid, l'\'{e}conomie est \`{a} l'\'{e}tat stationnaire: les prix sont les m\^{e}mes $ P_{A} = P_{B} $, les salaires sont identiques dans les deux secteurs, et le taux d'int\'{e}r\^{e}t d'\'{e}quilibre est $ r_{-1} = 1/\beta -1 $
+ 
+\bigskip 
+
+\textbf{Question 3. }  Montrez qu' \`{a} l'\'{e}tat stationnaire  $C_A^{\ast}=\alpha$ et $C_B^{\ast}=1-\alpha$
+
+\bigskip 
+
+%\textbf{R\'{e}ponse:} With $\lambda$ the Lagrange multiplier, write the foc
+%\[
+%\alpha ^{\rho}c_{A}^{-\rho }(1-\rho) \left[\frac{1}{1-\rho }\left( \alpha ^{\rho
+%}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+%}{1-\rho }-1}\right]=\lambda P_A
+%\]
+%
+%\[
+%(1-\alpha) ^{\rho}c_{B}^{-\rho }(1-\rho) \left[\frac{1}{1-\rho }\left( \alpha ^{\rho
+%}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+%}{1-\rho }-1}\right]=\lambda P_B
+%\]
+%
+%Since prices are the same on the SS, we have our result
+\bigskip 
+
+\textbf{Question 4. } Maximisez l'utilit\'{e} intertemporelle en $t=0$ par rapport \`{a} $c_{B,0}$ et $c_{B,1}$. Ecrivez l'\'{e}quation de Keynes-Ramsey.  Montrez que $r_{0}<r_{1}$\ si et seulement si%
+\[
+\frac{1}{\sigma }>\frac{1}{\rho }.
+\]%
+Repr\'{e}sentez cette condition dans le plan $\left( \frac{1}{\rho },\frac{1%
+}{\sigma }\right) $ et interpr\'{e}tez la \'{e}conomiquement. Si  la banque centrale maintient le taux d'int\'{e}ret r\'{e}el constant \`{a} $ 1/\beta-1 $, les m\'{e}nages consommeraient-ils suffisamment pour maintenir le secteur B au plein emploi?
+
+
+%\textbf{R\'{e}ponse:} Comme $Y_{1,0}=0,$ on a n\'{e}cessairement $\mathbf{c}%
+%_{1,0}=0$. L'\'{e}quation d'Euler est donc donn\'{e}e par%
+%\[
+%1+r_{0}=\frac{1}{\beta }\frac{U_{2}\left( 0,\mathbf{c}_{2,0}\right) }{%
+%U_{2}\left( \mathbf{c}_{1,1},\mathbf{c}_{2,1}\right) }.
+%\]%
+%Pour rappel, $\mathbf{c}_{2,0}=\mathbf{c}_{2,1}=1-\alpha $ et $\mathbf{c}%
+%_{1,1}=\alpha $.\ On a donc%
+%\begin{eqnarray*}
+%\frac{U_{2}\left( 0,\mathbf{c}_{2,0}\right) }{U_{2}\left( \mathbf{c}_{1,1},%
+%\mathbf{c}_{2,1}\right) } &=&\frac{\left( (1-\alpha )^{\rho }\left( 1-\alpha
+%\right) ^{1-\rho }\right) ^{\frac{1-\sigma }{1-\rho }-1}}{\left( \alpha
+%^{\rho }\alpha ^{1-\rho }+(1-\alpha )^{\rho }\left( 1-\alpha \right)
+%^{1-\rho }\right) ^{\frac{1-\sigma }{1-\rho }-1}} \\
+%&=&\left( 1-\alpha \right) ^{\frac{\rho -\sigma }{1-\rho }}.
+%\end{eqnarray*}%
+%La condition $r_{0}<1/\beta -1$ est satisfaite quand le ratio ci-dessus est
+%inf\'{e}rieur \`{a} $1$, c'est \`{a} dire quand%
+%\[
+%\frac{\rho -\sigma }{1-\rho }>0\Leftrightarrow \frac{1}{\sigma }>\frac{1}{%
+%\rho }.
+%\]%
+%Quand cette condition est satisfaite, les deux types de biens sont compl\'{e}%
+%ments.\ Ainsi l'effondrement de la production dans le secteur non-essentiel
+%entraine aussi une baisse de la demande dans le secteur essentiel. La compl%
+%\'{e}mentarit\'{e} propage le choc n\'{e}gatif d'offre dans le secteur 1 en
+%choc n\'{e}gatif de demande dans le secteur 2. Pour inciter les agents \`{a}
+%consommer, le taux d'int\'{e}r\^{e}t doit s'ajuste \`{a} la baisse.
+
+\bigskip 
+
+
+\textbf{Question  5}  \'{E}tudiez le choc Covid \`{a} l'aide du diagramme OA-DA. Montrez d'abord comment AO se d\'{e}place lorsque le choc frappe. Ensuite, dessinez la demande agr\'{e}g\'{e}e apr\'{e}s le choc dans les diff\'{e}rents cas \'{e}tudi\'{e}s ci-dessus (section 1 vs. section 2)
+
+
+%\textbf{R\'{e}ponse:} If I am not wrong,  AO is vertical and moves to the left. AD moves up (in the complete market example with one sector) or down depending (when complemetarity matters). Since prices are flexible, the drop in output is the same in all cases. 
+
+
+\end{document}
+\textbf{Section 2:\ Economie avec deux secteurs et march\'{e}s parfaits.}
+
+Nous supposons qu'il y a deux secteurs (A et B). Dans le mod\`{e}le, une fraction $ \alpha $ d'agents travaille dans le secteur non-essentiel A et la fraction restante $ 1- \alpha $ dans le secteur essentiel B. Tous les agents fournissent in\'{e}lastiquement du travail \`{a} leur secteur respectif et les travailleurs ne peuvent pas se d\'{e}placer d'un secteur \`{a} l'autre. Le choc Covid arr\^{e}te le secteur non essentiel. \ Lorsque le choc Covid frappe, la production dans le secteur non essentiel est nulle et, par conséquent, personne ne peut consommer les biens non essentiels.
+
+
+Nous reprenons l'hypoth\`{e}se selon laquelle les march\'{e}s sont parfaits et nous supposons que tous les m\'{e}nages sont \'{e}galement touch\'{e}s par le choc Covid: c'est-\`{a}-dire qu'une fraction $ \alpha $ de chaque m\'{e}nage travaille dans le secteur A.  L'\'{e}conomie peut donc
+\^{e}tre analys\'{e}e en utilisant un m\'{e}nage repr\'{e}sentatif. 
+
+
+Les pr\'{e}f\'{e}rences des
+m\'{e}nages  sont donn\'{e}es par%
+\[
+\sum_{t=0}^{\infty }\beta ^{t}U\left( c_{A,t}^{i},c_{B,t}^{i}\right) ,
+\]%
+o\`{u} $c_{A,t}$ est la consommation de biens non-essentiels et $c_{B,t}$ la
+consommation de biens essentiels. La fonction d'utilit\'{e} est 
+\[
+U\left( c_{A},c_{B}\right) =\frac{1}{1-\sigma }\left( \alpha ^{\rho
+}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+}{1-\rho }}\ ,
+\]
+o\`{u} $1/\sigma $ est l'\'{e}lasticit\'{e} de substitution
+inter-temporelle, et $1/\rho $ est l'\'{e}lasticit\'{e} de substitution entre
+les biens, avec $\rho <1$. Une faible valeur de $1/\rho $  signifie que les deux biens sont utilis\'{e}es ensemble et il difficile de remplacer un bien par l'autre.
+
+La contrainte budg\'{e}taire est
+
+\[
+P_{A,t}c_{A,t}^{i} + P_{B,t}c_{B,t}^{i} +P_{B,t}a_{t}^{i}\leq W_t n_{t}^{i}+(1+i_{t-1})P_{B,t-1}a_{t-1}^{i}, 
+\]%
+
+o\`{u} $ P_{A, t} $ et $ P_{B, t} $ sont les prix nominaux dans les deux secteurs. Supposons que chaque obligation co\^{u}te une unit\'{e} de bien B. Enfin, en sachant que les salaires dans les deux secteurs sont identiques,  $ n_{t}^{i} $ est l'offre totale de travail du m\'{e}nage. Nous exprimons le taux d'int\'{e}r\^{e}t r\'{e}el en termes de bien B,
+
+\[
+(1+r_t)= (1+i_t) \frac{P_{B,t}}{P_{B,t+1}} 
+\]%
+
+
+ Avant le choc Covid, l'\'{e}conomie est \`{a} l'\'{e}tat stationnaire: les prix sont les m\^{e}mes $ P_{A} = P_{B} $, les salaires sont identiques dans les deux secteurs, et le taux d'int\'{e}r\^{e}t d'\'{e}quilibre est $ r_{-1} = 1/\beta -1 $
+ 
+\bigskip 
+
+\textbf{Question 4. }  Montrez qu' \`{a} l'\'{e}tat stationnaire  $C_A^{\ast}=\alpha$ et $C_B^{\ast}=1-\alpha$
+
+\bigskip 
+
+%\textbf{R\'{e}ponse:} With $\lambda$ the Lagrange multiplier, write the foc
+%\[
+%\alpha ^{\rho}c_{A}^{-\rho }(1-\rho) \left[\frac{1}{1-\rho }\left( \alpha ^{\rho
+%}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+%}{1-\rho }-1}\right]=\lambda P_A
+%\]
+%
+%\[
+%(1-\alpha) ^{\rho}c_{B}^{-\rho }(1-\rho) \left[\frac{1}{1-\rho }\left( \alpha ^{\rho
+%}c_{A}^{1-\rho }+(1-\alpha )^{\rho }c_{B}^{1-\rho }\right) ^{\frac{1-\sigma 
+%}{1-\rho }-1}\right]=\lambda P_B
+%\]
+%
+%Since prices are the same on the SS, we have our result
+\bigskip 
+
+\textbf{Question 5. } Maximisez l'utilit\'{e} intertemporelle en $t=0$ par rapport \`{a} $c_{B,0}$ et $c_{B,1}$. Ecrivez l'\'{e}quation de Keynes-Ramsey.  Montrez que $r_{0}<r_{1}$\ si et seulement si%
+\[
+\frac{1}{\sigma }>\frac{1}{\rho }.
+\]%
+Repr\'{e}sentez cette condition dans le plan $\left( \frac{1}{\rho },\frac{1%
+}{\sigma }\right) $ et interpr\'{e}tez la \'{e}conomiquement. Si  la banque centrale maintient le taux d'int\'{e}ret r\'{e}el constant \`{a} $ 1/\beta-1 $, les m\'{e}nages consommeraient-ils suffisamment pour maintenir le secteur B au plein emploi?
+
+
+%\textbf{R\'{e}ponse:} Comme $Y_{1,0}=0,$ on a n\'{e}cessairement $\mathbf{c}%
+%_{1,0}=0$. L'\'{e}quation d'Euler est donc donn\'{e}e par%
+%\[
+%1+r_{0}=\frac{1}{\beta }\frac{U_{2}\left( 0,\mathbf{c}_{2,0}\right) }{%
+%U_{2}\left( \mathbf{c}_{1,1},\mathbf{c}_{2,1}\right) }.
+%\]%
+%Pour rappel, $\mathbf{c}_{2,0}=\mathbf{c}_{2,1}=1-\alpha $ et $\mathbf{c}%
+%_{1,1}=\alpha $.\ On a donc%
+%\begin{eqnarray*}
+%\frac{U_{2}\left( 0,\mathbf{c}_{2,0}\right) }{U_{2}\left( \mathbf{c}_{1,1},%
+%\mathbf{c}_{2,1}\right) } &=&\frac{\left( (1-\alpha )^{\rho }\left( 1-\alpha
+%\right) ^{1-\rho }\right) ^{\frac{1-\sigma }{1-\rho }-1}}{\left( \alpha
+%^{\rho }\alpha ^{1-\rho }+(1-\alpha )^{\rho }\left( 1-\alpha \right)
+%^{1-\rho }\right) ^{\frac{1-\sigma }{1-\rho }-1}} \\
+%&=&\left( 1-\alpha \right) ^{\frac{\rho -\sigma }{1-\rho }}.
+%\end{eqnarray*}%
+%La condition $r_{0}<1/\beta -1$ est satisfaite quand le ratio ci-dessus est
+%inf\'{e}rieur \`{a} $1$, c'est \`{a} dire quand%
+%\[
+%\frac{\rho -\sigma }{1-\rho }>0\Leftrightarrow \frac{1}{\sigma }>\frac{1}{%
+%\rho }.
+%\]%
+%Quand cette condition est satisfaite, les deux types de biens sont compl\'{e}%
+%ments.\ Ainsi l'effondrement de la production dans le secteur non-essentiel
+%entraine aussi une baisse de la demande dans le secteur essentiel. La compl%
+%\'{e}mentarit\'{e} propage le choc n\'{e}gatif d'offre dans le secteur 1 en
+%choc n\'{e}gatif de demande dans le secteur 2. Pour inciter les agents \`{a}
+%consommer, le taux d'int\'{e}r\^{e}t doit s'ajuste \`{a} la baisse.
+
+\bigskip 
+
+
+\textbf{Question 6}  \'{E}tudiez le choc Covid \`{a} l'aide du diagramme OA-DA. Montrez d'abord comment AO se d\'{e}place lorsque le choc frappe. Ensuite, dessinez la demande agr\'{e}g\'{e}e apr\'{e}s le choc dans les diff\'{e}rents cas \'{e}tudi\'{e}s ci-dessus (section 1 vs. section 2)
+
+
+%\textbf{R\'{e}ponse:} If I am not wrong,  AO is vertical and moves to the left. AD moves up (in the complete market example with one sector) or down depending (when complemetarity matters). Since prices are flexible, the drop in output is the same in all cases. 
+
+\end{document}
+\section{Donn\'{e}es empiriques (7 pts.)}
+
+\bigskip 
+
+\textbf{Question 10. (4 pts.)} Trouver des donn\'{e}es sur l'\'{e}volution
+des emplois par secteur (aux Etats-Unis ou en France) au cours des ann\'{e}%
+es 2019-2020. Classifiez les secteurs en fonction de la perte relative
+d'emplois suite \`{a} la diffusion du COVID, et v\'{e}rifiez si votre
+classification recoupe bien la notion de secteurs n\'{e}cessaires vs. non-n%
+\'{e}cessaires.
+
+\bigskip 
+
+\textbf{Question 11. (3 pts.)} D'apr\`{e}s l'exercice ci-dessus, quels secteurs essentiels devraient avoir \'{e}t\'{e} les plus affect\'{e}s par le pand\'{e}mie ?\ Confrontez cette pr\'{e}diction aux donn\'{e}es que vous avez r\'{e}colt\'{e}es pour la question 10
+
+\end{document}

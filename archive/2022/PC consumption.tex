@@ -1,0 +1,258 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wed Apr 05 06:17:18 2000}
+%TCIDATA{LastRevised=Tuesday, October 23, 2018 17:51:02}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{Language=French}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{17.5cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{-1cm}
+\setlength\textheight{25cm}
+
+\begin{document}
+
+
+\begin{center}
+\textbf{Ecole Polytechnique}
+
+\textbf{Eco 432 - Macro\'{e}conomie}
+
+\bigskip
+
+\textbf{PC 4. La demande de consommation}
+\end{center}
+
+\bigskip
+
+
+\noindent \textbf{Exercice : Choix de consommation}
+
+\smallskip
+
+\noindent
+
+
+On \'{e}tudie les choix de consommation de m\'{e}nages qui maximisent leur
+utilit\'{e} intertemporelle. On raisonne sous l'hypoth\`{e}se de pr\'{e}visions parfaites,
+de sorte que les m\'{e}nages anticipent parfaitement les valeurs futures de
+leur revenu.
+
+Les individus vivent deux périodes. L'utilit\'{e} intertemporelle du m\'{e}nage $j$ \`{a} partir de la p\'{e}riode $t=0$ est
+donn\'{e}e :%
+\begin{equation}
+\mathcal{U}_{0}=\ln
+C_{0}^{j} + \left( \frac{1}{1+\rho }\right) \ln
+C_{1}^{j},  \label{2 - utilite intertemporelle}
+\end{equation}%
+avec $C_{t}^{j}$ la consommation du m\'{e}nage et $%
+\rho >0$ son \textquotedblleft taux de pr\'{e}f\'{e}rence pour le pr\'{e}%
+sent\textquotedblright\ (plus $\rho $ est \'{e}lev\'{e}, moins la
+consommation future est valoris\'{e}e relativement \`{a} la consommation pr%
+\'{e}sente).
+
+Le m\'{e}nage fait face, \`{a} chaque p\'{e}riode $t=0,1$, \`{a} la contrainte
+budg\'{e}taire suivante :%
+\begin{equation}
+\underset{\text{consommation}}{\underset{\uparrow }{\underset{}{C_{t}^{j}}}}+%
+\underset{\text{\'{e}pargne financi\`{e}re nette }S_{t}^{j}}{\underbrace{%
+\underset{}{A_{t}^{j}-A_{t-1}^{j}}}}=\underset{\text{revenus du patrimoine}}{%
+\underbrace{\underset{}{r_{t-1}A_{t-1}^{j}}}}\ +\ \underset{\text{revenu
+salarial }}{\underbrace{\underset{}{\frac{W_{t}}{P_{t}}\bar{L}_{t}^{j}}}}
+\label{2 - CB}
+\end{equation}%
+avec $\bar{L}_{t}^{j}$ est la quantit\'{e} de travail fournie par le m\'{e}%
+nage (ici exog\`{e}ne), $A_{t}^{j}$ son patrimoine (en fin de p\'{e}riode $t$%
+), $W_{t}/P_{t}$ le salaire r\'{e}el et $r_{t}$ le taux d'int\'{e}r\^{e}t r%
+\'{e}el entre les p\'{e}riodes $t$ et $t+1$. $(W_{t}/P_{t})\bar{L}_{t}^{j}$
+est donc le revenu salarial du m\'{e}nage. Par la suite, on \'{e}crira le revenu salarial $h^j_t = (W_{t}/P_{t})\bar{L}_{t}^{j}$. Par souci de simplicit\'{e} on
+fait ici abstraction des imp\^{o}ts. Le patrimoine initial $A^j_{-1}$  est donné car il est le résultat de décisions passées
+
+Les m\'{e}nages peuvent par ailleurs \^{e}tre sujets \`{a} une contrainte
+d'endettement de la forme : 
+\begin{equation}
+A_{t}^{j}\geq \frac{\bar{D}_{t}}{1+r_{t}}\text{, \ avec }\bar{D}_{t}\leq 0,
+\label{2 - CE}
+\end{equation}%
+de sorte qu'ils ne peuvent s'endetter que jusqu'au point o\`{u} la dette 
+\`{a} rembourser (capital et int\'{e}r\^{e}t) est \'{e}gale \`{a} $-\bar{D}%
+_{t}$.
+
+\begin{enumerate}
+\item Expliquer intuitivement pourquoi $%
+A_{1}^{j}=0$ [indice : distinguer les cas $A_{1}^{j}<0$ et $%
+A_{1}^{j}>0 $]; en d\'{e}duire la contrainte budg\'{e}taire
+intertemporelle du m\'{e}nage :%
+\begin{equation}
+C^j_0+\frac{C^j_1}{1+r_0}
+=A_{-1}^{j}\left( 1+r_{-1}\right) +  h^j_0+\frac{h^j_1}{1+r_0}
+\label{2 - CBI}
+\end{equation}%
+et interpr\'{e}ter cette expression.
+
+%\item Montrer que l'\'{e}quation (\ref{2 - CBI}) se g\'{e}n\'{e}ralise au
+%cas o\`{u} $n\rightarrow \infty $ d\`{e}s lors que :%
+%\begin{equation*}
+%\mathcal{A}_{t}:=\lim_{n\rightarrow +\infty }\frac{A_{t+n}}{\Pi
+%_{m=0}^{n-1}\left( 1+r_{t+m}\right) }=0
+%\end{equation*}%
+%Expliquer intuitivement pourquoi cette condition est satisfaite [indice : l%
+%\`{a} encore, distinguer les cas $\mathcal{A}_{t}<0$ et $\mathcal{A}_{t}>0$].
+
+\item Un m\'{e}nage \textit{ricardien} (R) est un m\'{e}nage dont les choix de
+consommation ne sont jamais contraints par la contrainte d'endettement (\ref%
+{2 - CE}). Ecrire le lagrangien correspondant au probl\`{e}me de
+maximisation d'un m\'{e}nage ricardien et en d\'{e}duire que ses choix
+satisfont la condition :%
+\begin{equation*}
+\frac{C_{1}^{R}}{C_{0}^{R}}=\frac{1+r_{0}}{1+\rho },
+\end{equation*}%
+et interpr\'{e}ter cette relation.
+
+\item  Utiliser les réponses précédentes pour calculer $%
+C_{0}^{R}$ et $%
+C_{1}^{R}$ en fonction de $\rho $ et de la richesse totale, le côté droit de l'\'{e}%
+quation (\ref{2 - CBI}), et expliquer intuitivement l'expression obtenue. Considerons le cas $\rho=r_0$ et $A_{-1}=0$. Étudiez comment $C_{0}^{R} $ et $%
+A_{0}^{R}$ changent lorsqu'il y a une augmentation de $ h^j_0 $ (revenu courant) ou de $h ^ j_1$ (revenu futur).
+
+%Appelons $R_{t}=\frac{W_{t}}{P_{t}}\bar{L}_{t}^{j}$ le revenu salarial
+%apr\`{e}s imp\^{o}t du m\'{e}nage $j$, et supposons pour cette question que
+%le taux d'int\'{e}r\^{e}t r\'{e}el est constant \`{a} $r_{t}=\rho $.
+%Calculer les sentiers de consommation $\left\{ C_{t}^{R}\right\}
+%_{t=0}^{+\infty }$ et de patrimoine $\left\{ A_{t}^{R}\right\}
+%_{t=0}^{+\infty }$ d'un m\'{e}nage ricardien vivant ind\'{e}finiment ($%
+%n\rightarrow +\infty $), dont le patrimoine initial est nul ($A_{t-1}^{R}=0$%
+%) et dont le sentier de revenu est le suivant $R_{t}=R\geq 0$ de $t=0$ \`{a} 
+%$t=T-1$ ($T\geq 1$), puis $R_{t}=R+\Delta R>R$ \`{a} partir de $t=T$.
+
+\item Un m\'{e}nage \textit{keyn\'{e}sien} (K) est un m\'{e}nage dont la
+consommation courante est syst\'{e}matiquement contrainte par l'\'{e}quation
+(\ref{2 - CE}). Calculer sa consommation, et expliquer pourquoi elles est d%
+\'{e}croissante du taux d'int\'{e}r\^{e}t r\'{e}el.
+
+%\item En supposant que l'\'{e}conomie est compos\'{e}e de m\'{e}nages keyn%
+%\'{e}siens et ricardiens, en d\'{e}duire qu'on peut \'{e}crire la
+%consommation agr\'{e}g\'{e}e sous la forme du fonction de consommation de la
+%forme :%
+%\begin{equation}
+%C_{t}=C(\underset{-}{\bar{D}_{t}},\underset{-}{r_{t}},\underset{+}{Y_{t}},%
+%\underset{+}{Y_{t+1}},,...)  \label{3 - fonction de consommation}
+%\end{equation}
+\end{enumerate}
+
+
+\noindent \textbf{Exercice : Épargne de précaution}
+
+
+\bigskip
+
+
+Considérons le choix de consommation d'un individu qui vit pendant deux périodes, $t=0,1$. Supposons que l'utilité 
+à chaque période soit
+
+\begin{equation}
+u(C_t)=\left\{ 
+\begin{array}{l}
+ac -\frac{b}{2} (C_t)^2\text{\qquad  } if \  \ \ \ C_t \in [0,a/b ] \\ 
+a^2/(2b) \text{\qquad } C_t \geq a/b  %
+\end{array}%
+\right.  \label{uti}
+\end{equation}
+%%sent\textquotedblright\ est $\rho =0$. 
+
+Le revenu de la première période est $ h_0 $. Le revenu de la deuxième période est $ h_1 $. 
+À chaque $ t = 0,1 $, la contrainte budgétaire est \begin{equation}
+C_{t}+ A_{t}-A_{t-1}=r_{t-1}A_{t-1}  + h_t
+\label{2 - CB}
+\end{equation}%
+
+On suppose que $ r_0=r_{-1}=0 $ et que le patrimoine initiale soit nul: $ A_{- 1} = 0 $. 
+Sachant que 
+à l'équilibre les individus choisissent $A_1 = 0 $, les contraintes budgétaires peuvent s'écrire:
+
+\begin{equation}
+C_{0} + A_{0}=h_0
+\label{2 - CB}
+\end{equation}
+
+\begin{equation}
+C_{1} = A_{0}+h_1
+\label{2 - CB}
+\end{equation}
+
+
+Le revenu de la première période est $h_0=a/b$. Une caractéristique importante de cet exercice est que le revenu de la deuxième période est stochastique: 
+\begin{equation}
+h_1=\left\{ 
+\begin{array}{l}
+a/b +\sigma \text{\qquad  } avec  \  \ \ \ \ probabilité \ 1/2 \\ 
+a/b -\sigma  \text{\qquad } avec \ \ probabilité \  1/2  %
+\end{array}%
+\right.  \label{uti2}
+\end{equation}
+
+Aujourd'hui ($t=0$), les individus ne savent pas quel sera le revenu de la période suivante, mais on suppose que ils connaissent  la distribution de probabilité (\ref{uti2}). Une augmentation de $ \sigma $ ne change pas la valeur espérée du revenu, mais peut être interprétée comme une augmentation de l'incertitude (``mean-preserving spread"). Plus de dispersion signifie que le revenu est «plus risqué». 
+
+
+
+
+
+Le consommateur maximise, à la date 0, l'espérance de la somme des utilités futures actualisées. On suppose que $\rho=0$ (les individus sont infiniment patients). En utilisant les contraintes budgétaires, nous écrivons l'utilité intertemporelle espérée: 
+\begin{equation}
+\mathcal{U}_{0}=\underset{\text{utilité 
+aujourd'hui}}{\underbrace{u(h_0-A_0)} } + \frac{1}{2} \underset{\text{utilité 
+si $h_1$ est bas}}{\underbrace{u (A_0+\frac{a}{b} -\sigma)} }   + \frac{1}{2} \underset{\text{utilité 
+si $h_1$ est élevé}}{\underbrace{u (A_0+\frac{a}{b} +\sigma)} }   \label{2 - utilite intertemporelle}
+\end{equation}%
+
+\begin{enumerate}
+\item Tracez l'utilité marginale $u'(C_t)$ en fonction de la consommation.
+
+\item Tout d'abord, supposons que $\sigma = 0 $ (aucun risque). Trouvez l'épargne optimale $A_0$; puis, calculez $ C_0 $ et $ C_1 $. Deuxièmement, supposons que le revenu $h_1$ soit incertain.  Étudiez comment $\sigma$ affecte les choix optimaux de  $ A_0 $, $ C_0 $ et $ C_1 $.
+Comparez les deux cas ($\sigma=0$ et $\sigma>0$). Y a-t-il plus d'épargne lorsque le revenu est incertain? Expliquez. 
+
+\end{enumerate}
+\smallskip
+
+
+
+\end{document}
