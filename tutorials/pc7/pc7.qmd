@@ -14,7 +14,7 @@ format: pdf
 ## Twitter & Short Term Macroeconomics {.appendix}
 
 
-Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chief économiste du FMI, maintenant au Peterson institute.
+Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chef économiste du FMI, maintenant au Peterson institute.
 
 
 [^macro_musing]: https://www.mercatus.org/macro-musings/ricardo-reis-macroeconomics-financial-crises-and-recent-inflation-surge
@@ -51,3 +51,6 @@ Le 7 août 2023, Ricardo Reis professor à London School of Economics était int
 
 ![](blanchard_response_3.png){width=70%}
 
+
+
+Why is the Phlips curve not supported by the data ?

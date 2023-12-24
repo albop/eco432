@@ -621,9 +621,6 @@ On the other hand, imagine demand is increased and prices are prevented from inc
 
 # The Great Depression
 
-<!-- ![Unemployment rate in the US in 1932: 23.6%](assets/unemployment_crisis.jpg) -->
-
-
 
 ![Unemployment rate in the US in 1932: 23.6%](assets/hungry_lion.png){width=30%}
 
