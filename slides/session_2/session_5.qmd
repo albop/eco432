@@ -1,0 +1,1122 @@
+---
+title: Demande Agrégée
+subtitle: ECO432 - Macroéconomie
+author: Pablo Winant`
+format:
+  beamer:
+    pdf-engine: xelatex
+
+aspectratio: 169
+slide-level: 3
+latex:
+---
+
+### Programme des séances
+
+\frametitle{Plan: Fluctuations de Court Terme}
+
+- Séance 5 : demande globale
+- Séance 6 : offre globale
+- Séance 7 : fluctuations macroéconomiques
+- Séance 8 : politique monétaire
+
+---
+
+\tableofcontents
+
+# Nominal / Réel
+
+---
+
+### Produit intérieur brut (PIB) Nominal / Réel
+
+Commençons par quelques notations[^periode]. Dans ce cours :
+
+- $Y_t$ : *PIB réel* : le nombre de paniers de bien produits par l'économie
+- $P_t$ : *Niveau des prix* : le prix d'un panier de biens donné
+- $\boxed{\pi_t = \frac{P_t-P_{t-1}}{P_{t-1}}}$ : *Taux d'inflation*
+
+Avec ces définitions, le *PIB nominal*, c'est-à-dire la production vendue aux prix du marché, est simplement $P_t Y_t$.
+
+[^periode]: Nous utilisons $t$ pour désigner différentes périodes dans le temps.
+
+---
+
+### Taux d'intérêt nominal
+
+Pour épargner d'une période à l'autre, les agents ont accès à des obligations sans risque rapportant :
+
+- $i_t$ : taux d'intérêt nominal entre $t$ et $t+1$
+
+Si un agent investit des économies $S_t$ à la période $t$, il obtient $S_t (1+i_t)$ à la période $t+1$.
+
+---
+
+### Taux d'intérêt nominal / réel
+
+Qu'est-ce qui détermine la décision d'épargner davantage ou moins ?
+
+Considérons l' expérience de pensée suivante :
+
+- un agent renonce à $1$ unité de consommation à la période $t$, valant $P_t$ aux prix du marché : sa richesse est $P_t$
+- investie au taux nominal $i_t$, cette richesse devient $P_t (1+i_t)$ à la période $t+1$
+- l'agent peut maintenant acheter $\frac{P_t (1+i_t)}{P_{t+1}}$ biens de consommation au nouveau prix du marché $P_{t+1}$
+
+En reconnaissant le ratio $1+\pi_{t+1} = \frac{P_{t+1}}{P_t}$, nous concluons que chaque unité de consommation aujourd'hui peut être échangée contre $\frac{1+i_t}{1+\pi_{t+1}}$ unités demain
+
+- c'est plus avantageux lorsque le taux d'intérêt nominal est élevé
+- c'est moins avantageux lorsque l'inflation est élevée
+
+---
+
+### Taux d'Intérêt Réel
+
+Le __taux d'intérêt réel__ $r_t$ est défini par :
+
+$$\boxed{1+r_t = \frac{1+i_t}{1+\pi_{t+1}}}$$
+
+Il mesure à quel point il est bénéfique d'échanger des biens de consommation actuels contre des biens de consommation futurs.
+
+En logarithmes:
+
+$$\boxed{r_t = i_t - \pi_{t+1}}$$
+
+Cette relation est parfois appelée l'__équation de Fisher__.
+
+
+---
+
+### Mini-check
+
+::: columns
+
+:::: {.column width=20%}
+
+![](assets/../../session_1/assets/check.jpg)
+
+::::
+
+:::: {.column width=80%}
+
+#### Quizz 1
+
+Supposons que le taux d'intérêt nominal soit de 4% et l'inflation de 5%. Quel est le taux d'intérêt réel (en pourcentage) ?
+
+1. 1
+2. -1
+3. 4/5
+4. 5/6
+
+. . . 
+
+#### Quizz 2
+
+L'effet fishérien est la tendance de l'inflation à augmenter et à annuler toute hausse des taux nominaux par la banque centrale. Cela est plus susceptible de se produire si :
+
+1. le taux réel est indépendant des variables nominales
+2. les prix sont rigides
+3. l'inflation est élevée
+4. la dette est élevée
+
+...
+
+::::
+
+:::
+
+
+# Demande
+
+## Composantes de la demande
+
+### Les composantes de la demande
+
+\framesubtitle{D'où vient la demande ?}
+
+Dans une économie de marché, les décisions de dépenses sont prises par :
+
+- Les consommateurs
+- Les entreprises
+- Les exportateurs et les importateurs
+- Le gouvernement
+
+Les dépenses du gouvernement sont décidées par les décideurs politiques. Parce qu'elles peuvent être choisies indépendamment du niveau de revenu général, elles sont entièrement __autonomes__.
+
+Dans ce cours, nous considérerons également les décisions des exportateurs et des importateurs comme exogènes afin de nous concentrer sur les consommateurs et les entreprises.[^économie_fermée]
+
+[^économie_fermée]: Pour nos besoins, nous pourrions également faire l'hypothèse plus forte que l'économie est __fermée__, c'est-à-dire que les exportations et les importations sont nulles.
+
+---
+
+\begin{center}
+\includegraphics[height=0.5\textheight]{assets/hypnotic.jpg}
+\end{center}
+
+
+#### Notre objectif principal aujourd'hui
+
+Établir pourquoi et comment chacune des composantes de la demande dépend du \emph{revenu agrégé réel} $Y$ et du \emph{taux d'intérêt réel} $r$."
+
+## Consommateurs
+
+
+### Décisions de Consommation
+
+::: columns
+
+:::: column
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![](assets/why_do_save_today.png){height=25%}
+
+\onslide<2,3>
+
+![](assets/why_do_save.png){height=50%}
+
+\onslide<4->
+
+![](assets/why_do_save_r.png){height=50%}
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+
+
+Pourquoi les consommateurs épargnent-ils ?
+
+. . .
+
+Pour substituer les biens présents par les biens futurs.
+
+. . .
+
+Qu'est-ce qui détermine la substitution ?
+
+. . .
+
+Le taux d'intérêt (réel)
+
+. . .
+
+Qu'est-ce qui détermine également la substitution ?
+
+. . .
+
+Le revenu aujourd'hui et demain
+
+::::
+
+:::
+
+---
+
+### Décisions de consommation
+
+\framesubtitle{Intuition}
+
+Selon leurs préférences, le montant que les consommateurs décident de dépenser est déterminé par :
+
+Leur revenu aujourd'hui ( $\color{green}{Y_t}$ )
+Leur revenu attendu dans le futur ( $Y_{t+1}, Y_{t+2}, ...$ )
+
+\ \ \ 
+
+Étant donné leur profil de revenu attendu, la décision de consommer peut être vue comme un arbitrage entre la consommation aujourd'hui et la consommation demain.
+
+Cet arbitrage dépend du taux d'intérêt intertemporel réel ( $\color{red}{r_t}$ ).
+
+Les deux déterminants à court terme de la consommation devraient donc être $\color{green}{Y_t}$ et $\color{red}{r_t}$.
+
+
+### Consumers: Ricardian and Keynesian households
+
+Classiquement, on distingue :
+
+\ \ \ 
+
+
+::: columns
+
+:::: column
+
+__Ménages Ricardiens__
+
+\ \ 
+
+Des agents qui peuvent librement réaffecter la consommation intertemporelle.
+
+\ \
+
+Les ménages Ricardiens choisissent de ne pas consommer davantage aujourd'hui, afin de consommer davantage demain.
+
+::::
+:::: column
+
+__Ménages Keynésiens__
+
+\ \ 
+
+Des agents dont la consommation dans la période actuelle est limitée par une contrainte de crédit contraignante.
+
+Soit ils ne peuvent pas du tout emprunter, soit le montant qu'ils peuvent emprunter aujourd'hui est limité.
+
+\ \
+
+Les ménages Keynésiens consomment aujourd'hui autant qu'ils le peuvent.
+
+::::
+:::
+
+. . .
+
+Nous étudierons les deux types d'agents tour à tour, en commençant par les agents Ricardiens.
+
+
+---
+
+
+
+
+### Consommateurs Ricardiens
+
+
+\framesubtitle{Microfondation}
+
+\subsubsection{Consommateurs Ricardiens}
+
+Modélisons le choix intertemporel d'un ménage Ricardien. Ce sont des décideurs rationnels, mais ils ont une préférence pour le présent. Pour des raisons d'exposition, nous supposons qu'ils vivent seulement pendant deux périodes.
+
+Désignons par  $C_1$ and $C_2$ la consommation aujourd'hui et demain.
+
+
+Un consommateur représentatif maximise : $$U(C_1, C_2) = \log(C_1) + \beta \log (C_2)$$
+
+où $\beta<1$ est un facteur d'actualisation, indiquant que la consommation aujourd'hui est préférée. $\beta$ est généralement proche de 1.
+
+Cette optimisation n'est pas libre, elle est soumise à une contrainte budgétaire.
+
+---
+
+
+### Consommateurs Ricardiens
+
+
+\framesubtitle{Détermination de la contrainte budgétaire (1)}
+
+Notons $P_1 = 1$ le niveau actuel des prix, at $P_2$ le niveau futur.
+
+Notons $P_1 Y_1$ le revenu nominal présent et $P_2 Y_2$ le revenu nominal futur.
+
+On suppose que notre consommateur consomme $C_1$ au prix .$P_1$ pour un montant $C_1 P_1$
+
+Ce qui reste[^footnote], i.e. $Y_1 P_1 - C_1 P_1$ est épargné au taux nominal $1+i$ et ajouté au revenu futur.
+
+La contrainte de budget en période 2 s'écrit:
+
+$$C_2 P_2 \leq (\underbrace{Y_1 P_1 - C_1 P_1}_{\text{Savings}}) (1+i) + Y_2 P_2$$
+
+[^footnote]: Remarquons que la formule est exactement la même selon que le consommateur épargne $(C_1 P_1 < Y_1 P_1)$ ou emprunte $(C_1 P_1 > Y_1 P_1)$ en période 1.
+
+---
+
+### Consommateurs
+
+\framesubtitle{Détermination de la contrainte budgétaire (2)}
+
+La dernière équation peut être réorganisée comme suit :
+
+$$C_1 P_1 (1+i) + C_2 P_2 \leq Y_1 P_1 (1+i) + Y_2 P_2$$
+
+Divisons par $P_2$
+
+$$C_1 \frac{P_1}{P_2} (1+i) + C_2 \leq Y_1 \frac{P_1}{P_2} (1+i) + Y_2$$
+
+Et reconnaissons $1+\pi = \frac{P_2}{P_1}$
+
+$$C_1 \frac{1+i}{1+\pi}  + C_2 \leq Y_1 \frac{1+i}{1+\pi} + Y_2$$
+
+---
+
+### Consommateurs
+
+\framesubtitle{Contrainte budgétaire intertemporelle}
+
+Finalement, la contrainte budgétaire intertemporelle se lit comme suit :
+
+$$C_1 (1 + r) +C _2 \leq Y_1 (1 + r) + Y_2$$
+
+Le *côté droit* est le revenu et est donné dans l'optimisation. Il correspond à la richesse totale.
+
+Dans le *côté gauche* : $(1+r)$ peut être compris comme le prix des biens de consommation d'aujourd'hui.
+
+Quel est l'effet d'un taux d'intérêt réel plus élevé ?
+
+- La consommation aujourd'hui est plus chère : effet de substitution -> plus de consommation de biens futurs, moins de consommation dans le présent
+- Le revenu d'aujourd'hui est plus précieux : il détend la contrainte budgétaire créant un effet de richesse direct -> plus de consommation des deux biens
+
+---
+
+### Consommateurs
+
+\framesubtitle{Consommation optimale}
+
+Un consommateur résout $$\begin{aligned}\max_{C_1, C_2} & & U(C_1, C_2) \\ s.t. & & C_1 (1 + r) +C _2 \leq Y_1 (1 + r) + Y_2  \end{aligned}$$
+
+Il s'agit d'un problème d'optimisation sous contrainte, identique à ceux rencontrés en microéconomie.
+
+On obtient facilement la consommation optimale (consommation souhaitée) en période $1$:
+
+$$\boxed{C_1 = \frac{1}{1+\beta} \left( Y_1 + \frac{1}{1+r} Y_2 \right)}$$
+
+---
+
+### Ménages Ricardiens
+
+Comment interprétons-nous cette formule optimale ?
+$$C_1 = \frac{1}{1+\beta}\underbrace{ \left( Y_1 + \frac{1}{1+r} Y_2 \right) }_{\text{Revenu Permanent} }$$
+
+```{=beamer}
+\begin{overprint}
+```
+\onslide<1>
+
+Le revenu permanent est la valeur actualisée de tous les revenus perçus par le consommateur sur son horizon d'optimisation.
+il s'agit essentiellement de la valeur du revenu sur toute la vie similaire à l'évaluation d'un flux de dividendes
+\onslide<2>
+
+Un ménage Ricardien dépense en période 1 une fraction de son revenu permanent.
+
+\ 
+
+Cela découle d'un motif de lissage de la consommation dans le temps, qui provient de la concavité de la fonction d'utilité.
+
+\ 
+
+Dans le cas à deux périodes, la fraction est $\frac{1}{1+\beta}\approx \frac{1}{2}$. S'il y avait plus de deux périodes, la fraction serait encore plus petite.
+
+
+```{=beamer}
+\end{overprint}
+```
+
+---
+
+### Réponse au taux d'intérêt
+
+À partir de la dernière formule, nous pouvons voir comment les ménages Ricardiens modifient leur consommation en réponse à un changement $\color{red}\Delta r$ dans les taux d'intérêt réels.
+Alors la consommation augmente de $\color{red}{\Delta C}$ de telle sorte que :
+$$C_1 + {\color{red}{\Delta C}} = \frac{1}{1+\beta} \left( Y_1  + \frac{1}{1+r+\color{red}\Delta r} Y_2 \right)$$
+
+Cela conduit à la formule approximative :
+
+$$\boxed{\frac{\Delta C}{\Delta r} = -\frac{1}{1+\beta} \frac{1}{\left(1+r\right)^2} Y_2}$$
+
+En accord avec l'intuition : la consommation aujourd'hui est plus faible lorsque le taux d'intérêt réel est plus élevé.
+
+---
+
+### Choc de revenu temporaire
+
+Comment réagissent les ménages Ricardiens aux chocs de revenu ?
+
+Supposons que le revenu augmente temporairement (en période $1$) de $\color{green}{\Delta Y}$. Alors la consommation augmente de $\color{green}{\Delta C}$ de telle sorte que :
+$$C_1 + {\color{green}{\Delta C}} = \frac{1}{1+\beta}\underbrace{ \left( Y_1 + {\color{green}{\Delta Y}} + \frac{1}{1+r} Y_2 \right) }_{\text{Revenu Permanent} }$$
+
+Nous obtenons une propension marginale à consommer (à partir d'un choc temporaire) égale à[^version_complète] :
+
+$$MPC^{\text{ricardian}} = \frac{\Delta C}{\Delta Y} = \frac{1}{1+\beta}<<1$$
+
+[^version_complète]: Nous avons utilisé deux périodes pour simplifier l'exposition. Dans les modèles NK pratiques, le revenu permanent est $\sum_t \frac{1}{(1+r)^t} Y_t$ et la fraction consommée en première période serait $(1-\beta) \approx 0$, ce qui est très proche de 0.
+
+---
+
+### Ménages Keynésiens
+
+\subsubsection{Consommateurs Keynésiens}
+
+Intrinsèquement, les agents keynésiens ont les mêmes préférences en matière de consommation que les ménages ricardiens.
+
+::: columns
+
+:::: {.column width=10%}
+
+::::
+
+:::: {.column width=70%}
+
+Idéalement, ils aimeraient dépenser une fraction de leur revenu permanent, mais ils sont confrontés à une limite quant à la somme qu'ils peuvent emprunter.
+
+::::
+:::: {.column width=20%}
+
+![](assets/../bank_no.jpg){width=50px}
+
+::::
+
+:::
+
+Un agent keynésien pur (qui ne peut pas emprunter du tout) est soumis à la contrainte simple $C_1 \leq Y_1$ et puisqu'elle consomme autant que possible, sa consommation est simplement : $$C_1 = Y_1$$
+
+Sa propension marginale à consommer est :
+
+$$PMC^{\text{keynésien}} = 1$$
+
+
+---
+
+#### Quiz 3
+Parmi les agents suivants, lequel est le plus susceptible d'être keynésien ?
+
+1. un étudiant qui envisage une offre de prêt de la banque pour couvrir les frais universitaires
+2. un ménage de classe moyenne réduisant les dépenses alimentaires pour rembourser un prêt en cours
+3. un travailleur à faible revenu aux États-Unis, qui n'a pas de carte de crédit
+4. un trader boursier
+
+---
+
+#### Quiz 4
+Supposez que le paiement annuel pour rembourser un prêt $L$ soit $L\left(1-\frac{1}{1+r}\right)$
+Quelle pourrait être la contrainte pour un agent keynésien qui est autorisé à emprunter seulement jusqu'à ce que les remboursements représentent une fraction $\lambda=33\%$ de son revenu ?
+
+1. $C_1 \leq Y_1$
+2. $C_1 \leq \lambda Y_1$
+3. $C_1 \leq \lambda Y_1 \left(1-\frac{1}{1+r}\right)$
+4. $(C_1 - Y_1) \left(1-\frac{1}{1+r}\right) \leq \lambda Y_1$
+
+---
+
+### Consommation Agrégée
+
+Pour connaître le comportement de la consommation agrégée, en particulier la propension marginale à consommer agrégée, nous devons connaître la proportion de ménages ricardiens et keynésiens.[^td_x]
+
+::: columns
+
+:::: column
+
+![Un chien keynésien, lors de la récession de 1929](assets/keynesian_dog.png){width=60%}
+
+::::
+
+:::: column
+
+![Un chat ricardien, jouant avec de l'argent.](assets/ricardian_cat.png){width=60%}
+
+::::
+
+:::
+
+[^td_x]:  Vous verrez lors du PC5, que le comportement de la consommation agrégée dépend crucialement de la nature redistributive des chocs.
+
+
+---
+
+Jetons un coup d'œil à la distribution de la PMC pour la France.[^source_pmc_1]
+
+![PMC en Réponse à un Choc de Revenu Temporaire (Autodéclarée)](assets/mpc_1.png){width=60%}
+
+[^source_pmc_1]: Tiré de <u>Politique Budgétaire et Hétérogénéité de la PMC</u>, Tullio Jappelli et Luigi Pistaferri, American Economic Journal: Macroeconomics, 2014
+
+---
+
+![PMC Moyenne par Percentiles de Trésorerie](assets/mpc_2.png){width=60%}
+
+. . .
+
+Apparemment, la PMC est bien prédite par la Trésorerie (montant d'argent restant au ménage après avoir effectué tous les paiements obligatoires).
+
+---
+
+![Distribution de la Richesse](assets/mpc_3.png){width=60%}
+
+---
+
+![Décomposition de la Richesse](assets/mpc_4.png){width=60%}
+
+. . . 
+
+Les agents au milieu de la distribution de la richesse ont une hypothèque, dont les intérêts laissent très peu à dépenser après les paiements. Ils ont une trésorerie plus faible, donc une propension marginale à consommer plus élevée (que les agents riches).
+
+---
+
+### Agents Fortunés Vivant au Jour le Jour (Hand to Mouth)
+
+Nous venons de voir que les agents au milieu de la distribution de la richesse détiennent une plus grande proportion de richesse sous forme d'actifs illiquides (logements)
+
+- Leur trésorerie (disponible pour des achats immédiats) est réduite. Une fraction importante de leurs revenus est consacrée au remboursement de leur prêt...).
+- Ils ont une PMC plus élevée
+- Ils réagissent également aux variations des taux d'intérêt (notamment ceux qui ont des taux d'intérêt variables)
+- Dans un article très influent, "Monetary Policy According to HANK", 2018, Kaplan, Moll and Violante, mettent en évidence le rôle des agents Hand-to-Mouth et la nécessité de prendre en compte leur existence pour évaluer l'influence des politiques monétaires.
+
+## Producteurs
+
+### Producteurs
+
+\framesubtitle{Intuition}
+
+Comment la demande des producteurs en biens d'investissement dépend-elle du taux d'intérêt ?
+
+. . . 
+
+Prenons une entreprise hypothétique.
+
+. . . 
+
+Elle a besoin de capital pour produire.
+
+. . . 
+
+Pour acheter plus de capital, l'entreprise peut emprunter à un taux réel $r$. Elle devra rembourser le prêt une fois la production terminée. Le taux réel est appelé le coût externe des fonds.
+
+. . . 
+
+Intuitivement, plus le coût des fonds est faible, plus il est facile d'emprunter, et plus l'entreprise cherchera à acheter des biens de capital.
+
+Ainsi, __la demande d'investissement des entreprises diminue avec le taux d'intérêt__.
+
+
+---
+
+
+### Producteurs
+
+\framesubtitle{Preuve Simplifiée}
+
+Une entreprise produit $f(K)$ en utilisant du capital K. Nous supposons des rendements marginaux décroissants dans la production, c'est-à-dire $f^{\prime\prime}(K)<0$ (et bien sûr $f^{\prime}(K)>0$).
+
+Supposons que l'entreprise emprunte une quantité I pour financer K, c'est-à-dire $K=I$. Après la production, elle doit rembourser I(1+r) dans la période suivante.
+
+Le programme de maximisation des bénéfices se lit comme suit : $$\max \pi = f(I) - I (1+r)$$
+
+Lorsque l'entreprise est libre d'emprunter autant qu'elle le souhaite, la condition d'optimalité est:$$f^{\prime}(I) =1+r$$
+
+Cela définit implicitement $I(r)$. Étant donné que $f^{\prime}(I)$ décroît en fonction de $I$, __$I(.)$ est une fonction décroissante de r__.
+
+---
+
+### Reality Check
+
+\framesubtitle{Est-ce que les entreprises réagissent aux taux d'intérêt ?}
+
+![](assets/investment.png)
+
+---
+
+### Reality Check
+
+\framesubtitle{Est-ce que les entreprises réagissent aux taux d'intérêt ?}
+
+::: columns
+
+:::: column
+
+![](assets/investment.png)
+
+::::
+
+:::: column
+
+- Ces dernières années, il semble que le canal de l'investissement n'ait pas très bien fonctionné.
+
+- Au cours des deux dernières crises, et après, les taux d'intérêt étaient très bas. Et l'investissement était également faible.
+
+
+::::
+
+:::
+
+. . . 
+
+Il y a de nombreuses raisons à cela :
+
+- Incertitude concernant les résultats économiques
+    - Les entreprises averses au risque qui font face à une valeur incertaine de la production produisent moins
+- Même si le taux réel est bas, les conditions de financement auxquelles les entreprises sont confrontées peuvent être différentes
+    - Les banques sont également averses au risque
+
+
+### Producteurs
+
+Au-delà du coût de financement, pouvez-vous penser à d'autres raisons pour lesquelles l'investissement pourrait être réduit par les entreprises ?
+
+- Une partie du capital préexistant appartient à l'entreprise, ce qui signifie qu'il n'est pas toujours nécessaire d'emprunter
+- Tous les emprunts ne sont pas à court terme (et ne doivent pas être remboursés immédiatement après la production)
+- De nombreuses entreprises ont des contraintes de crédit
+    - En pratique, leur capacité à emprunter est limitée par le capital préexistant qu'elles ont et qu'elles utilisent comme "collatéral"
+
+
+
+# Dérivation de la Demande Agrégée
+
+## La Courbe IS
+
+Notre travail sur le comportement des consommateurs et des entreprises nous permet d'écrire.
+$$\begin{aligned}
+C(Y,r) & = & C_0 + C_Y Y + C_r r \\
+I(r) & = & I_0 + I_r r
+\end{aligned}$$
+
+où $I_r<0$ et où les valeurs $C_Y>0$ et $C_r<0$ dépendent de la proportion de ménages ricardiens et keynésiens.
+
+Donc, si nous prenons $G$ et $NX$ comme exogènes, la somme de toutes les composantes de dépenses est :
+
+est : $$C(Y,r) + I(r) + G + NX$$
+
+. . . 
+
+Est-ce que cela représente la Demande Agrégée ? __Non !__
+
+---
+
+### Courbe IS
+
+En macroéconomie, le côté demande de toute l'économie est caractérisé par la relation :
+
+$$Y=C(Y,r) + I(r) + G + NX$$
+
+qui lie *implicitement* la production et le taux d'intérêt réel.
+
+Cette relation est appelée équilibre __Investissement-Épargne__ (courbe IS) car elle traduit un compromis intertemporel (à travers le taux d'intérêt réel).
+
+Elle correspond à un équilibre sur le marché des biens et services, déterminé par les préférences de dépenses, avec une production parfaitement élastique.
+
+---
+
+### Courbe IS
+
+\framesubtitle{Quelques commentaires sur la Courbe IS}
+
+Quelques remarques :
+
+- la relation IS microfondée n'implique que des quantités réelles
+- elle implique uniquement des décisions rationnelles des consommateurs et des entreprises
+- la demande peut être microfondée sans nécessiter de monnaie ou de prix
+
+Fait intéressant, la microfondation de la demande montre qu'elle est parfaitement cohérente avec l'approche néoclassique.
+
+Il n'y a pas de controverse dans la profession concernant l'existence de la courbe de demande. Il y a des désaccords concernant :
+
+- la propension marginale à consommer agrégée et le multiplicateur fiscal
+- la courbe d'offre...
+
+
+### Courbe IS
+
+Jusqu'à présent, nous avons justifié les dépendances suivantes pour les composantes des dépenses du PIB :
+$$C(Y,r) + I(r) + G + NX$$
+
+À l'équilibre du PIB et du taux d'intérêt, nous avons : $$Y_0 = C_0 + I_0 + G_0 + NX_0$$
+
+On peut différentier l'équation ci-dessus pour obtenir :
+
+$$Y_0 + \Delta Y = C_0 + C_Y \Delta Y + C_r \Delta r + I_r \Delta r + G_0 + NX_0 + \Delta S$$
+
+Où $\Delta S= \Delta G + \Delta NX$ capture le choc à la demande. Après soustraction des constantes, on obtient une approximation linéaire :
+$$\Delta Y = C_Y \Delta Y + C_r \Delta r + I_r \Delta r + \Delta S$$
+
+---
+
+### Courbe IS
+
+\framesubtitle{Log-linéarisation}
+
+On peut différencier la courbe IS pour obtenir :
+$$\Delta Y = C_Y \Delta Y + C_r \Delta r + I_r \Delta r$$
+
+En logarithmes:
+
+$$\frac{\Delta Y}{Y} = C_Y \frac{\Delta Y}{Y} + \frac{C_r}{Y}\Delta r + \frac{I_r}{Y}\Delta r$$
+
+Avec $y=\frac{\Delta Y}{Y}$ et $\Delta r = r-r^{\star}$ on obtien l'équation décrivant la courbe IS:
+$$y= -\sigma (r-r^{\star}) $$
+
+où $$\sigma = \frac{-\left(\frac{C_r}{Y}+\frac{I_r}{Y}\right)}{1-C_Y}>0$$.
+
+---
+
+### Courbe IS
+
+Dans ce qui suit, nous considérerons une version légèrement modifiée de la courbe IS
+
+$$\boxed{y_t = -\sigma (r_r - r^{\star}) + {\color{red}\theta_t}}$$
+
+où $\sigma = \frac{-\left(\frac{C_r}{Y}+\frac{I_r}{Y}\right)}{1-C_y}>0$ et $\color{red}{\theta_t}$ est un choc de demande, qui capture tous les chocs externes au modèle ou que nous avons négligés pour simplifier.
+
+Par exemple, les revenus futurs des consommateurs ont été exclus de toutes les équations. Si les attentes des consommateurs changent positivement (optimisme), nous le considérerions comme un changement dans $\theta_t$.
+
+De la même manière, une augmentation des dépenses publiques est un déplacement autonome de la courbe IS, que nous capturons par un déplacement de $\theta_t$.
+
+
+
+### Exercice pour interpéter $\sigma$
+
+::: columns
+
+:::: {.column width=40%}
+
+\onslide<2>{
+
+On rappelle la courbe IS $$\boxed{y_t = -\sigma (r_r - r^{\star}) + \theta_t}$$
+
+où $\sigma = \frac{-\left(\frac{C_r}{Y}+\frac{I_r}{Y}\right)}{1-C_y}$ et où $\theta_t$ est un choc de demande.
+
+}
+
+::::
+
+:::: {.column width=60%}
+
+####  Quizz 5
+
+Trouvez l'affirmation incorrecte parmi les suivantes :
+
+\ 
+
+- Une PMC plus élevée implique une élasticité plus élevée de la demande aux chocs de revenu pour les ménages keynésiens
+- Une élasticité plus élevée de la deamnde au taux d'intérêt signifie une réponse plus élevée de la demande à la politique monétaire pour les ménages et les entreprises ricardiens
+
+
+::::
+
+:::
+
+
+## Le rôle de la Banque Centrale
+
+### Politique Monétaire
+
+L'objectif principal de la banque centrale consiste à *stabiliser l'inflation* $\pi$ autour de sa cible $\pi^{\star}$
+
+. . . 
+
+- Elle atteint cet objectif en *influençant la demande* en réponse aux fluctuations des cycles économiques
+
+. . . 
+
+- La demande est affectée par le taux d'intérêt *réel* $r$
+  - plus précisément, les ménages et les entreprises ricardiens réagissent au taux d'intérêt réel
+
+### Politique Monétaire
+
+- En pratique, la banque centrale fixe le taux d'intérêt *nominal* $i$
+
+  - Comme  l'inflation ne suit pas le taux d'intérêt  1 pour 1, la banque centrale est capable d'influencer le taux d'intérêt réel[^fisher]
+
+- Pour simplifier, on suppose que la banque centrale choisit indirectement le taux d'intérêt réel à n'importe quel niveau qu'elle souhaite
+
+- On peut alors décrire la fonction de réponse de la banque centrale[^romer2002] comme suit :
+$$\boxed{r_r = r^{\star} + \gamma (\pi_t - \pi^{\star})}$$
+
+. . . 
+
+- En général, les banques centrales augmentent le taux d'intérêt pour réduire l'inflation, donc $\gamma>0$
+
+[^fisher]: on rappelle l'équation de Fisher $r_t = i_t-\pi_{t+1}$}
+[^romer2002]: on suit ici l'approche de Romer 2002.
+
+## Demande Agrégée
+
+### Demande Agrégée
+
+Maintenant que nous disposons de la courbe (IS) :
+$$y_t = -\sigma (r_t - r^{\star}) + \theta_t$$
+
+Et de la réponse de la politique de la banque centrale (MP) :
+$$r_t = r^{\star} + \gamma (\pi_t -\pi)$$
+
+On peut substituer le taux d'intérêt réel pour obtenir une équation de demande agrégée (AD) :
+$$\boxed{y_t = -\sigma \gamma (\pi_t - \pi^{\star}) + \theta_t}$$
+
+où $\theta_t$ est le choc de demande.
+
+Cette courbe représente l'équilibre sur les marchés des biens et des services, en tenant compte de la règle de décision de la banque centrale.
+
+### Courbe de Demande Agrégée[^footnote13]
+
+::: columns
+
+:::: column
+
+![](assets/as_ad.png)
+
+::::
+
+:::: column
+
+Demande Agrégée (AD) : $$y_t = \theta_t - \sigma \gamma (\pi_t - \overline{\pi})$$
+
+Notez que la demande agrégée $y_t$ est une fonction décroissante de l'inflation (et des prix).
+
+
+::::
+
+:::
+
+[^footnote13]: Dans certains manuels, vous trouverez les prix agrégés $P_t$ sur l'axe des ordonnées au lieu de l'inflation. Parce que $P_{t-1}$ est donné et que l'inflation est $\pi_t= P_t / P_{t-1}$, c'est en fait équivalent.
+
+### Résumé Exécutif
+
+\framesubtitle{À Retenir}
+
+- La demande agrégée peut être fondée sur la micro-optimisation rationnelle des consommateurs et des entreprises
+  - Les ménages keynésiens ont une propension marginale à consommer élevée
+  - Les ménages ricardiens ont une propension marginale à consommer faible et réagissent (négativement) au taux d'intérêt réel
+  - Les entreprises investissent moins lorsque le taux d'intérêt réel est plus élevé
+
+\ 
+
+- La demande agrégée est décroissante (en l'inflation)
+
+- Pour stabiliser l'inflation, la banque centrale stimule la demande en modifiant le taux d'intérêt réel. Elle le fait indirectement en fixant le taux d'intérêt 
+nominal.
+  - ...on verra dans la dernière session *comment* la BC influence le taux nominal
+
+
+### À Suivre
+
+__Offre Agrégée__ : pourquoi est-elle croissante à court terme ?
+
+
+
+# Bonus
+
+
+### Un tout petit peu d'histoire
+
+:::{.center}
+![](assets/history_keynes.png){width=80%}
+:::
+
+| ![](assets/keynes.jpg){width=50%} | ![](assets/general_theory.jpg){width=20%}            |
+| --------------------------------- | ---------------------------------------------------- |
+| Keynes (1883-1946)                | The General Theory of Employment, Interest and Money (1936) |
+
+---
+
+### Un choc de demande
+
+
+::: columns
+
+:::: column
+
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Économie Simplifiée](assets/circular.png){width=90%}
+
+\onslide<2>
+
+![Économie Simplifiéey](assets/circular_keynes.png){width=90%}
+
+\onslide<3,4>
+
+![Économie Simplifiée](assets/circular_keynes_badeq.png){width=90%}
+
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+
+\onslide<1>
+
+Keynes, in TGTEIM, p18:
+  - *Depuis Say et Ricardo les éconmistes classiques nous enseignent que l'offre crée sa propre demande...*
+
+\onslide<2>
+
+Mais si un agent *décide* de ne pas dépenser tout son revenu
+
+\onslide<3>
+
+La production baisse
+
+\onslide<4>
+
+Pourquoi un agent ne dépenserait pas tout?
+
+- mauvais rêve, animal spirits...
+- peur du futur -> épargne de précaution
+- faible propension à consommer
+
+::::
+
+:::
+
+---
+
+### Synthèse néoclassique
+
+:::{.center}
+![](assets/history_neoclassical.png){width=80%}
+:::
+
+|![Alvin Hansen](assets/hansen.jpg){width=30%} |  ![John Hicks](assets/hicks.png){width=30%} | ![Paul Samuelson](assets/samuelson.jpg){width=30%}  |
+|------------------------------------------|------------------------------------------------- | --------------------------------------------------|
+| Alvin Hansen (1887-1975)                                 | John  Hicks (1904-1989)                                        | Paul Samuelson (1915-2009)                                      |
+
+---
+
+### Le programme de la synthèse néoclassique
+
+Décrire un cadre rigoureux et quantitatif pour exposer les idées keynésiennes de manière compréhensible pour les penseurs classiques.
+
+Deux questions centrales
+
+- qu'est-ce que la "demande"
+- quel marché est hors équilibre?
+
+[Consensus]{.underline} (Pour faire court)
+
+- le *long terme* est classique
+  - équilibre statique
+- le *court terme* est keynesian
+  - fluctuations dynamiques
+
+---
+
+### Qu'est-ce que la demande ?
+
+- S'écarter du postulat "Revenu=Demande"
+
+- __Demandes "prévues"__:
+  - Combien les agents (consumers, firms, ...) veulent dépenser pour un niveau de revenu donné
+
+- dont:
+  - __dépenses autonomes__: ce que les agents dépensent indépendamment de leur revenu
+  - __dépenses induites__: ce qu'ils dépensent losque el eur revenu augmente
+
+- Certes, mais si les dépenses dépendent du revenu et le revenu des dépenses, ...
+
+---
+
+### La croix keynesienne
+
+
+::: columns
+
+
+:::: {.column width=40%}
+
+![La croix keynesienne a.k.a. le diagramme à 45 degrés](assets/keynesian_cross.png)
+
+::::
+
+::::  {.column width=60%}
+
+Supposons que les dépenses prévues soient données par:
+
+$$P(Y) = c_0 + c_1 Y + g$$
+
+L'équilibre sur le marché des biens implique:
+$$Y = P(Y) = c_0 + c_1 Y + g$$
+
+::::
+
+:::
+
+C'est ce qui serait produit, *si la production était totalement déterminée par la demande*.
+
+---
+
+
+### Stimuler la demande
+
+ 
+::: columns
+
+::::  {.column width=40%}
+
+![Effet des dépenses gouvernementales](assets/keynesian_cross_gvt.png)
+
+::::
+
+::::  {.column width=60%}
+
+Supposons que le gouvernement dépense $g+\Delta G$ au lieu de $g$
+
+Les dépenses prévues deviennent:
+$$P(Y) = c_0 + c_1 Y + g + \Delta G$$
+
+Et la condition d'équilibre \begin{eqnarray*}
+& & Y + \Delta Y  =  P(Y+\Delta Y) \\
+             & = & c_0 + c_1 ( Y + \Delta Y) + g + \Delta G
+\end{eqnarray*}
+
+d'où $$\Delta Y = \frac{1}{1-c_1} \Delta G$$
+
+::::
+
+:::
+
+Cela montre que le gouvernement peut stimuler la demande par un __stimulus fiscal__. Et le stimulus est potentiellement plus grand que les dépenses: $\frac{1}{1-c_1}$ est le multiplicateur fiscal.
+
+---
+
+
+### Sur l'équilibre du marché
+
+L'idée que l'on peut produire *la quantité que les gens veulent* est un peu ridicule, non?
+
+. . . 
+
+Si les marchés étaient à l'équilibre, la production serait déjà optimale
+
+- on ne peut pas l'augmenter juste en "voulant" plus
+- la demande excessive devrait être compensée par une augmentation des prix
+
+. . . 
+
+Mais si on empêche les prix de s'ajuster, est-ce que les firmes peuvent produire plus?
+
+- non, si elle produisent déjà au maximum
+  - mais alors le marché des biens est hors équilibre[^french_economists]
+- oui, s'il y a des ressources non utilisées
+
+[^french_economists]: Certains économistes (Patinkin, Benassy, Malinvaud...) ont développées des théories du déséquilibre. Elles n'ont pas vraiment percé à l'époque.
+
+---
+
+### La grande dépression
+
+
+![Taux de chômage aux US end 1932: 23.6%](assets/hungry_lion.png){width=30%}
+
+Au lendemain de la crise de 1929, il y avait beaucoup de travailleurs prêts à travailler...
+
+---
+
+
+### Le marché du travail
+
+
+Alors *à prix constants*, stimuler la demande devrait marcher.
+
+::: {.center}
+
+![](assets/unemployment.png){width=80%}
+
+:::
+
+En réalité ça dépend de l'origine du chômage
+
+- __frictionnel__
+- __structurel__ (les chômeurs n'ont pas de valeur ajoutée)
+- __cyclique__ (moins de demande pour ce qu'ils font)
+
+En suivant Keynes, pour que les politiques de demande fonctionnent il faut qu'il y a du chômage involontaire
