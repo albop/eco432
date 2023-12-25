@@ -3,7 +3,40 @@ title: "PC6: Croix Keynésienne"
 format: pdf
 ---
 
+## Exercice 1: agents ricardiens et keynesiens
 
+1. Commenter brièvements les graphes suivants[^sources]. Quelle explication proposeriez-vous pour les ménages dont la MPC est égale à 50%?
+2. En utilisant le dernier graphique justifier l'expression de "Wealthy Hand to Mouth"[^wealth_hand_to_mouth] pour les ménages dont la PMC est non-nulle alors qu'ils disposent d'une richesse financière importante.
+
+:::: {#fig-elephants layout-ncol=2}
+
+![PMC  (Autodéclarée) en Réponse à un Choc de Revenu Temporaire](assets/mpc_1.png)
+
+![MC Moyenne par Percentiles de Trésorerie](assets/mpc_2.png)
+
+![Distribution de la Richesse](assets/mpc_3.png)
+
+![Décomposition de la Richesse](assets/mpc_4.png)
+
+::::
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+1. Dans le premier graphe on note que la proportion d'agent ricardiens (dont la PMC est proche de zero) est sensiblement égale à celle des agents keynésiens (PMC proche de un). Cela dit, on remarque que toutes les valeurs intermédiaires sont présentes, notamment celle de 0.5. Ces valeurs sont a priori incompatibles avec un modèle d'optimisation intertemporelle sans risque.
+Comment peut-on l'interpéter? Sans exclusive, on peut avancer les explications suivantes:
+- certains agents ne sont pas rationnels: ils suivent des règles de consommations (rule of thumb). C'est particulièrement plausible pour la valeur de 50%.
+- la propension à consommer est une fonction continue de l'épargne de précaution. Elle est fonction des contraintes de crédit (voir question suivante) et du revenu disponible  (graphes 2 et 3) qui a une distribution continue.
+
+2. Le graphe 3 montre l'importance de l'inégalité de la distribution de richesse. Sur le dernier on note l'existence d'une catégorie d'agents, dont la richesse est en grande partie une richesse immobilière. Concrètement il s'agit d'agents, dont le remboursement du crédit représente une part importante du revenu. Qui peuvent donc facilement être contraints de consommer moins si leur revenu baisse. Dans le cas extrême où cette correspondance s'opère un pour un, on les appelle "wealthy hand to mouth". Sinon, en général, ces agents consomment seulement une fraction de leur revenu additionel de façon à se couvrir contre une perte potentielle de revenu.
+
+::::
+:::
+
+[^sources]: Les deux premiers graphes sont tirés de <u>Fiscal Policy and MPC Heterogeneity</u>, Tullio Jappelli et Luigi Pistaferri, American Economic Journal: Macroeconomics, 2014, les deux derniers d'"Une brève histoire de l'égalité", Thomas Piketty, éditions du seuil.
+
+[^wealth_hand_to_mouth]: Les "Wealthy Hand to Mouth" on été mis en évidence dans l'article <u>Monetary Policy According to HANK</u>de Kaplan, Moll and Violante dans American Economic Review, 2018
 
 ## Exercice 2: la croix keynésienne
 
@@ -140,7 +173,7 @@ On fait maintenant les hypothèses suivantes sur la répartition du revenu total
 - une fraction $\alpha_L$ des revenus totaux revient aux travailleurs, une fraction $\alpha_K$ aux détenteurs du capital et une fraction $\alpha_\pi$ est payée sous forme de profits au détenteurs des firmes. On a bien sûr $\alpha_L + \alpha_K + \alpha_\pi=1$
 - le gouvernements taxe les profits et les revenus du capital à un taux $\tau$, pour les redistribuer aux agents $H$
 
-1. __Calculer la propension marginale à consommer agrégée. Peut-elle être plus grande que 1? Quel est le multiplicateur fiscal.__
+7. __Calculer la propension marginale à consommer agrégée. Peut-elle être plus grande que 1? Quel est le multiplicateur fiscal.__
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
