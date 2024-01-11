@@ -506,8 +506,8 @@ Hypothèse centrale des nouveaux modèles keynésiens : certaines rigidités _no
 * Si les prix étaient flexibles, ils changeraient tout le temps
   * Les prix des actions sont mis à jour en continu (LSE : 126 microsecondes)
 * Il existe des statistiques sur les changements de prix : ils sont rigides (voir tableau ci-dessous)
-  * Fréquence mensuelle des changements de prix : proportion de tous les prix ajustés chaque mois
-  * Durée moyenne des prix : temps moyen nécessaire pour réviser un prix moyen
+  * Fréq mensuelle des changements de prix : proportion des ajustés chaque mois
+  * Durée moyenne des prix : temps moyen nécessaire pour réviser un prix
 
 |  | Zone euro (1996-2000) | États-Unis (1998-200) |
 | :-: | :-: | :-: |

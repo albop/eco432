@@ -1,21 +1,133 @@
 ---
-title: "PC7: Demand and Supply Shocks"
-format: pdf
+title: "PC7: Chocs d'Offre et de Demande"
+format: typst
 ---
 
 ## Exercice 1:
 
 
+
 ## Exercice 2: 
+
+
+Lire les documents en annexe et répondre aux questions suivantes:
+
+1/ La courbe de Philips a-t-elle disparu ? Axe des abcisses. Pourqui est-il important de savoir s'il s'agit d'une relation structurelle ou d'une relation statistique ?
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+_Pourquoi elle aurait disparu:_
+
+La courbe de Philips est à l'origine une relation négative entre la niveau de d'inflation et le niveau du chômage. Cette relation était bien vérifiée dans les années 70 (cf cours ou picture).
+
+Or le graphe de The Economist, semble montrer que depuis les années 1995, le chômage  évolue indépendamment de l'inflation. 
+
+Cela dit, sur le graphe XXX, on observe une forte correlation depuis 2018 qui semble même augmenter sur les sous-périodes plus récentes.
+
+Notons que la sur l'axe des abcisses, n'est pas précisément la même sur tous les graphes. Dans le graphe de Philips original, il s'agit du chomage. Dans les graphes suivants, on veut éliminer les changements dans le niveau du chômage structurel. Pour le graphe XXX on regarde donc la déviation au niveau structurel. Dans les papiers plus récents, on utilise plutôt, la tension sur le marché du travail: c'est à dire que l'on regarde le ratio entre le nombre de chômeur, et le nombre d'emplois non pourvus. (raison: ća correspond plus naturellement à des modèles de matching) Intuitivement, c'est la même chose, dans la mesure où le nombre d'offre d'emploi est étroitement corrélé avec la capacité structurelle de l'économie à produire à court terme.
+
+Notons que que les graphes n'indiquent pas s'il s'agit seulement d'une relation statistique (définition??) ou d'une relation structurelle. S'il s'agit d'une relation structurelle, on peut imaginer de lutter contre le chômage en augmentant l'inflation.
+
+
+
+(mention court-terme, long-terme)
+
+
+
+::::
+:::
+
+2/ Comment peut-on interpréter la courbe de Philips nonlinéaire ? En s'inspirant de l'analyse graphique des chocs faite en cours, que peut-on en déduire sur l'efficacité des politiques de demande ?
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+Une présentation usuelle de la courbe AS/AD se présente comme: 
+
+![](Short term / long term AS AD)
+
+On peut interpréter la partie horizontale de la courbe comme
+On peut interpréter la courbe verticale de la courbe comme ...
+
+
+
+::::
+:::
+
+2/ Labour market tightness
+
+
+
+What do we mean when we say the philipps curve has disppaead.
+
+
+Raad the documents in appendix and answer the following questions:
+
+- why high pi -> high u ?
+- what does it mean reduced form / deep structural ?
+- spurious correlation
+- monetary fiscal regime
+
+According to the course, how can you explain the causal relationship between (nominal) interest rate setting and changes in unumployment?
+
+
+
+Page 5, what is Ricardo Reis explaining ? Where does it fit in the course ?
+- short term IS: move in the AD curve
+- AS is a side effect...
+
+Answer from Blanchard:
+which theories from the course are alluded to by RReis?
+
+Cochrane, asset price?
+
+Context: philips curve
+
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+This is my response.
+
+::::
+:::
 
 
 {{< pagebreak >}}
 
+
+
+## Where is the Philips Curve?
+
+Le graphe suivant est extrait de *The Economist* (2017):
+
+![Disparition de la Courbe de Philips](disparition_pc.png){width=70%}
+
+Les graphes suivants proviennent du papier *Reducing Inflation along a Nonlinear Phillips Curve* par Erin E. Crust, Kevin J. Lansing, et Nicolas Petrosky-Nadeau
+
+![Inflation et Chômage](inflation_without_unemployement.png){width=70%}
+
+![Courbe de Beveridge](beveridge_curve.png){width=70%}
+
+![Courbe Philips Nonlinéaire](nonlinear_philips_curve.png){width=70%}
+
+Its' baaack. The Philips Curve is 
+
+![Courbe Philips Nonlinéaire](no_pc.png){#fig-nopc width=70%}
+
+
+{{< pagebreak >}}
+
+
 ## Twitter & Short Term Macroeconomics {.appendix}
 
 
-Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chef économiste du FMI, maintenant au Peterson institute.
+Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview[^transcript_ai] a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chef économiste du FMI, maintenant au Peterson institute.
 
+[^transcript_ai]: Le transcript est généré par IA d'où certaines bizarreries de syntaxe...
 
 [^macro_musing]: https://www.mercatus.org/macro-musings/ricardo-reis-macroeconomics-financial-crises-and-recent-inflation-surge
 
