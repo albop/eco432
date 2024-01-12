@@ -1,110 +1,350 @@
 ---
 title: "PC7: Chocs d'Offre et de Demande"
-format: typst
+format: pdf
 ---
 
-## Exercice 1:
+## Questions de cours
+
+@. Quelle est la bonne réponse ?
+    a. Les agents ricardiens ont une propension marginale à consommer plus basse que les agents keynésiens et les agents ricardiens réagissent au taux d'intérêt nominal.
+    b. Les agents ricardiens ont une propension marginale à consommer plus élevée que les agents keynésiens et les agents ricardiens réagissent au taux d'intérêt nominal.
+    c. Les agents ricardiens ont une propension marginale à consommer plus basse que les agents keynésiens et les agents ricardiens réagissent au taux d'intérêt réel.
+    d. Les agents ricardiens ont une propension marginale à consommer plus élevé eque les agents keynésiens et les agents ricardiens réagissent au taux d'intérêt réel.
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+__c__ Voir le cours.
+
+::::
+:::
+
+@. La demande agrégée est une fonction décroissante des prix. Choisissez la justification qui correspond le mieux au modèle AS/AD vu en cours :
+
+    a. Une inflation plus élevée correspond à des taux d'intérêt réels plus élevés, ce qui correspond à des rendements de l' épargne plus élevés et donc à des investissements plus élevés. L'augmentation des investissement augmente finalement la production et la consommation.
+    b. Lorsque l'inflation est plus élevée, la réaction de la banque centrale implique une hausse des taux réels qui incite les consommateurs ricardiens à diminuer leurs dépenses et les entreprises à reporter leurs investissements. La demande diminuée des ménages  ricardiens et des entreprises induit également les ménages keynésiens à consommer moins.
+    c. Une inflation plus élevée correspond à des taux d'intérêt nominaux plus élevés, ce qui correspond à des rendements de l'épargne plus élevés et donc à des investissements plus élevés. Un investissement plus élevé augmente finalement la production et la consommation.
+    d. Une fonction de demande est décroissante par définition.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. faux. Une inflation plus élevéec correspond à un taux réel plus *bas*
+b. __vrai__. C'est exactement ça. Notons bien que si la banque centrale de réagissait pas, une hausse de l'inflation baisserait les taux réels.
+c. faux. D'une part l'épargne est déterminée par les taux réels, pas nominaux. D' autre part la hausse des taux provoque une baisse de la production.
+d. faux. La demande agrégée n'est pas une fonction de demande normale. Il s'agit de l'équilibre implicite qui provient de la courbe IS.
+
+::::
+:::
+
+
+@. La courbe d'offre agrégée est ascendante parce que (choisissez la meilleure justification) :
+
+    a. Les courbes d'offre sont ascendantes sur tous les micro-marchés.
+    b. Les courbes d'offre sont toujours ascendantes.
+    c. Des prix plus élevés permettent aux entreprises monopolistiques de réduire leur production.
+    d. Un niveau de prix plus élevé incite les entreprises qui ne peuvent pas ajuster leur propre prix à augmenter la production.
 
 
 
-## Exercice 2: 
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. faux. L'offre agréegée  peut conceptuellement être verticale, même si les marchés de chacun des biens à une pente d'offre normalement pentue.
+b. faux. L'offre agrégée n'est pas une fonction d'offre normale normale. 
+c. faux. Une entreprise monopolistique peut décider de réduire sa production en augmentant le prix. Mais l'inverse n'a pas de sens car le prix est une variable de décision de la firme. La même explication tient pour les firmes monopolistiques.
+d. __vrai__. C'est le mécanisme qui fait que la production de certaines firmes augmentent lorsque la demande augmente, au lieu que ce soient seulement les prix qui servent de valeur d'ajustement. On a vu que l' intuition reste vraie quand une fraction seulement des firmes peut ajuster.
+
+
+::::
+:::
+
+
+@. Trouvez la bonne déclaration :
+
+    a. Les pays avec des marges plus basses ont des marchés plus concurrentiels.
+    b. Les pays où les marchés sont plus compétitifs ont une croissance plus élevée.
+    c. Des marges moyennes plus élevées signifient des prix plus flexibles.
+    d. La marge d'une entreprise monopolistique dépend uniquement de son coût marginal.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. __vrai__
+b. non, ce n' est pas si simple. On a vue que la concurrence est moins forte aux États-Unis, mais la croissance y est plus faible qu'en France.
+c. non
+d. non. le lien entre coût marginal, marge et prix est de la forme $p = (1+\mu) mc$. La marge $\mu$ dépend de l'élasticité de la demande qui elle-même dépend de l' environnement compétitif.
+
+
+::::
+:::
+
+
+@. Après un choc négatif d'offre :
+
+    a. Les achats gouvernementaux peuvent atténuer l'effet sur le chômage.
+    b. La banque centrale ne peut rien faire car c'est un choc réel.
+    c. L'économie restera en déséquilibre jusqu'à ce que le gouvernement ou la banque centrale intervienne.
+    d. Les entreprises devraient changer de fournisseurs.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. __oui__ le gouvernemnt peut en effet augmenter la demande en augmentant les dépense. Cela stabilise le chômage au prix d'une inflation plus haute
+b. non, la banque centrale peut accomoder le choc, en déplacer la demande de manière à neutraliser son effet sur la production et/où l'inflation
+c. non, s'il n' est pas persistent l'effet du choc se résorbe de lui-même à mesure que les prix s'ajustent
+d. non, pas de rapport
+
+::::
+:::
+
+
+@. Lequel des cas suivants n'est pas un bon exemple de choc positif de la demande, du point de vue de l'économie européenne :
+
+    a. Les déboires des sous-traitants de Boeing poussent la société à importer des moteurs allemands et italiens à la place des moteurs Pratt & Whitney 
+    b. La fin de la Covid-19 provoque une hausse de l'optimisme des consommateurs.
+    c. Les réglementations en matière de crédit sont mises à jour pour limiter le surendettement
+    d. Un nouveau type de poussette électrique bon marché devient un must-have pour tous les passionnés de mode urbaine.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. faux. cela augmente la demande étrangère pour la production domestique. C'est un choc de demande positif.
+b. faux. les consommateurs plus optimistes pensent que leur consommation va augmenter dans le future. Pour lisser leur consommation dans le temps, ils augmentent donc leur consommation présente. (l'optimisme peut-aussi réduire leur perception du risque future et leur besoin d'une épargne de précaution, avec le même effet)
+c. __vrai__. la réglementation sur le surendettement empêche certains ménages de s'endetter pour consommer donc c'est un choc de demande négatif (même s'il peut être désirable)
+d. faux. L'évolution des préférences entraîne une demande des consommateurs pour ce type de produit. C'est un choc de demande positif.
+
+::::
+:::
+
+
+@. Lequel des événements suivants est un choc d'offre positif:
+    a. les prix mondiaux du pétrole augmentent à cause de la guerre en Ukraine
+    b. pour atteindre l'objectif "zéros émissions in 2030", les entreprises sont encouragées à éviter les énergies fossiles
+    c. le gouvernment met en place une subventions pour les entreprises qui investissent dans les technologies vertes
+    d. comme les voitures à essences sont interdites de circulation dans les grandes villes, les consommateurs achètent des voitures électriques
+
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+d. faux. choc d'offre négatif
+b. faux. c'est équivalent à un renchérissement du prix des énergies fossiles donc à un choc d'offre négatif
+a. __vrai__. sans que le prix des autres énergie soient affectées, la production de technologies vertes est moins chère. C'est un choc d'offre positif.
+c. faux. un choc de demande positif pour les voitures électrique
+
+::::
+:::
+
+
+@. Selon la version NK du modèle AS/AD vue pendant le cours, laquelle des déclarations suivantes est vraie :
+
+    a. Après un choc de demande temporaire, les prix augmentent, puis diminuent pour revenir à leur niveau initial.
+    b. Un choc de demande positif persistant affecte l'écart de production, uniquement jusqu'à ce que tous les prix aient été ajustés.
+    c. Tout choc de demande induit une réponse d'offre opposée qui annulera finalement ses effets à long terme.
+    d. Les politiques de demande sont plus efficaces lorsque les prix sont plus flexibles.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+a. Non. les prix augmentent mais ne baisse pas. L'inflation elle redescend à son niveau initial.
+b. __Oui__. cf cours.
+c. Non. L'économie se déplace le long de la courbe d'offre de cours terme mais ce n'est pas un choc.
+d. Non. Les politiques de demande sont plus efficaces lorsque les prix sont *moins* flexible.
+
+::::
+:::
+
+
+## Exercice 3: offre et demande
 
 
 Lire les documents en annexe et répondre aux questions suivantes:
 
-1/ La courbe de Philips a-t-elle disparu ? Axe des abcisses. Pourqui est-il important de savoir s'il s'agit d'une relation structurelle ou d'une relation statistique ?
+1/ La courbe de Phillips a-t-elle disparu ?  Pourqui est-il important de savoir s'il s'agit d'une relation structurelle ou d'une relation statistique ?
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
-_Pourquoi elle aurait disparu:_
 
-La courbe de Philips est à l'origine une relation négative entre la niveau de d'inflation et le niveau du chômage. Cette relation était bien vérifiée dans les années 70 (cf cours ou picture).
+La courbe de Phillips est à l'origine une relation négative entre la niveau de l'inflation et le niveau du chômage. Cette relation était bien vérifiée dans les années 70 (cf cours ou picture).
 
 Or le graphe de The Economist, semble montrer que depuis les années 1995, le chômage  évolue indépendamment de l'inflation. 
 
-Cela dit, sur le graphe XXX, on observe une forte correlation depuis 2018 qui semble même augmenter sur les sous-périodes plus récentes.
+Cela dit, sur la figure 4, on observe une forte correlation depuis 2018 qui semble même augmenter sur les sous-périodes plus récentes.
 
-Notons que la sur l'axe des abcisses, n'est pas précisément la même sur tous les graphes. Dans le graphe de Philips original, il s'agit du chomage. Dans les graphes suivants, on veut éliminer les changements dans le niveau du chômage structurel. Pour le graphe XXX on regarde donc la déviation au niveau structurel. Dans les papiers plus récents, on utilise plutôt, la tension sur le marché du travail: c'est à dire que l'on regarde le ratio entre le nombre de chômeur, et le nombre d'emplois non pourvus. (raison: ća correspond plus naturellement à des modèles de matching) Intuitivement, c'est la même chose, dans la mesure où le nombre d'offre d'emploi est étroitement corrélé avec la capacité structurelle de l'économie à produire à court terme.
-
-Notons que que les graphes n'indiquent pas s'il s'agit seulement d'une relation statistique (définition??) ou d'une relation structurelle. S'il s'agit d'une relation structurelle, on peut imaginer de lutter contre le chômage en augmentant l'inflation.
+Notons que la sur l'axe des abcisses, n'est pas précisément la même sur tous les graphes. Dans le graphe de Phillips original, il s'agit du chomage. Dans les graphes suivants, on veut garder une relation de court terme, les auteurs ont voulu neutraliser les variations persistantes dans le niveau du chômage. Pour la figure 2 on a donc on abcisse la déviation du chômageau à son niveau structurel. Dans les papiers plus récents, on utilise plutôt, comme dans la figure 4, la tension sur le marché du travail: c'est à dire que l'on regarde le ratio entre le nombre de chômeur, et le nombre d'emplois non pourvus. Intuitivement, c'est la même chose, dans la mesure où le nombre d'emploi à pourvoir est étroitement corrélé avec la capacité structurelle de l'économie à produire à court terme. Notons aussi que le graphe 6 est inversé gauche droite puisqu' il utilise le nombre de poste à pourvoir sur le nombre de chômeurs au lieu de l'inverse.
 
 
-
-(mention court-terme, long-terme)
-
+Notons que que les graphes n'indiquent pas s'il s'agit seulement d'une relation statistique ou d'une relation structurelle.
+Une relation structurelle est vérifiées dans toutes les circonstances, et peut recevoir une interprétation causale. Si l'on croît que la relation chômage inflation est structurelle, alors on pourrait vouloir augmenter l'inflation par n'importe quel moyen pour réduire le chômage.
 
 
 ::::
 :::
 
-2/ Comment peut-on interpréter la courbe de Philips nonlinéaire ? En s'inspirant de l'analyse graphique des chocs faite en cours, que peut-on en déduire sur l'efficacité des politiques de demande ?
+2/ Comment peut-on interpréter la courbe de Phillips nonlinéaire ? En s'inspirant de l'analyse graphique des chocs faite en cours, que peut-on en déduire sur l'efficacité des politiques de demande à court terme? 
 
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
-Une présentation usuelle de la courbe AS/AD se présente comme: 
+La courbe AS/AD est parfois présentée de la faćon suivante (TODO change p for $\pi$)
 
-![](Short term / long term AS AD)
+![Modèle AS/AD avec AS nonlinéaaire](nonlinear_as_ad.svg.png){width=60%}
 
-On peut interpréter la partie horizontale de la courbe comme
-On peut interpréter la courbe verticale de la courbe comme ...
+On peut l'interpréter intuitivement de la façon suivante:
+Pour la partie (presque) horizontale, le niveau de chômage est tel qu'il existe des ressources non utilisées. Si besoin les firmes peuvent donc produire plus à prix (presque) constant.
+A l'inverse, sur la partie verticale, l'économie est au plein emploi et ne peut produire plus sans que les prix augmentent très vite.
 
+Traçons le diagramme AS/AD en remplaçant la courbe AS par la courbe de Phillips non-linéaire. Un choc de demande positif correspond à un déplacement de la courbe de demande vers la droite. En fonction du point d'équilibre initial, on peut alors avoir plusieurs dynamiques possibles:
+
+- si l'équilibre initial est loin du plein emploi, l'emploi augmente significativement et l'augmentation de l'inflation est modérée
+- si l'équilibre initial est au plein emploi, l'emploi ne bouge pas mais l'inflation augmente
+
+Dans le deuxième cas, la politique de relance est inefficace.
 
 
 ::::
 :::
 
-2/ Labour market tightness
-
-
-
-What do we mean when we say the philipps curve has disppaead.
-
-
-Raad the documents in appendix and answer the following questions:
-
-- why high pi -> high u ?
-- what does it mean reduced form / deep structural ?
-- spurious correlation
-- monetary fiscal regime
-
-According to the course, how can you explain the causal relationship between (nominal) interest rate setting and changes in unumployment?
-
-
-
-Page 5, what is Ricardo Reis explaining ? Where does it fit in the course ?
-- short term IS: move in the AD curve
-- AS is a side effect...
-
-Answer from Blanchard:
-which theories from the course are alluded to by RReis?
-
-Cochrane, asset price?
-
-Context: philips curve
+3/ Quels changements persistents a apporté la crise de la Covid? Quelle raison y avait-il de penser que l'inflation élevée de 2023 pourrait être controlée sans dommage ?
 
 
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
-This is my response.
+Le graphe 5 nous renseigne sur le comportement du marché de l'emploi en conséquence de la crise. Le chômage a d'abord augmenté brutalement, puis s'est résorbé alors que le nombre d'emploi créé par l'économie américaine augmentait. Dans le nouvel équilibre, le marché de l'emploi est donc particulièrement tendu de sorte que l'excès de demande post-covid, est principalement inflationiste.
+
+Cette situation était un argument pour penser qu'une augmentation des taux d'intérêts réduirait l'inflation sans augmenter le chômage ou peu: l'économie revient à la normale en suivant la partie verticale de la courbe AS.
 
 ::::
 :::
+
+4/ Quel est le point de vue de Ricardo Reis sur la courbe de Phillips ? Pourquoi David Beckworth parle-t-il de variable confondante ?
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+
+Selon R. Reis, la banque centrale manipule les taux d'intérêt pour contrôler l'inflation, ce qui a pour effet *secondaire* d'affecter le niveau  chômage. Le mécanisme précis est expliqué dans les Tweets 2. L'augmentation des taux d'intérêt nominaux rend les actifs réels plus côuteux à détenir que les actifs nominaux. Donc les taux d'intérêts réels tendent à diminuer. Comme les taux réels baissent, la consommation, l'investissement (précisément la demande d'investissement) baissent aussi. Ce mécanisme est a priori le même quelque soit la réaction de l'offre et du marché du travail.
+
+```{mermaid}
+flowchart LR
+  A[Interest Rate] --> B[Inflation]
+  A -->|?| C[Unemployment]
+    Z[Z] --> B
+
+%%   B ---|?| C
+```
+
+Si on regarde le graphe ci-dessus, on retrouve un motif familier en statistique celui d'une variable confondante: lorsqu'une variable aléatoire X cause à la fois Y et Z, on trouve une corrélation entre Y et Z, sans rapport de causalité. Par exemple, il existe une corrélation claire entre la quantité de chocolat consommée dans un pays et le nombre de prix Nobel produits par ce pays. Sauf s'il s'agit d'une anomalie statistique (corrélation parasite), cela peut s'expliquer par le fait que le niveau de vie cause une consommation plus élevée de produits de luxe (et de chocolat), et un système de recherche capable de produire des prix Nobel.
+
+En particulier si l'on affecte l'inflation par une variable quelconque Z, mais qu'inflation et chômage ne sont pas liés structurellement on n'a aucun effect sur le chômage.
+
+::::
+:::
+
+5/ Qu'est ce qui caractérise le prix d'un actif ? En quoi est-ce pertinent pour comprendre la caractérisation par Olivier Blanchard de sa diférence avec Ricardo Reis dans les Tweets (3) ?[^fiscal_theory]
+
+[^fiscal_theory]: on peut laisser ici de côté la référence à la théorie fiscale du niveau des prix de John Cochrane.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+Un actif (réel ou nominal) est un titre de propriété qui donne le droit à un flux de revenu (réel ou nominal). Typiquement la valorisation d'un actif réel qui produit un dividende $d_t$ peut prendre la forme:
+
+$$ p_t = E_t \left[ \sum_{s \geq t}^{\infty} \frac{1}{(1+r)^{s-t}} d_s \right]$$
+
+que l'on peut aussi écrire sous la forme:
+
+$$ p_t = \frac{1}{1+r} E_t \left[ p_{t+1} \right] + d_t$$
+
+
+Dans un modèle keynésien standard (comme dans l'exercice 3), la courbe PC s'écrit: 
+
+$$ \pi_t = \alpha E_t \pi_{t+1} + y_t $$
+
+avec $0<\alpha<1$ ce qui par substitution donne la formule 
+
+$$ \pi_t = E_t \left[ \sum_{s \geq t}^{\infty} {\alpha^{s-t}} y_s \right]$$
+
+formellement équivalente à la formule de valuation précédente si l'on remplace les dividendes par l'output gap $y_s$
+
+En particulier, on voit dans la formule plus haut que les *anticipations d'inflation* jouent formellement le même rôle dans la détermination de l'inflation présente que l'anticipation des prix futurs dans la détermination des prix présents. Il s'ensuit que le travail d'une banque centrale consiste en grande partie à contrôler ces anticipations d'inflations par tous les moyens disponibles (par exemple en communiquant sur sa politique future).
+
+Un autre caractéristique d'un actif classique est l'existence d'un marché pour cet actif. L'intéraction des acheteurs et vendeurs sur ce marché est parfaitement coordonnée par les prix.
+
+A l'inverse O. Blanchard considère que le niveau des prix (donc l'inflation) n'entre pas directement dans leur décisions de fixation des salaires et des prix, car les firmes considèrent uniquement des prix relatifs pertinents pour eux (leur salaires, leur prix de vente, celui des concurrents...). On ne peut donc pas coordonner les actions des firmes en agissant sur leurs anticipations d'inflation. Il faut donc pour réduire l'inflation agir directement sur les décisions des firmes pour les inciter à réduire leur prix. Cela est possible si l'on réduit la demande. Dans cette vision l'ajustement par les entreprises est un canal de transmission dû la politique monétaire. 
+
+::::
+:::
+
+6. Pourquoi le point de vue sur rigidités nominales est-il central pour distinguer un point de vue de l'autre?
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-note appearance="simple"}
+
+
+On a vu dans le cours, comment les rigidités nominales aboutissaient à une courbe AS croissante. 
+
+Schématiquement, le point de vue d'O Blanchard, est parfaitement compatible avec le graphe AS/AD. La banque centrale peut contrôler l'inflation en déplaçant l'équilibre le long de la courbe AS.
+
+A l'inverse, en l'absence de rigidité des prix (cf Tweets 4), la courbe AS de court terme ne suffirait pas à déterminer l'inflation puisqu'elle serait verticale. L'aspect intertemporel serait donc primordial pour déterminer l'inflation, même à court terme.
+
+::::
+:::
+
+
+
+## Exercice 3: dynamique des chocs
+
+Dans les amphis on a dérivé un modèle de la forme:
+
+\begin{align}
+\pi_t & = &  \pi^{\star} + \kappa (y_t - y^{nt}_t) \\
+y_t & = & E_t y_{t+1} + \sigma (i_t - \pi_{t+1}) + \theta_t  \\
+i_t & = &  i^{\star} + \gamma (\pi_t - \pi^{\star})
+\end{align}
+
+
+où $\pi_t$ est l'inflation, $i_t$ le taux d'intérêt nominal et $y_t$ le niveau de production. $y^{nt}$ et $\theta_t$ sont respectivement des chocs exogènes, d'offre et de demande. $\sigma$, $\kappa$, $\gamma$ sont tous des paramètres positifs.
+
+L'équation de la Phillips Curve (PC_1) est obtenue en supposant qu'une fraction $\omega$ des firmes n'ajustent pas leur prix, et que celles qui ajustent optimisent leur profit instantané à la date $t$.
+
+Si au lieu de cela, on avait supposé (comme dans le poly) que les firmes qui ne peuvent pas ajuster à la date $t$ fixent leur prix à l'avance en fonctions de leur anticipations d'inflation et si l'on suppose de plus que ces anticipations sont adaptative $E_t \pi_{t+1} = \pi_t$, on obtient la courbe de phillips accélérante: 
+
+$$ \pi_t =  \pi_{t-1} + \kappa (y_t - y^{nt}_t) $$
+
+Enfin le modèle Néo-Keynésien standard suppose que les firmes qui n'ajustent pas en $t$ gardent leur prix de $t-1$ et que celles qui ajustent fixent leur prix de manière à maximiser tous leur profits futures escomptés de sorte que leurs décisions dépendent de leurs anticipations. On a alors la courbe de Phillips "augmentée des anticipations":
+$$ \pi_t =  E_t \left[ \pi_{t+1} \right] + \kappa (y_t - y^{nt}_t) $$
+
+1. Pour les différentes versions de la courbe de Phillips, calculer la réponse de l'économie à un choc de demande de persistence $\rho$. Faire de même pour un choc de production $\rho$ de même persistence. Commenter.
+
+2. Le critère de Taylor stipule que l'inflation (et le reste de l'économie) a un équilibre unique non divergent si et seulement si $\gamma>1$. Pour lequel (lesquel) des modèles précédents ce critère est-il valide ?
+
+
 
 
 {{< pagebreak >}}
 
 
+## Annexe: Documents {.appendix}
 
-## Where is the Philips Curve?
+### Où est passée la courbe de Phillips?
+
+
+![Original Phillips Curve](original_pc.png){width=70%}
+
 
 Le graphe suivant est extrait de *The Economist* (2017):
 
-![Disparition de la Courbe de Philips](disparition_pc.png){width=70%}
+![Disparition de la Courbe de Phillips](disparition_pc.png){width=70%}
 
 Les graphes suivants proviennent du papier *Reducing Inflation along a Nonlinear Phillips Curve* par Erin E. Crust, Kevin J. Lansing, et Nicolas Petrosky-Nadeau
 
@@ -112,17 +352,17 @@ Les graphes suivants proviennent du papier *Reducing Inflation along a Nonlinear
 
 ![Courbe de Beveridge](beveridge_curve.png){width=70%}
 
-![Courbe Philips Nonlinéaire](nonlinear_philips_curve.png){width=70%}
+![Courbe Phillips Nonlinéaire](nonlinear_phillips_curve.png){width=70%}
 
-Its' baaack. The Philips Curve is 
+Its' baaack. The Phillips Curve is 
 
-![Courbe Philips Nonlinéaire](no_pc.png){#fig-nopc width=70%}
+![Courbe Phillips Nonlinéaire](no_pc.png){#fig-nopc width=70%}
 
 
 {{< pagebreak >}}
 
 
-## Twitter & Short Term Macroeconomics {.appendix}
+### Twitter & Short Term Macroeconomics
 
 
 Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing]. Le transcript de cet interview[^transcript_ai] a provoqué une discussion intéressante sur twitter, impliquant notamment Olivier Blanchard, ancien chef économiste du FMI, maintenant au Peterson institute.
@@ -155,14 +395,10 @@ Le 7 août 2023, Ricardo Reis professor à London School of Economics était int
 > Reis: That's a perfectly acceptable complementary view to the ones I was saying. It goes back a little bit to my, as a side effect, meaning you want to be monitoring employment to understand this correlation exists, because it is reflecting something going on in your body, right? You're trying to diagnose the body of the patient. You're trying to kill the bacteria. You know that when you do the antibiotics, it's going to have an effect on a bunch of other things, and you want to be monitoring them, and focusing on your digestion is a very useful one, sometimes even if you're really as triggering is whether the antibiotics are creating problems in other parts of the body, absolutely.
 
 
-![](rreis_response.png){width=70%}
+![Tweets (1)](rreis_response.png){width=70%}
 
-![](rreis_explanation.png){width=70%}
+![Tweets (2)](rreis_explanation.png){width=70%}
 
-![](blanchard_response_2.png){width=70%}
+![Tweets (3)](blanchard_response_2.png){width=70%}
 
-![](blanchard_response_3.png){width=70%}
-
-
-
-Why is the Phlips curve not supported by the data ?
+![Tweets (4)](blanchard_response_3.png){width=70%}
