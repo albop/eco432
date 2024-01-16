@@ -623,6 +623,7 @@ Cette formulation englobe :
 ::::
 :::: column
 
+TODO: move clarification where it belongs
 
 En cours de route, nous avons fait quelques simplifications par rapport au cadre New Keynesian de référence :
 
