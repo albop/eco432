@@ -506,12 +506,12 @@ Hypothèse centrale des nouveaux modèles keynésiens : certaines rigidités _no
 * Si les prix étaient flexibles, ils changeraient tout le temps
   * Les prix des actions sont mis à jour en continu (LSE : 126 microsecondes)
 * Il existe des statistiques sur les changements de prix : ils sont rigides (voir tableau ci-dessous)
-  * Fréq mensuelle des changements de prix : proportion des ajustés chaque mois
+  * Fréquence mensuelle des changements de prix : proportion des ajustés chaque mois
   * Durée moyenne des prix : temps moyen nécessaire pour réviser un prix
 
 |  | Zone euro (1996-2000) | États-Unis (1998-200) |
 | :-: | :-: | :-: |
-| Fréquence mensuelle des changements de prix | 15,1% | 21,5% |
+| Fréq mensuelle des changements de prix | 15,1% | 21,5% |
 | Durée moyenne des prix | 13,0 mois | 9,6 mois |
 
 ---
@@ -604,10 +604,6 @@ Le chômage est évidemment lié au travail et le travail à la production
 
 \framesubtitle{Quelques commentaires}
 
-::: columns
-
-:::: column
-
 Nous avons obtenu la courbe des offres globales comme : $$\pi_t = \kappa (y_t- y^{nt}_t)$$
 
 avec $$\kappa = \frac{1}{\xi} \frac{\omega}{1-\omega}$$
@@ -620,22 +616,23 @@ Cette formulation englobe :
 - les prix rigides : lorsque $\omega=0$
 - tous les cas intermédiaires
 
-::::
-:::: column
 
-TODO: move clarification where it belongs
+### Notre courbe de l'offre agégée
+
+\framesubtitle{Quelques commentaires}
 
 En cours de route, nous avons fait quelques simplifications par rapport au cadre New Keynesian de référence :
 
 - nous avons omis les chocs de productivité
-  - nous supposerons simplement qu'ils sont des écarts dans $y^{nt}_t$
-- nous n'avons incorporé aucune "anticipation" dans le comportement des entreprises
-  - en principe, elles devraient faire des prévisions de prix rationnelles pour fixer leurs prix
-  - cela inclurait un terme en $\pi_{t-1}$ et/ou $\pi_{t+1}$ selon la manière dont les prévisions sont faites
-
-::::
-
-:::
+  - nous les réintroduirons comme chocs dans $y^{nt}_t$
+- nous n'avons incorporé aucune "anticipation" dans le comportement des entreprises. en principe, elles devraient 
+  - faire des prévisions de prix rationnelles pour fixer leurs prix
+  - maximiser leur profit intertemporel
+- en fonction du choix de modélisation on on obtient des termes en:
+  - $\pi_{t-1}$ pour optimisation statique et extrapolation du trend ($E_t \pi_{t+1}=\pi_t$) [^poly]
+  - $\pi_{t+1}$ pour optimisation dynamique et anticipations rationnelle (modèle standard)
+  
+[^poly]: c'est l'hypothèse retenue dans le poly.
 
 ---
 
