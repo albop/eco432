@@ -50,7 +50,7 @@ entreprises qui le peuvent répercutent ce coût en élevant leur prix*
 ## Équilibre de court terme
 
 $$\text{\textbf{DA}}: y_t = \theta_t - \sigma \gamma (\pi_t - \overline{\pi})$$
-$$\text{\textbf{OA}}: \pi_t = \pi_{t-1} + \kappa (y_t - y^t_n)$$
+$$\text{\textbf{OA}}: \pi_t = \overline{\pi} + \kappa (y_t - y^t_n)$$
 
 Dans ce modèle il y a:
 
