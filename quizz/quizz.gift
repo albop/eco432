@@ -1,0 +1,151 @@
+//Comment line 
+::Question title 
+::Supposons que vous soyez sur une trajectoire de croissance équilibrée, c'est-à-dire que la
+production par tête augmente à un taux constant, égal au taux de croissance de la
+technologie ( g_A ), et que grâce aux nouveaux développements de l'intelligence artificielle, le
+taux de croissance de la technologie est supposé augmenter de façon permanente à g'_A > g_A .
+Sélectionnez la seule option correcte parmi celles qui suivent {
+=ela améliorera la production par habitant étant donné que le progrès technologique ne peut pas avoir d'effet négatif sur le produit par travailleur (Y/L) dans le modèle de Solow
+~Cela réduira la production par habitant, car dans le PC1 (cf. solution page 1) vous avez constaté que la production par unité de travail efficace diminue avec gA)
+~Dans le modèle de Solow, sous certaines conditions, le progrès technologique ralentit le taux d'épargne, ce qui peut ralentir l'accumulation.
+}
+
+::Deuxième question
+::Sur une trajectoire de croissance équilibrée de l’économie sans croissance démographique ni progrès technique, l’investissement par tête est{
+~égal à la consommation par tête
+~supérieur à la consommation par tête
+=égal à la dépréciation du capital par tête
+~inférieur à la dépréciation du capital par tête
+}
+
+::Troisième question
+::Supposons une économie où les ménages épargnent 3/4 de leur revenu. Le taux de
+dépréciation est 0.1, et la technologie de production est de type Cobb-Douglas à
+rendements constants, avec l’élasticité du capital α\=1/3. Que faut-t-il faire pour atteindre la
+règle d'or dans cette économie {
+~ augmenter le taux d'épargne
+= diminuer le taux d'épargne
+~ on ne peut pas savoir
+}
+
+::Quatrième
+::À partir des notes de cours "Climat, environnement et croissance" jointes à l'amphithéâtre 3
+(voir modèle 2 discuté dans les sections 4.5 et 4.6), pensez-vous que - du moins selon le
+modèle dans ces sections - le prix du pétrole aura tendance, au fil du temps, {
+~ à baisser 
+= à augmenter
+~ on ne peut pas dire
+}
+
+::Cinquième
+::Actuellement aux États-Unis, l'Environmental Protection Agency a proposé d'évaluer le coût
+social du carbone par tonne métrique de CO2 à 190 $ et utilise un taux d'escompte - une
+mesure de la valeur que nous accordons au présent par rapport au futur - de 2%. Si un taux
+d'escompte plus élevé de 2,5% était utilisé, le coût social du carbone {
+= diminuerait
+~ augmenterait
+~ le coût social du carbone est lié à la perte de production actuelle et est donc
+indépendant du taux d'escompte.
+}
+
+::Sixième
+::Dans une économie malthusienne (économie pré-industrielle), il n'y a pas de machines ni de
+capital, et seuls les travailleurs sont utilisés pour la production. La fonction de production est
+Y\=AL^α où alpha<1. Le prix de l'output est normalisé à 1. La technologie A est gratuite. Les
+entreprises maximisent le profit. {
+~ Les entreprises ne réaliseront aucun profit car le
+Théorème d'Euler s'applique 
+= Les entreprises réaliseront des profits positifs
+~ Les entreprises réaliseront des pertes, ce qui explique la stagnation pré-industrielle.
+}
+
+::Septième
+:: Lire l'article des deux économistes du MIT, Acemoglu et Johnson, dans Finances &
+Développement, la publication trimestrielle du Fonds monétaire international (sur moodle).
+Seule une affirmation est correcte \: {
+= Une innovation technologique, par exemple l'IA, peut augmenter la production moyenne par travail, mais elle n'augmente pas
+nécessairement la productivité marginale du travail.
+~ Toutes les innovations technologiques augmentent les deux simultanément
+~ Les travailleurs bénéficieraient de moins de travail et de salaires plus élevés grâce aux bienfaits de l'intelligence artificielle.
+}
+
+::Huitième
+:: L'identité comptable Y − T \= C + S indique que le revenu disponible (c'est-à-dire le revenu
+moins les impôts) est consommé ou épargné. De plus, en économie fermée, Y \= C + I + G. Les
+2 identités impliquent que l'épargne privée (S) plus l’épargne publique (T − G) est égale à
+l'investissement (Cf. notes «Dette Publique » à la fin du polycopié). Supposons que l'État
+décide d'augmenter G – T (de faire un déficit plus important) en baissant les impôts
+courants. Choisissez l'affirmation qui n'est pas correcte \: {
+= En augmentant G - T, la somme de l'épargne privée et publique sera plus petite que l'investissement.
+~ L'investissement I, le revenu Y et le taux d'intérêt peuvent tous ne pas changer si le secteur privé décide
+d'épargner davantage
+~ Si le revenu courant Y et l’épargne privée S restent constants, et si C
+augmente, cela baissera le taux d'intérêt, réduisant l'investissement en capital, ce qui
+diminuera la production future.
+}
+
+
+::Macro1
+::Après un choc positif persistant de la demande {
+= les prix et la production augmentent. La production revient à l'equilibre après que les prix se sont ajusté
+~ l'équilibre est rétabli après que la courbe d'offre s'est ajustée à la demande
+~ les prix augmentent, la production augmente et revient à l'équilibre après que la courbe de demande a pris en compte les anticipations sur les prix futurs
+~ la production augmente et les prix baissent car les biens sont plus abondants
+}
+
+::Inflation
+::Qui bénéficie d'une inflation plus élevée que prévu ? {
+= ceux qui ont emprunté à un taux nominal
+~ ceux qui ont emprunté à un taux réel
+~ ceux qui ont prêté à un taux nominal
+~ ceux qui ont prêté à un taux réel
+}
+
+
+// :: Q
+// :: Quel n'est pas un objectif de la banque centrale ? {
+//     ~ être le prêteur en dernier ressort pour les ménages endettés
+//     ~ garantir la stabilité et la prévisibilité des politiques économiques du gouvernement
+//     = contrôler le stock d'argent dans l'économie
+//     ~ garantir que l'inflation reste proche de zéro
+// }
+
+:: Q
+:: Lorsqu'il y a un choc négatif de la demande (cochez la réponse incorrecte) {
+~ Le gouvernement devrait plutôt baisser les impôts que les augmenter
+~ Le gouvernement devrait augmenter les dépenses gouvernementales plutôt que de les diminuer
+= La Banque Centrale peut accommoder le choc en vendant des obligations gouvernementales
+~ La courbe d'offre peut s'ajuster de manière à atteindre un nouvel équilibre
+}
+
+:: Q
+:: Quel choc  déclenche un déplacement vers la droite de la courbe d'offre agrégée à court terme ? {
+= une amélioration du bien-être de tous les travailleurs
+~ une augmentation des prix agrégés
+~ des prix plus flexibles
+~ une réduction de la taxe sur la consommation
+}
+
+:: Q
+:: Which of the following statements is true? {
+~ In an economy with mostly ricardian households governement spending is
+efficient to stimulate demand
+~ A typical ricardian demand can be represented by c(Y ) = c0 + c1Y where
+c1 is the marginal propensity to consume
+~ When more agents are credit constrained, government spending raises
+demand more efficiently
+~ When all consumers are keynesian, lowering interest rates is not efficient
+to stimulate demand
+}
+
+::Q
+:: Recall the Fisher equation\: rt \= it − πt+1. Find the true statement. {
+~ Under the classical dichotomy theory, inflation adjusts one to one to changes
+in the nominal rate.
+~ The central bank takes real interest rate as given and manipulates nominal
+interest rate in order to affect inflation.
+~ The central bank manipulates inflation in order to optimize the real interest
+rate.
+~ Under the monetarist doctrine, the central bank should set interest rate
+equal to real interest so as to avoid inflation.
+}
