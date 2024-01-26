@@ -5,7 +5,7 @@ author: Pablo Winant
 format: 
   beamer:
     aspectratio: 169
-    slide-level: 2
+    slide-level: 3
 ---
 
 ## Programme des amphis
@@ -17,23 +17,22 @@ format:
 - Politique monétaire (*)
 - ...
 
-### Cette session
+## Cette session
 
 - Les outils de la politique monétaire
 - Implémentation de la politique monétaire
   - La structure des taux d'intérêt
   - Le marché interbancaire
 
-::::
 
-:::
-
-## Les outils de la politique monétaire
+# Les outils de la politique monétaire
 
 
 ## Les outils de la politique monétaire
 
 Quels sont les principaux outils de la politique monétaire ?
+
+::: {.incremental}
 
 - Opérations d'open market
   - la BC échange des liquidités (cash) en échange d'actifs moins liquides (obligations/bons du gvt)
@@ -47,137 +46,277 @@ Quels sont les principaux outils de la politique monétaire ?
 
 - D'autres outils non-conventionnels (non couverts ici)
 
+:::
 
-## Masse Monétaire / Base Monétaire (1)
+## Agrégats monétaires
 
-![](piece.gif){height=50%}
+\framesubtitle{ Monnaie Banque Centrale}
 
-Depuis la "Théorie Générale de l'Emploi, de l'intérêt et de la monnaie", de J.M.Keynes, on sait que la quantité de monnaie qui circule dans l'économie joue un rôle dans la détermination de prix et de l'inflation.
+La Banque Centrale a le monopole de la création de  **Monnaie Banque Centrale** :
 
-Qu'est-ce que la monnaie ?
+- Pièces, billets de banque, euros numériques...
 
-## Masse Monétaire / Base Monétaire (2)
+La Monnaie Banque Centrale est également appelée **Base Monétaire**. Comment est-elle *injectée* dans l'économie ?
 
-Qu'est-ce que la monnaie ? La BCE liste plusieurs agrégats monétaires:
+. . .
 
-- M1: devises (pièces, billets) en circulation et dépots au jour le jour
-- M2: M1 + depôts dont la maturité est inférieure à deux ans + dépôts dont la maturité est supérieure à deux ans mais qui peuvent être liquidés avec un préavis de remboursement inférieur à trois mois
-- M3: M2 + accords de rachat d'actions ("repurchase agreement"), parts/unités des "money market fund" et obligations dont la maturité est inférieure à deux ans.
-- Les agrégats monétaires sont composés d'agrégats dont la *liquidité* est décroissante
-  - M1 est la base monétaire
-  - M2 est la presque monnaie ("quasi money")
-  - M3 est la monnaie au sens large ("broad money")
+En principe, la Banque Centrale *pourrait* la distribuer :
+
+- en envoyant des chèques ou en monétisant directement le déficit du gouvernement[^helicopter]
+
+. . .
+
+Mais en pratique, les banques centrales échangent la Monnaie Banque Centrale contre des actifs moins liquides.
+
+  - ce qui permet la création d'argent par les banques privées.
+
+[^helicopter]: L'Argent Hélicoptère est une *métaphore* inventée par Milton Friedman pour décrire, pour expliquer que, d'un point de vue macroéconomique, le destinataire réel de l'argent n'est pas si important. 
+
+---
+
+### Qui possède la Monnaie Banque Centrale ?
+
+![Base Monétaire (statistiques de la BCE)](./assets/base_money.png){height=50%}
+
+. . .
+
+La majeure partie de l'argent créé par la Banque Centrale depuis 2009 est détenue par des institutions financières privées qui détiennent des réserves (comptes courants) à la Banque Centrale.[^virtual]
+
+[^virtual]: Cet argent reste virtuel dans le sens où il n'est jamais imprimé. Il s'agit effectivement de la monnaie numérique.
+
+---
+
+### Monnaie Étroite / Monnaie Large
+
+\framesubtitle{Argent circulant dans l'économie}
+
+::: columns
+
+:::: {.column width=60%}
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+La BCE répertorie plusieurs agrégats monétaires :
+
+  - M1 : **Monnaie étroite**
+    - monnaie (pièces, billets) en circulation et dépôts à vue (par exemple, les comptes de chèques des consommateurs)
+  - M2 :
+    - M1 + dépôts avec une maturité convenue de jusqu'à deux ans et dépôts remboursables avec un préavis de jusqu'à trois mois
+  - M3 : **Monnaie large**
+    - M2 + accords de rachat, parts/unités de fonds du marché monétaire et titres de créance avec une maturité de jusqu'à deux ans 
+
+\onslide<2>
+
+Les agrégats monétaires contiennent des actifs financiers de liquidité décroissante.
+
+Notez que dans ces agrégats monétaires, seule la monnaie est créée par la Banque Centrale. Tous les autres actifs sont créés par le secteur privé.
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: {.column width=40%}
+
+![](assets/aggreg.png){height=60%}
+
+::::
+
+:::
+
+---
+
+![ ](two_birds.png){width=20%}
+
+Attendez ? Les banques privées créent de l'argent ?
+
+. . .
+
+Oui, la plupart d'entre elles. Expliquons comment.
+
+---
+
+### Contrôler M1
+
+\framesubtitle{Rappel : Système de Réserve Fractionnaire}
+
+::: columns
+
+:::: {.column width=60%}
+
+- Lorsqu'une banque commerciale accorde un prêt, elle crée de l'argent directement !
+- Le crédit des banques privées est limité par le ratio de réserve obligatoire
+  - les banques commerciales doivent conserver une fraction $\lambda$ des prêts en cours en réserves
+  - pour 1 unité de Monnaie Banque Centrale qu'elles reçoivent (par exemple, sous forme de dépôts), elles peuvent prêter $1-\lambda$
+- Le montant total d'argent étroit que le système financier peut créer à partir d'un dépôt de 1 unité est appelé multiplicateur monétaire : $μ=\frac{1}{\lambda}-1$
+
+::::
+
+:::: {.column width=40%}
+
+![](multiplier.png){width=80%}
+
+::::
+
+:::
+
+Changer le ratio de réserve est un outil politique potentiel pour contrôler la création d'argent par le secteur privé[^money_multiplier].
+
+[^money_multiplier]: les calculs pour obtenir le multiplicateur monétaire sont très similaires au multiplicateur fiscal. Un euro de dépôts conduit à un prêt total de $(1-\lambda) + (1-\lambda)^2 + \cdots  = (1-\lambda)\frac{1}{1-(1-\lambda)}$
+
+### 
+
+Quelle est la taille du multiplicateur monétaire ?
+
+. . .
+
+Les exigences de réserves étaient de 2% jusqu'en 2012. 1% depuis lors.
+
+. . .
+
+Le multiplicateur monétaire théorique était d'environ 50 jusqu'en 2012, 100 depuis lors.
+
+. . .
+
+Vérifions les données...
+
+### Contrôler M1
+
+![Base money and the money multiplier (BCE)](assets/base_money_multiplier.png){width=60%}
+
+Depuis 2009, la base monétaire a augmenté considérablement, mais pas le crédit. Le multiplicateur monétaire est loin de son maximum.
+Les exigences de réserves ne sont pas contraignantes.
 
 
-## Contrôler M1
 
-\framesubtitle{Le système de réserves fractionnaires}
+## Ciblage de l'inflation
 
-
-- La banque centrale a le monopole de la création de la "monnaie banque centrale"
-  - Pièces, billets, euros numériques
-  - Pour l'injecter, elle l'échange contre des actifs moins liquides
-- Notons que la base monétaire (M1) inclut les prêts faits par les banques et versés au compte de leurs clients dépositaires
-  - Les banques privées créent de la monnaie ! (c'est un fait)
-- Le crédit par les banques privées est limité par le __taux de réserves obligatoire__
-  - Changer ce ratio devrait être un puissant outil de politique monétaire
-
-
-## Contrôler M1
-
-![](base_money.png){width=45%} ![](base_money_multiplier.png){width=45%}
-
-- La base monétaire a beaucoup augmenté. Les crédits pas tellement.\footnote{Source: ECB}
-- Le multiplicateur du crédit a décru et les ratio obligatoire ne sont pas contraignant (pour info, les ratios obligatoire valaient 2% jusqu'en 2012, 1% depuis)
-- La banque centrale ne contrôle plus vraiment M3 (broad money) depuis la crise financière.
-
-
-## Evolution des pratiques des banques centrales
+### Évolution des pratiques politiques standard
 
 ![](evolution_practices.png)
 
-## Ciblage d'inflation et règle de Taylor
+### Ciblage de l'inflation
 
-La plupart des banques centrales pratiquent maintenant une forme de __ciblage d'inflation__.
+La plupart des BC (Banques Centrales) ont maintenant adopté une forme de "ciblage de l'inflation"
 
-- elle tentent de maintenir l'inflation autour d'une cible prédéfinie (e.g. 2\% en Zone Euro)
+- la banque centrale tente d'atteindre un objectif d'inflation donné (par exemple, 2\% dans la zone euro)
 
-Pour atteindre la cible elles manipulent les taux d'intérêt *nominaux*:
+Elle atteint cet objectif en manipulant les taux d'intérêt nominaux :
 
-- soit en contrôlant l'offre de monnaie
-- soit en contrôlant les taux d'intérêt directement
+- soit en contrôlant la masse monétaire
+- soit en fixant directement les taux d'intérêt
 
-John Taylor a découvert empiriqument que les décisions pour les taux d'intérêt étaient bien approximées par une __règle simple__:
+. . .
+
+::: {.callout-note icon=false}
+
+#### Message important
+
+Depuis les années 2009, __l'instrument principal de la politique monétaire est le taux d'intérêt__
+
+- la quantité d'argent créée est déterminée par le secteur privé
+
+:::
+
+## La règle de Taylor
+
+### Ciblage de l'inflation et la règle de Taylor
+
+Quelles variables économiques la BC regarde-t-elle principalement pour stabiliser l'inflation ?
+
+. . .
+
+John Taylor, a découvert empiriquement (en 1993) que les décisions réelles en matière de taux d'intérêt étaient bien approximées (même avant l'adoption du ciblage de l'inflation) par une *règle simple* de la forme :
 
 $$i_t = i^{\star} + 0.5 (\pi_t - \pi^ {\star}) + 0.5 (y_t - y_t^ {nt})$$
 
-## Règle de Taylor et taux effectif (1)
+Cela dépend de
 
-![](taylor_rule_vs_effective_1.png){width=80%}
+- l'écart d'inflation par rapport à sa cible
+- l'écart de production par rapport à son niveau naturel (écart de production)
 
+### Règle de Taylor vs Taux Effectif
 
-##  Règle de Taylor et taux effectif (2)
+![Règle de Taylor d'origine par rapport aux décisions réelles (Données US)](taylor_rule_vs_effective_1.png){width=80%}
 
-![](taylor_rule_vs_effective_2.png){width=80%}
+Depuis 1999, la règle de Taylor reste globalement pertinente mais ne correspond complètement plus à la cible après 2014 (quand les taux d'intérêt étaient à 0).
 
-Source: Orphanides et Wieland
+### Règle de Taylor améliorée
 
-## Règle de Taylor
+Une version basée sur les anticipations d'inflation décrit bien les décisions des BC :
 
-La règle de Taylor originale est trop simple.
+$$i_t = i^{\star} + 0,5 \underbrace{(E_t \left[ \pi_{t+1} \right] - \pi^{\star})}_{\text{excès d'inflation attendu}} + 0,5 \underbrace{E_t \left[y_t - y_t^ {nt}\right]}_{\text{écart de production attendu}}$$
 
-Une version basée sur les anticipations d'inflation décrit encore mieux les decisions des CBs:
+Cette version est un bon point de référence pour comprendre la communication de la banque centrale.
 
-$$i_t = i^{\star} + \alpha_{\pi} (E_t \left[ \pi_{t+1} \right] - \pi^{\star}) + \alpha_y (y_t - y_t^ {nt})$$
+### Règle de Taylor améliorée vs Taux Effectif
 
-Cette version est très utile pour comprendre les éléments de langage de la BC:
+![Règle de Taylor améliorée](taylor_rule_vs_effective_2.png){width=80%}
 
-- elle décrit la conjoncture éco en terme d'__output gap__
-- elle essaie d'__ancrer les anticipations__ en les gardant près d'une cible d'inflation
+Source : Orphanides et Wieland
 
-## Implémentation de la politique monétaire
+### Résumé opérationnel
 
+Évolution de la Banque Centrale
 
-## Équation de Fisher et anticipations d'inflation
+- depuis les années 90 et le ciblage de l'inflation, les principales banques centrales sont passées au ciblage de l'inflation
 
+La banque centrale augmente le taux d'intérêt
 
-\framesubtitle{Equation de Fisher}
+- lorsque la production (anticipée) est supérieure à son niveau naturel
+  - pour éviter les pressions inflationnistes, la surchauffe économique
+- lorsque l'inflation (anticipée) est trop élevée
+  - la banque tente d'ancrer les anticipations autour de sa cible
 
-Rappelons l'__équation de Fisher__ anticipée
+Le fait que la banque centrale réagisse et manipule les *anticipations* est la clé du central banking moderne.[^jedis]
+
+[^jedis]: Le blogueur Matt O’Brian note que les « Banques Centrales ont une forte influence sur les anticipations du marché » et compare leurs activités à des « jedi mind-tricks ».
+
+# Mise en œuvre de la politique monétaire
+
+## Structure temporelle des taux d'intérêt
+
+### Équation de Fisher et anticipation d'inflation
+
+\framesubtitle{Rappel}
+
+Rappel de l'équation de Fisher :
+
 $$r_t = i_t - \pi_{t+1}$$
 
-Plus généralement (en environnement incertain) on devrait écrire.
+Pour être plus précis, nous devrions écrire :
 $$r_t = i_t - E_t [\pi_{t+1}]$$
 
+Car c'est seulement l'inflation "anticipée" qui est connue à la date $t$. Nous omettons le signe d'espérance, mais gardez à l'esprit que $\pi_{t+1}$ représente l'inflation anticipée.
 
-## Règle monétaire et anticipations d'inflation
+### Règle monétaire et anticipation d'inflation
 
-Jusqu'à présent, on a écrit la règle monétaire (MP) de cette faćon: $$r_t = r^ {\star} + \gamma (\pi_t - \overline{\pi})$$
+Lors de la dérivation de la courbe AD, nous avons écrit la règle des taux d'intérêt réels (MP) comme suit : $$r_t = r^ {\star} + \gamma (\pi_t - \overline{\pi})$$
 
-Or la BC ne contrôle pas les taux d'intérêt réels mais le taux *nominal*. Si l'on remplace MP dans l'équation de Fisher $r_t = i_t - \pi_{t+1}$ on obtient: $$i_t = r^{\star} + \gamma (\pi_t - \overline{\pi}) + \pi_{t+1}$$
+Mais la BC ne contrôle pas directement le taux d'intérêt réel. Elle contrôle le taux d'intérêt nominal $i_t$.
 
-On voit alors que la BC doit réagir à une combinaison de l'inflation et de l'inflation anticipée (ce qui ressemble à une règle de Taylor).
+Maintenant, prenons l'équation de Fisher $r_t = i_t - \pi_{t+1}$. Nous pouvons la remplacer ci-dessus pour obtenir :
+$$i_t = r^{\star} + \gamma (\pi_t - \overline{\pi}) + \pi_{t+1}$$
 
-Comment la BC mesure et contrôle les anticipations d'inflations ? C'est une question aux ramifications très profondes (prophéties auto-réalisatrices, réputation et incohérence temporelle, ...)\footnote{Jedi Mind Trick: « These aren’t the droids you are looking for ». Matt O’Brian:  « Central Banks have a strong influence on market expectations »}
+Nous voyons que la banque centrale fixe le taux d'intérêt pour contrôler une combinaison de l'inflation et de l'"inflation anticipée". Plus proche d'une règle de Taylor moderne.
 
-## Taux d'intérêt de court terme
+### Taux d'intérêt à court terme
 
-En réalité la BC ne contrôle pas $i_t$ directement (le taux trimestriel ou annuel)
+En réalité, la BC ne contrôle pas directement $i_t$ (le taux trimestriel ou annuel)
 
-Elle contrôle le taux de très court terme, typiquement au jour le jour.  Où donc?
+La BC contrôle plutôt les taux d'intérêt à très court terme, généralement du jour au lendemain. Où cela se passe-t-il ?
+Sur le *marché interbancaire* :
 
-Sur les __marchés interbancaires__
+- Les banques prêtent entre elles les réserves qu'elles détiennent sur un compte de la Banque Centrale.
+- La Banque Centrale fixe le prix sur ce marché
+- Comment le paramétrage d'un taux d'intérêt à court terme affecte-t-il le taux d'intérêt à long terme à n'importe quelle maturité (horizon) ?
 
-- Les banques se prêtent les unes aux autres les réserves qu'elles détiennent sur le compte banque centrale
-- Sur ce marché, la banque centrale est un "faiseur de prix"
-
-Comment le fait de fixer les taux de court terme, affecte-t-il les taux d'intérêt à n'importe quel horizon?
-
-- Par la capacité du marché (/des investisseurs) à *arbitrer* entre différentes options d'investissement
-
-
-## Arbitrage
-
+### Arbitrage
 
 ::: columns
 
@@ -189,81 +328,87 @@ Comment le fait de fixer les taux de court terme, affecte-t-il les taux d'intér
 
 :::: {.column width=60%}
 
-- La notion d'__arbitrage__ est un concept pervasif en finance et économie
-- Lorsque deux (ou plusieurs) options d'investissement donnent différent retours sur investissement, les investisseurs se focalisent sur l'option la plus profitable... jusqu'à ce que les rendement s'égalisent.
-- Donc à l'équilibre, toutes les opportunités d'invesissement équivalentes doivent avoir le même retour sur investissment (rendement)
-- Les différences entre les rendements peuvent s'expliquer par
-  - le profil de risque
-  - la liquidité
-  - ...
+::::: {.incremental}
+
+L'arbitrage est un concept très général
+
+Lorsque deux ou plusieurs options d'investissement équivalentes rapportent des rendements différents, les investisseurs se précipitent vers la plus rentable... jusqu'à ce que les rendements s'égalisent
+
+Ainsi, à l'équilibre, toutes les options d'investissement équivalentes doivent finalement avoir le même rendement.
+
+Les différences entre les taux de rendement sont expliquées par des différences dans :
+
+- les caractéristiques de risque
+- la liquidité
+
+:::::
+
 
 ::::
 
 :::
 
-## Structure des échéances et taux d'intérêt
+### Structure temporelle des taux d'intérêt
 
 ::: columns
 
-:::: {.column width=40%}
+:::: column
 
 ![](arbitrage_2.png)
 
 ::::
 
-:::: {.column width=60%}
+:::: column
 
-On peut appliquer le principe d'arbitrage à:
+Appliquons le principe de l'arbitrage à :
 
-- Une obligation à un an au taux $i_t^{1y}$
-- Deux obligations à 6 mois qui rapportent (en taux annualisés)
-
-  - $i_t^{6m}$, achetée à la date $t$
-  - $i_{t+6m}^{6m}$, achetée à la date  $t+6m$
-- On a donc deux options d'investissement sur un an
+- Une obligation d'un an rapportant $i_t^{1y}$
+- Deux obligations de six mois rapportant (annualisées)
+  - $i_t^{6m}$ achetée à la date $t$
+  - $i_{t+6m}^{6m}$ achetée à la date $t+6m$
+- Cela nous fournit deux options pour investir sur 1 an.
 - Quelle est la condition d'arbitrage ?
 
 ::::
 
 :::
 
-##  Structure des échéances et taux d'intérêt
+### Structure temporelle des taux d'intérêt
 
-Si l'on investit le montant $X$ à la date $t$
+Investissement de la valeur X à la date $t$
 
-L'option 1 rapporte:
+L'option 1 rapporte :
 
 - $X(1+i^{1y})$ après un an
-- Le rendement (brut) est $(1+i^{1y})$
+- Le rendement brut est $(1+i^{1y})$
 
-L'option 2 rapporte: (attention au fait que les rendements sont annualisés)
+L'option 2 rapporte (faites attention au fait que les rendements sont annualisés)
 
 - $X(1+i^{6m}_t)^{1/2}$ après 6 mois
-- $X(1+i^{6m}_t)^{1/2}(1+i_{t+6m}^{6m})^{1/2}$ après un an
-- Le rendement (brut) est $(1+i^{6m}_t)^{1/2}(1+i_{t+6m}^{6m})^{1/2}$
+- $X(1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$ après un an
+- Le rendement brut est $(1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$
 
-## Structure des échéances et taux d'intérêt
+### Structure temporelle des taux d'intérêt
 
-L'équation d'arbitrage se lit: $$(1+i^{1y}) = (1+i^{6m}_t)^{1/2}(1+i_{t+6m}^{6m})^{1/2}$$
+L'équation d'arbitrage s'écrirait : $$(1+i^{1y}) = (1+i^{6m}_t)^{1/2}(1+i^{t+6m}_{6m})^{1/2}$$
+Ou en termes logarithmiques : $i^{1y}_t = \frac{1}{2} i^ {6m}_t + \frac{1}{2} i^ {6m}_{t+6m}$
+Étant donné que les investisseurs sont averses au risque et apprécient la flexibilité d'avoir de l'argent plus tôt, ils demandent une prime de risque $\varphi$ :
+$$i^{1y} = \frac{1}{2} i^{6m}_{t} + \frac{1}{2} i^ {6m}_{t+6m} + \varphi$$
 
-Ou en logs: $i^{1y}_t = \frac{1}{2} i^{6m}_t + \frac{1}{2} i^{6m}_{t+6m}$
+La prime de risque intègre l'incertitude concernant le fait que les opportunités d'investissement pourraient changer avant un an, et la possibilité que le taux d'intérêt à six mois puisse changer avant un an.
 
-Sachant que les investisseurs sont averses aux risques et valorisent la flexibilité de pouvoir récupérer leur mise plus tôt, il demandent une prime de risque: $$i^{1y} = \frac{1}{2} i^{6m}_{t} + \frac{1}{2} i^{6m}_{t+6m} + \varphi$$
+### Structure temporelle des taux d'intérêt
 
-Cette prime de risque $\varphi$ incorpore aussi l'incertitude sur le fait que les opportunités d'investissement peuvent changer avant un an et la possibilité que les taux à 6 mois puissent changer avant un an.
+Le même raisonnement s'applique au taux quotidien fixé par la banque centrale :
 
-## Structure des échéances et taux d'intérêt
+$$i^{1y}_t = \frac{1}{365} \left( i^{t}_{1d}  + i^{1d}_{t+1d}  + i^{1d}_{t+2d}i^{1d}_{t+2d} +  \cdots i^{1d}_{t+364d} \right) + \varphi$$
 
-Le même raisonnement s'applique pour le taux au jour le jour fixé par la banque centrale:
+- En manipulant les taux d'intérêt de courte durée (maturité annualisée), la banque centrale peut manipuler le taux d'intérêt annuel.
+- Elle le fait en annonçant une trajectoire des taux d'intérêt futurs.
+- Pour que la manipulation soit efficace, la trajectoire des taux d'intérêt futurs doit être claire et prévisible, de même que son ajustement éventuel aux contingences économiques.
+- C'est l'une des raisons pour lesquelles la banque centrale tente de s'engager dans une politique claire et transparente.
 
-$$i^{1y}_t = \frac{1}{365} \left( i^{1d}_{t}  + i^{1d}_{t+1d}  + i^{1d}_{t+2d} + i^{1d}_{t+3d} +  \cdots i^{1d}_{t+364d} \right) + \varphi$$
-
-- En manipulant les taux au jour le jour, la banque centrale peut manipuler le taux annuel
-- Elle le fait en annonćant une *trajectoire de taux*
-- Pour que la manipulation soit efficace, la trajectoire des futurs taux doit être claire et predictible, de même que sa réaction éventuelle aux contingences économiques
-- -> La BC s'engage à suivre une politique prédéfinie, claire et transparente
-
-## Structure des échéances et taux d'intérêt
+### Taux d'intérêt à court terme
 
 ::: columns
 
@@ -275,112 +420,162 @@ $$i^{1y}_t = \frac{1}{365} \left( i^{1d}_{t}  + i^{1d}_{t+1d}  + i^{1d}_{t+2d} +
 
 :::: column
 
-- Les taux d'intérêt sont revus de manière régulière (tous les quelques mois).
-- En général, ils évoluent lentement, de manière prédictible
-- Les taux US fédéraux évoluent dans une *bande*
-- Notons que les taux sont restés très bas depuis 2008
-- ...et ont commencé à remonter
-  - fin 2022: 2.5% EZ, 4.5% US Fed
+- Les taux d'intérêt sont examinés régulièrement (tous les quelques mois).
+- En général, ils évoluent lentement, de manière prévisible.
+  - La Fed américaine laisse les taux fluctuer dans une fourchette.
+- Notez que les taux sont restés à des niveaux historiquement bas depuis 2008.
 
 ::::
 
 :::
 
-## Taux de court terme et de long terme
+### Taux d'intérêt à court terme et taux d'intérêt à long terme
 
 ::: columns
 
-:::: column
+:::: {.column width=60%}
 
 ![](short_term_long_term.png)
 
 ::::
 
-:::: column
+:::: {.column width=40%}
 
-- Les taux au jour le jour sur le marché interbancaire affectent les maturités plus longues (3 mois et 10 ans)
+- Les taux d'intérêt à court terme sur le marché interbancaire influencent les maturités plus longues (3 mois et 10 ans)
 
-- Notons que les taux d'intérêt de long terme ne varient pas 1 pour 1 avec le taux de court terme...
+- Les taux d'intérêt à long terme ne varient pas de manière équivalente aux taux d'intérêt à court terme.
 
-- Parce que les taux de long terme incorporent des changements dans les *futurs* taux de court terme.
+- Cela s'explique par le fait que les taux d'intérêt à long terme intègrent les changements futurs des taux d'intérêt à court terme.
 
 ::::
 
 :::
 
-## Taux sur les réserves et taux sur le marché interbancaire
 
-- Donc la BC manipule $r$ en manipulant $i$, en fixant le taux sur le marché interbancaire...
-- Mais comment fixe-t-elle le taux sur le marché interbancaire ? 🤔
-- C'est un prix d'équilibre, pas décidé directement par la BC
-- D'abord, quel est le role du marché interbancaire?
+## Le marché interbancaire
 
-  - lorsque deux clients d'une même banque font affaire, aucun argent ne quitte la banque
-  - si un client d'une banque A paye un client d'une banque B, la banque A doit recevoir des réserves de la banque B
-  - le même jour des transaction de B vers A compensent peut-être cette première transaction
-  - à la fin de la journées, les déséquilibres doivent être corrigés et les banques doivent se payer
-  - comment?
+### Taux d'intérêt sur les réserves et taux d'intérêt sur le marché interbancaire
 
-## Taux sur les réserves et taux sur le marché interbancaire
+- Donc, la banque centrale (BC) manipule $r$ en manipulant $i$ en fixant le taux d'intérêt sur le marché interbancaire de nuit...
+- Mais comment la BC fixe-t-elle le prix sur le marché interbancaire ? 🤔
 
-- Pour être certaines de pouvoir couvrir leurs obligations
+  - C'est un prix d'équilibre, pas directement décidé par la BC.
 
-  - les banques détiennent des réserves auprès de la BC de manière à couvrir les paiements interbancaires
-  - elles se "prêtent" des réserves les unes au autres sur le marché interbancaire
+### Le marché interbancaire
 
-- Il y a deux taux correspondants
+\framesubtitle{Quel est le rôle du marché interbancaire ?}
 
-  - Les réserves à la BC raportent $i^R$. Fixé de manière exogène par la BC.
-  - Le taux de marché  qui est $i^M$
+Lorsque les clients d'une banque donnée font des transactions entre eux, aucun argent ne quitte la banque.
 
-## Équilibre sur le marché interbancaire
+Maintenant, considérons l'expérience mentale suivante :
 
-Qu'est-ce qui détermine le niveau des réserves détenu par les banques ?
+- Lorsqu'un client de la banque A paie un client de la banque B, la banque A devrait recevoir des réserves de la banque B.
+- Le même jour, il peut y avoir des transactions de B vers A pour compenser la première transaction.
+- Mais à la fin de la journée, les déséquilibres doivent être corrigés et la banque A doit payer la banque B.
+- Si A a suffisamment de réserves, elle peut les utiliser.
+- Sinon, elle peut les emprunter à une autre banque C pour couvrir la transaction
+  - sur le marché interbancaire.
 
-- S'il est plus profitable de prêter aux autres banques ou de laisser des réserves à la BC
-- Le nombre de transactions. Qui augmente avec l'activité économique, c'est à dire $y$
+### Taux d'intérêt sur les réserves et taux d'intérêt sur le marché interbancaire
 
-__Demande__ pour les réserves:
+- Pour s'assurer qu'elles peuvent effectuer les transactions pour régler les déséquilibres :
 
-$$R^d \left( \underbrace{i^M-i^R}_{-} , \underbrace{y}_{+}\right)$$
+  - Les banques détiennent des réserves à la BC pour couvrir les paiements interbancaires en cas de besoin.
+  - Et elles prêtent de l'argent les unes aux autres sur le marché interbancaire.
 
-## Équilibre sur le marché interbancaire
+- Il y a deux taux correspondants :
 
-La banque centrale apporte des liquidités aux banques via les opérations d'open market
+  - Les réserves à la BC rapportent un taux d'intérêt $i^R$. Fixé de manière exogène par la BC.
+  - Le taux de marché $i_M$
 
-- elle échange des actifs moins liquides (obligations gouvernementales) en échange de monnaie banque centrale, liquide (réserves)
+- Le montant total $R_0$ de réserves (Monnaie Banque centrale) est décidé par la banque centrale.
 
-L'__offre__ de réserves est contrôlée parfaitement par la CB: $$R^s$$
-
-## Équilibre sur le marché interbancaire
-
-Rappelons l'équilibre:
-
-$$R^S = R^D \left(i^N - i^R, y \right)$$
-
-En inversant cette relation, on obtient:
-
-$$i^M = i^M\left(\underbrace{i^R}_{+}, y, \underbrace{R_0}_{-} \right) \geq i_R$$
-
-La banque centrale a *deux* options pour influencer le taux d'intérêt interbancaire:
-
-- fixer le taux d'intérêt sur les réserves
-- introduire plus de liquidités via les opérations d'open market\footnote{Note: on a toujours $i^M>i^R$ sinon il n'y aurait pas de marché interbancaire, puisque prêter à la BC serait toujours plus intéressant que prêter aux autres banques (car il n'y a aucun risque).}
-
-## Équilibre sur le marché interbancaire
-
-![](short_term.png){width=40%}
-![](excess_reserves.png){width=50%}
-
-Le taux d'intérêt sur les réserves est devenu le principal instrument de politique monétaire. C'est une conséquence des larges réserves excédentaires détenues par les banques.\footnote{Remarque: le fait que $i^M\approx i^R$ lorsque $R^0$ est très large découle de la fonction de demande pour les réserves de la diapo précédente.}
-
-Ceci est vrai aussi aux US, ou la BC rémunère les réserves excédentaires depuis 2008.
+- Deux instruments :
+  - introduire davantage de réserves via des opérations de marché ouvertes : changer $R_0$
+  - changer le taux d'intérêt payé sur les réserves
 
 
-## A retenir
 
-- Les banques centrales contrôlent les taux d'intérêt à l'aide de plusieurs instruments
-- Aujourd'hui, elles se concentrent sur la fixation du taux d'intérêt sur le marché interbancaire
-- Le contrôle des taux par la croissance de la masse monétaire est moins efficace car les banques privées ne prêtent pas assez et détiennent de larges réserves excédentaires
-- Le taux sur les réserves détenues par les banques privées sont devenues l'instrument principal
-- ... Mais récemment, les mesures "non-conventionelles" ont remis les mesures "quantitatives" sur le devant de la scène
+### Équilibre sur le marché interbancaire
+
+
+
+::: {.columns}
+
+:::: {.column}
+
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+![Équilibre sur le marché interbancaire](assets/interbank.png){width=80%}
+
+\onslide<2>
+
+![Équilibre sur le marché interbancaire : intervention quantitative](assets/interbank_quantitative.png){width=80%}
+
+
+\onslide<3>
+quantitative
+![Équilibre sur le marché interbancaire : intervention quantitative](assets/interbank_ir.png){width=80%}
+
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::: column
+ 
+```{=beamer}
+\begin{overprint}
+```
+
+\onslide<1>
+
+- Plus le taux d'intérêt est élevé, plus l'incitation est grande pour une banque ayant besoin de liquidité de puiser dans ses propres réserves (au prix de certains risques opérationnels).
+- La demande diminue avec le taux d'intérêt à court terme.
+
+\onslide<2>
+
+Intervention quantitative :
+
+- Une offre plus importante de réserves diminue le taux de marché $i_M$
+  - comme dans le modèle IS-LM  $\heartsuit$ 
+- Plus le niveau de réserves est élevé, plus le canal quantitatif est faible.
+
+\onslide<3>
+
+Fixation directe des taux d'intérêt :
+
+- La diminution des taux d'intérêt sur les réserves fonctionne toujours.
+- Pas de piège à liquidité
+- Les taux d'intérêt peuvent même être négatifs
+  - les banques paient pour la fourniture de liquidités
+
+```{=beamer}
+\end{overprint}
+```
+
+::::
+
+:::
+
+
+### Équilibre sur le marché interbancaire
+
+![Taux d'intérêt à court terme](short_term.png){width=40%}
+![Excédent de réserves](excess_reserves.png){width=40%}
+
+Le taux d'intérêt sur les réserves est devenu l'instrument principal de politique monétaire. Cela découle des excédents importants (par précaution) de réserves détenus par les banques.
+
+## Conclusion
+
+- Les banques centrales contrôlent les taux d'intérêt grâce à plusieurs instruments de politique monétaire.
+- De nos jours, elles se concentrent sur la fixation du taux d'intérêt sur le marché interbancaire.
+- Le contrôle des taux d'intérêt par la croissance monétaire est moins efficace car les banques privées ne prêtent pas suffisamment et détiennent d'énormes quantités de réserves à la banque centrale.
+- Les taux d'intérêt sur les réserves détenues par les banques commerciales à la banque centrale sont devenus l'instrument principal de la banque centrale.
+- ... Mais récemment, des mesures non conventionnelles ont remis les mesures quantitatives au premier plan.
