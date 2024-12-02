@@ -107,7 +107,7 @@ La BCE répertorie plusieurs agrégats monétaires :
   - M2 :
     - M1 + dépôts avec une maturité convenue de jusqu'à deux ans et dépôts remboursables avec un préavis de jusqu'à trois mois
   - M3 : **Monnaie large**
-    - M2 + accords de rachat, parts/unités de fonds du marché monétaire et titres de créance avec une maturité de jusqu'à deux ans 
+    - M2 + accords de rachat,  parts/unités de fonds du marché monétaire et titres de créance avec une maturité de jusqu'à deux ans 
 
 \onslide<2>
 

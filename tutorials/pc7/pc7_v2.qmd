@@ -1,61 +1,12 @@
 ---
-title: "PC7: Offre et Demande à court terme."
-format: pdf
+title: "PC4: Offre et Demande à court terme."
+format:
+    typst:
+        keep-typ: true
 ---
 
 
-## Exercice 1: choc pétrolier et stagflation
-
-Dans le graphique ci-joint, l'économie est à l'équilibre macroéconomique de long terme (initialement au point $E_0$), lorsqu' un choc pétrolier déplace la courbe d'offre globale (de court terme) vers la gauche.[^clarification] Répondez aux questions suivantes à partir du graphique:
-
-[^clarification]: Notons que l'équilibre initial se situe à l'intersection des courbes AD at AS mais aussi AD et LRAS: l'équilibre de court terme correspond à l'équilibre de long terme.
-
-![Choc Pétrolier](as_choc_petrolier.png)
-
-@. Comment varient à court terme l' inflation et le PIB en conséquence du choc pétrolier ? Comment appelle-t-on ce phénomène ?
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-Le choc d'offre est un shift de la courbe d'offre de court terme vers la gauche. A court terme l'équilibre se déplace vers $E_1$. Il y a simultanément une baisse du pib (augmentation du chômage) et une hausse du l'inflation. Cette situation est appelée stagflation. 
-
-::::
-:::
-
-@. Quelle politique budgétaire ou monétaire le gouvernement peut-il utiliser pour gérer les effets du choc d'offre? Montrez graphiquement les effets des politiques choisies pour gérer la variation du PIB réel. Montrez sur un autre graphique les effets des politiques choisies pour stabiliser l'inflation.
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-A court terme, il n'est pas possible d'influer sur la courbe d'offre. Mais on peut contrer l'effet sur le chômage en stimulant la demande. On parle alors de politique *accomodante* (on accommode le choc d'offre).
-
-Pour stimuler la demande, la banque centrale peut baisser les taux d'intérêt (hors réaction normale à l' inflation déjà intégrée à la courbe de demande). Le gouvernement peut aussi augmenter ses dépenses. Dans les deux cas, la situation est représentée par le premier graphique.
-
-![Choc Pétrolier - Politique accommodante](as_choc_petrolier_2.png)
-
-::::
-:::
-
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-
-A l'inverse si la banque centrale n'est préoccupée que par l'inflation elle peut la stabiliser complètement en augmentant les taux pour diminuer la demande au prix d'une augmentation du chômage. C'est la situation sur le deuxième graphique.
-
-![Choc Pétrolier - Stabilisation de l'inflaiton](as_choc_petrolier_3.png)
-
-
-::::
-:::
-
-
-@. En quoi le choc d' offre présente-t-il un dilemme pour les décideurs 1?
-
-Dans ce contexte, il n'est pas possible de réduire en même temps l'inflation et le chômage de sorte que les décideurs doivent arbitrer entre les deux.
-
-
-## Exercice 2: Macroéconomie de court terme
+## Exercice 1: Macroéconomie de court terme
 
 Trouver l'unique bonne réponse pour les aux questions suivantes, en raisonnant dans le cadre du modèle AS/AD.
 
@@ -199,228 +150,52 @@ d. Non. Les politiques de demande sont plus efficaces lorsque les prix sont *moi
 :::
 
 
-## Exercice 3: politique monétaire
+## Exercice 2: choc pétrolier et stagflation
 
-À l'aide des documents en annexe, répondre aux questions suivantes:
+Dans le graphique ci-joint, l'économie est à l'équilibre macroéconomique de long terme (initialement au point $E_0$), lorsqu' un choc pétrolier déplace la courbe d'offre globale (de court terme) vers la gauche.[^clarification] Répondez aux questions suivantes à partir du graphique:
 
-### Première partie
+[^clarification]: Notons que l'équilibre initial se situe à l'intersection des courbes AD at AS mais aussi AD et LRAS: l'équilibre de court terme correspond à l'équilibre de long terme.
 
-@. La courbe de Phillips a-t-elle disparu ? Pourquoi les graphes les plus récents, parmi ceux fournis, utilisent-ils un indicateur de tension sur le marché du travail différent du simple taux de chômage ?
+![Choc Pétrolier](as_choc_petrolier.png)
+
+@. Comment varient à court terme l' inflation et le PIB en conséquence du choc pétrolier ? Comment appelle-t-on ce phénomène ?
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
-
-La courbe de Phillips est à l'origine une relation négative entre la niveau de l'inflation et le niveau du chômage. Le papier original utilisait des donnnés historiques (1861-1913), mais on voit sur le la figure 2 qu'elle était encore bien vérifiée dans les années 70.
-
-
-Or le graphe de *The Economist*, semble montrer que depuis les années 1990 le chômage a commencé à évoluer indépendamment de l'inflation. On peut en faire deux interprétations légèrement différentes:
-
-- le coefficient a changé. Dans ce cas, il faudrait plutôt parler d'applatissement de la courbe.
-
-- il n'y a pas de relation structurelle car il n'y a pas de coefficient de la régression valable sur une longue période. On pourrait alors dire que cette relation structurelle a disparu.
-
-Si l'on regarde la figure 3, on peut sur la période 2000-2020, mettre en exergue deux événement particuliers, la crise financière de 2008 et la crise du Covid pendant lesquels le chômage a énormément augmenté sans que l'inflation suive autant.
-
-A l'inverse, la figure 4, elle, serait un argument pour l' existence d'une relation nonlinéaire entre inflation et chômage.
-
-On ne peut pas conclure si facilement. C'est d'ailleurs un grand débat dans la profession...
-
-\ \ 
-
-Notons que la légende sur l'axe des abcisses, n'est pas précisément la même sur tous les graphes. Dans la courbe de Phillips original, il s'agit du chômage. Mais pour pouvoir interpréter la courbe comme une relation de court terme, il faut neutraliser les variations persistantes dans le niveau du chômage.
-Pour la figure 2 on a donc en abcisse la déviation du chômage à son niveau structurel
-Dans les papiers plus récents, on utilise donc plutôt, comme dans les figure 4 et 5, la tension sur le marché du travail: c'est à dire que l'on regarde le ratio entre le nombre de chômeur, et le nombre d'emplois non pourvus. Intuitivement, c'est la même chose, dans la mesure où le nombre d'emploi à pourvoir est étroitement corrélé avec la capacité structurelle de l'économie à produire à court terme. Notons aussi que le graphe 5 est inversé gauche droite puisqu' il utilise le nombre de postes à pourvoir sur le nombre de chômeurs au lieu de l'inverse.
-
-
+Le choc d'offre est un shift de la courbe d'offre de court terme vers la gauche. A court terme l'équilibre se déplace vers $E_1$. Il y a simultanément une baisse du pib (augmentation du chômage) et une hausse du l'inflation. Cette situation est appelée stagflation. 
 
 ::::
 :::
 
-@. Pouquoi est-il important de savoir s'il s'agit d'une relation statistique ou structurelle. Quelle est la *variable confondante* dont parle David Beckworth ?
-
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-Notons que que les graphes n'indiquent pas si la relation chômage / inflation est une relation statistique ou structurelle. Une relation structurelle est vérifiées dans toutes les circonstances, et peut recevoir une interprétation causale. Si l'on croît que la relation chômage inflation est structurelle, alors on pourrait vouloir augmenter l'inflation par n'importe quel moyen pour réduire le chômage.
-
-Or la corrélation que l'on observe est le résultat de multiples effet. En particulier elle dépend de la politique des taux d'intérêt, qui affecte la demande et par suite l'équilibre que l'on observe. Qui peut alors dire si la courbe de Philips existe indépendament de la politique monétaire  ? Ici la variable confondante nous fait croire à une relation structurelle alors qu'elle n'existe pas forcément.[^chocolat]
-
-En d'autres termes, on n'observe jamais la courbe d'offre agregée ou la courbe de Philips directement mais seulement son intersection avec la courbe de demande et son évolution dans le temps. A moins d'identifier précisément les chocs qui ont lieu, on ne peut pas en tirer *directement* des informations sur les deux courbes pour valider une théorie comme celle de la courbe de Philips.
-
-[^chocolat]: Un autre exemple célèbre: il existe une corrélation claire entre la quantité de chocolat consommée dans un pays et le nombre de prix Nobel produits par ce pays. Donc logiquement, on devrait chercher à produire plus de chocolat? Sauf qu'il s'agit d'une anomalie statistique (corrélation parasite), cela peut s'expliquer par le fait que le niveau de vie cause une consommation plus élevée de produits de luxe (et de chocolat), *et* un système de recherche capable de produire des prix Nobel. Ici la variable confondante est le niveau de vie.
-
-::::
-:::
-
-@. Sur la base des documents peut-on affirmer que la Banque Centrale devrait avoir comme unique objectif la stabilisation de l'inflation ? Est-ce le point de vue de Ricardo Reis ?
-
-
+@. Quelle politique budgétaire ou monétaire le gouvernement peut-il utiliser pour gérer les effets du choc d'offre? Montrez graphiquement les effets des politiques choisies pour gérer la variation du PIB réel. Montrez sur un autre graphique les effets des politiques choisies pour stabiliser l'inflation.
 
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
+A court terme, il n'est pas possible d'influer sur la courbe d'offre. Mais on peut contrer l'effet sur le chômage en stimulant la demande. On parle alors de politique *accomodante* (on accommode le choc d'offre).
 
-Dans son interview, Ricardo Reis ne dit pas que l'inflation est le seul objectif de la Banque Centrale dans la mesure où la banque centrale *préfère* éviter d'augmenter le chômage. Ses préférences (~son objectifs) sont donc mieux représentées par l'arbitrage (le tradeoff) inflation / chômage. 
+Pour stimuler la demande, la banque centrale peut baisser les taux d'intérêt (hors réaction normale à l' inflation déjà intégrée à la courbe de demande). Le gouvernement peut aussi augmenter ses dépenses. Dans les deux cas, la situation est représentée par le premier graphique.
 
-Par ailleurs, si on prend un point de vue positif[^positif]
-
-- On sait que la BC ne répond pas uniquement au changements dans l'inflation
-    - la fed américaine a officiellement un double mandat qui inclut la stabilité des prix et le plein emploi
-- D'après la figure 6, il semble que la politique de taux suivie par la fed, a historiquement répondu aux déviations de l'inflation et celles de l'emploi qu'elles fluctuent dans le même sens ou non
-
-[^positif]: on supposant que la banque centrale prend des décisions éclairées le point de vue positif (ce qu'elle fait) nous renseigne sur un plan normatif (ce qu'elle devrait faire)
+![Choc Pétrolier - Politique accommodante](as_choc_petrolier_2.png)
 
 ::::
 :::
 
 
-### Deuxième partie
-
-@. La figure 4, suggère l'existence d'une courbe de Philips nonlinéaire. En supposant qu'elle est vérifiée à court terme, refaire le diagramme AS/AD et montrer l'effet d'un choc de demande à court terme. Dans quelles conditions une politique de relance est-elle efficace ?
-
-
 ::: {.content-visible when-profile="correction"}
 :::: {.callout-note appearance="simple"}
 
 
-La courbe AS/AD est parfois présentée de la façon suivante
+A l'inverse si la banque centrale n'est préoccupée que par l'inflation elle peut la stabiliser complètement en augmentant les taux pour diminuer la demande au prix d'une augmentation du chômage. C'est la situation sur le deuxième graphique.
 
-![Modèle AS/AD avec AS nonlinéaaire](as2.png){width=60%}
+![Choc Pétrolier - Stabilisation de l'inflaiton](as_choc_petrolier_3.png)
 
-On peut l'interpréter intuitivement de la façon suivante:
-Pour la partie (presque) horizontale, le niveau de chômage est tel qu'il existe des ressources non utilisées. Si besoin les firmes peuvent donc produire plus à prix (presque) constant.
-A l'inverse, sur la partie verticale, l'économie est au plein emploi et ne peut produire plus sans que les prix augmentent très vite.
-
-::::
-
-:::
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-![Choc de demande](as2_demand.png){width=60%}
-
-
-Comme dans le diagramme du cours, un choc de demande positif correspond à un déplacement de la courbe de demande vers la droite. En fonction du point d'équilibre initial, on peut alors avoir plusieurs dynamiques possibles:
-
-- si l'équilibre initial est loin du plein emploi, l'emploi augmente significativement et l'augmentation de l'inflation est modérée
-- si l'équilibre initial est au plein emploi, l'emploi ne bouge pas mais l'inflation augmente
-
-Dans le deuxième cas, la politique de relance est inefficace.
-
-::::
-:::
-
-@. En 2023, le niveau d' inflation a atteint un plus haut historique. D'après vous, quel argument pouvait être avancé par la banque centrale pour augmenter les taux sans craindre des conséquences fortement récessives ? Quel était le risque à éviter.
-
-
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-
-Lorsque la banque décide d'augmenter les taux, il s'agit d'un choc de demande négatif. On peut donc utiliser le même graphe que la question précédente pour étudier l'efficacité d'une politique de désinflation.
-
-Lorsque l'économie est proche du plein emploi, un choc de demande négatif peut reéduire l'inflation sans modification du niveau d'emploi. 
-
-Or d'après les figures 4 et 5, la situation en 2023 correspondait à un niveau d'inflation élevée et de faible tension sur le marché du travail. 
-
-En haussant les taux pour réduire l'inflation, la Fed devait cela dit être attentive à ne pas aller trop loin pour éviter de repasser l'économie dans une zone plus horizontale ou le chômage aurait commencer à augmenter plus vite.
 
 ::::
 :::
 
 
+@. En quoi le choc d' offre présente-t-il un dilemme pour les décideurs 1?
 
-
-<!-- 
-4/ Quel est le point de vue de Ricardo Reis sur la courbe de Phillips ? Pourquoi David Beckworth parle-t-il de variable confondante ?
-
-
-::: {.content-visible when-profile="correction"}
-:::: {.callout-note appearance="simple"}
-
-
-Selon R. Reis, la banque centrale manipule les taux d'intérêt pour contrôler l'inflation, ce qui a pour effet *secondaire* d'affecter le niveau  chômage. Le mécanisme précis est expliqué dans les Tweets 2. L'augmentation des taux d'intérêt nominaux rend les actifs réels plus côuteux à détenir que les actifs nominaux. Donc les taux d'intérêts réels tendent à diminuer. Comme les taux réels baissent, la consommation, l'investissement (précisément la demande d'investissement) baissent aussi. Ce mécanisme est a priori le même quelque soit la réaction de l'offre et du marché du travail.
-
-```{mermaid}
-flowchart LR
-  A[Interest Rate] --> B[Inflation]
-  A -->|?| C[Unemployment]
-    Z[Z] --> B
-
-%%   B ---|?| C
-```
-
-Si on regarde le graphe ci-dessus, on retrouve un motif familier en statistique celui d'une variable confondante: lorsqu'une variable aléatoire X cause à la fois Y et Z, on trouve une corrélation entre Y et Z, sans rapport de causalité. Par exemple, il existe une corrélation claire entre la quantité de chocolat consommée dans un pays et le nombre de prix Nobel produits par ce pays. Sauf s'il s'agit d'une anomalie statistique (corrélation parasite), cela peut s'expliquer par le fait que le niveau de vie cause une consommation plus élevée de produits de luxe (et de chocolat), et un système de recherche capable de produire des prix Nobel.
-
-En particulier si l'on affecte l'inflation par une variable quelconque Z, mais qu'inflation et chômage ne sont pas liés structurellement on n'a aucun effect sur le chômage.
-
-::::
-::: -->
-
-
-{{< pagebreak >}}
-
-
-## Annexe: Documents {.appendix}
-
-### La courbe de Phillips?
-
-
-
-![Original Phillips Curve](original_pc.png){width=70%}
-
-
-![Disparition de la Courbe de Phillips (*The Economist* (2017))](disparition_pc.png){width=70%}
-
-![Inflation et Chômage  (*San Francisco Fed* (2023))](inflation_without_unemployement.png){width=70%}
-
-![Courbe Phillips Nonlinéaire (*San Francisco Fed* (2023))](nonlinear_phillips_curve.png){width=70%}
-
-
-![Taylor Rule (from FRED))](taylor_rule.png){width=100%}
-
-
-
-### Ricardo Reis on the Philips Curve
-
-
-Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast *Macro Musings* [^macro_musing][^transcript_ai]. 
-
-[^transcript_ai]: Le transcript est généré par IA d'où certaines bizarreries de syntaxe...
-
-[^macro_musing]: https://www.mercatus.org/macro-musings/ricardo-reis-macroeconomics-financial-crises-and-recent-inflation-surge
-
-
-> *Ricardo’s View of the Phillips Curve*
-
-> Beckworth: Okay, one last question and then I'll let you go, but the Phillips curve, it's a key part of modern macro, and at least in the US, it's come under a lot of criticism because we've had low inflation, low unemployment, all of the predictions of some of the big names that we would have to have this huge amount of unemployment to get to the inflation we've gotten to, it hasn't happened. What is your thoughts on the Phillips curve? And maybe we should begin with, how do you view the Phillips curve? Do you view it as a reduced form relationship or a deep structural one? And then from there I guess it's maybe easier to think about its future.
-
-> Reis: David, let me start by saying that I'm the Phillips professor at the LSE, so I have to defend the Phillips curve.
-
-> Beckworth: Okay.
-
-> Reis: I can never say it's obsolete otherwise I would fall on the floor since my chair would become obsolete. So it's definitely present. But with that account, let me make three observations. The first one is that, the way I understand monetary policy is, whereby tightening monetary policy, a central bank is able to bring inflation down. In the same way that when I go to the doctor with an infection with a bacteria of some kind, antibiotics are the way to kill the bacteria and cure me from that. However, a side effect, and I emphasize, let me say it slowly, a side effect of raising interest rates is that you also cause a recession. You also lead to an increase in unemployment. In the same way that a side effect of taking antibiotics is that they tend to wreak havoc with your gastrointestinal, digestive system.
-
-> Reis: Note that it is not a channel. It's not by taking antibiotics and screwing up my intestines that I therefore kill the bacteria. No, no, it’s a side effect. Likewise, raising interest rates lowers inflation and has a side effect of unemployment, but it may not lower unemployment the same way that you may go through a course of antibiotics and be perfectly fine with your gastrointestinal system. So the fact that unemployment has not gone up, does not in any way discredit the way in which monetary policy works, does not pose a puzzle of any kind, because an increase in unemployment following a tightening of monetary policy is not something that has to happen for inflation to fall. It's something that often happens as a side effect. So I make that point first. Second, the Phillips curve is, I think, still one of the most important concepts for any monetary policymaker precisely because if you were to say that raising interest rates brings down inflation, and you are to ignore the side effects, you would go crazy on raising and lowering interest rates in sharp ways, focusing solely on inflation.
-
-> Reis: It's understanding that side effect, and that side effect is the Phillips curve, that when you raise interest rates, you're going to bring down inflation, but you may also increase unemployment. That side effect is there. That makes central banking hard, monetary policy hard. That leads you to be cautious. That leads you to not destroy economies in your obsession with controlling inflation. So understanding the Phillips curve as a trade-off, as a structural trade-off, as a side effect of what happens after you raise interest rates and lower down inflation, is, I think, essential. And any central bank that told me it does not understand the Phillips curve [inaudible] in the central bank, is one that should resign immediately because it would be a very dangerous central bank in that sense.
-
-> Reis: However, and third answer now here, the Phillips curve, however, and as it is, as indeed it was written by Bill Phillips originally, my predecessor here at the LSE many decades ago, as an empirical relation that says that you have a correlation between inflation and employment, or even as a causal relation, that it's through raising unemployment, they lower inflation, is a deeply flawed empirical as well as theoretical claim, precisely because it is a side effect. And when that happens sometimes, but not always, precisely because it's not the causal mechanism, it very often happens that you have inflation going up and down with unemployment not going up and down in that way. That is why when you look at a correlation between inflation and employment, you end up with relatively low values.
-
-> Reis: It is also why when Bill Phillips did those correlations, under some circumstances, having to do with monetary-fiscal regimes, he found very nice Phillips curves, but under other circumstances you wouldn't find them. Just like, David, under some circumstances, antibiotics mess up your stomach and some others, it doesn't. So that Phillips curve is seen as an ironclad law of what happens when employment and inflation moves, seen as a causal part of the mechanism when inflation goes down. That, indeed, is, I think, something that does not receive a lot of support in theory or in the data. But the Phillips curve has a very important trade off as what you can do, is why you have to be careful in controlling inflation, that is absolutely essential for any central bank.
-
-> Beckworth: Well, let me tell you how I think about it, and correct my understanding here. I view it more as a reduced form relationship. It's reflecting some other third variable, which is aggregate demand, which is being shaped by monetary policy. So aggregate demand can affect inflation, it can affect unemployment, and so policy is moving aggregate demand towards some goal and maybe it affects unemployment, maybe it affects inflation. Is that too simple of an understanding?
-
-> Reis: That's a perfectly acceptable complementary view to the ones I was saying. It goes back a little bit to my, as a side effect, meaning you want to be monitoring employment to understand this correlation exists, because it is reflecting something going on in your body, right? You're trying to diagnose the body of the patient. You're trying to kill the bacteria. You know that when you do the antibiotics, it's going to have an effect on a bunch of other things, and you want to be monitoring them, and focusing on your digestion is a very useful one, sometimes even if you're really as triggering is whether the antibiotics are creating problems in other parts of the body, absolutely.
-
-
-<!-- ![Tweets (1)](rreis_response.png){width=70%}
-
-![Tweets (2)](rreis_explanation.png){width=70%}
-
-![Tweets (3)](blanchard_response_2.png){width=70%}
-
-![Tweets (4)](blanchard_response_3.png){width=70%} -->
+Dans ce contexte, il n'est pas possible de réduire en même temps l'inflation et le chômage de sorte que les décideurs doivent arbitrer entre les deux.

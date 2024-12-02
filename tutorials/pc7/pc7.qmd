@@ -1,6 +1,8 @@
 ---
 title: "PC7: Chocs d'Offre et de Demande"
-format: pdf
+format:
+  typst:
+    keep-typ: true
 ---
 
 ## Questions de cours

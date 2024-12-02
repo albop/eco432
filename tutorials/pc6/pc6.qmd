@@ -1,6 +1,8 @@
 ---
-title: "PC6: Croix Keynésienne"
-format: pdf
+title: "PC2: Croix Keynésienne"
+format:
+  typst:
+    keep-typ: true
 ---
 
 ## Exercice 1: agents ricardiens et keynesiens
