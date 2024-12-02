@@ -1,0 +1,237 @@
+%2multibyte Version: 5.50.0.2953 CodePage: 65001
+
+\documentclass{article}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{Codepage=65001}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, February 15, 2021 18:40:38}
+%TCIDATA{LastRevised=Tuesday, February 22, 2022 15:26:45}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\begin{document}
+
+\begin{center}
+    \textbf{ECO432 - Macroéconomie. Rattrapage   2024}
+
+
+
+\end{center}
+
+\begin{center}
+
+\textit{Avril 23: 10.00-12.00. Le seul document autorisé est une feuille A4 recto-verso manuscrite.}
+
+\end{center}
+\bigskip
+\bigskip
+
+\textbf{Exercice 1 (Modèle Harrod-Domar)  (10 points)}
+
+
+\textbf{}
+
+\hspace{1.0in}
+
+
+Considérons un modèle de croissance avec un taux d'épargne constant. Le temps est continu, $t \in [0, +\infty[$. Soit une économie fermée (i.e. qui n’importe ni n’exporte aucun bien), produisant un bien de consommation suivant la fonction de production:
+
+\begin{equation}\label{leon}
+Y_t=\min\{ AK_t,BL_t\}
+\end{equation}
+
+où $A, B > 0$ sont des constantes qui ne changent pas avec le temps, et \( K_t \) est le stock de capital à la date \( t \) et \( L_t \) est la quantité de travail (= population) à la date \( t \), supposée croissant au taux exogène \( n > 0 \): \( \forall t \geq 0, \frac{\dot{L}_t}{L_t} = n \). L'output $Y_t$ peut être soit consommé, soit investi:
+\begin{equation}Y_t=C_t+I_t \end{equation} où $I_t$ est l'investissement physique mesuré en unités de consommation. 
+
+% Chaque unité de bien de consommation peut être soit consommée, soit transformée en \( q_t > 0 \) unités de bien capital. Ainsi, l’équation d’accumulation du capital est :
+% Contrairement au modèle de Solow ordinaire, nous supposons ici l’existence de deux biens distincts : le bien de consommation, et le bien capital. Le bien capital est produit à partir du bien de consommation, par une technologie linéaire et en situation de concurrence pure et parfaite.
+
+% Chaque unité de bien de consommation peut être soit consommée, soit transformée en \( q_t > 0 \) unités de bien capital.
+
+
+Les agents de l’économie ont un taux d’épargne constant \( s \in]0,1] \) et $I_t = s Y_t $.  Ainsi, l’équation d’accumulation du capital est :
+
+\begin{equation}\label{eq1}
+    \dot{K}_t = -\delta K_t + I_t 
+\end{equation}
+où \( \delta > 0 \) est le taux instantané de dépréciation du capital
+
+
+
+\begin{enumerate}
+    \item (2 points) Discutez la fonction de production (\ref{leon}). Expliquez en termes économiques la différence entre la fonction de production habituellement observée en classe $Y_t = K_t^{\alpha} L_t^{1-\alpha}$ (Cobb-Douglas) et la fonction (\ref{leon}).
+
+\item (1 point) Exprimez la fonction de production en termes par habitant ($y\equiv Y/L$ et $k\equiv K/L$) et dessinez la fonction de production : montrez la relation entre $y$ et $k$ et commentez.
+
+\item (1 point) Exprimez l'évolution du capital dans le temps (\ref{eq1}) en termes de $k$, le capital par habitant.
+\item (3 points) À partir de la question précédente, à l'aide d'un graphique, tracez $\frac{\dot{k}_t}{k_t}$ en fonction de $k$ pour voir l'évolution du capital par habitant $k$. Notez qu'il existe différents cas, selon les paramètres. Trouvez sous quelle condition le capital par habitant atteint un état stationnaire $k^\ast>0$. Dans ce cas, trouvez $k^\ast>0$ et discutez s'il est au-dessus ou en dessous de $B/A$. Est-il possible que, sous d'autres paramètres, $k$ décroisse à un rythme négatif et atteigne 0 ? Expliquez l'intuition pour les différents cas.
+
+\item (1.5 point) Supposons que nous soyons dans le cas où $k^\ast>0$ existe.   Toutes les machines sont-elles utilisées dans la production? Est-il raisonnable que $s$ reste constant dans ce cas?
+
+\item (1.5 point) Si nous sommes dans le cas de la décroissance, y a-t-il du chômage à long terme ? Expliquez l'intuition de ce résultat et expliquez pourquoi nous n'avons pas de chômage dans le modèle standard de Solow avec production Cobb-Douglas
+\end{enumerate}
+
+
+
+\bigskip
+
+\textbf{Exercice 2 (10 points)}
+
+
+
+\bigskip
+
+Selon les \'{e}conomistes Augustin Landier et David Thesmar, l'entr\'{e}e de
+Free sur le march\'{e} des op\'{e}rateurs mobiles en 2012 aurait conduit \`{a} la cr%
+\'{e}ation de 16000 \`{a} 30000 emplois en France.
+
+\begin{enumerate}
+    \item (2 points) Comment qualifieriez-vous ce choc ?
+
+    \item (6 points) En s'appuyant sur le mod\`{e}le AS-AD, \'{e}tudier analytiquement et
+graphiquement ses effets à court et long terme et expliquer intuitivement
+les m\'{e}canismes \'{e}conomiques en jeu (on supposera que la banque
+centrale cible l'inflation z\'{e}ro et le produit naturel, et que ces
+objectifs sont toujours atteints \`{a} long terme). 
+
+    \item  (2 points) Expliquer comment et pourquoi l'effet de court terme du choc est modifi%
+\'{e} lorsque la banque centrale r\'{e}agit plus fortement aux \'{e}carts de
+l'inflation \`{a} sa cible.
+\end{enumerate}
+
+\begin{center}
+\bigskip
+\end{center}
+
+\textbf{Note} : on rappelle le mod\`{e}le AS-AD vu en cours
+\begin{eqnarray*}
+\text{AD} &:&y_{t}=\theta _{t}-\sigma \gamma \left( \pi _{t}-\bar{\pi}%
+\right)  \\
+\text{AS} &:&\pi _{t}=\bar{\pi}+\kappa \left( y_{t}-y_{t}^{n}\right) \text{%
+, }y_{t}^{n}=z_{t}-\xi \mu ^{\ast },
+\end{eqnarray*}%
+avec $y_{t}$ le produit (en log), $\pi _{t}$ l'inflation, $\theta _{t}$ un
+param\`{e}tre de demande agr\'{e}g\'{e}e, $\sigma $ l'\'{e}lasticit\'{e} de
+la demande priv\'{e}e au taux d'int\'{e}r\^{e}t r\'{e}el, $\gamma $ l'\'{e}%
+lasticit\'{e} du taux d'int\'{e}r\^{e}t r\'{e}el \`{a} l'inflation, $%
+y_{t}^{n}$ le produit naturel, $z_{t}$ la productivit\'{e}, $\xi $ l'\'{e}%
+lasticit\'{e} de l'offre de travail, $\mu ^{\ast }$ le taux de marge optimal
+et $\kappa $ un param\`{e}tre qui d\'{e}pend (entre autre) du degr\'{e} de
+rigidit\'{e} nominale.
+
+% \newpage
+
+% \textbf{R\'{e}ponses}
+
+% \bigskip
+
+% \begin{enumerate}
+% \item $\phi =$ semi elasticit\'{e} du capital par rapport \`{a} la dur\'{e}e
+% des \'{e}tudes. L'expression de $H$ refl\`{e}te l'arbitrage entre
+% allongement des \'{e}tudes (ce qui augmente l'efficacit\'{e} du travail
+% brut) et temps de travail (qui augmente le nombre d'unit\'{e}s de travail
+% brut)
+
+% \item On peut se ramener \`{a} un cas connu en d\'{e}finissant $A_{t}\equiv
+% B_{t}^{1-\alpha }$, de sorte que la fonction de production s'\'{e}crive 
+% \begin{equation*}
+% \frac{Y_{t}}{B_{t}H_{t}}=\frac{K_{t}^{\alpha }}{\left( B_{t}H_{t}\right)
+% ^{\alpha }}
+% \end{equation*}%
+% Ainsi, si on d\'{e}finit%
+% \begin{equation*}
+% y_{t}=\frac{Y_{t}}{B_{t}H_{t}}=\frac{Y_{t}}{A_{t}^{\frac{1}{1-\alpha }}H_{t}}%
+% \text{, \ }k_{t}=\frac{K_{t}}{B_{t}H_{t}}=\frac{K_{t}}{A_{t}^{\frac{1}{%
+% 1-\alpha }}H_{t}}
+% \end{equation*}%
+% on peut \'{e}crire%
+% \begin{eqnarray*}
+% y_{t} &=&k_{t}^{\alpha } \\
+% k_{t+1} &=&\frac{K_{t+1}}{A_{t+1}^{\frac{1}{1-\alpha }}H_{t+1}}=\frac{%
+% sY_{t}/A_{t}^{\frac{1}{1-\alpha }}H_{t}}{A_{t+1}^{\frac{1}{1-\alpha }%
+% }H_{t+1}/A_{t}^{\frac{1}{1-\alpha }}H_{t}}=\underset{:=\Omega }{\underbrace{%
+% \left[ \frac{s}{\left( 1+g_{A}\right) ^{\frac{1}{1-\alpha }}\left(
+% 1+n\right) }\right] }}k_{t}^{\alpha }
+% \end{eqnarray*}
+
+% \item L'\'{e}tat stationnaire de cette dynamique est donn\'{e} par :%
+% \begin{equation*}
+% k^{\ast }=\Omega \left( k_{t}^{\ast }\right) ^{\alpha }\Rightarrow k^{\ast
+% }=\Omega ^{\frac{1}{1-\alpha }}\text{, }y^{\ast }=\left( k^{\ast }\right)
+% ^{\alpha }=\Omega ^{\frac{\alpha }{1-\alpha }}
+% \end{equation*}%
+% On rappelle que%
+% \begin{equation*}
+% y_{t}=\frac{Y_{t}}{A_{t}^{\frac{1}{1-\alpha }}H_{t}}=\frac{Y_{t}}{A_{t}^{%
+% \frac{1}{1-\alpha }}h\left( 1-u\right) L_{t}}
+% \end{equation*}%
+% Ce qui implique, le long du SCE:%
+% \begin{equation*}
+% \frac{Y_{t}}{L_{t}}=y^{\ast }A_{t}^{\frac{1}{1-\alpha }}h\left( 1-u\right)
+% =\Omega ^{\frac{\alpha }{1-\alpha }}h\left( 1-u\right) A_{t}^{\frac{1}{%
+% 1-\alpha }}
+% \end{equation*}%
+% et donc%
+% \begin{equation*}
+% 1+g_{Y/L}^{\ast }=\frac{\frac{Y_{t+1}}{L_{t+1}}}{\frac{Y_{t}}{L_{t}}}=\left( 
+% \frac{1}{1+n}\right) \frac{Y_{t+1}}{Y_{t}}=\left( 1+g_{A}\right) ^{\frac{1}{%
+% 1-\alpha }}\Rightarrow g_{Y/L}^{\ast }=\left( 1+g_{A}\right) ^{\frac{1}{%
+% 1-\alpha }}-1
+% \end{equation*}%
+% Par ailleur, la dynamique $k_{t+1}=\Omega k_{t}^{\alpha }$ est globalement
+% stable, donc l'\'{e}conomie converge vers ce sentier
+
+% \item Le long du SCE la consommation par travailleur est donn\'{e}e par:%
+% \begin{equation*}
+% \frac{C_{t}}{L_{t}}=\frac{\left( 1-s\right) Y_{t}}{L_{t}}=\left( 1-s\right)
+% \Omega ^{\frac{\alpha }{1-\alpha }}\text{e}^{\phi u}\left( 1-u\right) A_{t}^{%
+% \frac{1}{1-\alpha }}
+% \end{equation*}%
+% La dur\'{e}e optimale des \'{e}tudes r\'{e}soud :%
+% \begin{equation*}
+% \frac{\partial \text{e}^{\phi u}\left( 1-u\right) }{\partial u}=0\Rightarrow
+% u=1-\frac{1}{\phi }>0
+% \end{equation*}%
+% Le taux d'\'{e}pargne optimal r\'{e}soud :%
+% \begin{equation*}
+% \frac{\partial \left( 1-s\right) s^{\frac{\alpha }{1-\alpha }}}{\partial s}%
+% =0\Rightarrow s=\alpha
+% \end{equation*}%
+% La dur\'{e}e optimale des \'{e}tudes est d'autant plus \'{e}lev\'{e}e que
+% l'est la productivit\'{e} des \'{e}tudes. Le taux d'\'{e}pargne optimal est
+% d'autant plus \'{e}lev\'{e} que la productivit\'{e} marginal du capital
+% l'est, et celle-ci d\'{e}pend de $\alpha $.
+% \end{enumerate}
+
+
+
+\end{document}

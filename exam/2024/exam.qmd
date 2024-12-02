@@ -1,0 +1,189 @@
+---
+title: Examen (Partie 1)
+format: typst
+---
+
+## Questions de cours
+
+Choisir l'unique bonne réponse:
+
+1/ Laquelles des assertions suivantes est fausse:
+
+a. la propension marginale à consommer des consommateurs est comprise entre 0 et 1
+b. la consommation des consommateurs ricardiens réagit au taux d'intérêt réel
+c. si tous les consommateurs sont keynésiens, une baisse du taux d'intérêt réel ne stimule pas la demande agrégée
+e. la banque centrale stabilise la demande en influant sur le taux d'intérêt réel
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+a. vrai (cf cours)
+b. vrai (cf cours)
+c. faux: même si tous les consommateurs sont ricardiens, il reste les entreprises qui répondent  au taux d'intérêt réel
+e. vrai (cf cours)
+
+::::
+:::
+
+2/ A la suite d'un choc inconnu, on a observé une baisse de la production accompagnée d'une augmentation de l'inflation. Après plusieurs périodes, la production est revenue à son niveau d'origine mais l'inflation est restée à un niveau plus haut. Quel type d'événement est compatible avec cette observation:
+
+a. Un choc négatif persistent de la production et un choc  négatif temporaire de la demande
+b. Un choc négatif temporaire de la production et un choc  postif persistent de la demande
+c. Un choc positif temporaire de la production et un choc  négatif persistent de la demande
+d. Un choc positif persistent de la production et un choc  négatif temporaire de la demande
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+A long terme, le production est revenue à l'équilibre donc le choc d'offre est temporaire.
+L'inflation reste plus haute de manière permanente, donc le choc sur la demande est persistent (et positif).
+Comme le choc de demande est positif, pour que la production baisse à court terme, il faut qu'il y ait en même temps un choc d'offre négatif.
+
+
+::::
+:::
+
+## Équilibre à long terme et marché du travail. 
+
+<!-- On considère ici une économie caractérisée par  -->
+
+<!-- 1/ Courbe de Philips: -->
+
+
+On suppose que les firmes produisent avec une technologie linéaire
+$Y_t = L_t Z_t$ où $L_t$ est le nombre d'heures travaillées, et $Z_t$ un choc de productivité. Le salaire horaire est $W_t$.
+
+1/ Quel est le coût marginal de la production?
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+Il faut $\frac{Y_t}{Z_t}$ unités de travail pour produire une unité de production. Chaque unité de travail coûte $W_t$. Le coût (marginal) d'une unité de production est donc ${mc}_t=\frac{Y_t}{Z_t} W_t$.
+
+::::
+:::
+
+Les travailleurs maximisent chaque période une fonction d'utilité $V(C_t,L_t) = \frac{{C_t}^{1-\sigma}}{1-\sigma} - \frac{1}{\xi}{L_t}^{\xi}$ où $C_t$ est la consommation et $L_t$ le nombre d'heures travaillées et $\xi$ un paramètre positif.  On note $P_t$ le niveau des prix.
+
+2/ Écrire la contrainte de budget intratemporelle des travailleurs et déterminer leur offre de travail à l'équilibre.
+
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+Contrainte de budget: $P_t C_t \leq W_t L_t$. 
+En maximisant la fonction d'utilité sous la contrainte de budget on obtient: $L_t = \left(\frac{W_t}{P_t}\right)^{\xi}$.
+
+::::
+:::
+
+3/ Quel est l'équilibre sur le marché du travail? Représentation graphique.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+L'offre de travail vient d'être calculée: $L^S_t = \left(\frac{W_t}{P_t}\right)^{\xi}$.
+
+La demande de travail vient de la fonction de production et vaut: $L^D_t = \frac{Y_t}{Z_t}$. 
+
+A l'équilibre on a $L^D_t = L^S_t$ donc $\left(\frac{W_t}{P_t}\right)^{\xi} = \frac{Y_t}{Z_t}$
+
+![Marché du travail](labour.png)
+
+::::
+:::
+
+On suppose maintenant que les firmes fixent leur prix optimal $P^{\star}_t$ en intégrant une marge $\mu$ sur le coût marginal.
+
+
+4/ En supposant les prix parfaitement flexibles calculer l'équilibre de long terme pour les différentes variables macroéconomiques. Commenter l'effet de la productivité $Z$ et du taux de marge $\mu$ sur $Y$ et $L$.
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+Le prix optimal des firmes s'écrit    simplement:
+
+$$P^{\star}_t = mc_t (1+\mu) = \frac{Y_t}{Z_t} W_t (1+\mu)$$
+
+
+Lorsque les prix sont flexibles, toutes les firmes fixent le même prix qui est donc égal à l'indice des prix: $P^{\star}_t = P_t$
+
+On a donc:
+
+$$\frac{P_t}{W_t} = \left( \frac{Y_t}{Z_t} \right)^{-\frac{1}{\xi}} = \frac{Y_t}{Z_t} (1+\mu)$$
+
+Et: $$Y_t = Z_t (1+\mu)^{-(1+\frac{1}{\xi})}$$
+
+$$L_t = (1+\mu)^{-(1+\frac{1}{\xi})}$$
+
+Commentaires:
+
+- La production d'équilibre et l'emploi sont négativement affectée par la marge. C'est logique car les firmes en compétition monopolistique raréfient les produits de sorte à augmenter les prix et les profits.
+
+- Une augmentation de la productivité augmente la production comme attendu.
+
+- Une augmentation de la productivité n'a pas d'effet sur l'emploi dans ce modèle. Comme on a $L_t \frac{W_t}{P_t} = C_t$ et que la consommation augmente, on voit que la hausse de salaire réel décourage les travailleurs d'augmenter leur offre d'emploi. Cet effet précis, que l'on observe à l'equilibre serait différent pour une autre spécification de l'utilité des travailleurs.
+
+::::
+:::
+
+<!-- Comment est-il affecté par un choc de productivité. -->
+
+
+## Principe de Taylor
+
+On considère ici une économie loglinéarisée caractérisée par les courbes IS et PC suivantes:
+
+$$y_t = y_{t+1} - \sigma \left( i_t - \pi_{t+1} \right) + e^{\pi}_t$${#eq-is}
+$$\pi_t = \kappa (y_t - e^y_t)  + \beta \pi_{t+1}$${#eq-pc}
+
+où $\pi_t$ dénote l'inflation, $y_t$ la production, $i_t$ le taux d'intérêt et où $\sigma$ et $\kappa$ sont des paramètres réels positifs et où $\beta \in ]0,1[$ est le facteur d'escompte. 
+
+[^augmented]: Ici, la courbe de Philips provient de la fixation des prix par des entreprises en compétitions monopolistiques, qui optimisent leur profits futurs plutôt qu'instantané. On parle de courbe de Philips augmentée par les anticipations.
+
+Les variables $e^{\pi}_t$ et $e^{y}_t$ sont respectivement des chocs de demande et d'offre.[^augmented]. Ils sont pris comme exogènes et on les suppose bornés. On suppose qu'il n'y a pas d'incertitude sur la valeur des chocs futurs, de sorte qu'on peut omettre les symboles d'espérance et considérer toutes leurs valeurs comme connues.
+
+La banque centrale suit une règle pour fixer son taux d'intérêt:
+$$i_t = i^{\star} + \varphi_y (y_t - e^{\pi}_t) + \varphi_\pi (\pi_t - \pi^{\star})$${#eq-taylor}
+
+avec la cible d'inflation égale au taux d'intérêt cible: $i^{\star}=\pi^{\star}$.
+
+On dit qu'une règle de Taylor satisfait le principe de Taylor, si en réponse à un choc de demande permanent ayant pour effet d'augmenter l'inflation d'1\%, la banque centrale augmente le taux d'intérêt de plus d'1\%.
+
+1. Définir deux matrices A, B telles que:
+
+$$z_{t+1} = A z_t + B e_t$$
+
+où $z_t=(\pi_t, y_t)$ et $e_t = (e^{\pi}_t, e^{y}_t)$
+
+2. Montrer que les niveaux d'inflation et de production sont uniquement déterminés à toutes les dates $t\geq 0$ si $$\varphi_{\pi} + \frac{1-\beta}{\kappa} \varphi_{y}> 1$$ Cela correspond-il a une banque centrale plus active ou plus passive vis-à-vis de l'inflation? Comparer avec le principe de Taylor. 
+
+::: {.content-visible when-profile="correction"}
+:::: {.callout-warning title="Correction"}
+
+Si A n'est pas inversible, pour une valeur $z_{t+1}$ donnée il peut exister plusieurs valeurs de $z_t$.
+
+On suppose donc que $A$ est inversible on peut alors écrire
+
+$$z_t = A^{-1} z_{t+1} -  A^{-1} B e_{t+k}$$ d'où l'on déduit formellement:
+
+$$z_t = -\sum_{k \geq 0} \left(A^{-1}\right)^k (A^{-1} B) e_{t+k}$$.
+
+
+Pour que cette somme ne diverge pour aucune valeur de $(e_{t+k})_{k\geq0}$ il faut que le rayon spectral de $A^{-1}$ soit plus petit que 1, donc que toutes les valeurs propres de $A$ soient supérieures à 1.
+En calculant les deux valeurs propres on trouve la condition:
+
+$$\varphi_{\pi} + \frac{1-\beta}{\kappa} \varphi_{y}> 1$$
+
+Pour que cette condition soit satisfaite, il faut que $\varphi_{\pi}$ soit suffisament grand.
+
+On peut interpréter ce résultat en disant que la banque centrale doit réagir suffisament à l'inflation anticipée pour que l'inflation ajourd'hui soit bien définie.
+
+D'après l'équation (2), un choc de demande permanent qui augmente l'inflation de $\Delta \pi=1\%$ augmente la production de $\Delta y=\frac{1-\beta}{\kappa}\Delta \pi$.  En suivant la règle de l'énoncé la réaction de la banque centrale est donc:
+
+$$\Delta i = \varphi_{\pi} \Delta \pi + \varphi{y} \Delta y = \left( \varphi_{\pi}  +\frac{1-\beta}{\kappa}  \varphi_y \right)\Delta \pi$$
+
+Le critère de Taylor se confond donc dans ce cas précis avec un critère de détermination.
+
+::::
+:::

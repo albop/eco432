@@ -1,0 +1,261 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 1252
+
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=1252}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Wed Apr 05 06:17:18 2000}
+%TCIDATA{LastRevised=Sunday, September 02, 2018 22:38:01}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="General\Blank Document">}
+%TCIDATA{Language=French}
+%TCIDATA{CSTFile=LaTeX article (bright).cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\oddsidemargin 0pt
+\evensidemargin 0pt
+\setlength\textwidth{18cm}
+\setlength{\topmargin}{-2cm}
+\setlength{\oddsidemargin}{-1.2cm}
+\setlength\textheight{25cm}
+
+\begin{document}
+
+
+ECO432 -- Macro\'{e}conomie
+
+Examen de remplacement / rattrapage
+
+Jeudi 6 septembre 2018, 10h-12h
+
+\begin{center}
+\bigskip
+
+Sans document ni calculatrice
+
+\bigskip
+
+\textbf{Exercice 1 (13\ points)}
+
+\bigskip
+\end{center}
+
+On consid\`{e}re le mod\`{e}le de Solow avec capital humain suivant. Le
+temps est discret : $t=1,2...$, et chaque g\'{e}n\'{e}ration d'individus vit
+exactement une p\'{e}riode. Un individu dispose d'une unit\'{e} de temps de
+travail au cours de sa vie, dont une fraction $u$ est pass\'{e}e \`{a} se
+former (et le reste \`{a} travailler). La fonction de production agr\'{e}g%
+\'{e}e est donn\'{e}e par :%
+\begin{equation}
+Y_{t}=A_{t}K_{t}^{\alpha }H_{t}{}^{1-\alpha },\;\;\alpha \in \left] 0,1%
+\right[ ,  \label{Fonction de production}
+\end{equation}%
+avec $K_{t}$ le stock de capital physique, $A_{t}$ un terme de progr\`{e}s
+technique et $H_{t}$ le stock de capital humain dans l'\'{e}conomie qui est
+disponible pour la production. Celui-ci est donn\'{e} par :%
+\begin{equation}
+H_{t}=h\left( 1-u\right) L_{t},  \label{Travail efficace}
+\end{equation}%
+avec $L_{t}$ la population active, $u$ la dur\'{e}e des \'{e}tudes (suppos%
+\'{e}e constante dans le temps) et $h$ le capital humain par individu.
+Celui-ci est donn\'{e} par :%
+\begin{equation}
+h=\text{e}^{\phi u},\text{ }\phi >1.  \label{Capital humain par tete}
+\end{equation}
+
+La population active cro\^{\i}t au taux $n>0$ et le progr\`{e}s technique au
+taux $g_{A}>0$, avec $L_{0}>0$ et $A_{0}>0$. Les agents \'{e}pargnent une
+fraction $s\in \left] 0,1\right[ $ du revenu agr\'{e}g\'{e} $Y_{t}$. La d%
+\'{e}pr\'{e}ciation du capital est compl\`{e}te et l'\'{e}conomie est ferm%
+\'{e}e, de sorte qu'on a :%
+\begin{equation*}
+K_{t+1}=sY_{t}\text{.}
+\end{equation*}
+
+\bigskip
+
+\begin{enumerate}
+\item Interpr\'{e}ter les \'{e}quations (\ref{Travail efficace}) et (\ref%
+{Capital humain par tete}). (2 points)
+
+\item D\'{e}finir de mani\`{e}re appropri\'{e}e les variables intensives du
+mod\`{e}le $y_{t}$ et $k_{t}$, puis \'{e}crire sous forme intensive la
+fonction de production et la loi d'\'{e}volution du capital [Indice : la
+premi\`{e}re est de la forme $y_{t}=f\left( k_{t}\right) $ et la seconde de
+la forme $k_{t+1}=\Omega f\left( k_{t}\right) $, avec $f$ une fonction et $%
+\Omega $ une constante, les deux \'{e}tant \`{a} d\'{e}terminer]. (4 points)
+
+\item Calculer le taux de croissance de la production par travailleur $%
+Y_{t}/L_{t}$ le long du sentier de croissance \'{e}quilibr\'{e} (c'est-\`{a}%
+-dire tel que $Y_{t}/L_{t}$ cro\^{\i}t \`{a} taux constant), puis montrer
+que ce sentier est globalement stable (c'est-\`{a}-dire que le taux de
+croissance de $Y_{t}/L_{t}$ tend asymptotiquement vers ce taux constant pour
+tout $(A_{0},L_{0})$. (4 points)
+
+\item Calculer les niveaux du taux d'\'{e}pargne $s$ et de la dur\'{e}e des 
+\'{e}tudes $u$ qui maximisent le niveau de consommation par travailleur de l'%
+\'{e}conomie le long du sentier de croissance \'{e}quilibr\'{e}. Expliquer
+intuitivement la mani\`{e}re dont ces grandeurs optimales d\'{e}pendent des
+param\`{e}tres $\alpha $\ et $\phi $. (3 points)
+\end{enumerate}
+
+\bigskip
+
+\begin{center}
+\textbf{Exercice 2 (7 points)}
+
+\bigskip
+\end{center}
+
+Selon les \'{e}conomistes Augustin Landier et David Thesmar, l'entr\'{e}e de
+Free sur le march\'{e} des op\'{e}rateurs mobiles aurait conduit \`{a} la cr%
+\'{e}ation de 16000 \`{a} 30000 emplois en France.
+
+\begin{enumerate}
+\item En s'appuyant sur le mod\`{e}le OA-DA, \'{e}tudier analytiquement et
+graphiquement l'impact \`{a} court et \`{a} long terme d'une intensification
+de la concurrence sur les march\'{e}s des biens, et expliquer intuitivement
+les m\'{e}canismes \'{e}conomiques en jeu (on supposera que la banque
+centrale cible l'inflation z\'{e}ro et le produit naturel, et que ces
+objectifs sont toujours atteints \`{a} long terme). (4 points)
+
+\item Expliquer comment et pourquoi l'effet de court terme du choc est modifi%
+\'{e} lorsque la banque centrale r\'{e}agit plus fortement aux \'{e}carts de
+l'inflation \`{a} sa cible. (3 points)
+\end{enumerate}
+
+\begin{center}
+\bigskip
+\end{center}
+
+\textbf{Note} : on rappelle que le mod\`{e}le OA-DA est donn\'{e} par :%
+\begin{eqnarray*}
+\text{DA} &:&y_{t}=\theta _{t}-\sigma \gamma \left( \pi _{t}-\bar{\pi}%
+\right)  \\
+\text{OA} &:&\pi _{t}=\pi _{t-1}+\kappa \left( y_{t}-y_{t}^{n}\right) \text{%
+, }y_{t}^{n}=z_{t}-\xi \mu ^{\ast },
+\end{eqnarray*}%
+avec $y_{t}$ le produit (en log), $\pi _{t}$ l'inflation, $\theta _{t}$ un
+param\`{e}tre de demande agr\'{e}g\'{e}e, $\sigma $ l'\'{e}lasticit\'{e} de
+la demande priv\'{e}e au taux d'int\'{e}r\^{e}t r\'{e}el, $\gamma $ l'\'{e}%
+lasticit\'{e} du taux d'int\'{e}r\^{e}t r\'{e}el \`{a} l'inflation, $%
+y_{t}^{n}$ le produit naturel, $z_{t}$ la productivit\'{e}, $\xi $ l'\'{e}%
+lasticit\'{e} de l'offre de travail, $\mu ^{\ast }$ le taux de marge optimal
+et $\kappa $ un param\`{e}tre qui d\'{e}pend (entre autre) du degr\'{e} de
+rigidit\'{e} nominale.
+
+\newpage
+
+\textbf{R\'{e}ponses}
+
+\bigskip
+
+\begin{enumerate}
+\item $\phi =$ semi elasticit\'{e} du capital par rapport \`{a} la dur\'{e}e
+des \'{e}tudes. L'expression de $H$ refl\`{e}te l'arbitrage entre
+allongement des \'{e}tudes (ce qui augmente l'efficacit\'{e} du travail
+brut) et temps de travail (qui augmente le nombre d'unit\'{e}s de travail
+brut)
+
+\item On peut se ramener \`{a} un cas connu en d\'{e}finissant $A_{t}\equiv
+B_{t}^{1-\alpha }$, de sorte que la fonction de production s'\'{e}crive 
+\begin{equation*}
+\frac{Y_{t}}{B_{t}H_{t}}=\frac{K_{t}^{\alpha }}{\left( B_{t}H_{t}\right)
+^{\alpha }}
+\end{equation*}%
+Ainsi, si on d\'{e}finit%
+\begin{equation*}
+y_{t}=\frac{Y_{t}}{B_{t}H_{t}}=\frac{Y_{t}}{A_{t}^{\frac{1}{1-\alpha }}H_{t}}%
+\text{, \ }k_{t}=\frac{K_{t}}{B_{t}H_{t}}=\frac{K_{t}}{A_{t}^{\frac{1}{%
+1-\alpha }}H_{t}}
+\end{equation*}%
+on peut \'{e}crire%
+\begin{eqnarray*}
+y_{t} &=&k_{t}^{\alpha } \\
+k_{t+1} &=&\frac{K_{t+1}}{A_{t+1}^{\frac{1}{1-\alpha }}H_{t+1}}=\frac{%
+sY_{t}/A_{t}^{\frac{1}{1-\alpha }}H_{t}}{A_{t+1}^{\frac{1}{1-\alpha }%
+}H_{t+1}/A_{t}^{\frac{1}{1-\alpha }}H_{t}}=\underset{:=\Omega }{\underbrace{%
+\left[ \frac{s}{\left( 1+g_{A}\right) ^{\frac{1}{1-\alpha }}\left(
+1+n\right) }\right] }}k_{t}^{\alpha }
+\end{eqnarray*}
+
+\item L'\'{e}tat stationnaire de cette dynamique est donn\'{e} par :%
+\begin{equation*}
+k^{\ast }=\Omega \left( k_{t}^{\ast }\right) ^{\alpha }\Rightarrow k^{\ast
+}=\Omega ^{\frac{1}{1-\alpha }}\text{, }y^{\ast }=\left( k^{\ast }\right)
+^{\alpha }=\Omega ^{\frac{\alpha }{1-\alpha }}
+\end{equation*}%
+On rappelle que%
+\begin{equation*}
+y_{t}=\frac{Y_{t}}{A_{t}^{\frac{1}{1-\alpha }}H_{t}}=\frac{Y_{t}}{A_{t}^{%
+\frac{1}{1-\alpha }}h\left( 1-u\right) L_{t}}
+\end{equation*}%
+Ce qui implique, le long du SCE:%
+\begin{equation*}
+\frac{Y_{t}}{L_{t}}=y^{\ast }A_{t}^{\frac{1}{1-\alpha }}h\left( 1-u\right)
+=\Omega ^{\frac{\alpha }{1-\alpha }}h\left( 1-u\right) A_{t}^{\frac{1}{%
+1-\alpha }}
+\end{equation*}%
+et donc%
+\begin{equation*}
+1+g_{Y/L}^{\ast }=\frac{\frac{Y_{t+1}}{L_{t+1}}}{\frac{Y_{t}}{L_{t}}}=\left( 
+\frac{1}{1+n}\right) \frac{Y_{t+1}}{Y_{t}}=\left( 1+g_{A}\right) ^{\frac{1}{%
+1-\alpha }}\Rightarrow g_{Y/L}^{\ast }=\left( 1+g_{A}\right) ^{\frac{1}{%
+1-\alpha }}-1
+\end{equation*}%
+Par ailleur, la dynamique $k_{t+1}=\Omega k_{t}^{\alpha }$ est globalement
+stable, donc l'\'{e}conomie converge vers ce sentier
+
+\item Le long du SCE la consommation par travailleur est donn\'{e}e par:%
+\begin{equation*}
+\frac{C_{t}}{L_{t}}=\frac{\left( 1-s\right) Y_{t}}{L_{t}}=\left( 1-s\right)
+\Omega ^{\frac{\alpha }{1-\alpha }}\text{e}^{\phi u}\left( 1-u\right) A_{t}^{%
+\frac{1}{1-\alpha }}
+\end{equation*}%
+La dur\'{e}e optimale des \'{e}tudes r\'{e}soud :%
+\begin{equation*}
+\frac{\partial \text{e}^{\phi u}\left( 1-u\right) }{\partial u}=0\Rightarrow
+u=1-\frac{1}{\phi }>0
+\end{equation*}%
+Le taux d'\'{e}pargne optimal r\'{e}soud :%
+\begin{equation*}
+\frac{\partial \left( 1-s\right) s^{\frac{\alpha }{1-\alpha }}}{\partial s}%
+=0\Rightarrow s=\alpha
+\end{equation*}%
+La dur\'{e}e optimale des \'{e}tudes est d'autant plus \'{e}lev\'{e}e que
+l'est la productivit\'{e} des \'{e}tudes. Le taux d'\'{e}pargne optimal est
+d'autant plus \'{e}lev\'{e} que la productivit\'{e} marginal du capital
+l'est, et celle-ci d\'{e}pend de $\alpha $.
+\end{enumerate}
+
+\end{document}

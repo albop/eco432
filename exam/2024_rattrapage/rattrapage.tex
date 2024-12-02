@@ -1,0 +1,104 @@
+%2multibyte Version: 5.50.0.2953 CodePage: 65001
+
+\documentclass{article}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{Codepage=65001}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Monday, February 15, 2021 18:40:38}
+%TCIDATA{LastRevised=Tuesday, February 22, 2022 15:26:45}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+%\input{tcilatex}
+\begin{document}
+
+\begin{center}
+    \textbf{ECO432 - Macroéconomie. Rattrapage   2024}
+
+
+
+\end{center}
+
+\begin{center}
+
+\textit{Avril 23: 10.00-12.00. Le seul document autorisé est une feuille A4 recto-verso manuscrite.}
+
+\end{center}
+\bigskip
+\bigskip
+
+\textbf{Exercice 1 (Modèle Harrod-Domar)  (10 points)}
+
+
+\textbf{}
+
+\hspace{1.0in}
+\end{center}
+
+
+Considérons un modèle de croissance avec un taux d'épargne constant. Le temps est continu, $t \in [0, +\infty[$. Soit une économie fermée (i.e. qui n’importe ni n’exporte aucun bien), produisant un bien de consommation suivant la fonction de production:
+
+\begin{equation}\label{leon}
+Y_t=\min\{ AK_t,BL_t\}
+\end{equation}
+
+où $A, B > 0$ sont des constantes qui ne changent pas avec le temps, et \( K_t \) est le stock de capital à la date \( t \) et \( L_t \) est la quantité de travail (= population) à la date \( t \), supposée croissant au taux exogène \( n > 0 \): \( \forall t \geq 0, \frac{\dot{L}_t}{L_t} = n \). L'output $Y_t$ peut être soit consommé, soit investi:
+\begin{equation}Y_t=C_t+I_t \end{equation} où $I_t$ est l'investissement physique mesuré en unités de consommation. 
+
+% Chaque unité de bien de consommation peut être soit consommée, soit transformée en \( q_t > 0 \) unités de bien capital. Ainsi, l’équation d’accumulation du capital est :
+% Contrairement au modèle de Solow ordinaire, nous supposons ici l’existence de deux biens distincts : le bien de consommation, et le bien capital. Le bien capital est produit à partir du bien de consommation, par une technologie linéaire et en situation de concurrence pure et parfaite.
+
+% Chaque unité de bien de consommation peut être soit consommée, soit transformée en \( q_t > 0 \) unités de bien capital.
+
+
+Les agents de l’économie ont un taux d’épargne constant \( s \in]0,1] \) et $I_t = s Y_t $.  Ainsi, l’équation d’accumulation du capital est :
+
+\begin{equation}\label{eq1}
+    \dot{K}_t = -\delta K_t + I_t 
+\end{equation}
+où \( \delta > 0 \) est le taux instantané de dépréciation du capital
+
+
+
+\begin{enumerate}
+    \item (2 points) Discutez la fonction de production (\ref{leon}). Expliquez en termes économiques la différence entre la fonction de production habituellement observée en classe $Y_t = K_t^{\alpha} L_t^{1-\alpha}$ (Cobb-Douglas) et la fonction (\ref{leon}).
+
+\item (1 point) Exprimez la fonction de production en termes par habitant ($y\equiv Y/L$ et $k\equiv K/L$) et dessinez la fonction de production : montrez la relation entre $y$ et $k$ et commentez.
+
+\item (1 point) Exprimez l'évolution du capital dans le temps (\ref{eq1}) en termes de $k$, le capital par habitant.
+\item (3 points) À partir de la question précédente, à l'aide d'un graphique, tracez $\frac{\dot{k}_t}{k_t}$ en fonction de $k$ pour voir l'évolution du capital par habitant $k$. Notez qu'il existe différents cas, selon les paramètres. Trouvez sous quelle condition le capital par habitant atteint un état stationnaire $k^\ast>0$. Dans ce cas, trouvez $k^\ast>0$ et discutez s'il est au-dessus ou en dessous de $B/A$. Est-il possible que, sous d'autres paramètres, $k$ décroisse à un rythme négatif et atteigne 0 ? Expliquez l'intuition pour les différents cas.
+
+\item (1.5 point) Supposons que nous soyons dans le cas où $k^\ast>0$ existe.   Toutes les machines sont-elles utilisées dans la production? Est-il raisonnable que $s$ reste constant dans ce cas?
+
+\item (1.5 point) Si nous sommes dans le cas de la décroissance, y a-t-il du chômage à long terme ? Expliquez l'intuition de ce résultat et expliquez pourquoi nous n'avons pas de chômage dans le modèle standard de Solow avec production Cobb-Douglas
+\end{enumerate}
+
+\end{document}

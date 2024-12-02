@@ -1,0 +1,86 @@
+---
+title: Presentation
+subtitle: ECO432 - Macroéconomie
+author: Pablo Winant
+format:
+  revealjs:
+    navigation-mode: linear
+    layout: wide
+    toc: true
+    toc-depth: 1
+    toc-title: Plan
+    width: 1920
+    height: 1080
+
+---
+
+
+## ECO432
+
+\ \ 
+
+### Amphis
+
+
+::: {.columns}
+
+
+
+:::: {.column}
+
+
+
+__Pablo Winant__: (5 séances)
+
+- fluctuations de court terme 
+  - demande agrégée, offre agrégée
+- politiques de stabilisation
+  - politique monétaire
+
+
+::::
+
+:::: {.column}
+
+__Mehdi Senouci__: (5 séances)
+
+- développement économique 
+- thèmes additionnels (tbc)
+  - transition écologique
+  - chômage
+  - dette
+  - ...
+
+::::
+
+:::
+
+\ 
+
+
+
+::: {.columns}
+
+:::: {.column}
+
+### Petites Classes
+
+
+- mises à jour et rappels utiles
+- exercices sur les modèles
+- lecture de documents, case studies
+
+::::
+
+:::: {.column}
+
+### Objectifs
+
+- Assimiler vocabulaire et raisonnements macroéconomiques
+- Introduction à la modélisation moderne (microfondations)
+
+
+
+::::
+
+:::
