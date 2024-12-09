@@ -1,7 +1,15 @@
 {
-    "spellright.language": [],
+    "spellright.language": [
+        "fr"
+    ],
     "spellright.documentTypes": [
         "markdown",
-        "plaintext"
-    ]
+        "plaintext",
+        "typst"
+    ],
+    "spellright.parserByClass": {
+        "typst": {
+            "parser": "plain"
+        }
+    }
 }

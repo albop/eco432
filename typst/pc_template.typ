@@ -1,8 +1,17 @@
-#let pc(pcn, title, doc) = {
+  #let correction(content, visible: true) = {
+    if visible {
+      block(
+        emph(content),
+        breakable: true,
+        stroke: (left: 1pt),
+        inset: (left: 12pt)
+      )
+    }
+  }
 
+#let pc(pcn, title, doc, correct: true) = {
 
-
-
+  // set correction(with_correction: with_correction )
   set page(
     paper: "a4",
     number-align: center,
@@ -39,8 +48,12 @@
       \
       ]
     )
-    
-    text(12pt, "PC " +str(pcn)+" - "+title)
+
+    if correct {
+      text(12pt, "PC " +str(pcn)+" - "+title + " - Correction")
+    } else {
+      text(12pt, "PC " +str(pcn)+" - "+title)
+    }
   }
 
   set math.equation(numbering: "(1)")
@@ -52,6 +65,9 @@
   )
 
   text("")
+
+
+
 
   doc
 }
