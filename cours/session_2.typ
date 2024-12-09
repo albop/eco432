@@ -1,6 +1,47 @@
+#import "@preview/touying:0.5.3": *
+#import "@preview/fontawesome:0.3.0": *
+#import "quarto_theme.typ": *
+
+#show: clean-theme.with(
+  aspect-ratio: "16-9",
+                        )
+
+#title-slide(
+  title: [Demande Agrégée],
+  subtitle: [ECO432 - Macroéconomie],
+  authors: (
+                    ( name: [Pablo Winant],
+            affiliation: [],
+            email: [],
+            orcid: []),
+            ),
+  date: [],
+)
+
+
+= Les composantes de la demande
+
+== Qui dépense ?
+
+Rappelons la décomposition du PIB par les dépenses:
+
+$ Y = C + I + G + N X $
+
+où
+
+- $Y$: PIB nominal
+- $C$: Consommation
+- $I$: Investissement
+- $G$: Dépenses du gouvernement
+- $N X$: Exportations nettes
+
+== Rappel sur les consommateurs
+
+
+Consommation: $C(Y,r)$
 
 == Producteurs
-<producteurs-2>
+
 Une entreprise produit $f (K)$ en utilisant du capital K. Nous supposons des rendements marginaux décroissants dans la production, c’est-à-dire $f^('') (K) < 0$ (et bien sûr $f^(') (K) > 0$).
 
 Supposons que l’entreprise emprunte une quantité I pour financer K, c’est-à-dire $K = I$. Après la production, elle doit rembourser I(1+r) dans la période suivante.
@@ -29,7 +70,8 @@ Cela définit implicitement $I (r)$. Étant donné que $f^(') (I)$ décroît en 
 
 ]
 ]
-. . .
+
+#pause
 
 Il y a de nombreuses raisons à cela :
 
@@ -56,12 +98,9 @@ I (r) & = & I_0 + I_r r $
 
 où $I_r < 0$ et où les valeurs $C_Y > 0$ et $C_r < 0$ dépendent de la proportion de ménages ricardiens et keynésiens.
 
-Donc, si nous prenons $G$ et $N X$ comme exogènes, la somme de toutes les composantes de dépenses est :
+Donc, si nous prenons $G$ et $N X$ comme exogènes, la somme de toutes les composantes de dépenses est :$ C (Y , r) + I (r) + G + N X $
 
-est : $ C (Y , r) + I (r) + G + N X $
-
-. . .
-
+#pause
 Est-ce que cela représente la Demande Agrégée ? #strong[Non !]
 
 == Courbe IS
