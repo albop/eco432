@@ -19,6 +19,94 @@
 )
 
 
+
+= Rappel: PIB Nominal / PIB Réel
+
+
+== Produit intérieur brut (PIB) : Nominal / Réel
+
+Commençons par quelques notations. Dans ce cours :
+
+- $Y_t$ : *PIB réel* : le nombre de paniers de bien produits par l'économie
+- $P_t$ : *Niveau des prix* : le prix d'un panier de biens donné
+- $pi_t = frac(P_t-P_(t-1),P_(t-1)))$ : *Taux d'inflation*
+
+Avec ces définitions, le *PIB nominal*, c'est-à-dire la production vendue aux prix du marché, est simplement $P_t Y_t$.
+
+
+---
+
+== Taux d'intérêt nominal
+
+Pour épargner d'une période à l'autre, les agents ont accès à des obligations sans risque rapportant :
+
+- $i_t$ : taux d'intérêt nominal entre $t$ et $t+1$
+
+Si un agent investit des économies $S_t$ à la période $t$, il obtient $S_t (1+i_t)$ à la période $t+1$.
+
+
+== Taux d'intérêt nominal / réel
+
+Qu'est-ce qui détermine la décision d'épargner davantage ou moins ?
+
+Considérons l' expérience de pensée suivante :
+
+- un agent renonce à $1$ unité de consommation à la période $t$, valant $P_t$ aux prix du marché : sa richesse est $P_t$
+- investie au taux nominal $i_t$, cette richesse devient $P_t (1+i_t)$ à la période $t+1$
+- l'agent peut maintenant acheter $frac(P_t (1+i_t),P_(t+1))$ biens de consommation au nouveau prix du marché $P_(t+1)$
+
+En reconnaissant le ratio $1+pi_(t+1) = frac(P_(t+1),P_t)$, nous concluons que chaque unité de consommation aujourd'hui peut être échangée contre $frac(1+i_t,1+pi_(t+1))$ unités demain
+
+- c'est plus avantageux lorsque le taux d'intérêt nominal est élevé
+- c'est moins avantageux lorsque l'inflation est élevée
+
+
+== Taux d'Intérêt Réel
+
+Le _taux d'intérêt réel_ $r_t$ est défini par :
+
+$ 1+r_t = frac(1+i_t,1 + pi_(t+1)) $
+
+Il mesure à quel point il est bénéfique d'échanger des biens de consommation actuels contre des biens de consommation futurs.
+
+En logarithmes:
+
+$ r_t = i_t - pi_(t+1) $
+
+Cette relation est parfois appelée l'_équation de Fisher_.
+
+
+
+== Mini-check
+
+#columns(2,[
+
+  #image("assets_2/check.jpg",width:30%)
+
+
+==== Quizz 1
+
+Supposons que le taux d'intérêt nominal soit de 4% et l'inflation de 5%. Quel est le taux d'intérêt réel (en pourcentage) ?
+
+1. 1
+2. -1
+3. 4/5
+4. 5/6
+
+#colbreak()
+
+#pause 
+==== Quizz 2
+
+L'effet fishérien est la tendance de l'inflation à augmenter et à annuler toute hausse des taux nominaux par la banque centrale. Cela est plus susceptible de se produire si :
+
+1. le taux réel est indépendant des variables nominales
+2. les prix sont rigides
+3. l'inflation est élevée
+4. la dette est élevée
+
+])
+
 = Les composantes de la demande
 
 == Qui dépense ?
