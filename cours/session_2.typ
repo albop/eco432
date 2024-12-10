@@ -25,35 +25,35 @@
 
 == Produit intérieur brut (PIB) : Nominal / Réel
 
-Commençons par quelques notations. Dans ce cours :
+Commençons par quelques notations. 
+
+Dans ce cours :
 
 - $Y_t$ : *PIB réel* : le nombre de paniers de bien produits par l'économie
 - $P_t$ : *Niveau des prix* : le prix d'un panier de biens donné
-- $pi_t = frac(P_t-P_(t-1),P_(t-1)))$ : *Taux d'inflation*
+- $pi_t = frac(P_t-P_(t-1),P_(t-1))$ : *Taux d'inflation* #footnote[En pratique, l'inflation d'un panier de biens est calculée par les statisticiens de l'INSEE en agrégeant les quantités $x_i$ consommées par un agent représentatif, pondérées par leur prix, donc $P_t=integral_i p_i x_i$.  ]
 
 Avec ces définitions, le *PIB nominal*, c'est-à-dire la production vendue aux prix du marché, est simplement $P_t Y_t$.
 
-
----
+Aussi, de manière, conventionnelle, lorsqu'une variable en niveau est donnée par une lettre majuscule, la même lettre en minuscule dénote le log de cette variable (ex: $y_t=log(Y_t)$)
 
 == Taux d'intérêt nominal
 
 Pour épargner d'une période à l'autre, les agents ont accès à des obligations sans risque rapportant :
 
-- $i_t$ : taux d'intérêt nominal entre $t$ et $t+1$
+- $i_t$ : taux d'intérêt _nominal_ entre $t$ et $t+1$#footnote[Le choix d'indice pour $i_t$ dénote le fait que le taux d'intérêt est connu en période $t$.]
 
-Si un agent investit des économies $S_t$ à la période $t$, il obtient $S_t (1+i_t)$ à la période $t+1$.
+Si un agent investit son épargne $S_t$ à la période $t$, il obtient $S_t (1+i_t)$ à la période $t+1$.
 
 
 == Taux d'intérêt nominal / réel
-
-Qu'est-ce qui détermine la décision d'épargner davantage ou moins ?
 
 Considérons l' expérience de pensée suivante :
 
 - un agent renonce à $1$ unité de consommation à la période $t$, valant $P_t$ aux prix du marché : sa richesse est $P_t$
 - investie au taux nominal $i_t$, cette richesse devient $P_t (1+i_t)$ à la période $t+1$
 - l'agent peut maintenant acheter $frac(P_t (1+i_t),P_(t+1))$ biens de consommation au nouveau prix du marché $P_(t+1)$
+
 
 En reconnaissant le ratio $1+pi_(t+1) = frac(P_(t+1),P_t)$, nous concluons que chaque unité de consommation aujourd'hui peut être échangée contre $frac(1+i_t,1+pi_(t+1))$ unités demain
 
@@ -115,7 +115,6 @@ Rappelons la décomposition du PIB par les dépenses:
 
 $ Y = C + I + G + N X $
 
-où
 
 - $Y$: PIB nominal
 - $C$: Consommation
@@ -123,62 +122,105 @@ où
 - $G$: Dépenses du gouvernement
 - $N X$: Exportations nettes
 
-== Rappel sur les consommateurs
+Les dépenses du gouvernments sont décidés indépendamment des conditions de marchés par les politiques. En particulier elles ne sont pas automatiquement déterminées par le revenu. On dit qu'elles sont *autonomes*.
+
+On suppoera aussi par simplicités que les exportations nettes sont *exogènes*, c'est à dire déterminées en dehors du modèle.
+
+==
+
+#image("assets/hypnotic.jpg")
 
 
-Consommation: $C(Y,r)$
+==== Qu'est ce qui détermine les composants de la demande?
 
-== Producteurs
+#pause
+Les différents composants de la demande dépendent du niveau de revenu réel $Y$ et du taux d'intérêt réel $r$.
 
-Une entreprise produit $f (K)$ en utilisant du capital K. Nous supposons des rendements marginaux décroissants dans la production, c’est-à-dire $f^('') (K) < 0$ (et bien sûr $f^(') (K) > 0$).
 
-Supposons que l’entreprise emprunte une quantité I pour financer K, c’est-à-dire $K = I$. Après la production, elle doit rembourser I(1+r) dans la période suivante.
 
-Le programme de maximisation des bénéfices se lit comme suit : $ max pi = f (I) - I (1 + r) $
+== Demande des Consommateurs
 
-Lorsque l’entreprise est libre d’emprunter autant qu’elle le souhaite, la condition d’optimalité est:$ f^(') (I) = 1 + r $
 
-Cela définit implicitement $I (r)$. Étant donné que $f^(') (I)$ décroît en fonction de $I$, #strong[$I (.)$ est une fonction décroissante de r];.
+- Les ménages keynésiens ont une propension marginale à consommer élevée: 
 
-== Reality Check
-<reality-check>
-#box(image("assets/investment.png"))
+$ C^K (underbrace(Y^K,"+"))=Y^K $
 
-== Reality Check
-<reality-check-1>
-#block[
-#block[
-#box(image("assets/investment.png"))
+- Les ménages ricardiens ont une propension marginale à consommer faible et réagissent (négativement) au taux d’intérêt
 
-]
-#block[
-- Ces dernières années, il semble que le canal de l’investissement n’ait pas très bien fonctionné.
+$ C^R (underbrace(Y^R,"+"), underbrace(r,"-"))=Y^R $
 
-- Au cours des deux dernières crises, et après, les taux d’intérêt étaient très bas. Et l’investissement était également faible.
+Pour simplifier#footnote[Comme les règles $C_K$, $C_R$, ne sont pas parfaitements additives, $C$ n'est pas simplement leur moyenne.], on supposera qu'un agent représentatif consomme $ C(underbrace(Y,"+"), underbrace(r,"-"))$
 
-]
-]
+
+== Demande des Producteurs (intuition)
+
+Comment les dépenses d'investissement dépendent-elle du taux d'intérêt (réel) ?#footnote[De la même façon que l'inflation disparait du programme du consommateur, on peut montrer que seul le taux réel compte pour déterminer la rentabilité des décisions d'investissement.]
+
+Prenons une firme hypothétique. Elle produit grâce à du *capital*.
 
 #pause
 
-Il y a de nombreuses raisons à cela :
+Pour acheter du capital, elle peut emprunter au taux réel $r$. Une fois que la production a eu lieu, elle doit repayer ce qu'elle a emprunté. Le taux $r$ est appelé le *coût des fonds externes*.
+
+#pause
+
+Inuitivement, si le côut des fonds est plus faible, il est plus avantageux d'emprunter, donc notre firme devrait investir plus.
+
+Donc _la demande d'investissement des firmes est décroissante dans le taux d'intérêt réel_.
+
+Ce raisonnement est correct si le rendements marginaux du capital physique sont décrossants. Montrons-le.
+
+== Demande des Producteurs
+
+
+Une entreprise produit $f (K)$ en utilisant du capital K. Nous supposons des rendements marginaux décroissants dans la production, c’est-à-dire $f^('') (K) < 0$ (et bien sûr $f^(') (K) > 0$).
+
+Supposons que l’entreprise emprunte une quantité $I$ pour financer $K$, c’est-à-dire $K = I$. Après la production, elle doit rembourser $I(1+r)$ dans la période suivante.
+
+Le programme de maximisation des bénéfices s'écrit comme suit : $ max pi = f (I) - I (1 + r) $
+
+Si l’entreprise est libre d’emprunter autant qu’elle le souhaite, la condition d’optimalité est:$ f^(') (I) = 1 + r $
+
+Cela définit implicitement $I (r)$. Étant donné que $f^(') (I)$ décroît en fonction de $I$, #strong[$I (.)$ est une fonction décroissante de r];.
+
+== Demande des Producteurs: (reality check)
+
+#figure(
+  grid(columns: 2,
+    image("assets_2/investment.png", width:80%),
+    image("assets_2/real_rate.png", width:80%),
+  ),
+  caption: [
+    Évolution de l'investissement US-EU (gauche) et du taux réel US (droite)
+  ],
+)
+
+#pause
+
+- Ces dernières années, il semble que le canal de l’investissement n’ait pas très bien fonctionné.
+
+- Au cours des deux dernières crises, les taux d’intérêt étaient très bas. Et l’investissement était également faible. 
+
+== Demande des Producteurs (fin)
+
+
+Qu'est-ce qui peut expliquer l'apparente déconnexion entre le taux réel et l'investissement?
+
+#pause
+
 
 - Incertitude concernant les résultats économiques
   - Les entreprises averses au risque qui font face à une valeur incertaine de la production produisent moins
-- Même si le taux réel est bas, les conditions de financement auxquelles les entreprises sont confrontées peuvent être différentes
-  - Les banques sont également averses au risque
+- Même si le taux réel est bas, les conditions de financement peuvent varier
+  - Les banques sont également averses au risque et ne prêtent pas automatiquement
+- Toutes les firmes n'ont pas la même situation financière:
+  - certaines empruntent à long terme, d'autres à court terme
+  - certaines détiennent leur capital et n'ont pas besoin d'emprunter
+  - souvent leur capacité à emprunter est limitée par le capital existant (le collatéral)
 
-== Producteurs
-<producteurs-3>
-Au-delà du coût de financement, pouvez-vous penser à d’autres raisons pour lesquelles l’investissement pourrait être réduit par les entreprises ?
-
-- Une partie du capital préexistant appartient à l’entreprise, ce qui signifie qu’il n’est pas toujours nécessaire d’emprunter
-- Tous les emprunts ne sont pas à court terme (et ne doivent pas être remboursés immédiatement après la production)
-- De nombreuses entreprises ont des contraintes de crédit
-  - En pratique, leur capacité à emprunter est limitée par le capital préexistant qu’elles ont et qu’elles utilisent comme "collatéral"
 
 = Dérivation de la Demande Agrégée
-<dérivation-de-la-demande-agrégée>
+
 == La Courbe IS
 <la-courbe-is>
 Notre travail sur le comportement des consommateurs et des entreprises nous permet d’écrire. $ C (Y , r) & = & C_0 + C_Y Y + C_r r\
@@ -201,19 +243,19 @@ qui lie #emph[implicitement] la production et le taux d’intérêt réel.
 
 Cette relation est appelée équilibre #strong[Investissement-Épargne] (courbe IS) car elle traduit un compromis intertemporel (à travers le taux d’intérêt réel).
 
-Elle correspond à un équilibre sur le marché des biens et services, déterminé par les préférences de dépenses, avec une production parfaitement élastique.
+Elle correspond à un équilibre sur le marché des biens et services, déterminé par les préférences de dépenses, avec une production parfaitement élastique à la demande.#footnote["Élastique" signifie intuitivement "Réactif". Ici cela signifie que la production s'ajuste parfaitement à la demande.]
 
 == Courbe IS
 <courbe-is-1>
 Quelques remarques :
 
 - la relation IS microfondée n’implique que des quantités réelles
-- elle implique uniquement des décisions rationnelles des consommateurs et des entreprises
+- elle implique uniquement des décisions _rationnelles_ des consommateurs et des entreprises
 - la demande peut être microfondée sans nécessiter de monnaie ou de prix
 
-Fait intéressant, la microfondation de la demande montre qu’elle est parfaitement cohérente avec l’approche néoclassique.
+La microfondation de la demande montre qu’elle est parfaitement cohérente avec l’approche néoclassique.#footnote[Lorsque la théorie de la demande a été développée par Keynes dans les années, elle s'opposait à la théorie classique. Aujoud'hui les écoles de pensées néoclassique et néokeynésien ont attend un certain consensus sur les microfondations. On parle de synthèse néoclassique.]
 
-Il n’y a pas de controverse dans la profession concernant l’existence de la courbe de demande. Il y a des désaccords concernant :
+Pas de controverse dans la profession concernant l’existence de la courbe de demande mais pour:
 
 - la propension marginale à consommer agrégée et le multiplicateur fiscal
 - la courbe d’offre…
@@ -230,8 +272,9 @@ $ Y_0 + Delta Y = C_0 + C_Y Delta Y + C_r Delta r + I_r Delta r + G_0 + N X_0 + 
 
 Où $Delta S = Delta G + Delta N X$ capture le choc à la demande. Après soustraction des constantes, on obtient une approximation linéaire : $ Delta Y = C_Y Delta Y + C_r Delta r + I_r Delta r + Delta S $
 
+
 == Courbe IS
-<courbe-is-3>
+
 On peut différencier la courbe IS pour obtenir : $ Delta Y = C_Y Delta Y + C_r Delta r + I_r Delta r $
 
 En logarithmes:
@@ -240,7 +283,7 @@ $ frac(Delta Y, Y) = C_Y frac(Delta Y, Y) + C_r / Y Delta r + I_r / Y Delta r $
 
 Avec $y = frac(Delta Y, Y)$ et $Delta r = r - r^star.op$ on obtien l’équation décrivant la courbe IS: $ y = - sigma (r - r^star.op) $
 
-où $ sigma = frac(- (C_r / Y + I_r / Y), 1 - C_Y) > 0 $.
+où $ sigma = frac(- (C_r / Y + I_r / Y), 1 - C_Y) > 0 $
 
 
 
@@ -252,7 +295,7 @@ $ #box(stroke: black, inset: 3pt, [$ y_t = - sigma (r_r - r^star.op) + theta_t $
 
 où $sigma = frac(- (C_r / Y + I_r / Y), 1 - C_y) > 0$ et $theta_t$ est un choc de demande, qui capture tous les chocs externes au modèle ou que nous avons négligés pour simplifier.
 
-Par exemple, les revenus futurs des consommateurs ont été exclus de toutes les équations. Si les attentes des consommateurs changent positivement (optimisme), nous le considérerions comme un changement dans $theta_t$.
+Par exemple, les revenus futurs des consommateurs ont été exclus de toutes les équations. Si les attentes des consommateurs changent positivement (optimisme), nous le considérerions comme un changement dans $theta_t$. De même pour une réduction de l'incertitude.
 
 De la même manière, une augmentation des dépenses publiques est un déplacement autonome de la courbe IS, que nous capturons par un déplacement de $theta_t$.
 
@@ -262,7 +305,7 @@ De la même manière, une augmentation des dépenses publiques est un déplaceme
 #block[
 ]
 #block[
-==== Quizz 4
+==== Quizz 3
 
 Trouvez l’affirmation incorrecte parmi les suivantes :
 
@@ -286,13 +329,13 @@ L’objectif principal de la banque centrale consiste à #emph[stabiliser l’in
 
 - En pratique, la banque centrale fixe le taux d’intérêt #emph[nominal] $i$
 
-  - Comme l’inflation ne suit pas le taux d’intérêt 1 pour 1, la banque centrale est capable d’influencer le taux d’intérêt réel#footnote[on rappelle l’équation de Fisher $r_t = i_t - pi_(t + 1)$}]
+  - Comme l’inflation ne suit pas le taux d’intérêt 1 pour 1, la banque centrale est capable d’influencer le taux d’intérêt réel#footnote[on rappelle l’équation de Fisher $r_t = i_t - pi_(t + 1)$]
 
-- Pour simplifier, on suppose que la banque centrale choisit indirectement le taux d’intérêt réel à n’importe quel niveau qu’elle souhaite
+- Pour simplifier, on suppose que la banque centrale, met en oeuvre les instruments nécessaires, de manière à choisir le taux d’intérêt réel au niveau  niveau qu’elle souhaite
 
 - On peut alors décrire la fonction de réponse de la banque centrale#footnote[on suit ici l’approche de Romer 2002.] comme suit : $ #box(stroke: black, inset: 3pt, [$ r_r = r^star.op + gamma (pi_t - pi^star.op) $]) $
 
-- En général, les banques centrales augmentent le taux d’intérêt pour réduire l’inflation, donc $gamma > 0$
+- Les banques centrales augmentent le taux d’intérêt pour réduire l’inflation, donc $gamma > 0$
 
 = Demande Agrégée
 
@@ -308,13 +351,23 @@ où $theta_t$ est le choc de demande.
 
 Cette courbe représente l’équilibre sur les marchés des biens et des services, en tenant compte de la règle de décision de la banque centrale.
 
-== Courbe de Demande Agrégée#footnote[Dans certains manuels, vous trouverez les prix agrégés $P_t$ sur l’axe des ordonnées au lieu de l’inflation. Parce que $P_(t - 1)$ est donné et que l’inflation est $pi_t = P_t \/ P_(t - 1)$, c’est en fait équivalent.]
+== Courbe de Demande Agrégée
 
-#image("assets/as_ad.png")
+#columns(2,
+  [ 
+    #figure(
+      image("assets/as_ad.png"),
+      caption: [Courbe de demande agrégée$$]
+    ),
 
-Demande Agrégée (AD) : $ y_t = theta_t - sigma gamma (pi_t - overline(pi)) $
+    #colbreak()
 
-Notez que la demande agrégée $y_t$ est une fonction décroissante de l’inflation (et des prix).
+    Demande Agrégée (AD) #footnote[Dans certains manuels, vous trouverez les prix agrégés $P_t$ sur l’axe des ordonnées au lieu de l’inflation. Parce que $P_(t - 1)$ est donné et que l’inflation est $pi_t = P_t \/ P_(t - 1)$, c’est en fait équivalent.] : $ y_t = theta_t - sigma gamma (pi_t - overline(pi)) $
+
+    Notez que la demande agrégée $y_t$ est une fonction décroissante de l’inflation (et des prix).
+])
+
+//
 
 == Résumé Exécutif
 <résumé-exécutif>
