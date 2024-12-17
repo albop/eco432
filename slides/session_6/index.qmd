@@ -3,12 +3,11 @@ title: Offre Agrégée
 subtitle: ECO432 - Macroéconomie
 author: Pablo Winant
 format:
-  beamer:
-    pdf-engine: xelatex
+  typst:
+    keep-typ: true
+#  beamer:
+#    pdf-engine: xelatex
 
-aspectratio: 169
-slide-level: 3
-latex:
 ---
 
 ### Programme des séances

@@ -18,6 +18,7 @@
   date: [],
 )
 
+#import "@preview/mitex:0.2.4": *
 
 
 = Rappel: PIB Nominal / PIB Réel
@@ -291,7 +292,7 @@ où $ sigma = frac(- (C_r / Y + I_r / Y), 1 - C_Y) > 0 $
 <courbe-is-4>
 Dans ce qui suit, nous considérerons une version légèrement modifiée de la courbe IS
 
-$ #box(stroke: black, inset: 3pt, [$ y_t = - sigma (r_r - r^star.op) + theta_t $]) $
+$ #box(stroke: black, inset: 3pt, [$ y_t = - sigma (r_t - r^star.op) + theta_t $]) $
 
 où $sigma = frac(- (C_r / Y + I_r / Y), 1 - C_y) > 0$ et $theta_t$ est un choc de demande, qui capture tous les chocs externes au modèle ou que nous avons négligés pour simplifier.
 
