@@ -1,10 +1,13 @@
 #import "pc_template.typ": pc
 
+#let correct = false
 #show: doc => pc(
   4,
   [Offre et Demande à court terme],
   doc,
+  correct: correct
 )
+
 
 == Exercice 1: Macroéconomie de court terme
 <exercice-2-macroéconomie-de-court-terme>

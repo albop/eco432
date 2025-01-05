@@ -1,10 +1,14 @@
 #import "@preview/mitex:0.2.4": *
 #import "pc_template.typ": pc
 
+#let correct = false
+
+
 #show: doc => pc(
   5,
   [Le biais inflationniste],
   doc,
+  correct: correct
 )
 
 #mitext(`
