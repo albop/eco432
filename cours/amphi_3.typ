@@ -18,8 +18,6 @@
   date: [],
 )
 
-= TODO: check xi
-
 = Introduction
 
 
