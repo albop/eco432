@@ -3,9 +3,11 @@ title: Politique Monétaire
 subtitle: ECO432 - Macroéconomie
 author: Pablo Winant
 format: 
-  beamer:
-    aspectratio: 169
-    slide-level: 3
+  typst:
+    keep-typ: true
+  # beamer:
+  #   aspectratio: 169
+  #   slide-level: 3
 ---
 
 ## Programme des amphis

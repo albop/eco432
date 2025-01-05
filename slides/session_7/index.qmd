@@ -2,7 +2,9 @@
 title: Source des Fluctuations
 subtitle: ECO432 - Macroéconomie
 author: Pablo Winant
-format: 
+format:
+  typst:
+    keep-typ: true
   beamer:
     aspectratio: 169
     slide-level: 2
