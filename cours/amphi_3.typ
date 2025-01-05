@@ -18,9 +18,52 @@
   date: [],
 )
 
-= TODO
+= TODO: check xi
 
-Intro
+= Introduction
+
+
+== Un vieux débat
+
+#block[
+
+  #set text(18pt)
+
+On a vu que la demande agrégée répondait à des chocs et que l'on pouvait même la stimuler par des dépenses gouvernemententales...
+
+... mais naturellement on ne peut pas produire tout ce que les gens veulent.
+
+#pause
+
+🤔 Pourquoi ?
+
+#pause
+
+Si la quantité produite est déjà optimale, augmenter la demande ne fera qu'augmenter les prix.
+
+#pause
+
+🤔 Mais si les prix n'augmentaient pas ? Est-ce que la production s'ajusterait?
+
+#pause
+
+Deux options:
+
+- soit les firmes sont déjà à leur capacité maximale: les marchés sont en déséquilibres, il faut une autre théorie#footnote[Certains économistes (Patinkin, Benassy, Malinvaud...) ont essayé de développer une théorie du déséquilibre. Sans succès a l'époque.]
+- soit il existe un facteur inutilisé (capital, travail) et les firmes peuvent produirent plus
+
+]
+
+== La grande dépression
+
+#figure(
+    image("assets_3/hungry_lion.png", height:60%),
+  caption: [Taux de chômage aux États-Unis en  1932: 23.6%]
+)
+
+Au lendemain de la crise de 1929, il y avait de nombreux travailleurs près à être employés.
+
+Il a fallu 40 ans aux économistes pour réconcilier ce fait avec un modèle macroéconomique d'équilibre. Il a notamment fallu modliser la _concurrence imparfaite_ et la _rigidité des prix_.
 
 = Concurrence imparfaite
 
@@ -60,7 +103,7 @@ La dépendance de l’offre agrégée par rapport aux prix implique une certaine
 
 - Un monopole fait face à une demande élastique $y (p)$ avec un coût de production linéaire $m c$
 - Elle maximise le profit en fixant le bon prix : $max_p y (p) p - w y (p)$
-- Résultat : l’entreprise facture $p = (1 + mu)$ où $mu$ dépend de l’élasticité de la demande.
+- Résultat : l’entreprise facture $p = (1 + mu) "mc"$ où $mu$ dépend de l’élasticité de la demande.
 - $mu$ est une marge par rapport aux coûts de production (le _markup_)
 
 C’est mieux, mais comment capturer le fait que les prix s’ajustent imparfaitement s’il n’y a qu’un seul producteur et un seul prix ?
@@ -73,7 +116,7 @@ La *concurrence monopolistique* est une structure de marché où :
 - Ils produisent des biens qui sont des _substituts imparfaits_ (c’est-à-dire que les consommateurs veulent en consommer un peu de chacun)
 - Par conséquent, chaque producteur a un peu de #emph[pouvoir de marché];, car il peut facturer un prix plus élevé sans perdre immédiatement tous les consommateurs
 - … et applique un markup $mu$ sur le coût de production $p = (1 + mu) m c$ un peu comme un monopole
-- … le markup dépend (positivement) de l’élasticité de la demande #footnote[demande parfaitement élastique: consommateurs indifférents à remplacer un bien par un autre] et (négativement) de l’intensité de la concurrence (le nombre d’entreprises)#footnote[lors des la PC3, vous verrez une façon standard de modéliser la concurrence monopolistique]
+- … le markup dépend (négativement) de l’élasticité de la demande #footnote[demande parfaitement élastique: consommateurs indifférents à remplacer un bien par un autre] et (négativement) de l’intensité de la concurrence (le nombre d’entreprises)#footnote[lors des la PC3, vous verrez une façon standard de modéliser la concurrence monopolistique]
 
 == Comportement de fixation des prix : Concurrence monopolistique
 
@@ -108,7 +151,9 @@ A noter: les markups ne sont pas la  pas la seule mesure de la compétitivité. 
 
 De Thomas Philippon, #emph[The Great Reversal. How America Gave up on Free Markets];, 2019
 
-= Producteurs
+= L'économie de l'offre
+
+== Salaires et prix à la consommation
 
 Nous souhaitons comprendre le comportement des entreprises… dans un environnement macroéconomique
 
@@ -208,7 +253,6 @@ De nos jours, on estime que les boucles salaire-prix incontrôlées sont peu pro
 
 ])
 
-= Deux marchés pour les entreprises
 
 == Les entreprises, les consommateurs et les travailleurs
 
@@ -469,7 +513,7 @@ Hypothèse centrale des modèles de la synthèse néo-classique :
 
 - Ensuite, nous avons le prix d’un panier de consommation qui est une moyenne des deux prix#footnote[Ce cadre théorique s'appelle "fixation des prix échelonnée" ou "staggered price setting" et est du à Calvo.]
 
-  - $P_t = P_(t - 1)^((1 - omega)) (P^star.op)^omega$
+  - $P_t = P_(t - 1)^((1 - omega)) (P_t^star.op)^omega$
 
 #pagebreak()
 
