@@ -4,7 +4,7 @@
 
 #show: clean-theme.with(
   aspect-ratio: "16-9",
-                        )
+)
 
 #title-slide(
   title: [Offre Agrégée],
@@ -47,7 +47,7 @@ Si la quantité produite est déjà optimale, augmenter la demande ne fera qu'au
 
 Deux options:
 
-- soit les firmes sont déjà à leur capacité maximale: les marchés sont en déséquilibres, il faut une autre théorie#footnote[Certains économistes (Patinkin, Benassy, Malinvaud...) ont essayé de développer une théorie du déséquilibre. Sans succès a l'époque.]
+- soit les firmes sont déjà à leur capacité maximale: les marchés sont en déséquilibre, il faut une autre théorie#footnote[Certains économistes (Patinkin, Benassy, Malinvaud...) ont essayé de développer une théorie du déséquilibre. Sans succès a l'époque.]
 - soit il existe un facteur inutilisé (capital, travail) et les firmes peuvent produirent plus
 
 ]
@@ -275,9 +275,9 @@ où $mu$ est un markup qui mesure l’intensité de la concurrence, comme vu ava
 
 == Marché du travail
 
-=== Quel est le coût de l’embauche de travailleurs?
+=== Quel est le coût des travailleurs?
 
-Pour comprendre le coût de l’embauche de travailleurs, nous examinons le #emph[marché du travail]
+Pour comprendre le coût d'embaucher des travailleurs, nous examinons le #emph[marché du travail]
 
 Que savons-nous avec certitude?
 
@@ -331,7 +331,7 @@ Il peut soit :
 
 Nous pouvons écrire la contrainte budgétaire : $ W 1 gt.eq P C + W U $
 
-L’utilité à maximiser est$ V (C , u) = log (C) + xi U^(- 1 / xi) $
+L’utilité à maximiser est$ V (C , u) = log (C) - xi (1-U)^(1 / xi) $
 
 ])
 
@@ -340,7 +340,7 @@ L’utilité à maximiser est$ V (C , u) = log (C) + xi U^(- 1 / xi) $
 === Offre de travail
 
 
-Le résultat de l’optimisation donne :
+Le résultat de l’optimisation#footnote[Pour obtenir le résultat suivant, il faut aussi utiliser la condition $C=Y=L$] donne :
 
 $ #box(stroke: black, inset: 3pt, [$ L^S = (W / P)^xi $]) $
 

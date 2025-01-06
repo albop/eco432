@@ -4,7 +4,9 @@
 
 #show: clean-theme.with(
   aspect-ratio: "16-9",
-                        )
+)
+
+#let assets="assets_4a/"
 
 #title-slide(
   title: [Source des Fluctuations],
@@ -44,11 +46,16 @@ Cette sessions récapitule les deux sessions précédentes. Assurez-vous de bien
 
 == Équilibre OA/DA
 
+#block[
+
+#set text(18pt)
 
 - Demande Agrégée: $ y_t = theta_t - sigma gamma (pi_t - overline(pi)) $
   - #strong[mécanisme];: #emph[les presssions inflationnistes ($pi_t > overline(pi)$) poussent la banque centrale à adopter une politique monétaire restrictive, ce qui réduit la demande et la production#footnote[attention au rôle crucial de la banque centrale dans le modèle IS-MP ! Sans la banque centrale, le modèle ne dit pas comment changent les taux réels lorsque les prix augmentent.];]
 - Offre Agrégée: $ pi_t = overline(pi) + kappa (y_t - y_n^t) $
   - #strong[mécanisme];: #emph[un écart de production élevé engendre des tensions sur le marché du travail qui élèvent le salaire réel d’équilibre ; les entreprises qui le peuvent répercutent ce coût en élevant leur prix]
+
+]
 
 == Équilibre de long terme
 
@@ -95,15 +102,20 @@ Que représente $d theta_t$ ? Qu’est-ce qui peut cause un déplacement négati
 
 #columns(2,[
 
-#image("assets_4a/demand_shock.png")
+#image(assets+"demand_shock.png")
 
 #colbreak()
+
+#only(1,[
 
 Un choc $d theta_t$ sur la demande agrégée
 
 - Augmente la production de $ d y_t = (frac(1, 1 + sigma gamma kappa)) d theta_t $
 - Augmente l’inflation de $ d pi_t = (frac(kappa, 1 + sigma gamma kappa)) d theta_t $
 
+])
+
+#only(2,[
 Les paramètres principaux sont:
 
 - $sigma$: la décision d’épargne investissement par les agents économiques (consommateurs et firmes)
@@ -111,6 +123,7 @@ Les paramètres principaux sont:
 - $kappa$: la vitesse à laquelle les firmes ajustent leurs prix
   - (plus élevé lorsque plus de firmes ajustent)
 
+])
 ])
 
 == Choc de demande
@@ -128,9 +141,16 @@ Peut-on raconter intuitivement ce qui se passe en utilisant tous les mécanismes
 
 == Choc de demande
 
-#image("assets_4a/demand_shock_adjustment.png")
+#grid(columns:(40%,55%),
 
-// Choc persistant
+figure(
+    image(assets+"demand_shock_adjustment.png"),
+  caption: [Choc persistant]
+)
+,
+[
+
+#only(1,[
 
 Considérons un choc de demande transitoire
 
@@ -139,6 +159,10 @@ Considérons un choc de demande transitoire
 
 Lorsque plus de firmes ont eu le temps d’ajuster, la pente de la courbe AS augmente (elle est donnée par $kappa = frac(omega, xi (1 - omega))$ où $omega$ est le nombre de firmes qui ont ajusté)
 
+])
+
+#only(2,[
+
 On peut décrire la #strong[dynamique de l’inflation] informellement comme suit:
 
 - L’inflation augmente initialement à cause du choc de demande
@@ -146,16 +170,30 @@ On peut décrire la #strong[dynamique de l’inflation] informellement comme sui
 - L’inflation revient à la normale quand le choc de demande s’arrête
 - Plus les prix s’ajustent vite, plus l’nflation augmente
 
+])
+
+#only(3,[
+
 Et pour la dynamique de la production ?
 
 - Elle augmente initialement avec la demande
 - Puis revient à la normale alors que l’effet du choc de demande s’estompe
 - Plus les prix s’ajustent vite, plus faible est l’effet sur la production
 
+])
+
+])
 
 == Choc de demande: vérification empirique
 
 
+#grid(columns:(50%,50%),
+
+
+[
+
+
+#only(1,[
 Le graphe ci-contre montre l’effet d’un choc de demande "pur": un choc de politique monétaire non-anticipé
 
 Il compare la réponses de plusieurs variables économiques
@@ -163,6 +201,10 @@ Il compare la réponses de plusieurs variables économiques
 - Dans les données (économétrie: estimation VAR)
 - Dans un modèle avec des rigidités nominale (DSGE)
 - Les deux ont un comportement similaire
+
+])
+
+#only(2,[
 
 Et par rapport à notre modèle?
 
@@ -176,25 +218,42 @@ Et par rapport à notre modèle?
 
   - … mais il y a du capital qui lisse la production dans le temps
 
+])
 
-#image("assets_4a/irf.png")
+],
+
+figure(
+  image(assets+"irf.png", height: 90%),
+  caption: [TODO]
+)
+
+)
 
 == Choc d’Offre
 
-#image("assets_4a/negative_supply_shock.png")
+#grid(columns: 2,
 
+figure(image(assets+"negative_supply_shock.png")), 
+[
 
+#only(1,[
 Un choc $d y_t^(n t)$ sur l’offre agrégée
 
 - Augmente la production de: $ d y_t = (frac(sigma gamma kappa, 1 + sigma gamma kappa)) d y_t^(n t) $
 - Augmente l’inflation de: $ d pi_t = (frac(kappa, 1 + sigma gamma kappa)) d y_t^(n t) $
+])
 
+#only(2,[
 Les paramètres sont les mêmes qu’avant:
 
 - $gamma$: réaction de la banque centrale
 - $sigma$: décision d’épargne investissment par les consommateurs et les firmes
 - $kappa$: lié à la fixation des prix par les firmes
 
+])
+
+
+])
 
 == Offre
 <offre>
@@ -208,9 +267,14 @@ Un choc d’offre est un choc sur le PIB naturel $d y_t^(n t)$. Qu’est-ce qu�
 
 == Chocs d’offre
 
-#image("assets_4a/stabilization.png")
+#grid(columns: 2,
+
+figure(image(assets+"stabilization.png")),
+
+[
 
 
+#only(1,[
 Un choc d’offre négatif déplace la courbe OA vers la gauche
 
 - L’inflation augmente
@@ -220,17 +284,29 @@ Comment le gouvernement et la BC peuvent-ils mitiger le choc ?
 
 - Impossible d’agir sur l’offre
 
+])
+
+#only(2,[
+
 Dans notre modèle la #strong[banque centrale] est déjà incluse dans la courbe DA
 
 - Ce qui rend la demande plus réactive à l’inflation (plus horizontale)
 - Mais la règle MP suppose que la BC ne regarde que l’inflation
 - … ce qui est un mauvais cadre pour étudier la réponse de la BC
 
+])
+
+#only(3,[
+
 Le #strong[gouvernement] peut stimuler la demande pour contrer le choc d’offre
 
 - Avec des politiques fiscales
 - Mais ça ne fonctionne qu’à court terme
 - … et pose quelques questions(est-ce efficace ? d’où vient l’argent ?)
+
+])
+
+])
 
 == A retenir
 <a-retenir>
