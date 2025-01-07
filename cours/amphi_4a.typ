@@ -9,7 +9,7 @@
 #let assets="assets_4a/"
 
 #title-slide(
-  title: [Source des Fluctuations],
+  title: [Modèle AS/AD et chocs Macroéconomiques],
   subtitle: [ECO432 - Macroéconomie],
   authors: (
                     ( name: [Pablo Winant],
@@ -25,12 +25,9 @@
 
 = Introduction
 <introduction>
-== Programme des amphis
-<programme-des-amphis>
-- Séance 5 : demande agrégée
-- Séance 6 : offre agrégée
-- Séance 7 : fluctuations macroéconomiques (\*)
-- Séance 8 : politique monétaire
+
+
+
 
 == Cette session
 <cette-session>
@@ -51,7 +48,7 @@ Cette sessions récapitule les deux sessions précédentes. Assurez-vous de bien
 #set text(18pt)
 
 - Demande Agrégée: $ y_t = theta_t - sigma gamma (pi_t - overline(pi)) $
-  - #strong[mécanisme];: #emph[les presssions inflationnistes ($pi_t > overline(pi)$) poussent la banque centrale à adopter une politique monétaire restrictive, ce qui réduit la demande et la production#footnote[attention au rôle crucial de la banque centrale dans le modèle IS-MP ! Sans la banque centrale, le modèle ne dit pas comment changent les taux réels lorsque les prix augmentent.];]
+  - #strong[mécanisme];: #emph[les presssions inflationnistes ($pi_t > overline(pi)$) poussent la banque centrale à adopter une politique monétaire restrictive, ce qui augmente le taux d'intérêt réel donc réduit la demande et la production#footnote[attention au rôle crucial de la banque centrale dans le modèle IS-MP ! Sans la banque centrale, le modèle ne dit pas comment changent les taux réels lorsque les prix augmentent.];]
 - Offre Agrégée: $ pi_t = overline(pi) + kappa (y_t - y_n^t) $
   - #strong[mécanisme];: #emph[un écart de production élevé engendre des tensions sur le marché du travail qui élèvent le salaire réel d’équilibre ; les entreprises qui le peuvent répercutent ce coût en élevant leur prix]
 
@@ -59,10 +56,8 @@ Cette sessions récapitule les deux sessions précédentes. Assurez-vous de bien
 
 == Équilibre de long terme
 
-TODO : check
-
-- À long terme, tous les prix ont été ajustés de manière optimale et l’économie se comporte comme une économie de prix flexibles (OA): $ y_oo = y_oo^n = (- mu^star.op) $
-- Par ailleurs, en supposant qu’à long terme $pi_oo = overline(pi)$, on a: $ theta_oo = y_oo $ (c’est "l’offre qui détermine la demande")
+- À long terme, tous les prix ont été ajustés de manière optimale et l’économie se comporte comme une économie de prix flexibles:  $ y_oo = y_oo^n (= - mu^star.op) $
+- Par ailleurs, en supposant qu’à long terme $pi_oo = overline(pi)$, on a nécessairement: $ theta_oo = y_oo $ (c’est "l’offre qui détermine la demande")
 
 == Équilibre de court terme
 
@@ -77,17 +72,21 @@ Dans ce modèle il y a:
 
 == Équilibre de court terme
 <équilibre-de-court-terme-1>
-On trouve aisément la paire (inflation $pi_t$ / output $y_t$) qui correspond aux chocs ($theta_t$, $y_t^n$ ).
+On trouve aisément la paire (inflation $pi_t$ / output $y_t$) qui correspond aux variables exogènes ($theta_t$, $y_t^n$ ).
 
 $ y_t = "cte"_1 + (frac(1, 1 + sigma gamma kappa)) theta_t + (frac(sigma gamma kappa, 1 + sigma gamma kappa)) y_t^n $
 
 $ pi_t = "cte"_2 + (frac(kappa, 1 + sigma gamma kappa)) theta_t - (frac(kappa, 1 + sigma gamma kappa)) y_t^n $
 
-Les termes entre parenthèse sont génériquement appelés "multiplicateurs". Ils ont bien le signe attendu. Voyons comment on peut interpréter leur effet.
+Les termes entre parenthèse sont génériquement appelés "multiplicateurs":
+- Ils quantifient la réaction de court terme à des chocs $dif theta_t$ et $dif y^n_t$
+Ils ont bien le signe attendu. Voyons comment on peut interpréter leur effet.
 
 == Choc de demande
 <choc-de-demande>
-Que représente $d theta_t$ ? Qu’est-ce qui peut cause un déplacement négatif de la courbe de demande ?
+Que représente $dif theta_t$ ? Qu’est-ce qui peut cause un déplacement négatif de la courbe de demande ?
+
+#pause
 
 - Un changement dans les préférences des consommateurs (désir de consommer)
 - Un changement dans les anticipations des firmes et des consommateurs concernant leur revenus futurs.
@@ -100,6 +99,8 @@ Que représente $d theta_t$ ? Qu’est-ce qui peut cause un déplacement négati
 
 == Choc de demande
 
+=== Impact
+
 #columns(2,[
 
 #image(assets+"demand_shock.png")
@@ -108,10 +109,10 @@ Que représente $d theta_t$ ? Qu’est-ce qui peut cause un déplacement négati
 
 #only(1,[
 
-Un choc $d theta_t$ sur la demande agrégée
+Un choc $dif theta_t$ sur la demande agrégée
 
-- Augmente la production de $ d y_t = (frac(1, 1 + sigma gamma kappa)) d theta_t $
-- Augmente l’inflation de $ d pi_t = (frac(kappa, 1 + sigma gamma kappa)) d theta_t $
+- Augmente immédiatement la production: $ dif y_t = (frac(1, 1 + sigma gamma kappa)) dif theta_t $
+- Augmente immédiatement l’inflation: $ dif pi_t = (frac(kappa, 1 + sigma gamma kappa)) dif theta_t $
 
 ])
 
@@ -128,7 +129,11 @@ Les paramètres principaux sont:
 
 == Choc de demande
 
+=== Impact
+
 Peut-on raconter intuitivement ce qui se passe en utilisant tous les mécanismes que l’on a vu jusqu’a présent ?
+
+#pause
 
 - Une augmentation de la demande agrégée pour les biens et les services
 - Augmente la production
@@ -140,6 +145,8 @@ Peut-on raconter intuitivement ce qui se passe en utilisant tous les mécanismes
 - L’inflation des prix décourage la demande ce qui compense partiellement pour l’augmentation de la production.
 
 == Choc de demande
+
+=== Transition
 
 #grid(columns:(40%,55%),
 
@@ -194,7 +201,7 @@ Et pour la dynamique de la production ?
 
 
 #only(1,[
-Le graphe ci-contre montre l’effet d’un choc de demande "pur": un choc de politique monétaire non-anticipé
+Le graphe ci-contre montre l’effet d’un choc de demande "pur": un choc de politique monétaire non-anticipé.
 
 Il compare la réponses de plusieurs variables économiques
 
@@ -221,13 +228,32 @@ Et par rapport à notre modèle?
 ])
 
 ],
+[
+#figure(
+  image(assets+"irf.png", height: 80%),
+)
+#block[
+#set text(12pt)
+Extrait de Nominal Rigidities and the Dynamic Effect of a Shock to Monetary Policy, Christiano, Eichenbaum and Evans, Journal of Political Economy, 2005
+]
+]
 
-figure(
-  image(assets+"irf.png", height: 90%),
-  caption: [TODO]
+
+
 )
 
-)
+
+== Offre
+
+<offre>
+Un choc d’offre est un choc sur le PIB naturel $d y_t^(n t)$. Qu’est-ce qu’il représente ? Qu’est-ce qui cause un shift vers la gauche ou la droite de la courbe d’offre ?
+
+- Les changements qui affectent le long terme (il affecte le pib naturel)
+- Des changements dans les facteurs de production
+- Des chocs de productivités
+- Dans changement dans les markups (ou la compétitivité)
+- Des changemements dans les anticipations (qui affectent la fixation des prix par les firmes)
+
 
 == Choc d’Offre
 
@@ -254,16 +280,6 @@ Les paramètres sont les mêmes qu’avant:
 
 
 ])
-
-== Offre
-<offre>
-Un choc d’offre est un choc sur le PIB naturel $d y_t^(n t)$. Qu’est-ce qu’il représente ? Qu’est-ce qui cause un shift vers la gauche ou la droite de la courbe d’offre ?
-
-- Les changements qui affectent le long terme (il affecte le pib naturel)
-- Des changements dans les facteurs de production
-- Des chocs de productivités
-- Dans changement dans les markups (ou la compétitivité)
-- Des changemements dans les anticipations (qui affectent la fixation des prix par les firmes)
 
 == Chocs d’offre
 
@@ -310,6 +326,11 @@ Le #strong[gouvernement] peut stimuler la demande pour contrer le choc d’offre
 
 == A retenir
 <a-retenir>
+
+#block[
+
+ #set text(18pt)
+
 - Dans notre modèle, à court terme:
 
   - Un choc de demande positif implique que l’inflation et la production augmentent
@@ -326,3 +347,5 @@ Le #strong[gouvernement] peut stimuler la demande pour contrer le choc d’offre
 - Les chocs d’offre ne peuvent pas être directement annulés mais…
 
   - Les politiques de demande peuvent les #emph[accomoder] à court terme (jusqu’à ce que les prix s’ajustent)
+
+]

@@ -29,7 +29,7 @@ Quels sont les principaux outils de la politique monétaire ?
 
 - Opérations d’open market
 
-  - la BC échange des liquidités (cash) en échange d’actifs moins liquides (obligations/bons du gvt)
+  - la BC échange des liquidités (cash) en échange d’actifs moins liquides (obligations/bons du tresor)
   - la BC prête sur le marché interbancaire
 
 - Taux de réserves obligatoires
@@ -51,13 +51,13 @@ La Banque Centrale a le monopole de la création de #strong[Monnaie Banque Centr
 
 La Monnaie Banque Centrale est également appelée #strong[Base Monétaire];. Comment est-elle #emph[injectée] dans l’économie ?
 
-. . .
+#pause
 
 En principe, la Banque Centrale #emph[pourrait] la distribuer :
 
-- en envoyant des chèques ou en monétisant directement le déficit du gouvernement#footnote[L’Argent Hélicoptère est une #emph[métaphore] inventée par Milton Friedman pour décrire, pour expliquer que, d’un point de vue macroéconomique, le destinataire réel de l’argent n’est pas si important.]
+- en envoyant des chèques ou en monétisant directement le déficit du gouvernement#footnote[La Monnaie Hélicoptère est une #emph[métaphore] inventée par Milton Friedman pour décrire, pour expliquer que, d’un point de vue macroéconomique, le destinataire réel de la monnaie n’est pas si important.]
 
-. . .
+#pause
 
 Mais en pratique, les banques centrales échangent la Monnaie Banque Centrale contre des actifs moins liquides.
 
@@ -65,14 +65,16 @@ Mais en pratique, les banques centrales échangent la Monnaie Banque Centrale co
 
 == Qui possède la Monnaie Banque Centrale ?
 
-#image("assets_4b/base_money.png", height: 50%)
+#figure(
+  image("assets_4b/base_money.png", height: 50%),
+  caption: [Base Monétaire]
+)
 
 // Base Monétaire (statistiques de la BCE)
 
+#pause
 
-. . .
-
-La majeure partie de l’argent créé par la Banque Centrale depuis 2009 est détenue par des institutions financières privées qui détiennent des réserves (comptes courants) à la Banque Centrale.#footnote[Cet argent reste virtuel dans le sens où il n’est jamais imprimé. Il s’agit effectivement de la monnaie numérique.]
+La majeure partie de l’argent créé par la Banque Centrale depuis 2009 est détenue par des institutions financières privées qui détiennent des réserves (comptes courants) à la Banque Centrale.#footnote[Cet argent reste virtuel dans le sens où il n’est jamais imprimé. Il s’agit effectivement de monnaie numérique.]
 
 
 == Monnaie Étroite / Monnaie Large
@@ -93,14 +95,14 @@ La BCE répertorie plusieurs agrégats monétaires :
 - M3 : #strong[Monnaie large]
   - M2 + accords de rachat, parts/unités de fonds du marché monétaire et titres de créance avec une maturité de jusqu’à deux ans
 
-Les agrégats monétaires contiennent des actifs financiers de liquidité décroissante.
+Les agrégats monétaires contiennent des actifs financiers de _liquidité_#footnote[La liquidité d'un actif mesure, sa capacité] décroissante.
 
 Notez que dans ces agrégats monétaires, seule la monnaie est créée par la Banque Centrale. Tous les autres actifs sont créés par le secteur privé.
 ],
 
 figure(
   image("assets_4b/aggreg.png", height: 60%),
-  caption: "TODO"
+  caption: "Agrégats monétaire"
 )
 
 )
@@ -120,32 +122,36 @@ Oui, la plupart d’entre elles. Expliquons comment.
 
 == Contrôler M1
 
+#block[
 
+#set text(16pt)
 
 #grid(columns:(60%, 40%), [
 
 
 - Lorsqu’une banque commerciale accorde un prêt, elle crée de l’argent directement !
 - Le crédit des banques privées est limité par le ratio de réserve obligatoire
-  - les banques commerciales doivent conserver une fraction $lambda$ des prêts en cours en réserves
+  - les banques commerciales doivent conserver une fraction $lambda$ de leurs passif sous forme de réserves
   - pour 1 unité de Monnaie Banque Centrale qu’elles reçoivent (par exemple, sous forme de dépôts), elles sont autorisées à  prêter $1 - lambda$
-- Le montant total d’argent étroit que le système financier peut créer à partir d’un dépôt de 1 unité est appelé multiplicateur monétaire : $mu = 1 / lambda - 1$
+- Le montant total d’argent étroit que le système financier peut créer à partir d’un dépôt de 1 unité est appelé multiplicateur monétaire#footnote[les calculs pour obtenir le multiplicateur monétaire sont très similaires au multiplicateur fiscal. Un euro de dépôts conduit à un prêt total de $(1 - lambda) + (1 - lambda)^2 + dots.h.c = (1 - lambda) frac(1, 1 - (1 - lambda)) = 1/lambda - 1$.] : $mu = 1 / lambda - 1$
 
 ],
 
 figure(image("assets_4b/multiplier.png", width: 80%))
 )
 
-Changer le ratio de réserve est un outil politique potentiel pour contrôler la création d’argent par le secteur privé#footnote[les calculs pour obtenir le multiplicateur monétaire sont très similaires au multiplicateur fiscal. Un euro de dépôts conduit à un prêt total de $(1 - lambda) + (1 - lambda)^2 + dots.h.c = (1 - lambda) frac(1, 1 - (1 - lambda))$ TODO: chedk].
+Changer le ratio de réserve est un outil politique potentiel pour contrôler la création d’argent par le secteur privé.
 
-=== 
+]
+
+== 
 
 
 Quelle est la taille du multiplicateur monétaire ?
 
 #pause
 
-Les exigences de réserves étaient de 2% jusqu’en 2012. 1% depuis lors.
+Le ratio de réserves obligatoire était de 2% jusqu’en 2012. 1% depuis lors.
 
 #pause
 
@@ -159,7 +165,7 @@ Vérifions les données…
 
 #figure(
   image("assets_4b/base_money_multiplier.png", width: 60%),
-  caption: [Base money and the money multiplier (BCE)]
+  caption: [La base monétaire et le multiplicateur monéntaire (BCE)]
 )
 
 
@@ -184,9 +190,7 @@ Elle atteint cet objectif en manipulant les taux d’intérêt nominaux :
 - soit en contrôlant la masse monétaire
 - soit en fixant directement les taux d’intérêt
 
-. . .
-
-Important:
+#pause
 
 Depuis les années 2009, #strong[l’instrument principal de la politique monétaire est le taux d’intérêt]
 
@@ -215,7 +219,7 @@ Cela dépend de
 #image("assets_4b/taylor_rule_vs_effective_1.png", width: 80%)
  
 
-Depuis 1999, la règle de Taylor reste globalement pertinente mais ne correspond complètement plus à la cible après 2014 (quand les taux d’intérêt étaient à 0).
+Depuis 1999, la règle de Taylor reste globalement pertinente mais s'est détachée de la cible après 2014 (quand les taux d’intérêt étaient à 0).
 
 == Règle de Taylor améliorée
 
@@ -244,35 +248,35 @@ La banque centrale augmente le taux d’intérêt
 - lorsque l’inflation (anticipée) est trop élevée
   - la banque tente d’ancrer les anticipations autour de sa cible
 
-Le fait que la banque centrale réagisse et manipule les #emph[anticipations] est la clé du central banking moderne.#footnote[Le blogueur Matt O’Brian note que les « Banques Centrales ont une forte influence sur les anticipations du marché » et compare leurs activités à des « jedi mind-tricks ».]
+Le fait que la banque centrale réagisse et manipule les #emph[anticipations] est la clé de la politique monétaire moderne.#footnote[Le blogueur Matt O’Brian note que les « Banques Centrales ont une forte influence sur les anticipations du marché » et compare leurs activités à des « jedi mind-tricks ».]
 
 = Mise en œuvre de la politique monétaire
 
 == Structure temporelle des taux d’intérêt
 
-=== Équation de Fisher et anticipation d’inflation
+// === Équation de Fisher et anticipation d’inflation
 
-Rappel de l’équation de Fisher :
+// Rappel de l’équation de Fisher :
 
-$ r_t = i_t - pi_(t + 1) $
+// $ r_t = i_t - pi_(t + 1) $
 
-Pour être plus précis, nous devrions écrire : $ r_t = i_t - E_t [pi_(t + 1)] $
+// Pour être plus précis, nous devrions écrire : $ r_t = i_t - E_t [pi_(t + 1)] $
 
-Car c’est seulement l’inflation "anticipée" qui est connue à la date $t$. Nous omettons le signe d’espérance, mais gardez à l’esprit que $pi_(t + 1)$ représente l’inflation anticipée.
+// Car c’est seulement l’inflation "anticipée" qui est connue à la date $t$. Nous omettons le signe d’espérance, mais gardez à l’esprit que $pi_(t + 1)$ représente l’inflation anticipée.
 
-#pagebreak()
+// #pagebreak()
 
-=== Règle monétaire et anticipation d’inflation
+// === Règle monétaire et anticipation d’inflation
 
-Lors de la dérivation de la courbe AD, nous avons écrit la règle des taux d’intérêt réels (MP) comme suit : $ r_t = r^star.op + gamma (pi_t - overline(pi)) $
+// Lors de la dérivation de la courbe AD, nous avons écrit la règle des taux d’intérêt réels (MP) comme suit : $ r_t = r^star.op + gamma (pi_t - overline(pi)) $
 
-Mais la BC ne contrôle pas directement le taux d’intérêt réel. Elle contrôle le taux d’intérêt nominal $i_t$.
+// Mais la BC ne contrôle pas directement le taux d’intérêt réel. Elle contrôle le taux d’intérêt nominal $i_t$.
 
-Maintenant, prenons l’équation de Fisher $r_t = i_t - pi_(t + 1)$. Nous pouvons la remplacer ci-dessus pour obtenir : $ i_t = r^star.op + gamma (pi_t - overline(pi)) + pi_(t + 1) $
+// Maintenant, prenons l’équation de Fisher $r_t = i_t - pi_(t + 1)$. Nous pouvons la remplacer ci-dessus pour obtenir : $ i_t = r^star.op + gamma (pi_t - overline(pi)) + pi_(t + 1) $
 
-Nous voyons que la banque centrale fixe le taux d’intérêt pour contrôler une combinaison de l’inflation et de l’"inflation anticipée". Plus proche d’une règle de Taylor moderne.
+// Nous voyons que la banque centrale fixe le taux d’intérêt pour contrôler une combinaison de l’inflation et de l’"inflation anticipée". Plus proche d’une règle de Taylor moderne.
 
-#pagebreak()
+// #pagebreak()
 
 === Taux d’intérêt à court terme
 
@@ -292,7 +296,7 @@ La BC contrôle plutôt les taux d’intérêt à très court terme, généralem
   columns:(30%,5%,65%), 
   figure(
     image("assets_4b/arbitrage_1.png"),
-    caption: [TODO]
+    caption: [Arbitrage]
   ),[],
   [
 
@@ -315,7 +319,7 @@ Les différences entre les taux de rendement sont expliquées par des différenc
   columns:(30%,5%,65%), 
   figure(
     image("assets_4b/arbitrage_2.png"),
-    caption: [TODO]
+    caption: [Arbitrage entre maturités]
   ),[],
   [
 
@@ -338,10 +342,10 @@ Investissement de la valeur X à la date $t$
 
 L’option 1 rapporte :
 
-- $X (1 + i^(1 y))$ après un an
-- Le rendement brut est $(1 + i^(1 y))$
+- $X (1 + i^(1 y)_t)$ après un an
+- Le rendement brut est $(1 + i^(1 y)_t)$
 
-L’option 2 rapporte (faites attention au fait que les rendements sont annualisés)
+L’option 2 rapporte (attention au fait que les rendements sont annualisés)
 
 - $X (1 + i_t^(6 m))^(1 \/ 2)$ après 6 mois
 - $X (1 + i_t^(6 m))^(1 \/ 2) (1 + i_(6 m)^(t + 6 m))^(1 \/ 2)$ après un an
@@ -351,7 +355,9 @@ L’option 2 rapporte (faites attention au fait que les rendements sont annualis
 
 === Structure temporelle des taux d’intérêt
 
-L’équation d’arbitrage s’écrirait : $ (1 + i^(1 y)) = (1 + i_t^(6 m))^(1 \/ 2) (1 + i_(6 m)^(t + 6 m))^(1 \/ 2) $ Ou en termes logarithmiques : $i_t^(1 y) = 1 / 2 i_t^(6 m) + 1 / 2 i_(t + 6 m)^(6 m)$ Étant donné que les investisseurs sont averses au risque et apprécient la flexibilité d’avoir de l’argent plus tôt, ils demandent une prime de risque $phi$ : $ i^(1 y) = 1 / 2 i_t^(6 m) + 1 / 2 i_(t + 6 m)^(6 m) + phi $
+La condition d'absence d’arbitrage s’écrit : $ (1 + i^(1 y)) = (1 + i_t^(6 m))^(1 \/ 2) (1 + i_(6 m)^(t + 6 m))^(1 \/ 2) $ Ou en termes logarithmiques : $i_t^(1 y) = 1 / 2 i_t^(6 m) + 1 / 2 i_(t + 6 m)^(6 m)$
+
+Étant donné que les investisseurs sont averses au risque et apprécient la flexibilité d’avoir de l’argent plus tôt, ils demandent une prime de risque $phi$ : $ i^(1 y) = 1 / 2 i_t^(6 m) + 1 / 2 i_(t + 6 m)^(6 m) + phi $
 
 La prime de risque intègre l’incertitude concernant le fait que les opportunités d’investissement pourraient changer avant un an, et la possibilité que le taux d’intérêt à six mois puisse changer avant un an.
 
@@ -359,39 +365,23 @@ La prime de risque intègre l’incertitude concernant le fait que les opportuni
 
 Le même raisonnement s’applique au taux quotidien fixé par la banque centrale :
 
-$ i_t^(1 y) = 1 / 365 (i_(1 d)^t + i_(t + 1 d)^(1 d) + i_(t + 2 d)^(1 d) i_(t + 2 d)^(1 d) + dots.h.c i_(t + 364 d)^(1 d)) + phi $
+$ i_t^(1 y) = 1 / 365 (i^(1 d)_t + i_(t + 1 d)^(1 d) + i_(t + 2 d)^(1 d) + dots.h.c i_(t + 364 d)^(1 d)) + phi $
 
 - En manipulant les taux d’intérêt de courte durée (maturité annualisée), la banque centrale peut manipuler le taux d’intérêt annuel.
 - Elle le fait en annonçant une trajectoire des taux d’intérêt futurs.
-- Pour que la manipulation soit efficace, la trajectoire des taux d’intérêt futurs doit être claire et prévisible, de même que son ajustement éventuel aux contingences économiques.
-- C’est l’une des raisons pour lesquelles la banque centrale tente de s’engager dans une politique claire et transparente.
+- Pour que la manipulation soit efficace, la trajectoire des taux d’intérêt futurs doit être _claire et prévisible_, de même que son ajustement éventuel aux contingences économiques.
 
-=== Taux d’intérêt à court terme
 
-#grid(
-  columns:(30%,5%,65%), 
-  figure(
-    image("assets_4b/short_term.png"),
-    caption: [TODO]
-  ),[],
-  [
-
-- Les taux d’intérêt sont examinés régulièrement (tous les quelques mois).
-- En général, ils évoluent lentement, de manière prévisible.
-  - La Fed américaine laisse les taux fluctuer dans une fourchette.
-- Notez que les taux sont restés à des niveaux historiquement bas depuis 2008.
-
-])
 
 === Taux d’intérêt à court terme et taux d’intérêt à long terme
 
 
 
 #grid(
-  columns:(30%,5%,65%), 
+  columns:(50%,5%,45%), 
   figure(
   image("assets_4b/short_term_long_term.png"),
-    caption: [TODO]
+    caption: [Évolution des différentes maturités]
   ),[],
   [
 
@@ -402,12 +392,30 @@ $ i_t^(1 y) = 1 / 365 (i_(1 d)^t + i_(t + 1 d)^(1 d) + i_(t + 2 d)^(1 d) i_(t + 
 
 ])
 
+
+=== Taux d’intérêt à court terme
+
+#grid(
+  columns:(50%,5%,45%), 
+  figure(
+    image("Taux-directeurs.png"),
+    caption: [Taux d' intérêts à court terme]
+  ),[],
+  [
+
+- Les taux d’intérêt sont examinés régulièrement (tous les quelques mois).
+- En général, ils évoluent lentement, de manière prévisible.
+
+- Notez que les taux sont restés à des niveaux historiquement bas depuis 2008 jusqu'au retour de l'inflation en 2022
+
+])
+
 == Le marché interbancaire
 
 
 === Taux d’intérêt sur les réserves et taux d’intérêt sur le marché interbancaire
 
-- Donc, la banque centrale (BC) manipule $r$ en manipulant $i$ en fixant le taux d’intérêt sur le marché interbancaire de nuit…
+- Donc, la banque centrale (BC) manipule $r$ en manipulant $i$ en fixant le taux d’intérêt sur le marché interbancaire au jour le jour
 
 - Mais comment la BC fixe-t-elle le prix sur le marché interbancaire ? 🤔
 
@@ -442,15 +450,15 @@ Maintenant, considérons l’expérience mentale suivante :
 
 - Il y a deux taux correspondants :
 
-  - Les réserves à la BC rapportent un taux d’intérêt $i^R$. Fixé par la banque centrale
+  - Les réserves à la BC rapportent un taux d’intérêt $i_R$. Fixé par la banque centrale
   - Le taux de marché $i_M$
 
 - Le montant total $R_0$ de réserves (Monnaie Banque centrale) est décidé par la banque centrale.
 
-- Deux instruments :
+- La banque centrale a donc deux instruments :
 
-  - introduire davantage de réserves via des opérations de marché ouvertes : changer $R_0$
-  - changer le taux d’intérêt payé sur les réserves
+  - introduire davantage de réserves via des opérations d'open market : changer $R_0$
+  - changer le taux d’intérêt payé sur les réserves $i_R$
 
 ]
 
