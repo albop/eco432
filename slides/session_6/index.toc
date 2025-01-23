@@ -1,0 +1,11 @@
+\beamer@sectionintoc {1}{Concurrence imparfaite}{4}{0}{1}
+\beamer@sectionintoc {2}{Producteurs}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Marché des biens}{18}{0}{2}
+\beamer@subsectionintoc {2}{2}{Marché du travail}{20}{0}{2}
+\beamer@subsectionintoc {2}{3}{Le lien salaire-prix}{26}{0}{2}
+\beamer@subsectionintoc {2}{4}{L'équilibre naturel}{28}{0}{2}
+\beamer@sectionintoc {3}{Rigidités nominales}{33}{0}{3}
+\beamer@subsectionintoc {3}{1}{Prix rigides}{35}{0}{3}
+\beamer@subsectionintoc {3}{2}{Salaires rigides}{46}{0}{3}
+\beamer@subsectionintoc {3}{3}{Mauvaise perception}{50}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{54}{0}{4}
