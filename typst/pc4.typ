@@ -1,4 +1,4 @@
-#import "pc_template.typ": pc
+#import "pc_template.typ": pc, correction
 
 #let correct = false
 #show: doc => pc(
@@ -7,6 +7,8 @@
   doc,
   correct: correct
 )
+
+#let correction = correction.with(visible: correct)
 
 
 == Exercice 1: Macroéconomie de court terme
@@ -26,6 +28,18 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   ]
 ]
 
+#correction[
+
+a. _faux_. Une inflation plus élevéec correspond à un taux réel plus *bas*
+
+b. _vrai_. C'est exactement ça. Notons bien que si la banque centrale de réagissait pas, une hausse de l'inflation baisserait les taux réels.
+
+c. _faux_. D'une part l'épargne est déterminée par les taux réels, pas nominaux. D' autre part la hausse des taux provoque une baisse de la production.
+
+d. _faux_. La demande agrégée n'est pas une fonction de demande normale. Il s'agit de l'équilibre implicite qui provient de la courbe IS.
+
+]
+
 #block[
 #set enum(numbering: "1.", start: 2)
 + La courbe d’offre agrégée est croissante parce que (choisissez la meilleure justification) :
@@ -39,6 +53,19 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   ]
 ]
 
+#correction[
+
+a. _faux_. L'offre agréegée  peut conceptuellement être verticale, même si les marchés de chacun des biens à une pente d'offre normalement pentue.
+
+b. _faux_. L'offre agrégée n'est pas une fonction d'offre normale normale. 
+
+c. _faux_. Une entreprise monopolistique peut décider de réduire sa production en augmentant le prix. Mais l'inverse n'a pas de sens car le prix est une variable de décision de la firme. La même explication tient pour les firmes monopolistiques.
+
+d. _vrai_. C'est le mécanisme qui fait que la production de certaines firmes augmentent lorsque la demande augmente, au lieu que ce soient seulement les prix qui servent de valeur d'ajustement. On a vu que l' intuition reste vraie quand une fraction seulement des firmes peut ajuster.
+
+]
+
+
 #block[
 #set enum(numbering: "1.", start: 3)
 + Trouvez la bonne déclaration :
@@ -50,6 +77,18 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   + Des marges moyennes plus élevées signifient des prix plus flexibles.
   + La marge d’une entreprise en concurrence monopolistique dépend uniquement de son coût marginal.
   ]
+]
+
+#correction[
+
+a. _vrai_
+
+b. _non_, ce n' est pas si simple. On a vu que la concurrence est moins forte aux États-Unis, mais la croissance y est aussi plus forte qu'en France.
+
+c. _non_
+
+d. _non_. le lien entre coût marginal, marge et prix est de la forme $p = (1+mu) "mc"$. La marge $mu$ dépend de l'élasticité de la demande qui elle-même dépend de l' environnement compétitif.
+
 ]
 
 #block[
@@ -65,6 +104,18 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   ]
 ]
 
+#correction[
+
+a. _oui_ le gouvernemnt peut en effet augmenter la demande en augmentant les dépense. Cela stabilise le chômage au prix d'une inflation plus haute
+
+b. _non_, la banque centrale peut accomoder le choc, en déplacer la demande de manière à neutraliser son effet sur la production et/où l'inflation
+
+c. _non_, s'il n' est pas persistent l'effet du choc se résorbe de lui-même à mesure que les prix s'ajustent
+
+d. _non_, pas de rapport
+
+] 
+
 #block[
 #set enum(numbering: "1.", start: 5)
 + Lequel des cas suivants est un choc négatif de demande ?
@@ -76,6 +127,18 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   + Les réglementations en matière de crédit sont mises à jour pour limiter le surendettement
   + Un nouveau type de poussette électrique bon marché devient un must-have pour tous les passionnés de mode urbaine.
   ]
+]
+
+#correction[
+  
+  a. _faux_. cela augmente la demande étrangère pour la production domestique. C'est un choc de demande positif.
+
+b. _faux_. les consommateurs plus optimistes pensent que leur consommation va augmenter dans le future. Pour lisser leur consommation dans le temps, ils augmentent donc leur consommation présente. (l'optimisme peut-aussi réduire leur perception du risque future et leur besoin d'une épargne de précaution, avec le même effet)
+
+c. _vrai_. la réglementation sur le surendettement empêche certains ménages de s'endetter pour consommer donc c'est un choc de demande négatif (même s'il peut être désirable)
+
+d. _faux_. L'évolution des préférences entraîne une demande des consommateurs pour ce type de produit. C'est un choc de demande positif.
+
 ]
 
 #block[
@@ -90,6 +153,19 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   ]
 ]
 
+#correction[
+
+d. _faux_. choc d'offre négatif
+
+b. _faux_. c'est équivalent à un renchérissement du prix des énergies fossiles donc à un choc d'offre négatif
+
+a. _vrai_. sans que le prix des autres énergie soient affectées, la production de technologies vertes est moins chère. C'est un choc d'offre positif.
+
+c. _faux_. un choc de demande positif pour les voitures électrique
+
+
+]
+
 #block[
 #set enum(numbering: "1.", start: 7)
 + Selon la version NK du modèle AS/AD vue pendant le cours, laquelle des déclarations suivantes est vraie :
@@ -101,6 +177,20 @@ Trouver l’unique bonne réponse aux questions suivantes, en raisonnant dans le
   + Tout choc de demande induit une réponse d’offre opposée qui annulera finalement ses effets à long terme.
   + Les politiques de demande sont plus efficaces lorsque les prix sont plus flexibles.
   ]
+]
+
+#correction[
+
+a. _Non_. les prix augmentent mais ne baisse pas. L'inflation elle redescend à son niveau initial.
+
+b. _Oui_. cf cours.
+
+c. _Non_. L'économie se déplace le long de la courbe 
+d'offre de cours terme mais ce n'est pas un choc.
+
+d. _Non_. Les politiques de demande sont plus efficaces lorsque les prix sont *moins* flexible.
+
+
 ]
 
 == Exercice 2: choc pétrolier et stagflation
@@ -125,159 +215,50 @@ supplement: "Figure",
 + Comment varient à court terme l'inflation et le PIB en conséquence du choc pétrolier ? Comment appelle-t-on ce phénomène ?
 ]
 
+#correction[
+Le choc d’oﬀre est un shift de la courbe d’oﬀre de court terme vers la gauche. A court terme
+l’équilibre se déplace vers 𝐸1 . Il y a simultanément une baisse du pib (augmentation du chômage) et une hausse du l’inﬂation. Cette situation est appelée stagflation.
+]
+
 #block[
 #set enum(numbering: "1.", start: 2)
 + Quelle politique budgétaire ou monétaire le gouvernement peut-il utiliser pour gérer les effets du choc d’offre ? Montrez graphiquement les effets des politiques choisies pour gérer la variation du PIB réel. Montrez sur un autre graphique les effets des politiques choisies pour stabiliser l’inflation.
 ]
+
+
+#correction[
+
+
+  #figure(
+    image("pc4_assets/as_choc_petrolier_2.png"),
+    caption: "Choc-Pétrolier - Politique Accomodante"
+
+  )
+
+A court terme, il n'est pas possible d'influer sur la courbe d'offre. Mais on peut contrer l'effet sur le chômage en stimulant la demande. On parle alors de politique *accomodante* (on accommode le choc d'offre).
+
+Pour stimuler la demande, la banque centrale peut baisser les taux d'intérêt (hors réaction normale à l' inflation déjà intégrée à la courbe de demande). Le gouvernement peut aussi augmenter ses dépenses. Dans les deux cas, la situation est représentée par le premier graphique.
+
+A l'inverse si la banque centrale n'est préoccupée que par l'inflation elle peut la stabiliser complètement en augmentant les taux pour diminuer la demande au prix d'une augmentation du chômage. C'est la situation sur le deuxième graphique.
+
+
+
+  #figure(
+    image("pc4_assets/as_choc_petrolier_3.png"),
+    caption: "Choc Pétrolier - Stabilisation de l'inflation"
+
+  )
+
+]
+
 
 #block[
 #set enum(numbering: "1.", start: 3)
 + En quoi le choc d'offre présente-t-il un dilemme pour les décideurs ?
 ]
 
+#correction[
 
-// == Exercice 3: politique monétaire
-// <exercice-3-politique-monétaire>
-// À l’aide des documents en annexe, répondre aux questions suivantes:
+Dans ce contexte, il n’est pas possible de réduire en même temps l’inﬂation et le chômage ; les décideurs doivent arbitrer entre les deux.
 
-// === Première partie
-// <première-partie>
-// #block[
-// #set enum(numbering: "1.", start: 11)
-// + La courbe de Phillips a-t-elle disparu ? Pourquoi les graphes les plus récents, parmi ceux fournis, utilisent-ils un indicateur de tension sur le marché du travail différent du simple taux de chômage ?
-// ]
-
-// #block[
-// #set enum(numbering: "1.", start: 12)
-// + Pouquoi est-il important de savoir s’il s’agit d’une relation statistique ou structurelle. Quelle est la #emph[variable confondante] dont parle David Beckworth ?
-// ]
-
-// #block[
-// #set enum(numbering: "1.", start: 13)
-// + Sur la base des documents peut-on affirmer que la Banque Centrale devrait avoir comme unique objectif la stabilisation de l’inflation ? Est-ce le point de vue de Ricardo Reis ?
-// ]
-
-// === Deuxième partie
-// <deuxième-partie>
-// #block[
-// #set enum(numbering: "1.", start: 14)
-// + La figure 4, suggère l’existence d’une courbe de Philips nonlinéaire. En supposant qu’elle est vérifiée à court terme, refaire le diagramme AS/AD et montrer l’effet d’un choc de demande à court terme. Dans quelles conditions une politique de relance est-elle efficace ?
-// ]
-
-// #block[
-// #set enum(numbering: "1.", start: 15)
-// + En 2023, le niveau d'inflation a atteint un plus haut historique. D’après vous, quel argument pouvait être avancé par la banque centrale pour augmenter les taux sans craindre des conséquences fortement récessives ? Quel était le risque à éviter.
-// ]
-
-// #pagebreak()
-// == Annexe: Documents
-// <annexe-documents>
-// === La courbe de Phillips?
-// <la-courbe-de-phillips>
-// #figure([
-// #box(image("pc4_assets/original_pc.png", width: 70%))
-// ], caption: figure.caption(
-// position: bottom, 
-// [
-// Original Phillips Curve
-// ]), 
-// kind: "quarto-float-fig", 
-// supplement: "Figure", 
-// )
-
-
-// #figure([
-// #box(image("pc4_assets/disparition_pc.png", width: 70%))
-// ], caption: figure.caption(
-// position: bottom, 
-// [
-// Disparition de la Courbe de Phillips (#emph[The Economist] (2017))
-// ]), 
-// kind: "quarto-float-fig", 
-// supplement: "Figure", 
-// )
-
-//
-// #figure([
-// #box(image("pc4_assets/inflation_without_unemployement.png", width: 70%))
-// ], caption: figure.caption(
-// position: bottom, 
-// [
-// Inflation et Chômage (#emph[San Francisco Fed] (2023))
-// ]), 
-// kind: "quarto-float-fig", 
-// supplement: "Figure", 
-// )
-
-
-// #figure([
-// #box(image("pc4_assets/nonlinear_phillips_curve.png", width: 70%))
-// ], caption: figure.caption(
-// position: bottom, 
-// [
-// Courbe Phillips Nonlinéaire (#emph[San Francisco Fed] (2023))
-// ]), 
-// kind: "quarto-float-fig", 
-// supplement: "Figure", 
-// )
-
-
-// #figure([
-// #box(image("pc4_assets/taylor_rule.png", width: 100%))
-// ], caption: figure.caption(
-// position: bottom, 
-// [
-// Taylor Rule (from FRED))
-// ]), 
-// kind: "quarto-float-fig", 
-// supplement: "Figure", 
-// )
-
-
-// === Ricardo Reis on the Philips Curve
-// <ricardo-reis-on-the-philips-curve>
-// Le 7 août 2023, Ricardo Reis professor à London School of Economics était interviewé par David Beckworth sur le podcast #emph[Macro Musings] #footnote[https:\/\/www.mercatus.org/macro-musings/ricardo-reis-macroeconomics-financial-crises-and-recent-inflation-surge];#footnote[Le transcript est généré par IA d’où certaines bizarreries de syntaxe…];.
-
-// #quote(block: true)[
-// #emph[Ricardo’s View of the Phillips Curve]
-// ]
-
-// #quote(block: true)[
-// Beckworth: Okay, one last question and then I’ll let you go, but the Phillips curve, it’s a key part of modern macro, and at least in the US, it’s come under a lot of criticism because we’ve had low inflation, low unemployment, all of the predictions of some of the big names that we would have to have this huge amount of unemployment to get to the inflation we’ve gotten to, it hasn’t happened. What is your thoughts on the Phillips curve? And maybe we should begin with, how do you view the Phillips curve? Do you view it as a reduced form relationship or a deep structural one? And then from there I guess it’s maybe easier to think about its future.
-// ]
-
-// #quote(block: true)[
-// Reis: David, let me start by saying that I’m the Phillips professor at the LSE, so I have to defend the Phillips curve.
-// ]
-
-// #quote(block: true)[
-// Beckworth: Okay.
-// ]
-
-// #quote(block: true)[
-// Reis: I can never say it’s obsolete otherwise I would fall on the floor since my chair would become obsolete. So it’s definitely present. But with that account, let me make three observations. The first one is that, the way I understand monetary policy is, whereby tightening monetary policy, a central bank is able to bring inflation down. In the same way that when I go to the doctor with an infection with a bacteria of some kind, antibiotics are the way to kill the bacteria and cure me from that. However, a side effect, and I emphasize, let me say it slowly, a side effect of raising interest rates is that you also cause a recession. You also lead to an increase in unemployment. In the same way that a side effect of taking antibiotics is that they tend to wreak havoc with your gastrointestinal, digestive system.
-// ]
-
-// #quote(block: true)[
-// Reis: Note that it is not a channel. It’s not by taking antibiotics and screwing up my intestines that I therefore kill the bacteria. No, no, it’s a side effect. Likewise, raising interest rates lowers inflation and has a side effect of unemployment, but it may not lower unemployment the same way that you may go through a course of antibiotics and be perfectly fine with your gastrointestinal system. So the fact that unemployment has not gone up, does not in any way discredit the way in which monetary policy works, does not pose a puzzle of any kind, because an increase in unemployment following a tightening of monetary policy is not something that has to happen for inflation to fall. It’s something that often happens as a side effect. So I make that point first. Second, the Phillips curve is, I think, still one of the most important concepts for any monetary policymaker precisely because if you were to say that raising interest rates brings down inflation, and you are to ignore the side effects, you would go crazy on raising and lowering interest rates in sharp ways, focusing solely on inflation.
-// ]
-
-// #quote(block: true)[
-// Reis: It’s understanding that side effect, and that side effect is the Phillips curve, that when you raise interest rates, you’re going to bring down inflation, but you may also increase unemployment. That side effect is there. That makes central banking hard, monetary policy hard. That leads you to be cautious. That leads you to not destroy economies in your obsession with controlling inflation. So understanding the Phillips curve as a trade-off, as a structural trade-off, as a side effect of what happens after you raise interest rates and lower down inflation, is, I think, essential. And any central bank that told me it does not understand the Phillips curve \[inaudible\] in the central bank, is one that should resign immediately because it would be a very dangerous central bank in that sense.
-// ]
-
-// #quote(block: true)[
-// Reis: However, and third answer now here, the Phillips curve, however, and as it is, as indeed it was written by Bill Phillips originally, my predecessor here at the LSE many decades ago, as an empirical relation that says that you have a correlation between inflation and employment, or even as a causal relation, that it’s through raising unemployment, they lower inflation, is a deeply flawed empirical as well as theoretical claim, precisely because it is a side effect. And when that happens sometimes, but not always, precisely because it’s not the causal mechanism, it very often happens that you have inflation going up and down with unemployment not going up and down in that way. That is why when you look at a correlation between inflation and employment, you end up with relatively low values.
-// ]
-
-// #quote(block: true)[
-// Reis: It is also why when Bill Phillips did those correlations, under some circumstances, having to do with monetary-fiscal regimes, he found very nice Phillips curves, but under other circumstances you wouldn’t find them. Just like, David, under some circumstances, antibiotics mess up your stomach and some others, it doesn’t. So that Phillips curve is seen as an ironclad law of what happens when employment and inflation moves, seen as a causal part of the mechanism when inflation goes down. That, indeed, is, I think, something that does not receive a lot of support in theory or in the data. But the Phillips curve has a very important trade off as what you can do, is why you have to be careful in controlling inflation, that is absolutely essential for any central bank.
-// ]
-
-// #quote(block: true)[
-// Beckworth: Well, let me tell you how I think about it, and correct my understanding here. I view it more as a reduced form relationship. It’s reflecting some other third variable, which is aggregate demand, which is being shaped by monetary policy. So aggregate demand can affect inflation, it can affect unemployment, and so policy is moving aggregate demand towards some goal and maybe it affects unemployment, maybe it affects inflation. Is that too simple of an understanding?
-// ]
-
-// #quote(block: true)[
-// Reis: That’s a perfectly acceptable complementary view to the ones I was saying. It goes back a little bit to my, as a side effect, meaning you want to be monitoring employment to understand this correlation exists, because it is reflecting something going on in your body, right? You’re trying to diagnose the body of the patient. You’re trying to kill the bacteria. You know that when you do the antibiotics, it’s going to have an effect on a bunch of other things, and you want to be monitoring them, and focusing on your digestion is a very useful one, sometimes even if you’re really as triggering is whether the antibiotics are creating problems in other parts of the body, absolutely.
-// ]
+]

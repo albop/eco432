@@ -31,12 +31,12 @@ d. faux. La demande agrégée n'est pas une fonction de demande normale. Il s'ag
 :::
 
 
-@. La courbe d'offre agrégée est croissante parce que (choisissez la meilleure justification) :
+@. La courbe d'offre agrégée a une pente positive et finie parce que (choisissez la meilleure justification) :
 
     a. Les courbes d'offre sont croissantes sur tous les micro-marchés.
     b. Les courbes d'offre sont toujours ascendantes.
     c. Des prix plus élevés permettent aux entreprises monopolistiques de réduire leur production.
-    d. Un niveau de prix plus élevé incite les entreprises qui ne peuvent pas ajuster leur propre prix à augmenter la production.
+    d. Un niveau de prix plus élevé force les entreprises qui ne peuvent pas ajuster leur propre prix à augmenter la production.
 
 
 
@@ -92,9 +92,9 @@ d. non, pas de rapport
 :::
 
 
-@. Lequel des cas suivants est un choc négatif de demande ?
+@. Lequel des cas suivants est un choc négatif de demande ? (on se place du point de vue européen)
 
-    a. Les déboires des sous-traitants de Boeing poussent la société à importer des moteurs allemands et italiens à la place des moteurs Pratt & Whitney 
+    a. Les déboires des sous-traitants de Boeing poussent la société à importer des moteurs allemands et italiens à la place des moteurs Pratt & Whitney.
     b. La fin de la Covid-19 provoque une hausse de l'optimisme des consommateurs.
     c. Les réglementations en matière de crédit sont mises à jour pour limiter le surendettement
     d. Un nouveau type de poussette électrique bon marché devient un must-have pour tous les passionnés de mode urbaine.
