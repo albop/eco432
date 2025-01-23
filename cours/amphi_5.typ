@@ -10,11 +10,12 @@
   title: [Politique Monétaire],
   subtitle: [ECO432 - Macroéconomie],
   authors: (
-                    ( name: [Pablo Winant],
-            affiliation: [],
-            email: [],
-            orcid: []),
-            ),
+    (
+      name: [Pablo Winant],
+      affiliation: [],
+      email: [],
+      orcid: []),
+    ),
   date: [],
 )
 
