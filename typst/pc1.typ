@@ -1,6 +1,10 @@
 #import "pc_template.typ": pc, correction
 
-#let correct=false
+// this can be set with:
+// typst compile pc1.typ pc1_correction.pdf --input correct=true
+// or
+// typst compile pc1.typ pc1_correction.pdf --input correct=false
+#let correct = sys.inputs.at("correct", default: "false") == "true"
 
 #show: doc => pc(
   1,

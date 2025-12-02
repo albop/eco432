@@ -65,7 +65,7 @@ La prise en compte simultanée de plusieurs types d'agents et de marchés induit
   - *externalités* de toutes sortes
 
 - des complications pratique
-  - taille de l'espace d'état#footnote[Le nombre de paramètres à considérer dans les problèmes d'optisation devient gigantesque. Ceci est d' autant plus vrai que les modèles sont dynamiques.]
+  - taille de l'espace d'état#footnote[Le nombre de paramètres à considérer dans les problèmes d'optimisation devient gigantesque. Ceci est d' autant plus vrai que les modèles sont dynamiques.]
   - augmentation du nombre de degrés de liberté #footnote[Les effets sont similaires à l'overfitting en marchine learning: le modèle peut répliquer n'importe que phénomène, mais ne peut rien prédire. Aussi, le modèle ne peut jamais être invalidé.]
 
 == Agrégation
@@ -81,7 +81,7 @@ La prise en compte simultanée de plusieurs types d'agents et de marchés induit
   Résoudre le problème d'aggrégation
 
   - par des simplifications théoriques
-    - ex: les consommateurs sont identiques, leur disribution est continue...
+    - ex: les consommateurs sont identiques, leur distribution est continue...
     - ex: anticipations rationnelles
 
   - par des méthodes de simulations#footnote[Ces méthodes restent compliquées et limitées. On sait très bien "résoudre un modèle" autour d'un point fixe. Mais l'hétérogénéité des agents et la nonlinearité des modèles motive toujours une recherche très active.]
@@ -132,24 +132,24 @@ Les méthodes de la macroéconomie s'appliquent à différents horizons.
   - PC: croix keynésienne
 - Amphi 3 : l'offre agrégée
   - PC: courbe d'offre (micro)
-- Amphi 4 : banque centrale
+- Amphi 4 : analyse des fluctuations
   - PC: chocs macroéconomique
-- Amphi 5 : gouvernement  
+- Amphi 4 : politique monétaire
   - PC: biais inflationniste (micro)
 ]
 
 #colbreak()
 
-==== Thèmes choisis (à confirmer)
+==== Macroéconomie du Long Terme (à confirmer)
 
-(avec Mehdi Senouci)
+(avec Alessandro Riboni)
 
 #box[
-- Amphi 6 : croissance
-- Amphi 7 : environnement (1)
-- Amphi 8 : environnement (2)
+- Amphi 6 : politique budgétaire
+- Amphi 7 : croissance (1)
+- Amphi 8 : croissance (2)
 - Amphi 9 : inégalités (1)
-- Amphi 10 : inégalités (2) 
+- Amphi 10 : environnement
 ]
 
 ])
@@ -160,14 +160,14 @@ Les méthodes de la macroéconomie s'appliquent à différents horizons.
 - Déroulé:
   - 10 séances de cours (Mehdi Senouci et Pablo Winant)
   - 10 TDs (Augustin Pérez-Barahona et Mehdi Senouci)
-- Ce qu'il faut savoir
+- Il faut savoir
   - tout ce qui est sur les slides
-  - + savoir résoudre les exercices (problèmes et QCM)
-  - pour aller plus loin: #underline[Macroeconomic Fluctuations and Policies] by Edouard Challe#footnote[Vous pouvez trouver sur Moodle, les notes de cours qui ont servi de base au livre.]
+  - résoudre les exercices (problèmes et QCM)
+  
 - Évaluation
-  - note de participation (6 points)
+  - note de participation
     - participation + débat final + QCM
-  - contrôle final (2h)
+  - contrôle final (3h)
     - deux parties
 
 ⚠️ Il ne suffit pas de savoir calculer pour réussir, il faut aussi être familier des concepts.
@@ -328,9 +328,11 @@ Cet arbitrage dépend du taux d’intérêt intertemporel réel ( $r_t$ ).
 
 Les deux déterminants à court terme de la consommation devraient donc être $Y_t$ et $r_t$.
 
+☞ Vérifions le avec un modèle formalisé
+
 == Consommateurs ricardiens et keynésiens
 
-Classiquement, on distingue :
+Dans ce cours on distingue :
 
 #columns(2,[
 
@@ -417,15 +419,15 @@ Dans le #emph[côté gauche] : $(1 + r)$ peut être interprété comme le _prix_
 #pause 
 Quel est l’effet d’un taux d’intérêt réel plus élevé ?
 
-- La consommation aujourd’hui est plus chère : effet de substitution 
+- La consommation aujourd’hui est plus chère : *effet de substitution* 
   - plus de consommation de biens futurs, moins de consommation dans le présent
-- Le revenu d’aujourd’hui est plus précieux : il allège la contrainte budgétaire créant un effet de richesse direct 
+- Le revenu d’aujourd’hui vaut plus : il allège la contrainte budgétaire créant un *effet de richesse*
   - plus de consommation des deux biens
 
 == Consommateurs
 <consommateurs-3>
 Un consommateur résout $ max_(C_1 , C_2) &  & U (C_1 , C_2)\
-s. c.  &  & C_1 (1 + r) + C_2 lt.eq Y_1 (1 + r) + Y_2 $
+s. c. "  "   &  & C_1 (1 + r) + C_2 lt.eq Y_1 (1 + r) + Y_2 $
 
 Il s’agit d’un problème d’optimisation sous contrainte, identique à ceux rencontrés en microéconomie.
 
@@ -445,9 +447,9 @@ Cela découle d’un motif de *lissage de la consommation* dans le temps, qui pr
 
 == Réponse au taux d’intérêt
 <réponse-au-taux-dintérêt>
-À partir de la dernière formule, nous pouvons voir comment les ménages Ricardiens modifient leur consommation en réponse à un changement $Delta r$ dans les taux d’intérêt réels. Alors la consommation augmente de $Delta C$ de telle sorte que : $ C_1 + Delta C = frac(1, 1 + beta) (Y_1 + frac(1, 1 + r + Delta r) Y_2) $
+À partir de la dernière formule, nous pouvons voir comment les ménages Ricardiens modifient leur consommation de $Delta C$ en réponse à un changement $Delta r$ dans les taux d’intérêt réel : $ C_1 + Delta C = frac(1, 1 + beta) (Y_1 + frac(1, 1 + r + Delta r) Y_2) $
 
-Cela conduit à la formule approximative :
+Cela conduit à la formule approchée :
 
 $ #box(stroke: black, inset: 3pt, [$ frac(Delta C, Delta r) = - frac(1, 1 + beta) 1 / (1 + r)^2 Y_2 $]) $
 
@@ -468,21 +470,26 @@ $ "PMC" C^(upright("ricardian")) = frac(Delta C, Delta Y) = frac(1, 1 + beta) < 
 === Remarques sur la modélisation
 
 - Le fait que le consommateur consomme à chaque date une fraction fixe de sa consommation provient de la specification log pour l'utilité instantanée:
-  - avec une spécification CRRA#footnote[CRRA: Constant risk aversion]  $ U(C_1,C_2) = (C_1)^(1-sigma)/(1-sigma) + beta (C_2)^(1-sigma)/(1-sigma) $ le résultat serait différent
-  - comme en micro $sigma$ paramétrise l'élasiticité de la consommation future à la consommation presente (aussi appelée élasticité intertemporelle de substitution)
+  - avec une spécification CRRA#footnote[CRRA: Constant risk aversion]  $ U(C_1,C_2) = (C_1)^(1-1/sigma)/(1-1/sigma) + beta (C_2)^(1-1/sigma)/(1-1/sigma) $ le résultat serait différent
+  - comme en micro, $sigma$ paramétrise l'élasiticité de la consommation future à la consommation presente (aussi appelée élasticité intertemporelle de substitution)
 #pagebreak()
-- Dans la formule $ C_1 = frac(1, 1 + beta) (Y_1 + frac(1, 1 + r) Y_2) $ le consommateur à peu près la moitié de son revenu permanent en période 1 puisque $beta approx 1$
-  - si l'objectif était spécifié avec un horizon infini $max sum_t beta^t log(C_t) $ on aurait
+- D'après la formule $ C_1 = frac(1, 1 + beta) (Y_1 + frac(1, 1 + r) Y_2) $ le ménage consomme à peu près la moitié de son revenu permanent en période 1 ($beta approx 1$)
+- si l'objectif était spécifié avec un horizon infini $max sum_t beta^t log(C_t) $ on aurait
    $ C_1 = (1 - beta) (underbrace(Y_1 + frac(1, 1 + r) Y_2 +  frac(1, (1 + r)^2)Y_3 + ... ,"Revenu Permanent")) $ 
   - le consommateur consomme toujours une fraction fixe de son revenu permanent
-  - sous l'hypothèse d'equilibre $1/beta=(1+r)$ la fraction consommée correspond aux intérêts du revenu permanent
+  - sous l'hypothèse $1/beta=(1+r)$ il consomme les intérêts du revenu permanent
+
 - Le modèle présenté est *déterministe*
-  - On aurait pu considérer que la valeur du revenu en deuxième période $Y_2$ était *stochastique* $Y_2~>cal(D)$ où $cal(D)$ est une distibution connue...
+- On aurait pu considérer que la valeur du revenu en deuxième période $Y_2$ était *stochastique* $Y_2~>cal(D)$ où $cal(D)$ est une distibution connue...
   - et maximiser l'utilité espérée $ EE U(C_1, C_2) = log(C_1) + beta EE[ log(C_2) ]$
-  - on verrait #footnote[En PC1.] que la concavité de l'utilité crée une *aversion au risque* et de l'*épargne de précaution*
+  - on verrait #footnote[C'est le sujet de la PC1.] que la concavité de l'utilité crée une *aversion au risque* et de l'*épargne de précaution*
+
+#pagebreak()
 
 - On pourrait aussi considérer un cas plus général: $ max EE_t [sum_(s>=t) beta^s (c_s)^(1-sigma)/(1-sigma)] $
-    - qui cumulerait tous les effets mais ce serait seulement le début
+    - qui cumulerait tous les effets
+
+- C'est le modèle standard en macroéconomie formalisée
 
 
 == Ménages Keynésiens
@@ -497,10 +504,10 @@ Un agent keynésien pur (qui ne peut pas emprunter du tout) est soumis à la con
 
 Sa propension marginale à consommer est :
 
-$ "PMC"^(upright("keynésien")) = diff(C_1)/(diff Y_1)= 1 $
+$ "PMC"^(upright("keynésien")) = partial(C_1)/(partial Y_1)= 1 $
 
-==== Quiz 3
-<quiz-3>
+==== Quiz
+<quiz>
 Parmi les agents suivants, lequel est le plus susceptible d’être keynésien ?
 
 + un étudiant qui envisage une offre de prêt de la banque pour couvrir les frais universitaires
