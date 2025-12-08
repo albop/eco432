@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: build
+
+  build:
+    desc: Build all PCs
+    cmds:
+      - for: [1, 2]
+        task: pc
+        vars: { N: '{{.ITEM}}' }
+
+  pc:
+    desc: Build PC{{.N}} subject and correction
+    method: timestamp
+    sources:
+      - pc{{.N}}.typ
+      - pc_template.typ
+      - pc{{.N}}_assets/**/*
+    generates:
+      - pc{{.N}}.pdf
+      - pc{{.N}}_correction.pdf
+    cmds:
+      - typst compile pc{{.N}}.typ pc{{.N}}.pdf --input correct=false
+      - typst compile pc{{.N}}.typ pc{{.N}}_correction.pdf --input correct=true

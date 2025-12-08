@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Exercice : Modèle AS-AD et ZLB}
+
+On considère une version simplifiée du modèle AS/AD du cours:
+\[ \text{MP}: r=\gamma \left(\pi-\pi^{\star}\right)\]
+\[ \text{IS}: y=-\sigma r + \theta \]
+\[ \text{PC}: y=\kappa (\pi-\pi^{\star})\]
+
+où $r$ est le taux d'intérêt réel, où $\pi$ est l'inflation, $\pi^{\star}$ la cible d'inflation et où l'output gap ("pib potentiel") est noté $y$. La variable $\theta$ est un choc de demande et $\kappa$, $\sigma$, $\gamma$ sont tous des paramètres positifs.
+
+Initialement, l'économie se trouve à l'équilibre de plein emploi.
+Puis un gouvernement nouvellement élu décide de réduire drastiquement les dépenses publiques.
+
+
+\begin{enumerate}
+    \item De quel type de choc s'agit-il ? Quel est l'impact sur la courbe AD ? Dans quel sens la banque centrale ajuste-t-elle ses taux d'intérêt ?
+    \item Représentez graphiquement l'impact de ce choc à court terme.
+    \item On suppose maintenant que la banque centrale ne peut pas baisser le 
+    taux réel en dessous d'un certaine borne inférieure $\underbar{r}$\footnote{Lorsque cette borne inférieure est zéro, on l'appelle en anglais "zero lower bound" (ZLB).} On supposera que la courbe MP devient $r=max\left(\underbar{r},\gamma \left(\pi-\pi^{\star}\right)\right)$. Analyser alors l'effet du choc s'il est assez grand pour atteindre cette borne inférieure.
+\end{enumerate}
+    
+
+\section*{Exercice : Consommation intertemporelle, investissement immobilier et utilité du logement}
+
+Un agent économique vit pendant deux périodes $(t = 1, 2)$. Il dispose d'un revenu initial $Y_1$ à la période 1 et d'un revenu anticipé $Y_2$ à la période 2.
+
+L'agent peut investir dans un actif immobilier dont le prix à la période 1 est $P_1$ et qui est revendu à la période 2 au prix (parfaitement anticipé) $P_2$. Cet actif procure un service de logement qui augmente directement son utilité.
+
+L'agent peut aussi emprunter ou épargner au taux réel $r$.
+
+Il maximise la fonction d'utilité intertemporelle suivante :
+\[
+U(C_1, C_2, H) = \log(C_1) + \beta \log(C_2) + \gamma \log(H)
+\]
+avec $0 < \beta < 1$ et $\gamma > 0$, où $C_1$ et $C_2$ représentent les niveaux de consommation aux périodes 1 et 2, et $H$ la quantité d'actif immobilier acquise en période 1.
+
+On suppose qu'aucune contrainte de liquidité n'est imposée à l'agent, c'est-à-dire qu'il peut emprunter ou épargner sans limite. De même la quantité d'actifs immobiliers sur la marché, n'est pas limitée de sorte que le choix optimal de $H$ n'est pas contraint.
+
+\subsection*{Questions et corrections}
+
+\begin{enumerate}
+    \item Écrivez la contrainte budgétaire intertemporelle.
+
+% \textit{Correction :}
+% \[
+% C_1 + P_1 H + \frac{C_2}{1+r} = Y_1 + \frac{Y_2 + P_2 H}{1+r}
+% \]
+
+%     \item \textbf{Déterminez analytiquement les conditions d'optimalité.}
+
+% \textit{Correction :}
+% Les conditions de premier ordre sont :
+% \[
+% \frac{1}{C_1} = \frac{\beta(1+r)}{C_2}, \quad \frac{1}{C_1} P_1 = \frac{\gamma}{H} + \frac{P_2}{C_1 (1+r)}
+% \]
+
+    \item Montrez que la condition d'arbitrage entre immobilier et actif sans risque peut s'écrire:
+\[
+r = \frac{P_2 - P_1}{P_1} + \frac{\gamma C_1 (1+r)}{P_1 H}
+\]
+% \textit{Correction :}
+% La condition d'arbitrage s'écrit :
+% \[
+% r = \frac{P_2 - P_1}{P_1} + \frac{\gamma C_1}{P_1 H}
+% \]
+% Elle signifie que l'agent équilibre le rendement financier ajusté par l'utilité directe du logement avec celui de l'actif sans risque.
+
+    \item Quel est l'effet d'une hausse anticipée du prix immobilier futur $P_2$ ?
+
+% \textit{Correction :}
+% Une hausse de $P_2$ rend l'immobilier plus attractif, ce qui pousse l'agent à augmenter l'investissement immobilier à la période 1, réduisant ainsi probablement sa consommation actuelle.
+
+    \item Quel est l'effet d'une hausse du paramètre $\gamma$ ?
+
+% \textit{Correction :}
+% Si $\gamma$ augmente, l'utilité directe de l'immobilier augmente. L'agent investira davantage dans l'immobilier au détriment probablement de sa consommation actuelle.
+
+\end{enumerate}
+
+\end{document}
