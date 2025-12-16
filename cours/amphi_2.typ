@@ -4,17 +4,14 @@
 
 #show: clean-theme.with(
   aspect-ratio: "16-9",
-                        )
+)
 
 #title-slide(
   title: [Demande Agrégée],
   subtitle: [ECO432 - Macroéconomie],
   authors: (
-                    ( name: [Pablo Winant],
-            affiliation: [],
-            email: [],
-            orcid: []),
-            ),
+    (name: [Pablo Winant], affiliation: [], email: [], orcid: []),
+  ),
   date: [],
 )
 
