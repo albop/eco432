@@ -30,13 +30,13 @@ Commençons par quelques notations.
 
 Dans ce cours :
 
-- $Y_t$ : *PIB réel* : le nombre de paniers de bien produits par l'économie
+- $Y_t$ : *PIB réel* : le nombre de paniers de biens produits par l'économie
 - $P_t$ : *Niveau des prix* : le prix d'un panier de biens donné
 - $pi_t = frac(P_t-P_(t-1),P_(t-1))$ : *Taux d'inflation* #footnote[En pratique, l'inflation d'un panier de biens est calculée par les statisticiens de l'INSEE en agrégeant les quantités $x_i$ consommées par un agent représentatif, pondérées par leur prix, donc $P_t=integral_i p_i x_i$.  ]
 
 Avec ces définitions, le *PIB nominal*, c'est-à-dire la production vendue aux prix du marché, est simplement $P_t Y_t$.
 
-Aussi, de manière, conventionnelle, lorsqu'une variable en niveau est donnée par une lettre majuscule, la même lettre en minuscule dénote le log de cette variable (ex: $y_t=log(Y_t)$)
+Aussi, de manière conventionnelle, lorsqu'une variable en niveau est donnée par une lettre majuscule, la même lettre en minuscule dénote le log de cette variable (ex: $y_t=log(Y_t)$)
 
 == Taux d'intérêt nominal
 
@@ -49,7 +49,7 @@ Si un agent investit son épargne $S_t$ à la période $t$, il obtient $S_t (1+i
 
 == Taux d'intérêt nominal / réel
 
-Considérons l' expérience de pensée suivante :
+Considérons l'expérience de pensée suivante :
 
 - un agent renonce à $1$ unité de consommation à la période $t$, valant $P_t$ aux prix du marché : sa richesse est $P_t$
 - investie au taux nominal $i_t$, cette richesse devient $P_t (1+i_t)$ à la période $t+1$
@@ -123,16 +123,16 @@ $ Y = C + I + G + N X $
 - $G$: Dépenses du gouvernement
 - $N X$: Exportations nettes
 
-Les dépenses du gouvernments sont décidés indépendamment des conditions de marchés par les politiques. En particulier elles ne sont pas automatiquement déterminées par le revenu. On dit qu'elles sont *autonomes*.
+Les dépenses du gouvernement sont décidées indépendamment des conditions de marché par les politiques. En particulier elles ne sont pas automatiquement déterminées par le revenu. On dit qu'elles sont *autonomes*.
 
-On suppoera aussi par simplicités que les exportations nettes sont *exogènes*, c'est à dire déterminées en dehors du modèle.
+On supposera aussi par simplicité que les exportations nettes sont *exogènes*, c'est-à-dire déterminées en dehors du modèle.
 
 ==
 
 #image("assets/hypnotic.jpg")
 
 
-==== Qu'est ce qui détermine les composants de la demande?
+==== Qu'est-ce qui détermine les composants de la demande?
 
 #pause
 Les différents composants de la demande dépendent du niveau de revenu réel $Y$ et du taux d'intérêt réel $r$.
@@ -150,12 +150,12 @@ $ C^K (underbrace(Y^K,"+"))=Y^K $
 
 $ C^R (underbrace(Y^R,"+"), underbrace(r,"-"))=Y^R $
 
-Pour simplifier#footnote[Comme les règles $C_K$, $C_R$, ne sont pas parfaitements additives, $C$ n'est pas simplement leur moyenne.], on supposera qu'un agent représentatif consomme $ C(underbrace(Y,"+"), underbrace(r,"-"))$
+Pour simplifier#footnote[Comme les règles $C_K$, $C_R$, ne sont pas parfaitement additives, $C$ n'est pas simplement leur moyenne.], on supposera qu'un agent représentatif consomme $ C(underbrace(Y,"+"), underbrace(r,"-"))$
 
 
 == Demande des Producteurs (intuition)
 
-Comment les dépenses d'investissement dépendent-elle du taux d'intérêt (réel) ?#footnote[De la même façon que l'inflation disparait du programme du consommateur, on peut montrer que seul le taux réel compte pour déterminer la rentabilité des décisions d'investissement.]
+Comment les dépenses d'investissement dépendent-elles du taux d'intérêt (réel) ?#footnote[De la même façon que l'inflation disparait du programme du consommateur, on peut montrer que seul le taux réel compte pour déterminer la rentabilité des décisions d'investissement.]
 
 Prenons une firme hypothétique. Elle produit grâce à du *capital*.
 
@@ -165,11 +165,11 @@ Pour acheter du capital, elle peut emprunter au taux réel $r$. Une fois que la 
 
 #pause
 
-Inuitivement, si le côut des fonds est plus faible, il est plus avantageux d'emprunter, donc notre firme devrait investir plus.
+Intuitivement, si le coût des fonds est plus faible, il est plus avantageux d'emprunter, donc notre firme devrait investir plus.
 
 Donc _la demande d'investissement des firmes est décroissante dans le taux d'intérêt réel_.
 
-Ce raisonnement est correct si le rendements marginaux du capital physique sont décrossants. Montrons-le.
+Ce raisonnement est correct si les rendements marginaux du capital physique sont décroissants. Montrons-le.
 
 == Demande des Producteurs
 
@@ -224,7 +224,7 @@ Qu'est-ce qui peut expliquer l'apparente déconnexion entre le taux réel et l'i
 
 == La Courbe IS
 <la-courbe-is>
-Notre travail sur le comportement des consommateurs et des entreprises nous permet d’écrire. $ C (Y , r) & = & C_0 + C_Y Y + C_r r\
+Notre travail sur le comportement des consommateurs et des entreprises nous permet d’écrire : $ C (Y , r) & = & C_0 + C_Y Y + C_r r\
 I (r) & = & I_0 + I_r r $
 
 où $I_r < 0$ et où les valeurs $C_Y > 0$ et $C_r < 0$ dépendent de la proportion de ménages ricardiens et keynésiens.
@@ -242,7 +242,7 @@ $ Y = C (Y , r) + I (r) + G + N X $
 
 qui lie #emph[implicitement] la production et le taux d’intérêt réel.
 
-Cette relation est appelée équilibre #strong[Investissement-Épargne] (courbe IS) car elle traduit un compromis intertemporel (à travers le taux d’intérêt réel).
+Cette relation est appelée équilibre #strong[Investissement-Épargne] (courbe IS pour Investment-Saving) car elle traduit un compromis intertemporel (à travers le taux d’intérêt réel).
 
 Elle correspond à un équilibre sur le marché des biens et services, déterminé par les préférences de dépenses, avec une production parfaitement élastique à la demande.#footnote["Élastique" signifie intuitivement "Réactif". Ici cela signifie que la production s'ajuste parfaitement à la demande.]
 
@@ -254,7 +254,7 @@ Quelques remarques :
 - elle implique uniquement des décisions _rationnelles_ des consommateurs et des entreprises
 - la demande peut être microfondée sans nécessiter de monnaie ou de prix
 
-La microfondation de la demande montre qu’elle est parfaitement cohérente avec l’approche néoclassique.#footnote[Lorsque la théorie de la demande a été développée par Keynes dans les années, elle s'opposait à la théorie classique. Aujoud'hui les écoles de pensées néoclassique et néokeynésien ont attend un certain consensus sur les microfondations. On parle de synthèse néoclassique.]
+La microfondation de la demande montre qu’elle est parfaitement cohérente avec l’approche néoclassique.#footnote[Lorsque la théorie de la demande a été développée par Keynes dans les années, elle s'opposait à la théorie classique. Aujourd'hui, les écoles de pensée néoclassique et néokeynésienne ont atteint un certain consensus sur les microfondations. On parle de synthèse néoclassique.]
 
 Pas de controverse dans la profession concernant l’existence de la courbe de demande mais pour:
 
@@ -267,7 +267,7 @@ Jusqu’à présent, nous avons justifié les dépendances suivantes pour les co
 
 À l’équilibre du PIB et du taux d’intérêt, nous avons : $ Y_0 = C_0 + I_0 + G_0 + N X_0 $
 
-On peut différentier l’équation ci-dessus pour obtenir :
+On peut différencier l’équation ci-dessus pour obtenir :
 
 $ Y_0 + Delta Y = C_0 + C_Y Delta Y + C_r Delta r + I_r Delta r + G_0 + N X_0 + Delta S $
 
@@ -282,7 +282,7 @@ En logarithmes:
 
 $ frac(Delta Y, Y) = C_Y frac(Delta Y, Y) + C_r / Y Delta r + I_r / Y Delta r $
 
-Avec $y = frac(Delta Y, Y)$ et $Delta r = r - r^star.op$ on obtien l’équation décrivant la courbe IS: $ y = - sigma (r - r^star.op) $
+Avec $y = frac(Delta Y, Y)$ et $Delta r = r - r^star.op$ on obtient l’équation décrivant la courbe IS: $ y = - sigma (r - r^star.op) $
 
 où $ sigma = frac(- (C_r / Y + I_r / Y), 1 - C_Y) > 0 $
 
@@ -300,21 +300,6 @@ Par exemple, les revenus futurs des consommateurs ont été exclus de toutes les
 
 De la même manière, une augmentation des dépenses publiques est un déplacement autonome de la courbe IS, que nous capturons par un déplacement de $theta_t$.
 
-== Exercice pour interpéter $sigma$
-<exercice-pour-interpéter-sigma>
-#block[
-#block[
-]
-#block[
-==== Quizz 3
-
-Trouvez l’affirmation incorrecte parmi les suivantes :
-
-- Une PMC plus élevée implique une élasticité plus élevée de la demande aux chocs de revenu pour les ménages keynésiens
-- Une élasticité plus élevée de la deamnde au taux d’intérêt signifie une réponse plus élevée de la demande à la politique monétaire pour les ménages et les entreprises ricardiens
-
-]
-]
 = Le rôle de la Banque Centrale
 
 == Politique Monétaire
@@ -332,9 +317,9 @@ L’objectif principal de la banque centrale consiste à #emph[stabiliser l’in
 
   - Comme l’inflation ne suit pas le taux d’intérêt 1 pour 1, la banque centrale est capable d’influencer le taux d’intérêt réel#footnote[on rappelle l’équation de Fisher $r_t = i_t - pi_(t + 1)$]
 
-- Pour simplifier, on suppose que la banque centrale, met en oeuvre les instruments nécessaires, de manière à choisir le taux d’intérêt réel au niveau  niveau qu’elle souhaite
+- Pour simplifier, on suppose que la banque centrale met en oeuvre les instruments nécessaires, de manière à choisir le taux d’intérêt réel au niveau qu’elle souhaite
 
-- On peut alors décrire la fonction de réponse de la banque centrale#footnote[on suit ici l’approche de Romer 2002.] comme suit : $ #box(stroke: black, inset: 3pt, [$ r_r = r^star.op + gamma (pi_t - pi^star.op) $]) $
+- On peut alors décrire la fonction de réponse de la banque centrale#footnote[on suit ici l’approche de Romer 2002.] comme suit : $ #box(stroke: black, inset: 3pt, [$ r_t = r^star.op + gamma (pi_t - pi^star.op) $]) $
 
 - Les banques centrales augmentent le taux d’intérêt pour réduire l’inflation, donc $gamma > 0$
 
@@ -344,7 +329,7 @@ L’objectif principal de la banque centrale consiste à #emph[stabiliser l’in
 
 Maintenant que nous disposons de la courbe (IS) : $ y_t = - sigma (r_t - r^star.op) + theta_t $
 
-Et de la réponse de la politique de la banque centrale (MP) : $ r_t = r^star.op + gamma (pi_t - pi) $
+Et de la réponse de la politique de la banque centrale (MP) : $ r_t = r^star.op + gamma (pi_t - pi^star.op) $
 
 On peut substituer le taux d’intérêt réel pour obtenir une équation de demande agrégée (AD) : $ #box(stroke: black, inset: 3pt, [$ y_t = - sigma gamma (pi_t - pi^star.op) + theta_t $]) $
 
@@ -358,12 +343,12 @@ Cette courbe représente l’équilibre sur les marchés des biens et des servic
   [ 
     #figure(
       image("assets/as_ad.png"),
-      caption: [Courbe de demande agrégée$$]
+      caption: [Courbe de demande agrégée]
     ),
 
     #colbreak()
 
-    Demande Agrégée (AD) #footnote[Dans certains manuels, vous trouverez les prix agrégés $P_t$ sur l’axe des ordonnées au lieu de l’inflation. Parce que $P_(t - 1)$ est donné et que l’inflation est $pi_t = P_t \/ P_(t - 1)$, c’est en fait équivalent.] : $ y_t = theta_t - sigma gamma (pi_t - overline(pi)) $
+    Demande Agrégée (AD) #footnote[Dans certains manuels, vous trouverez les prix agrégés $P_t$ sur l’axe des ordonnées au lieu de l’inflation. Parce que $P_(t - 1)$ est donné et que l’inflation est $pi_t = P_t \/ P_(t - 1)$, c’est en fait équivalent.] : $ y_t = theta_t - sigma gamma (pi_t - pi^star.op) $
 
     Notez que la demande agrégée $y_t$ est une fonction décroissante de l’inflation (et des prix).
 ])
@@ -375,11 +360,9 @@ Cette courbe représente l’équilibre sur les marchés des biens et des servic
 - La demande agrégée peut être fondée sur la micro-optimisation rationnelle des consommateurs et des entreprises
   - Les ménages keynésiens ont une propension marginale à consommer élevée
   - Les ménages ricardiens ont une propension marginale à consommer faible et réagissent (négativement) au taux d’intérêt réel
-  - Les entreprises investissent moins lorsque le taux d’intérêt réel est plus élevé
+  - Les entreprises investissent moins lorsque le taux d’intérêt réel est plus élevé~
 
-~
-
-- La demande agrégée est décroissante (en l’inflation)
+- La demande agrégée est décroissante (en fonction de l’inflation)
 
 - Pour stabiliser l’inflation, la banque centrale stimule la demande en modifiant le taux d’intérêt réel. Elle le fait indirectement en fixant le taux d’intérêt nominal.
 

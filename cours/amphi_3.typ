@@ -61,7 +61,7 @@ Deux options:
 
 Au lendemain de la crise de 1929, il y avait de nombreux travailleurs près à être employés.
 
-Il a fallu 40 ans aux économistes pour réconcilier ce fait avec un modèle macroéconomique d'équilibre. Il a notamment fallu modliser la _concurrence imparfaite_ et la _rigidité des prix_.
+Il a fallu 40 ans aux économistes pour réconcilier ce fait avec un modèle macroéconomique d'équilibre. Il a notamment fallu modéliser la _concurrence imparfaite_ et la _rigidité des prix_.
 
 = Concurrence imparfaite
 
@@ -239,10 +239,11 @@ Cette inflation s’est arrêtée avec le plan Volcker
 
 #figure(
   image("assets_3/warhol_spiral.png", width: 60%),
-  caption: "La spirale de l’inflation salaire-prix comme une peinture dans le style d’Andy Warhol. Dall-E 2"
+  // caption: ""
+  
 )
 
-
+#colbreak()
 De nos jours, on estime que les boucles salaire-prix incontrôlées sont peu probables
 
 - les agents anticipent correctement l’inflation future
@@ -286,33 +287,36 @@ Que savons-nous avec certitude?
 - le coût est plus élevé lorsque la quantité de travail est plus élevée
   - car les travailleurs n’aiment pas travailler autant…
 
+Essayons de modéliser cela.
+
 #pagebreak()
 
-=== Comment expliquer le chômage théoriquement?
+// === Comment expliquer le chômage théoriquement?
 
-#columns(2,[
+// #columns(2,[
 
 
-#strong[Nouvelle synthèse néoclassique]
+// #strong[Nouvelle synthèse néoclassique]
 
-Les ménages choisissent rationnellement la quantité de travail qu’ils fournissent#footnote[Dans les théories antérieures, dites de la _synthèse néoclassique_, le chômage était un phénomène _involontaire_, c'est à dire qu'il n'était pas cohérent (dans le modèle) avec l'optimisation des agents.]
+// Les ménages choisissent rationnellement la quantité de travail qu’ils fournissent#footnote[Dans les théories antérieures, dites de la _synthèse néoclassique_, le chômage était un phénomène _involontaire_, c'est à dire qu'il n'était pas cohérent (dans le modèle) avec l'optimisation des agents.]
 
-- arbitrage entre loisir et travail
-- les variations de l’offre de travail sont #emph[microfondées] en utilisant les préférences des travailleurs
-- marché du travail en équilibre
-- pas de chômage involontaire
+// - arbitrage entre loisir et travail
+// - les variations de l’offre de travail sont #emph[microfondées] en utilisant les préférences des travailleurs
+// - marché du travail en équilibre
+// - pas de chômage involontaire
 
-#colbreak()
+// #colbreak()
 
-#strong[Théorie de la recherche]
+// #strong[Théorie de la recherche]
 
-Développements plus récents :
+// Développements plus récents :
 
-- par Mortensen, Pissarides, Diamond, …
-- les travailleurs et les employeurs recherchent constamment une correspondance
-- le manque de bonnes correspondances est expliqué par le modèle
-])
+// - par Mortensen, Pissarides, Diamond, …
+// - les travailleurs et les employeurs recherchent constamment une correspondance
+// - le manque de bonnes correspondances est expliqué par le modèle
+// ])
 
+== Marché du travail
 
 === Offre de travail
 
@@ -322,25 +326,23 @@ Développements plus récents :
 #image("assets_3/optimization.png", width:80%)
 
 #colbreak()
-Un travailleur fournit du travail $L lt.eq 1$.
-
-Il peut soit :
+Un travailleur choisit entre : 
 
 - consommer un panier de biens $C$ au niveau de prix $P$
 - profiter du temps libre $U = 1 - L$
 
-Nous pouvons écrire la contrainte budgétaire : $ W 1 gt.eq P C + W U $
+Nous pouvons écrire la contrainte budgétaire : $ W 1 gt.eq P C + W U + Delta A $ où $Delta A$ est la variation nette de la richesse.
 
 L’utilité à maximiser est$ V (C , u) = log (C) - xi (1-U)^(1 / xi) $
 
 ])
 
-#pagebreak()
+== Marché du travail
 
 === Offre de travail
 
 
-Le résultat de l’optimisation#footnote[Pour obtenir le résultat suivant, il faut aussi utiliser la condition $C=Y=L$] donne :
+Le résultat de l’optimisation donne pour l'ensemble des travailleurs#footnote[Pour obtenir le résultat suivant, il faut aussi utiliser la condition d'aggrégation $C=Y=L$]:
 
 $ #box(stroke: black, inset: 3pt, [$ L^S = (W / P)^xi $]) $
 
@@ -351,6 +353,7 @@ L’offre de travail est une fonction croissante du salaire #emph[réel];.
 
 Le paramètre $xi$ est l’élasticité de l’offre de travail au salaire réel
 
+== Marché du travail
 
 === Coût du travail
 
@@ -365,7 +368,7 @@ Nous voyons clairement que le salaire d’équilibre est :
 
 Face à une demande plus élevée, toutes les entreprises pourront produire davantage, mais feront face à des coûts croissants à mesure que les travailleurs deviendront plus chers.
 
-#pagebreak()
+== Marché du travail
 
 === Le lien salaire-prix
 <le-lien-salaire-prix>
@@ -376,12 +379,11 @@ Résumons ce que nous avons jusqu’à présent :
 - Marché des biens :
   - prix optimal : $P^star.op = (1 + mu) W (Y)$
 - Marché du travail
-  - salaure horaire : $W (Y) = P Y^xi$
+  - salaire horaire : $W (Y) = P Y^xi$
 
 Comment ces deux marchés sont-ils liés? Quel type de dynamique créent-ils?
 
 = L’équilibre naturel
-
 
 == L’équilibre naturel
 

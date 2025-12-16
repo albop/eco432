@@ -1,6 +1,6 @@
 #import "pc_template.typ": pc, correction
 
-#let correct = false
+#let correct = sys.inputs.at("correct", default: "false") == "true"
 
 #show: doc => pc(
   2,
