@@ -2,3 +2,4 @@
 _site/*
 normal/*
 correction/*
+**/*.quarto_ipynb
