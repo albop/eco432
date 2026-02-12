@@ -24,7 +24,7 @@
 
   #set text(18pt)
 
-On a vu que la demande agrégée répondait à des chocs et que l'on pouvait même la stimuler par des dépenses gouvernemententales...
+On a vu que la demande agrégée répondait à des chocs et que l'on pouvait même la stimuler par des dépenses gouvernementales...
 
 ... mais naturellement on ne peut pas produire tout ce que les gens veulent.
 
@@ -45,7 +45,7 @@ Si la quantité produite est déjà optimale, augmenter la demande ne fera qu'au
 Deux options:
 
 - soit les firmes sont déjà à leur capacité maximale: les marchés sont en déséquilibre, il faut une autre théorie#footnote[Certains économistes (Patinkin, Benassy, Malinvaud...) ont essayé de développer une théorie du déséquilibre. Sans succès a l'époque.]
-- soit il existe un facteur inutilisé (capital, travail) et les firmes peuvent produirent plus
+- soit il existe un facteur inutilisé (capital, travail) et les firmes peuvent produire plus
 
 ]
 
@@ -58,11 +58,15 @@ Deux options:
 
 Au lendemain de la crise de 1929, il y avait de nombreux travailleurs près à être employés.
 
+#pause
+
 Il a fallu 40 ans aux économistes pour réconcilier ce fait avec un modèle macroéconomique d'équilibre. Il a notamment fallu modéliser la _concurrence imparfaite_ et la _rigidité des prix_.
 
 = Concurrence imparfaite
 
 == Structures de marché
+
+Comment modéliser un ajustement incomplet?
 
 Dans un cours classique de microéconomie#footnote[Ou d'économie industrielle pour aller plus loin] on voit plusieurs modèles de structures de marché :
 
@@ -94,7 +98,7 @@ La dépendance de l’offre agrégée par rapport aux prix implique une certaine
 
 #pause
 
-#strong[Tarification monopolistique] :
+#strong[Tarification monopole] :
 
 - Un monopole fait face à une demande élastique $y (p)$ avec un coût de production linéaire $m c$
 - Elle maximise le profit en fixant le bon prix : $max_p y (p) p - w y (p)$
@@ -117,6 +121,8 @@ La *concurrence monopolistique* est une structure de marché où :
 
 Les markups sont une façon de mesurer la compétitivité des industries.
 
+#pause
+
 #figure(
   table(
     columns: 3,
@@ -131,6 +137,8 @@ Les markups sont une façon de mesurer la compétitivité des industries.
   ),
   caption: "Markups mesurés en 2018"
 )
+
+#pause
 
 A noter: les markups ne sont pas la  pas la seule mesure de la compétitivité. Par exemple, une industrie pourrait avoir des markups très faibles, mais des coûts excessifs, résultant d’un manque de concurrence.
 
@@ -154,6 +162,8 @@ Nous souhaitons comprendre le comportement des entreprises… dans un environnem
 
 - Les entreprises fixent des prix sur les marchés des biens
 - Les entreprises embauchent des travailleurs sur le marché du travail
+
+#pause
 
 Les deux sont interdépendants :
 
@@ -252,10 +262,10 @@ De nos jours, on estime que les boucles salaire-prix incontrôlées sont peu pro
 
 == Les entreprises, les consommateurs et les travailleurs
 
-*Objectif*: Établir pourquoi même si les marchés des biens sont #emph[à l’équilibre];, les entreprises monopolistiques choisissent de produire davantage lorsque les prix augmentent.
+*Objectif*: Établir pourquoi même si les marchés des biens sont #emph[à l'équilibre];, les entreprises monopolistiques choisissent de produire davantage lorsque les prix augmentent.
 
 
-Pour cela, il faut comprendre comment les entreprises intéragissent sur:
+Pour cela, il faut comprendre comment les entreprises interagissent sur:
 - le marché des biens
 - le marché du travail
 
@@ -389,7 +399,7 @@ Comment ces deux marchés sont-ils liés? Quel type de dynamique créent-ils?
 Ici, cela signifie que le prix optimal $P^star.op$ est égal au niveau général des prix $P$.
 
 #pause 
-On peut écrire : $ P = (1 + mu) underbrace(P Y^xi, W (Y)) $
+On peut écrire : $ P = (1 + mu) underbrace(P Y^(1/xi), W (Y)) $
 
 Ce qui donne : $ 1 = (1 + mu) Y^(1 / xi) $
 
@@ -420,6 +430,9 @@ Remarque:
     - est représentée comme une ligne verticale dans le plan $(pi , y)$
     - bonne description lorsque les prix ont eu le temps de s’ajuster
     - c'est l'offre à long terme     (LRAS#footnote[LRAS: Long run aggregate supply.])
+  
+  #pause
+
   - Lorsque les prix sont parfaitement flexibles, les politiques de demande sont inefficaces
     - soutenir la demande déplace la courbe de demande vers la droite
     - les prix absorbent toute la demande excédentaire
@@ -427,7 +440,9 @@ Remarque:
   ]
 )
 
-== offre agrégée à long terme
+== Offre agrégée de long terme
+
+=== Prix constants vs. prix flexibles
 
 #grid(columns: 2,[
 
@@ -446,6 +461,7 @@ Deux eux cas extrêmes :
   - courbe verticale
   - aucune importance des prix
 
+#pause 
 Pouvons-nous modéliser une situation où il y a un ajustement limité des prix? 
 - c’est-à-dire une relation positive entre l’inflation et la production à court terme?
 - c'est-à-dire une courbe d'offre globale croissante?
@@ -684,7 +700,7 @@ Voici l'intuition :
   image("assets_3/inflation_dashboard.png", height: 60%), caption: "Tableau de bord de l’inflation"
 )
 
-Avec une transparence accrue (consultez le #link("https://www.ecb.europa.eu/stats/macroeconomic_and_sectoral/hicp/html/index.en.html")[tableau de bord];) des banques centrales occidentales, ce canal est moins pertinent de nos jours, sauf dans des conditions désordonnées.
+Avec une transparence accrue (consultez le #link("https://www.ecb.europa.eu/stats/macroeconomic_and_sectoral/hicp/more/html/data.fr.html")[tableau de bord];) des banques centrales occidentales, ce canal est moins pertinent de nos jours, sauf dans des conditions désordonnées.
 
 = Conclusion
 
@@ -699,16 +715,16 @@ Avec une transparence accrue (consultez le #link("https://www.ecb.europa.eu/stat
 - Qu'est-ce que la production naturelle ?
   - l'équilibre en prix flexibles
   - la production de long terme
-- L’intuition derrière les trois théories expliquant la courbe AS :
+- L'intuition derrière les trois théories expliquant la courbe AS :
   - Prix rigides
   - Salaires rigides
   - Misperception
 
 == À venir
 
-#strong[PC: coûts de catalogue]: expliquer comment 
-
-
-#strong[Amphi/PC: Fluctuations macroéconomiques] : Quels sont les chocs et comment la banque centrale et le gouvernement peuvent-y répondre ?
+#strong[PC: coûts de catalogue]: expliquer comment est déterminé $omega$ .
 
 #strong[Amphi: Politique monétaire]: que fait la banque centrale ?
+
+#strong[Amphi/PC: Fluctuations macroéconomiques] : Modèle AS/AD. Quels sont les chocs et comment la banque centrale et le gouvernement peuvent-ils y répondre ?
+
