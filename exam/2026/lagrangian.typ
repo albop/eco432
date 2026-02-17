@@ -41,39 +41,32 @@ On considère une économie composée d'un nombre fini $N$ de variétés de bien
 $ C_t = (sum_(i=1)^N C_t(i)^((epsilon-1)/epsilon))^(epsilon/(epsilon-1)) $
 où $epsilon > 1$ est l'élasticité de substitution entre les biens.
 
-le consommateur cherche à minimiser sa dépense totale $ E_t = sum_(i=1)^N P_t(i) C_t(i) $.
+Le consommateur cherche à minimiser sa dépense totale $ E_t = sum_(i=1)^N P_t(i) C_t(i) $ pour atteindre un niveau donné de consommation agrégée $C_t$.
 
-1. condition d'optimalité
-   À l'optimum, le rapport des utilités marginales de deux biens doit être égal au rapport de leurs prix.
-   Montrez que cela implique la relation suivante entre les quantités consommées de deux biens quelconques $i$ et $j$ :
-   $ C_t(i) / C_t(j) = (P_t(i) / P_t(j))^(-epsilon) $
-   (Indice : On rappelle que $partial C_t / partial C_t(i) = (C_t / C_t(i))^(1/epsilon)$).
-
-2. Demande individuelle
-   En utilisant la relation précédente et la définition de l'agrégat $C_t$, montrez que la demande optimale pour chaque variété $i$ s'écrit :
+1. Écrivez le lagrangien du problème de minimisation de la dépense sous contrainte.
+2. Dérivez la condition de premier ordre pour chaque bien $i$.
+2. Montrez que la demande optimale pour chaque variété est donnée par :
    $ C_t(i) = (P_t(i) / P_t)^(-epsilon) C_t $
-   où $P_t$ est un indice des prix que vous définirez en fonction des prix individuels $P_t(j)$.
-
-3. Dépense totale
-   Montrez qu'avec ces fonctions de demande, la dépense totale minimale est simplement le produit de l'indice des prix et de la consommation agrégée : $E_t = P_t C_t$.
+   où $P_t$ est l'indice des prix idéal définie par $P_t = (sum_(i=1)^N P_t(i)^(1-epsilon))^(1/(1-epsilon))$.
+3. Vérifiez que pour ces demandes optimales, la dépense totale est bien égale à $P_t C_t$.
 
 #correction[
-   1. On a la condition d'optimalité $ (partial C_t / partial C_t(i)) / (partial C_t / partial C_t(j)) = P_t(i) / P_t(j) $.
-      Avec la dérivée donnée en indice :
-      $ ((C_t / C_t(i))^(1/epsilon)) / ((C_t / C_t(j))^(1/epsilon)) = (C_t(j)/C_t(i))^(1/epsilon) = P_t(i)/P_t(j) $
-      En élevant à la puissance $-epsilon$ :
-      $ C_t(i)/C_t(j) = (P_t(i)/P_t(j))^(-epsilon) $
+   1. Le lagrangien s'écrit :
+      $ cal(L) = sum_(i=1)^N P_t(i) C_t(i) - lambda_t [ (sum_(i=1)^N C_t(i)^((epsilon-1)/epsilon))^(epsilon/(epsilon-1)) - C_t ] $
    
-   2. On peut exprimer $C_t(j)$ en fonction de $C_t(i)$ :
-      $ C_t(j) = C_t(i) (P_t(j)/P_t(i))^(-epsilon) $
-      On substitue dans la définition de l'agrégat CES :
-      $ C_t = ( sum_j [ C_t(i) (P_t(j)/P_t(i))^(-epsilon) ]^((epsilon-1)/epsilon) )^(epsilon/(epsilon-1)) $
-      $ C_t = C_t(i) P_t(i)^epsilon ( sum_j P_t(j)^(1-epsilon) )^(epsilon/(epsilon-1)) $
+   2. La CPO par rapport à $C_t(i)$ donne :
+      $ P_t(i) = lambda_t ((epsilon)/(epsilon-1)) C_t^(1/epsilon) ((epsilon-1)/(epsilon)) C_t(i)^(-1/epsilon) $
+      $ P_t(i) = lambda_t (C_t / C_t(i) )^(1/epsilon) $
+   
+   3. On inverse la relation pour obtenir $C_t(i)$ :
+      $ C_t(i) = (P_t(i)/lambda_t)^(-epsilon) C_t $
+      Pour trouver $lambda_t$, on substitue ces demandes dans la contrainte agrégatrice :
+      $ C_t = (sum_(i=1)^N [(P_t(i)/lambda_t)^(-epsilon) C_t]^((epsilon-1)/epsilon))^(epsilon/(epsilon-1)) $
+      $ 1 = lambda_t^epsilon (sum P_t(i)^(1-epsilon))^(epsilon/(epsilon-1)) $
+      Cela implique que $lambda_t = (sum P_t(i)^(1-epsilon))^(1/(1-epsilon))$, ce qui correspond à la définition de l'indice $P_t$.
+      Donc $C_t(i) = (P_t(i)/P_t)^(-epsilon) C_t$.
       
-      Soit $P_t = (sum_j P_t(j)^(1-epsilon))^(1/(1-epsilon))$. Alors le terme entre parenthèse est $P_t^(-epsilon)$.
-      On obtient $C_t = C_t(i) (P_t(i)/P_t)^epsilon$, d'où $C_t(i) = (P_t(i)/P_t)^(-epsilon) C_t$.
-   
-   3. La dépense totale est :
+   4. La dépense totale est :
       $ sum_(i=1)^N P_t(i) C_t(i) = sum P_t(i) (P_t(i)/P_t)^(-epsilon) C_t = C_t P_t^epsilon sum P_t(i)^(1-epsilon) $
       Or, par définition, $P_t^(1-epsilon) = sum P_t(i)^(1-epsilon)$.
       Donc $E_t = C_t P_t^epsilon P_t^(1-epsilon) = P_t C_t$.
